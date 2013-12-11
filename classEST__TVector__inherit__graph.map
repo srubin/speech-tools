@@ -1,0 +1,10 @@
+<map id="EST_TVector&lt; T &gt;" name="EST_TVector&lt; T &gt;">
+<area shape="rect" id="node3" href="$classEST__FeatureSample.html" title="EST_FeatureSample\&lt;\l EST_Val \&gt;" alt="" coords="200,5,349,51"/>
+<area shape="rect" id="node5" href="$classEST__TMatrix.html" title="Template Matrix class. This is an extension of the EST_TVector class to two dimensions." alt="" coords="209,75,340,104"/>
+<area shape="rect" id="node9" href="$classEST__TMatrix.html" title="EST_TMatrix\&lt; EST_Val \&gt;" alt="" coords="188,128,361,157"/>
+<area shape="rect" id="node11" href="$classEST__TMatrix.html" title="EST_TMatrix\&lt; short \&gt;" alt="" coords="199,181,351,211"/>
+<area shape="rect" id="node17" href="$classEST__TSimpleVector.html" title="EST_TSimpleVector\&lt; T \&gt;" alt="" coords="188,235,361,264"/>
+<area shape="rect" id="node7" href="$classEST__TSimpleMatrix.html" title="A subclass of EST_TMatrix which copies using memcopy.This isn&#39;t suitable for matrices of class object..." alt="" coords="411,75,581,104"/>
+<area shape="rect" id="node13" href="$classEST__TSimpleMatrix.html" title="EST_TSimpleMatrix\&lt;\l short \&gt;" alt="" coords="423,173,569,219"/>
+<area shape="rect" id="node15" href="$classEST__SMatrix.html" title="EST_SMatrix" alt="" coords="631,181,729,211"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="Functions for Generating Frames" name="Functions for Generating Frames">
+<area shape="rect" id="node1" href="$group__Framebasedfilterbankandcepstralanalysis.html" title="Frame based filter\l bank and cepstral analysis" alt="" coords="219,5,400,51"/>
+<area shape="rect" id="node2" href="$group__LinearPredictionfunctions.html" title="Including, generation of coefficients from the signal, reflection coefficients, line spectral frequen..." alt="" coords="221,75,397,104"/>
+<area shape="rect" id="node3" href="$group__FastFourierTransformfunctions.html" title="Fast Fourier Transform\l functions" alt="" coords="232,127,387,174"/>
+<area shape="rect" id="node5" href="$group__Energyandpowerframefunctions.html" title="Energy and power frame\l functions" alt="" coords="228,197,391,243"/>
+</map>

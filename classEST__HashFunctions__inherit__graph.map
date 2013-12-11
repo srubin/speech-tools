@@ -1,0 +1,11 @@
+<map id="EST_HashFunctions" name="EST_HashFunctions">
+<area shape="rect" id="node3" href="$classEST__THash.html" title="An open hash table. The number of buckets should be set to allow enough space that there are relative..." alt="" coords="228,5,372,35"/>
+<area shape="rect" id="node5" href="$classEST__THash.html" title="EST_THash\&lt; EST_String,\l EST_FeatureFunctionPackage\l::Entry \&gt;" alt="" coords="199,59,401,123"/>
+<area shape="rect" id="node9" href="$classEST__THash.html" title="EST_THash\&lt; EST_String,\l EST_Item_Content * \&gt;" alt="" coords="212,146,388,193"/>
+<area shape="rect" id="node13" href="$classEST__THash.html" title="EST_THash\&lt; EST_String,\l EST_Item_featfunc \&gt;" alt="" coords="212,215,388,262"/>
+<area shape="rect" id="node17" href="$classEST__THash.html" title="EST_THash\&lt; EST_String, V \&gt;" alt="" coords="199,285,401,315"/>
+<area shape="rect" id="node7" href="$classEST__TStringHash.html" title="EST_TStringHash\&lt; EST\l_FeatureFunctionPackage\l::Entry \&gt;" alt="" coords="452,59,625,123"/>
+<area shape="rect" id="node11" href="$classEST__TStringHash.html" title="EST_TStringHash\&lt; EST\l_Item_Content * \&gt;" alt="" coords="456,146,621,193"/>
+<area shape="rect" id="node15" href="$classEST__TStringHash.html" title="EST_TStringHash\&lt; EST\l_Item_featfunc \&gt;" alt="" coords="456,215,621,262"/>
+<area shape="rect" id="node19" href="$classEST__TStringHash.html" title="A specialised hash table for when the key is an EST_String." alt="" coords="459,285,619,315"/>
+</map>

@@ -1,0 +1,10 @@
+<map id="EST_TrackFile" name="EST_TrackFile">
+<area shape="rect" id="node2" href="$classEST__TNamedEnumI.html" title="EST_TNamedEnumI\&lt; EST\l_TrackFileType, Info \&gt;" alt="" coords="683,19,864,66"/>
+<area shape="rect" id="node4" href="$classEST__TValuedEnumI.html" title="EST_TValuedEnumI\&lt; EST\l_TrackFileType, const\l char *, Info \&gt;" alt="" coords="453,5,632,69"/>
+<area shape="rect" id="node6" href="$structEST__TValuedEnumDefinition.html" title="EST_TValuedEnumDefinition\l\&lt; EST_TrackFileType, const\l char *, Info \&gt;" alt="" coords="149,5,341,69"/>
+<area shape="rect" id="node8" href="$structInfo.html" title="Info" alt="" coords="19,23,61,52"/>
+<area shape="rect" id="node10" href="$classEST__TNamedEnumI.html" title="EST_TNamedEnumI\&lt; EST\l_TrackFileType, TS_Info \&gt;" alt="" coords="683,90,864,137"/>
+<area shape="rect" id="node12" href="$classEST__TValuedEnumI.html" title="EST_TValuedEnumI\&lt; EST\l_TrackFileType, const\l char *, TS_Info \&gt;" alt="" coords="453,93,632,157"/>
+<area shape="rect" id="node14" href="$structEST__TValuedEnumDefinition.html" title="EST_TValuedEnumDefinition\l\&lt; EST_TrackFileType, const\l char *, TS_Info \&gt;" alt="" coords="149,93,341,157"/>
+<area shape="rect" id="node16" href="$structTS__Info.html" title="TS_Info" alt="" coords="7,111,73,140"/>
+</map>

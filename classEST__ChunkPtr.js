@@ -1,0 +1,25 @@
+var classEST__ChunkPtr =
+[
+    [ "EST_ChunkPtr", "classEST__ChunkPtr.html#a9dfa4dd5a21a5fe4bc75a93e7314c0d3", null ],
+    [ "EST_ChunkPtr", "classEST__ChunkPtr.html#a5744516c250472d19214d989434587a3", null ],
+    [ "~EST_ChunkPtr", "classEST__ChunkPtr.html#a42eac276cd5a9b72ea80d5986ed2cd1c", null ],
+    [ "size", "classEST__ChunkPtr.html#adbb12a6334893344eb4460e40e3cb2f9", null ],
+    [ "shareing", "classEST__ChunkPtr.html#a76a0cd42764f872dded9cd08b551a1fe", null ],
+    [ "count", "classEST__ChunkPtr.html#ad731c7f3335d9c71099165481427733f", null ],
+    [ "operator=", "classEST__ChunkPtr.html#af45de76836051aac097b2a973e443a40", null ],
+    [ "operator=", "classEST__ChunkPtr.html#ad6221deec1240200e6062a0db4d96df2", null ],
+    [ "operator char *", "classEST__ChunkPtr.html#a81636684b9464f063fc011f17c52c290", null ],
+    [ "operator const char *", "classEST__ChunkPtr.html#a00ea8de712cc99825824d4517b89bd66", null ],
+    [ "operator const char *", "classEST__ChunkPtr.html#a7a34dfe9cffbd53625d4e97feb83ac8a", null ],
+    [ "operator[]", "classEST__ChunkPtr.html#a4b9aebca45a9c0dc2006bc71a8eeecf0", null ],
+    [ "operator()", "classEST__ChunkPtr.html#a002971681c04f80fda85bd699e029e30", null ],
+    [ "chunk_allocate", "classEST__ChunkPtr.html#aab2e9b843b75519650873bdc105344d1", null ],
+    [ "chunk_allocate", "classEST__ChunkPtr.html#a849d2869bfe54d179fcaa45061618243", null ],
+    [ "chunk_allocate", "classEST__ChunkPtr.html#a6897dea110d2b67bad5bf9c76d4d33c6", null ],
+    [ "cp_make_updatable", "classEST__ChunkPtr.html#a51f6cd7d96de734282228645af955853", null ],
+    [ "cp_make_updatable", "classEST__ChunkPtr.html#a4ef33dfbefb59e539ef52343b6f4e321", null ],
+    [ "grow_chunk", "classEST__ChunkPtr.html#a168007e7610f15b52906e3b6822c431a", null ],
+    [ "grow_chunk", "classEST__ChunkPtr.html#ac405108177651d3cf41033aea22f3b5d", null ],
+    [ "operator<<", "classEST__ChunkPtr.html#acbededec19546294c7e0938db54c882e", null ],
+    [ "tester", "classEST__ChunkPtr.html#a9dfe348dce3bb9bbff9e3125c5a9bd06", null ]
+];

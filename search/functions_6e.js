@@ -1,0 +1,28 @@
+var searchData=
+[
+  ['n',['n',['../classEST__TIterator.html#abc6cbb307d61cd6f7a9ddf0b4697e50e',1,'EST_TIterator::n()'],['../classEST__TVector.html#a01d8bec44c286993ca4d989909e2a59f',1,'EST_TVector::n()']]],
+  ['name',['name',['../classEST__Server.html#ad4acebacd9f38afecaf3e22f6a040875',1,'EST_Server::name()'],['../classEST__Discrete.html#ae63f568d585bd9a89a8197786c7bdf98',1,'EST_Discrete::name(const int n) const '],['../classEST__Discrete.html#a3673629c311ae7e7fd8aef2a4a43c6fd',1,'EST_Discrete::name(const EST_String &amp;n) const '],['../classEST__Track.html#aa41300bb14815efc01104f5bc25f6bad',1,'EST_Track::name()'],['../classEST__Wave.html#aad9094285660edaf785c763a0290d182',1,'EST_Wave::name()'],['../classEST__Item__Content.html#ae13b36a3f9b2c38dd092d1b3dc32c6ec',1,'EST_Item_Content::name()'],['../classEST__Relation.html#a0fb9883b8419631dc6992b048045cd80',1,'EST_Relation::name()']]],
+  ['names',['names',['../classEST__ServiceTable.html#a7be743b22ae84d8f384a7202d726023e',1,'EST_ServiceTable']]],
+  ['nearest_5fboundary',['nearest_boundary',['../group__EST__Track__aux__functions.html#ga53684356ac25768cdd703611c0eebc06',1,'nearest_boundary(EST_Track &amp;tr, float time, int sample_rate, float offset=0):&#160;EST_track_aux.cc'],['../group__EST__Track__aux__functions.html#ga53684356ac25768cdd703611c0eebc06',1,'nearest_boundary(EST_Track &amp;tr, float time, int sample_rate, float offset):&#160;EST_track_aux.cc']]],
+  ['neg_5fzero_5fcross_5fpick',['neg_zero_cross_pick',['../group__PitchmarkingFunctions.html#gabdbfd3f5fc9e94596cc44f5850bacb10',1,'neg_zero_cross_pick(EST_Wave &amp;lx, EST_Track &amp;pm):&#160;pitchmark.cc'],['../group__PitchmarkingFunctions.html#gabdbfd3f5fc9e94596cc44f5850bacb10',1,'neg_zero_cross_pick(EST_Wave &amp;lx, EST_Track &amp;pm):&#160;pitchmark.cc']]],
+  ['next',['next',['../classEST__TIterator.html#ac89c5c32da7f59e306ca73665385c500',1,'EST_TIterator']]],
+  ['next_5felement',['next_element',['../classEST__TIterator.html#ae1deadf6d5953e68602d0e4df36d0e2e',1,'EST_TIterator::next_element()'],['../classEST__TRwIterator.html#a645068ec0b07f7b26109660026010f44',1,'EST_TRwIterator::next_element()']]],
+  ['next_5fid',['next_id',['../classEST__Utterance.html#abf75f6f717410ee8b942330c5cd71662',1,'EST_Utterance']]],
+  ['next_5fleaf',['next_leaf',['../group__treetraversalfunctions.html#ga88a2d751540440fdc66b519b4865bf95',1,'EST_Relation_tree.h']]],
+  ['next_5fnon_5fbreak',['next_non_break',['../classEST__Track.html#a383d4132b356218e4be05211540ffeac',1,'EST_Track']]],
+  ['next_5fsibling',['next_sibling',['../group__treetraversalfunctions.html#ga2e6f3c1c390098e67517fb9e898514b9',1,'next_sibling(const EST_Item *n):&#160;EST_Relation_tree.h'],['../group__treetraversalfunctions.html#gac71d3a22e1e6d7db642e434d78902f80',1,'next_sibling(const EST_Item *n, const char *relname):&#160;EST_Relation_tree.h']]],
+  ['nonterminal',['nonterminal',['../classEST__SCFG.html#ac238a3d2c9e76f016d60f2733457cbee',1,'EST_SCFG::nonterminal(int p) const '],['../classEST__SCFG.html#a2dee46cf838479adddac1d5aee609ace',1,'EST_SCFG::nonterminal(const EST_String &amp;p) const ']]],
+  ['nth',['nth',['../classEST__TList.html#a4d6fa93e196f0550a6d8fa391d76b0ec',1,'EST_TList::nth(int n)'],['../classEST__TList.html#ae21b05e0567b23d7224e14a2aaf57581',1,'EST_TList::nth(int n) const ']]],
+  ['num_5faux_5fchannels',['num_aux_channels',['../classEST__Track.html#a17db7f627aeabf0509aa68f812a467b7',1,'EST_Track']]],
+  ['num_5fchannels',['num_channels',['../classEST__Track.html#adcf56a7204cb8f8fcaf8059d7cc1e75e',1,'EST_Track::num_channels()'],['../classEST__Wave.html#ad5a2f2d5f9876bdf0838b740c9e10186',1,'EST_Wave::num_channels()']]],
+  ['num_5fcolumns',['num_columns',['../classEST__TMatrix.html#a3e7bf2fa066b4fd0f627709b6aff45b8',1,'EST_TMatrix::num_columns()'],['../classEST__TVector.html#ab18ed6fa1282f3947369e6b3ed4af5c5',1,'EST_TVector::num_columns()']]],
+  ['num_5fentries',['num_entries',['../classEST__THash.html#a7c2edb5c4ce317c1fca54652a1a18523',1,'EST_THash']]],
+  ['num_5fframes',['num_frames',['../classEST__Track.html#a2717caaf1ca41c0be2da0ed9de2da566',1,'EST_Track']]],
+  ['num_5fleaves',['num_leaves',['../group__treetraversalfunctions.html#gaee3823f60ca33135b749fc45811126b5',1,'num_leaves(const EST_Item *n):&#160;EST_Relation.cc'],['../group__treetraversalfunctions.html#gaee3823f60ca33135b749fc45811126b5',1,'num_leaves(const EST_Item *h):&#160;EST_Relation.cc']]],
+  ['num_5fnonterminals',['num_nonterminals',['../classEST__SCFG.html#acfbce31ebcbc46774c638143ae062a79',1,'EST_SCFG']]],
+  ['num_5frelations',['num_relations',['../classEST__Utterance.html#ae699321e95e1670c2dc8c09face1481e',1,'EST_Utterance']]],
+  ['num_5frows',['num_rows',['../classEST__TMatrix.html#ad0d3c943e51fb813e0dc14c86f782045',1,'EST_TMatrix']]],
+  ['num_5fsamples',['num_samples',['../classEST__Wave.html#aff0238847e68a291259f226f0285d9c8',1,'EST_Wave']]],
+  ['num_5fterminals',['num_terminals',['../classEST__SCFG.html#a11b1e60e4e2f4e23a629321c5c1fcc8e',1,'EST_SCFG']]],
+  ['number',['Number',['../classEST__String.html#a027e8879c28be6d9ed9e7709b0962f83',1,'EST_String::Number(int i, int base=10)'],['../classEST__String.html#a96aa851f283221f5ad0168fa520563cf',1,'EST_String::Number(long i, int base=10)'],['../classEST__String.html#a69161b968ae4777443ef8eacf551a15b',1,'EST_String::Number(double d)'],['../classEST__String.html#ac1a4fd675c3df2785ac3a63ba9d3d628',1,'EST_String::Number(float f)']]]
+];

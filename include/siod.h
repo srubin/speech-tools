@@ -111,9 +111,9 @@ int parse_url(const EST_String &url,
 	      EST_String &port, 
 	      EST_String &path);
 
-LISP err(const char *message, LISP x);
-LISP err(const char *message, const char *s);
-LISP errswitch(void);
+LISP err(const char *message, LISP x) EST_FUNC_NORETURN;
+LISP err(const char *message, const char *s) EST_FUNC_NORETURN;
+LISP errswitch(void) EST_FUNC_NORETURN;
 
 void siod_list_to_strlist(LISP l, EST_StrList &a);
 LISP siod_strlist_to_list(EST_StrList &a);

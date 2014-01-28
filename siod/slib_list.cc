@@ -31,7 +31,8 @@ static LISP llength(LISP obj)
       if NNULLP(l) err("improper list to length",obj);
       return(flocons(n));
     default:
-      return(err("wrong type of argument to length",obj));}}
+      err("wrong type of argument to length",obj);
+      return(flocons(-1));}}
 
 LISP assoc(LISP x,LISP alist)
 {LISP l,tmp;

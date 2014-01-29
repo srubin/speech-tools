@@ -271,9 +271,9 @@ var hierarchy =
     [ "Info", "structInfo.html", null ],
     [ "Info", "structInfo.html", null ],
     [ "InputSource", "structinput__source.html", null ],
+    [ "EST_Features::IPointer", "structEST__Features_1_1IPointer.html", null ],
     [ "EST_TKVL< K, V >::IPointer", "structEST__TKVL_1_1IPointer.html", null ],
     [ "EST_TList< T >::IPointer", "structEST__TList_1_1IPointer.html", null ],
-    [ "EST_Features::IPointer", "structEST__Features_1_1IPointer.html", null ],
     [ "EST_Track::IPointer_f", "classEST__Track_1_1IPointer__f.html", null ],
     [ "EST_Featured::IPointer_feat", "structEST__Featured_1_1IPointer__feat.html", null ],
     [ "EST_TKVL< K, V >::IPointer_k", "structEST__TKVL_1_1IPointer__k.html", null ],
@@ -296,7 +296,6 @@ var hierarchy =
       [ "EST_FringeServer::ResultHandler", "classEST__FringeServer_1_1ResultHandler.html", null ],
       [ "EST_SiodServer::ResultHandler", "classEST__SiodServer_1_1ResultHandler.html", null ]
     ] ],
-    [ "RFCelement", "classRFCelement.html", null ],
     [ "SEGMENT_", "structSEGMENT__.html", null ],
     [ "Srpd_Op", "structSrpd__Op.html", null ],
     [ "stats_accumulator", "structstats__accumulator.html", null ],

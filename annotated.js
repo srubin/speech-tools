@@ -141,7 +141,6 @@ var annotated =
     [ "old_tbuffer", "structold__tbuffer.html", "structold__tbuffer" ],
     [ "Parser", "structparser__state.html", "structparser__state" ],
     [ "repl_hooks", "structrepl__hooks.html", "structrepl__hooks" ],
-    [ "RFCelement", "classRFCelement.html", null ],
     [ "SEGMENT_", "structSEGMENT__.html", "structSEGMENT__" ],
     [ "Srpd_Op", "structSrpd__Op.html", "structSrpd__Op" ],
     [ "stats_accumulator", "structstats__accumulator.html", "structstats__accumulator" ],

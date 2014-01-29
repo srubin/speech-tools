@@ -11,7 +11,7 @@ var classEST__ChunkPtr =
     [ "operator char *", "classEST__ChunkPtr.html#a81636684b9464f063fc011f17c52c290", null ],
     [ "operator const char *", "classEST__ChunkPtr.html#a00ea8de712cc99825824d4517b89bd66", null ],
     [ "operator const char *", "classEST__ChunkPtr.html#a7a34dfe9cffbd53625d4e97feb83ac8a", null ],
-    [ "operator[]", "classEST__ChunkPtr.html#a4b9aebca45a9c0dc2006bc71a8eeecf0", null ],
+    [ "operator[]", "classEST__ChunkPtr.html#aafa2a2425c90192de0dc1ddb6975effd", null ],
     [ "operator()", "classEST__ChunkPtr.html#a002971681c04f80fda85bd699e029e30", null ],
     [ "chunk_allocate", "classEST__ChunkPtr.html#aab2e9b843b75519650873bdc105344d1", null ],
     [ "chunk_allocate", "classEST__ChunkPtr.html#a849d2869bfe54d179fcaa45061618243", null ],

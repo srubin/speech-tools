@@ -15,6 +15,8 @@ var group__treetraversalfunctions =
     [ "next_sibling", "group__treetraversalfunctions.html#gac71d3a22e1e6d7db642e434d78902f80", null ],
     [ "prev_sibling", "group__treetraversalfunctions.html#gac5b8af694ed156c0cc7d0623c3d1be1a", null ],
     [ "root", "group__treetraversalfunctions.html#ga781aa4cebd1bdec4cf872cd5af4573e9", null ],
+    [ "first_leaf_in_tree", "group__treetraversalfunctions.html#ga4c0a4983e82b2dec9026e32805e49d09", null ],
+    [ "last_leaf_in_tree", "group__treetraversalfunctions.html#ga55dc80065958e842aab5bdc9f2fee614", null ],
     [ "first_leaf", "group__treetraversalfunctions.html#gab785e451a9ee7bbf8e14ec86d1511526", null ],
     [ "last_leaf", "group__treetraversalfunctions.html#gad46c74ac10346597a79c249828781b85", null ],
     [ "next_leaf", "group__treetraversalfunctions.html#ga88a2d751540440fdc66b519b4865bf95", null ],

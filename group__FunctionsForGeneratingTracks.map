@@ -1,7 +1,0 @@
-<map id="Functions for generating Tracks" name="Functions for generating Tracks">
-<area shape="rect" id="node1" href="$group__Spectrogramgeneration.html" title="Spectrogram generation" alt="" coords="219,5,379,35"/>
-<area shape="rect" id="node2" href="$group__Functionsforusewithframebasedprocessing.html" title="Functions for use with\l frame based processing" alt="" coords="216,58,381,105"/>
-<area shape="rect" id="node4" href="$group__PitchmarkingFunctions.html" title="Pitchmarking Functions" alt="" coords="220,128,377,157"/>
-<area shape="rect" id="node5" href="$group__DeltaandAccelerationcoefficients.html" title="Delta and Acceleration\l coefficients" alt="" coords="221,181,376,227"/>
-<area shape="rect" id="node6" href="$group__PitchF0DetectionAlgorithmfunctions.html" title="Pitch/F0 Detection\l Algorithm functions" alt="" coords="229,250,368,297"/>
-</map>

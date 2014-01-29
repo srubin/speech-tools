@@ -1,6 +1,0 @@
-<map id="Filter Functions" name="Filter Functions">
-<area shape="rect" id="node1" href="$group__PrePostEmphasisfilters.html" title="These functions adjust the spectral tilt of the input waveform." alt="" coords="167,5,340,35"/>
-<area shape="rect" id="node2" href="$group__Miscellaneousfilters.html" title="Some of these filters are non&#45;linear and therefore don&#39;t fit the normal paradigm." alt="" coords="181,59,325,88"/>
-<area shape="rect" id="node4" href="$group__LinearPredictionfilters.html" title="Linear Prediction filters" alt="" coords="176,112,331,141"/>
-<area shape="rect" id="node5" href="$group__FIRfilters.html" title="FIR filters" alt="" coords="213,165,293,195"/>
-</map>

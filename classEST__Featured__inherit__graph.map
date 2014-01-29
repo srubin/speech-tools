@@ -1,5 +1,0 @@
-<map id="EST_Featured" name="EST_Featured">
-<area shape="rect" id="node3" href="$classEST__Track.html" title="EST_Track" alt="" coords="5,83,93,112"/>
-<area shape="rect" id="node5" href="$classEST__Wave.html" title="A class for storing digital waveforms. The waveform is stored as an array of 16 bit shorts..." alt="" coords="117,83,205,112"/>
-<area shape="rect" id="node7" href="$classEST__SingleChannelWave.html" title="EST_SingleChannelWave" alt="" coords="75,160,248,189"/>
-</map>

@@ -96,7 +96,7 @@ var group__containerclasses =
       [ "EST_TDeque", "classEST__TDeque.html#ac699334fff264a21ea3d6ea1789964ed", null ],
       [ "clear", "classEST__TDeque.html#a0504566f23c40a85531618cb161f94f6", null ],
       [ "is_empty", "classEST__TDeque.html#a40380a4e5b2091c31a9bb3906a4e09c9", null ],
-      [ "print", "classEST__TDeque.html#a552678b250ca40c8997d53791c074f90", null ],
+      [ "print", "classEST__TDeque.html#a60f06502423254b4abafd620c3a5b4e4", null ],
       [ "push", "classEST__TDeque.html#a2159059bf4a24c99d4d8684837700658", null ],
       [ "pop", "classEST__TDeque.html#a02b5d69a8c73d96552aeb9b8dbff657d", null ],
       [ "nth", "classEST__TDeque.html#a7ff1f5725cba904bc199d89f74c52b68", null ],
@@ -107,11 +107,11 @@ var group__containerclasses =
       [ "last", "classEST__TDeque.html#a670b0a0b9d4223632ebdb355dcf97518", null ],
       [ "unshift", "classEST__TDeque.html#a9eeb638fe2c37d7ab57819d20525347b", null ],
       [ "shift", "classEST__TDeque.html#a53bce7241123cfea01eec22aec047d6a", null ],
-      [ "operator<<", "classEST__TDeque.html#ab51f9eea5fd25966963da7dee4d52771", null ]
+      [ "operator<<", "classEST__TDeque.html#a5f8c1948e15a9d1d71c115cf51d6ca2d", null ]
     ] ],
     [ "EST_TKVI", "classEST__TKVI.html", [
       [ "operator==", "classEST__TKVI.html#a7c9c9b2473372c1747e9a902dea90bae", null ],
-      [ "operator<<", "classEST__TKVI.html#a88080318849b3ea3fbae60b751a26203", null ],
+      [ "operator<<", "classEST__TKVI.html#ab696eec275f8595b6d0eee80fbf4406b", null ],
       [ "k", "classEST__TKVI.html#a8a2aad3abd1d1dd5f107da580974fb8f", null ],
       [ "v", "classEST__TKVI.html#a10e40f8a3999ee715b5c77207682cf34", null ]
     ] ],
@@ -167,7 +167,7 @@ var group__containerclasses =
       [ "EST_TRwStructIterator< EST_TKVL< K, V >, IPointer, EST_TKVI< K, V > >", "classEST__TKVL.html#aa807455470392710287697dec75bdac3", null ],
       [ "EST_TIterator< EST_TKVL< K, V >, IPointer_k, K >", "classEST__TKVL.html#a68d9b24e4c7563e97afa4bbf2b71c249", null ],
       [ "EST_TRwIterator< EST_TKVL< K, V >, IPointer_k, K >", "classEST__TKVL.html#a8c41ab946ca6252c6a97a1aed8d34246", null ],
-      [ "operator<<", "classEST__TKVL.html#a590ca1b3f8035edce1073e2c428169bf", null ],
+      [ "operator<<", "classEST__TKVL.html#a8cc3114472b44dabc00d2473cc129e1c", null ],
       [ "list", "classEST__TKVL.html#a401bc7ba5fc806f6cab393c7be0a8151", null ]
     ] ],
     [ "EST_TList", "classEST__TList.html", [
@@ -208,7 +208,7 @@ var group__containerclasses =
       [ "points_at", "classEST__TList.html#a5d502b789a30ea035241035a418752ab", null ],
       [ "EST_TIterator< EST_TList< T >, IPointer, T >", "classEST__TList.html#ad4fe159e1883f9be854e3c71ce871bb9", null ],
       [ "EST_TRwIterator< EST_TList< T >, IPointer, T >", "classEST__TList.html#a240704226b47d3e380cd052b2f342fce", null ],
-      [ "operator<<", "classEST__TList.html#aaf76facbb5e99ffeff8751491b91e377", null ]
+      [ "operator<<", "classEST__TList.html#a6bea059ad296bae44a40f41c8f2a9fb0", null ]
     ] ],
     [ "EST_TMatrix", "classEST__TMatrix.html", [
       [ "EST_TMatrix", "classEST__TMatrix.html#aaa2de3f2376af111629a6326442ec104", null ],
@@ -265,7 +265,7 @@ var group__containerclasses =
       [ "set_memory", "classEST__TMatrix.html#a97425f8f38cbeae181a8f410c7843c81", null ],
       [ "load", "classEST__TMatrix.html#a2b14e98fe2b112e3e27ab5da7cb35e1b", null ],
       [ "save", "classEST__TMatrix.html#abe345020c8e86f66c8d09767817d0264", null ],
-      [ "operator<<", "classEST__TMatrix.html#abea6b905981fb2870ee4830cd0cf566a", null ],
+      [ "operator<<", "classEST__TMatrix.html#a8f34447918171cd96f39609713cb1af2", null ],
       [ "p_num_rows", "classEST__TMatrix.html#a2fa2b947ea9c9d781581f47e8c0f9810", null ],
       [ "p_row_step", "classEST__TMatrix.html#aa3ea9e52316feffaeeeb8a34f23cde60", null ]
     ] ],
@@ -341,7 +341,7 @@ var group__containerclasses =
       [ "def_val", "classEST__TVector.html#a13f9ea4894328f65354c25663307fc95", null ],
       [ "error_return", "classEST__TVector.html#a26d1180afcd8938d1b920e6e31778738", null ],
       [ "EST_TMatrix< T >", "classEST__TVector.html#a32832c83a0e1686a6d1368114bdb7c89", null ],
-      [ "operator<<", "classEST__TVector.html#ae07f6dcea1d0c74c364a5f194d972472", null ],
+      [ "operator<<", "classEST__TVector.html#ad9918ed4ee5061ee75982e8aee0e52bc", null ],
       [ "p_memory", "classEST__TVector.html#adcc5adc12bdb3e5a870fe324ab4f9098", null ],
       [ "p_num_columns", "classEST__TVector.html#a8b50c5fae47f22eb7ddd247d6727a640", null ],
       [ "p_offset", "classEST__TVector.html#a12d0dde4c75fa329eb87562d515adf32", null ],

@@ -1,7 +1,0 @@
-<map id="Lattice::Arc" name="Lattice::Arc">
-<area shape="rect" id="node2" href="$structLattice_1_1Node.html" title="Lattice::Node" alt="" coords="107,317,205,347"/>
-<area shape="rect" id="node4" href="$classEST__TList.html" title="EST_TList\&lt; Lattice\l::Arc * \&gt;" alt="" coords="5,203,139,250"/>
-<area shape="rect" id="node6" href="$classEST__UList.html" title="EST_UList" alt="" coords="75,123,160,152"/>
-<area shape="rect" id="node11" href="$classEST__TList.html" title="EST_TList\&lt; int \&gt;" alt="" coords="163,212,285,241"/>
-<area shape="rect" id="node8" href="$classEST__UItem.html" title="EST_UItem" alt="" coords="72,8,163,37"/>
-</map>

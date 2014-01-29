@@ -5,7 +5,7 @@ var classEST__TDeque =
     [ "EST_TDeque", "classEST__TDeque.html#ac699334fff264a21ea3d6ea1789964ed", null ],
     [ "clear", "classEST__TDeque.html#a0504566f23c40a85531618cb161f94f6", null ],
     [ "is_empty", "classEST__TDeque.html#a40380a4e5b2091c31a9bb3906a4e09c9", null ],
-    [ "print", "classEST__TDeque.html#a552678b250ca40c8997d53791c074f90", null ],
+    [ "print", "classEST__TDeque.html#a60f06502423254b4abafd620c3a5b4e4", null ],
     [ "push", "classEST__TDeque.html#a2159059bf4a24c99d4d8684837700658", null ],
     [ "pop", "classEST__TDeque.html#a02b5d69a8c73d96552aeb9b8dbff657d", null ],
     [ "nth", "classEST__TDeque.html#a7ff1f5725cba904bc199d89f74c52b68", null ],
@@ -16,5 +16,5 @@ var classEST__TDeque =
     [ "last", "classEST__TDeque.html#a670b0a0b9d4223632ebdb355dcf97518", null ],
     [ "unshift", "classEST__TDeque.html#a9eeb638fe2c37d7ab57819d20525347b", null ],
     [ "shift", "classEST__TDeque.html#a53bce7241123cfea01eec22aec047d6a", null ],
-    [ "operator<<", "classEST__TDeque.html#ab51f9eea5fd25966963da7dee4d52771", null ]
+    [ "operator<<", "classEST__TDeque.html#a5f8c1948e15a9d1d71c115cf51d6ca2d", null ]
 ];

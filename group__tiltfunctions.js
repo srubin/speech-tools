@@ -16,5 +16,7 @@ var group__tiltfunctions =
     [ "tilt_to_rfc", "group__tiltfunctions.html#ga35937210af2897308efe95fe273d83e2", null ],
     [ "rfc_to_tilt", "group__tiltfunctions.html#gab3b98797dc8d8e7ba25015f5d40342f4", null ],
     [ "tilt_to_rfc", "group__tiltfunctions.html#ga0cf1f8d8e3e5afc4e0ceb3aeef1f7fb1", null ],
-    [ "rfc_to_tilt", "group__tiltfunctions.html#ga8eef8e84ded512614a144c3c6f44d835", null ]
+    [ "rfc_to_tilt", "group__tiltfunctions.html#ga8eef8e84ded512614a144c3c6f44d835", null ],
+    [ "validate_rfc_stream", "group__tiltfunctions.html#ga6739d541b36117f6eb590e608b3fbe4e", null ],
+    [ "fill_rfc_types", "group__tiltfunctions.html#gaac830dd61912a05d5096cf68b1434cae", null ]
 ];

@@ -18,5 +18,5 @@ var classEST__Complex =
     [ "operator/", "classEST__Complex.html#a508989b85028239501eca844ce666b16", null ],
     [ "operator/", "classEST__Complex.html#a948d523e9c07f7db8e02bf4a75c07665", null ],
     [ "operator/", "classEST__Complex.html#aa5841fb90a435ee3c6a210640a6bb9be", null ],
-    [ "operator<<", "classEST__Complex.html#a27920ed850156da9ed8e7de1d62c4b4f", null ]
+    [ "operator<<", "classEST__Complex.html#a5ccd613be0abf930a82885092febc0dd", null ]
 ];

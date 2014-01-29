@@ -51,7 +51,7 @@ var classEST__TVector =
     [ "def_val", "classEST__TVector.html#a13f9ea4894328f65354c25663307fc95", null ],
     [ "error_return", "classEST__TVector.html#a26d1180afcd8938d1b920e6e31778738", null ],
     [ "EST_TMatrix< T >", "classEST__TVector.html#a32832c83a0e1686a6d1368114bdb7c89", null ],
-    [ "operator<<", "classEST__TVector.html#ae07f6dcea1d0c74c364a5f194d972472", null ],
+    [ "operator<<", "classEST__TVector.html#ad9918ed4ee5061ee75982e8aee0e52bc", null ],
     [ "p_memory", "classEST__TVector.html#adcc5adc12bdb3e5a870fe324ab4f9098", null ],
     [ "p_num_columns", "classEST__TVector.html#a8b50c5fae47f22eb7ddd247d6727a640", null ],
     [ "p_offset", "classEST__TVector.html#a12d0dde4c75fa329eb87562d515adf32", null ],

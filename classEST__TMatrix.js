@@ -54,7 +54,7 @@ var classEST__TMatrix =
     [ "set_memory", "classEST__TMatrix.html#a97425f8f38cbeae181a8f410c7843c81", null ],
     [ "load", "classEST__TMatrix.html#a2b14e98fe2b112e3e27ab5da7cb35e1b", null ],
     [ "save", "classEST__TMatrix.html#abe345020c8e86f66c8d09767817d0264", null ],
-    [ "operator<<", "classEST__TMatrix.html#abea6b905981fb2870ee4830cd0cf566a", null ],
+    [ "operator<<", "classEST__TMatrix.html#a8f34447918171cd96f39609713cb1af2", null ],
     [ "p_num_rows", "classEST__TMatrix.html#a2fa2b947ea9c9d781581f47e8c0f9810", null ],
     [ "p_row_step", "classEST__TMatrix.html#aa3ea9e52316feffaeeeb8a34f23cde60", null ]
 ];

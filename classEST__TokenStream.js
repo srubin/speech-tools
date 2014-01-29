@@ -4,7 +4,7 @@ var classEST__TokenStream =
     [ "~EST_TokenStream", "classEST__TokenStream.html#a65da952730345fc8a3b6116b3bc17d32", null ],
     [ "open", "classEST__TokenStream.html#aaf6820e7304f08749e9b725133fbf8c9", null ],
     [ "open", "classEST__TokenStream.html#a352b53930289527fecb8d5886de3b930", null ],
-    [ "open", "classEST__TokenStream.html#a951b1b3881c5b8ef7e8b669b5d650d45", null ],
+    [ "open", "classEST__TokenStream.html#a268b4f1a5e9b1d254164388e53acc824", null ],
     [ "open_string", "classEST__TokenStream.html#a6f20e7676f9415f51c6c4551c79b2cbc", null ],
     [ "close", "classEST__TokenStream.html#aa13d1c8a862b44957be0902c604f13b1", null ],
     [ "get", "classEST__TokenStream.html#ace21b3d30943896ec08ccb807ec6ca43", null ],
@@ -35,5 +35,5 @@ var classEST__TokenStream =
     [ "filedescriptor", "classEST__TokenStream.html#a7034f2d95d47fbe0b9b0c2cf0de7d175", null ],
     [ "operator>>", "classEST__TokenStream.html#a2d1240699c76924187bb78457bed9bb2", null ],
     [ "operator>>", "classEST__TokenStream.html#acf53e6190e7ee13d80beb8582a73ea2e", null ],
-    [ "operator<<", "classEST__TokenStream.html#ae0dd4bec24fc54059f9c5ae4eb8abbd9", null ]
+    [ "operator<<", "classEST__TokenStream.html#aba8727cfc9e0a780aa5f4ecb1e0e36a2", null ]
 ];

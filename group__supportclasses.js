@@ -28,7 +28,7 @@ var group__supportclasses =
       [ "operator->", "classEST__THandle.html#a7e803de407ed4c3a47b4e8f5860b3b46", null ],
       [ "operator==", "classEST__THandle.html#ac160c4762d7a82186b9ed54864fba52c", null ],
       [ "operator!=", "classEST__THandle.html#ae282e975180c1e3345c1121997a324aa", null ],
-      [ "operator<<", "classEST__THandle.html#a7c7c829d69aa2fd129c6848f0555433e", null ]
+      [ "operator<<", "classEST__THandle.html#a162412dec6edf8b2041b84265dce3a8e", null ]
     ] ],
     [ "EST_TStructIterator", "classEST__TStructIterator.html", [
       [ "Iter", "classEST__TStructIterator.html#a6bf1b2ae4d25c3b54dffa555948ff294", null ],

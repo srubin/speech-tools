@@ -120,7 +120,7 @@ var NAVTREE =
       [ "Class Members", "functions.html", [
         [ "All", "functions.html", "functions_dup" ],
         [ "Functions", "functions_func.html", "functions_func" ],
-        [ "Variables", "functions_vars.html", null ],
+        [ "Variables", "functions_vars.html", "functions_vars" ],
         [ "Typedefs", "functions_type.html", null ],
         [ "Enumerations", "functions_enum.html", null ],
         [ "Enumerator", "functions_eval.html", null ],
@@ -130,11 +130,13 @@ var NAVTREE =
     [ "Files", null, [
       [ "File List", "files.html", "files" ],
       [ "File Members", "globals.html", [
-        [ "All", "globals.html", null ],
-        [ "Functions", "globals_func.html", null ],
-        [ "Variables", "globals_vars.html", null ],
+        [ "All", "globals.html", "globals_dup" ],
+        [ "Functions", "globals_func.html", "globals_func" ],
+        [ "Variables", "globals_vars.html", "globals_vars" ],
         [ "Typedefs", "globals_type.html", null ],
-        [ "Macros", "globals_defs.html", null ]
+        [ "Enumerations", "globals_enum.html", null ],
+        [ "Enumerator", "globals_eval.html", "globals_eval" ],
+        [ "Macros", "globals_defs.html", "globals_defs" ]
       ] ]
     ] ]
   ] ]
@@ -142,24 +144,46 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"EST_8h_source.html",
-"EST__stats_8h_source.html",
-"classEST__Discrete.html#a371c6d94efe870f06de7bb279e3bb51b",
-"classEST__Hash__Pair.html",
-"classEST__NgrammarState.html#a8d19325f3df949fbe8ae1f147bee705d",
-"classEST__Server.html#a4a272d6fe263911d9342173caa130d58",
-"classEST__TDeque.html#a53bce7241123cfea01eec22aec047d6a",
-"classEST__TNamedEnum.html#a375fe459c5ff388c9464033ec02620d4",
-"classEST__TokenStream.html#afb383f211a4dde9f5e4e8d9cbdc03544",
-"classEST__Utterance.html#af8ef9472d5888926dad60e3d5ec0d618",
-"classEST__Wave.html#aaf0fe5b50c24196c8269ed4a9ba946ca",
-"classXML__Parser.html#a1a295628fba521752259aef940dd3f67",
-"functions_func_0x63.html",
-"kvl__sv__t_8cc_source.html",
-"structESPS__HDR__struct.html#aaf3a691f93277532e7edaaaac4670a2f",
-"structobj.html#a85382a2b3b7eede11856513732c80e8f"
+"EST_8h.html",
+"EST__FMatrix_8cc_source.html",
+"EST__Relation__mls_8cc.html#adeaf1e0365758c606bd93a621fec71d9",
+"EST__TMatrix_8h.html#af985acfeeaa3704c3cfed72f459c65ae",
+"EST__Utterance_8cc.html#a57c3d041e90a25a407ccbc1719198bae",
+"EST__cluster_8h.html#af6146776061c2049d20bcb01cd37a0bf",
+"EST__item__content__aux_8cc.html#a9cda1b691151073d56bfd4babfd24846",
+"EST__relation__compare_8cc.html#a5bde408cac84ab9710605b684edb4961",
+"EST__swapping_8cc.html#aa4386885046483b2edcc63b10f4777ab",
+"EST__wave__io_8cc.html#a09fbea4ede2bcda4faa3d8a477babc46",
+"classCSMM.html#a91a3ab547e747d53009a024dc88c9998",
+"classEST__FeatureData.html#aace722393745ef5eb0104778c9201a85",
+"classEST__Item__Content.html#adafbdc924b9c6d8e7de914bbb12dbc02",
+"classEST__PredictionSuffixTree__tree__node.html#a4e3610a1711f8aa4ef95cffa5ed0f119",
+"classEST__String.html#a099807c538416f42cb86d7ed1e205003",
+"classEST__TIterator.html#ac2f3788bf0b6227e1ea3727fb769183f",
+"classEST__TValuedEnumI.html#ab94ed6b96427770dd838568d9367f295",
+"classEST__Track.html#aa1c0594e342e77618bb2a6fc3579b15c",
+"classEST__Viterbi__Decoder.html#ab4ab3177068eaf6a1b1313cc57f8046c",
+"classHMM.html#ab84cf09717b6abf6c220923a1d2ea96e",
+"ctype16_8h.html#ace943ad4e0301f97a50c8fcc3894f970",
+"editline_8c.html#a2c6f423c2baf4a2243383477efb8cd9f",
+"esps__utils_8cc.html#ac360315a0ec7e178c82e7881a29382df",
+"functions_0x7e.html",
+"group__FIRfilters.html#ga50b7df940e6d6d07e98834c019e86a39",
+"input_8h.html#a606d882c33a75f7e9bce24b7f722760d",
+"ngrammar__io_8cc.html#a1e05bec156e2e2433f007786cdd4c39d",
+"rxp_8c.html#af98ce039d721f87614e5da594c5938bb",
+"siod_8h.html#ac041e6f36a59747c98b6ef22a1ff5911",
+"siodp_8h.html#a29708fcc3df4eb63af4772eac20ce39c",
+"slib__file_8cc.html#afbd54d9edd5795ea7bebcd7c672efad0",
+"string16_8c.html#aa300956a28953c977779f8ab25b00e63",
+"structcatch__frame.html#a607e07057873f7b028c9380719c4b256",
+"tilt_8h.html#ad8994741cb4d6a97ce4ca62a52e45ebc",
+"vector__val__t_8cc_source.html",
+"xmlparser_8h.html#a471cee813abc6ad31f6b6140eeae8cc1a9dd65d07f81f221de838b71c66516df3"
 ];
 
+var SYNCONMSG = 'click to disable panel synchronisation';
+var SYNCOFFMSG = 'click to enable panel synchronisation';
 var SYNCONMSG = 'click to disable panel synchronisation';
 var SYNCOFFMSG = 'click to enable panel synchronisation';
 var navTreeSubIndices = new Array();
@@ -242,12 +266,12 @@ function createIndent(o,domNode,node,level)
   var level=-1;
   var n = node;
   while (n.parentNode) { level++; n=n.parentNode; }
-  var imgNode = document.createElement("img");
-  imgNode.style.paddingLeft=(16*level).toString()+'px';
-  imgNode.width  = 16;
-  imgNode.height = 22;
-  imgNode.border = 0;
   if (node.childrenData) {
+    var imgNode = document.createElement("img");
+    imgNode.style.paddingLeft=(16*level).toString()+'px';
+    imgNode.width  = 16;
+    imgNode.height = 22;
+    imgNode.border = 0;
     node.plus_img = imgNode;
     node.expandToggle = document.createElement("a");
     node.expandToggle.href = "javascript:void(0)";
@@ -264,8 +288,12 @@ function createIndent(o,domNode,node,level)
     domNode.appendChild(node.expandToggle);
     imgNode.src = node.relpath+"ftv2pnode.png";
   } else {
-    imgNode.src = node.relpath+"ftv2node.png";
-    domNode.appendChild(imgNode);
+    var span = document.createElement("span");
+    span.style.display = 'inline-block';
+    span.style.width   = 16*(level+1)+'px';
+    span.style.height  = '22px';
+    span.innerHTML = '&nbsp;';
+    domNode.appendChild(span);
   } 
 }
 
@@ -484,7 +512,7 @@ function showNode(o, node, index, hash)
       if (!node.childrenVisited) {
         getNode(o, node);
       }
-      $(node.getChildrenUL()).show();
+      $(node.getChildrenUL()).css({'display':'block'});
       if (node.isLast) {
         node.plus_img.src = node.relpath+"ftv2mlastnode.png";
       } else {
@@ -516,8 +544,22 @@ function showNode(o, node, index, hash)
   }
 }
 
+function removeToInsertLater(element) {
+  var parentNode = element.parentNode;
+  var nextSibling = element.nextSibling;
+  parentNode.removeChild(element);
+  return function() {
+    if (nextSibling) {
+      parentNode.insertBefore(element, nextSibling);
+    } else {
+      parentNode.appendChild(element);
+    }
+  };
+}
+
 function getNode(o, po)
 {
+  var insertFunction = removeToInsertLater(po.li);
   po.childrenVisited = true;
   var l = po.childrenData.length-1;
   for (var i in po.childrenData) {
@@ -525,6 +567,7 @@ function getNode(o, po)
     po.children[i] = newNode(o, po, nodeData[0], nodeData[1], nodeData[2],
       i==l);
   }
+  insertFunction();
 }
 
 function gotoNode(o,subIndex,root,hash,relpath)
@@ -628,7 +671,10 @@ function initNavTree(toroot,relpath)
     navSync.click(function(){ toggleSyncButton(relpath); });
   }
 
-  navTo(o,toroot,window.location.hash,relpath);
+  $(window).load(function(){
+    navTo(o,toroot,window.location.hash,relpath);
+    showRoot();
+  });
 
   $(window).bind('hashchange', function(){
      if (window.location.hash && window.location.hash.length>1){
@@ -651,7 +697,5 @@ function initNavTree(toroot,relpath)
        navTo(o,toroot,window.location.hash,relpath);
      }
   })
-
-  $(window).load(showRoot);
 }
 

@@ -6,5 +6,6 @@ var group__FastFourierTransformfunctions =
     [ "IFFT", "group__FastFourierTransformfunctions.html#gadb54d93e024eab0b802045273be75cd9", null ],
     [ "power_spectrum", "group__FastFourierTransformfunctions.html#gae62615dd22bf99beb7a4072e1d3af414", null ],
     [ "power_spectrum_slow", "group__FastFourierTransformfunctions.html#gab79666c43860e73debe938117a4ea62c", null ],
-    [ "fastFFT", "group__FastFourierTransformfunctions.html#ga26795b1dca2eed6ce7dc97bdc4a081ac", null ]
+    [ "fastFFT", "group__FastFourierTransformfunctions.html#ga26795b1dca2eed6ce7dc97bdc4a081ac", null ],
+    [ "fastlog2", "group__FastFourierTransformfunctions.html#gafb2d6c1e4248d652b833e0d33b5078d2", null ]
 ];

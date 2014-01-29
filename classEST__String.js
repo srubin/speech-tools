@@ -61,7 +61,7 @@ var classEST__String =
     [ "quote_if_needed", "classEST__String.html#a2f4a8684cb545f9100070dafbdbc0ebf", null ],
     [ "unquote", "classEST__String.html#a1745d17f8edd2934c9c10c75989a456b", null ],
     [ "unquote_if_needed", "classEST__String.html#ac289c3d4bd5e08bb06ab3fa4d4ca9ac2", null ],
-    [ "operator()", "classEST__String.html#addc08fcd1dea2032654d37ee27f2f8f3", null ],
+    [ "operator()", "classEST__String.html#affd37c7556b02f7981d7084e382c956d", null ],
     [ "operator[]", "classEST__String.html#a8256cc89922885cdfa5b249159a82fdc", null ],
     [ "operator const char *", "classEST__String.html#a35dbdd2faab3309eb841c7f0d5b6d47d", null ],
     [ "operator const char *", "classEST__String.html#a910546c089892f19dab30d1f5f7284f9", null ],

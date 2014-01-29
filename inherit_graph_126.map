@@ -1,7 +1,0 @@
-<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classEST__TVector.html" title="EST_TVector\&lt; int \&gt;" alt="" coords="5,44,144,73"/>
-<area shape="rect" id="node3" href="$classEST__TMatrix.html" title="EST_TMatrix\&lt; int \&gt;" alt="" coords="199,13,335,43"/>
-<area shape="rect" id="node9" href="$classEST__TSimpleVector.html" title="EST_TSimpleVector\&lt;\l int \&gt;" alt="" coords="192,66,341,113"/>
-<area shape="rect" id="node5" href="$classEST__TSimpleMatrix.html" title="EST_TSimpleMatrix\&lt;\l int \&gt;" alt="" coords="389,5,536,51"/>
-<area shape="rect" id="node7" href="$classEST__IMatrix.html" title="EST_IMatrix" alt="" coords="585,13,679,43"/>
-</map>

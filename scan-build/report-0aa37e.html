@@ -1,0 +1,227 @@
+<!doctype html>
+<html>
+<head>
+<title>EST_Relation_mls.cc</title>
+<style type="text/css">
+ body { color:#000000; background-color:#ffffff }
+ body { font-family:Helvetica, sans-serif; font-size:10pt }
+ h1 { font-size:14pt }
+ .code { border-collapse:collapse; width:100%; }
+ .code { font-family: "Monospace", monospace; font-size:10pt }
+ .code { line-height: 1.2em }
+ .comment { color: green; font-style: oblique }
+ .keyword { color: blue }
+ .string_literal { color: red }
+ .directive { color: darkmagenta }
+ .expansion { display: none; }
+ .macro:hover .expansion { display: block; border: 2px solid #FF0000; padding: 2px; background-color:#FFF0F0; font-weight: normal;   -webkit-border-radius:5px;  -webkit-box-shadow:1px 1px 7px #000; position: absolute; top: -1em; left:10em; z-index: 1 } 
+ .macro { color: darkmagenta; background-color:LemonChiffon; position: relative }
+ .num { width:2.5em; padding-right:2ex; background-color:#eeeeee }
+ .num { text-align:right; font-size:8pt }
+ .num { color:#444444 }
+ .line { padding-left: 1ex; border-left: 3px solid #ccc }
+ .line { white-space: pre }
+ .msg { -webkit-box-shadow:1px 1px 7px #000 }
+ .msg { -webkit-border-radius:5px }
+ .msg { font-family:Helvetica, sans-serif; font-size:8pt }
+ .msg { float:left }
+ .msg { padding:0.25em 1ex 0.25em 1ex }
+ .msg { margin-top:10px; margin-bottom:10px }
+ .msg { font-weight:bold }
+ .msg { max-width:60em; word-wrap: break-word; white-space: pre-wrap }
+ .msgT { padding:0x; spacing:0x }
+ .msgEvent { background-color:#fff8b4; color:#000000 }
+ .msgControl { background-color:#bbbbbb; color:#000000 }
+ .mrange { background-color:#dfddf3 }
+ .mrange { border-bottom:1px solid #6F9DBE }
+ .PathIndex { font-weight: bold; padding:0px 5px; margin-right:5px; }
+ .PathIndex { -webkit-border-radius:8px }
+ .PathIndexEvent { background-color:#bfba87 }
+ .PathIndexControl { background-color:#8c8c8c }
+ .PathNav a { text-decoration:none; font-size: larger }
+ .CodeInsertionHint { font-weight: bold; background-color: #10dd10 }
+ .CodeRemovalHint { background-color:#de1010 }
+ .CodeRemovalHint { border-bottom:1px solid #6F9DBE }
+ table.simpletable {
+   padding: 5px;
+   font-size:12pt;
+   margin:20px;
+   border-collapse: collapse; border-spacing: 0px;
+ }
+ td.rowname {
+   text-align:right; font-weight:bold; color:#444444;
+   padding-right:2ex; }
+</style>
+</head>
+<body>
+<!-- BUGDESC Value stored to 'q' is never read -->
+
+<!-- BUGTYPE Dead assignment -->
+
+<!-- BUGCATEGORY Dead store -->
+
+<!-- BUGFILE /media/dades/src/festival-2013/speech_tools/ling_class/EST_Relation_mls.cc -->
+
+<!-- BUGLINE 69 -->
+
+<!-- BUGPATHLENGTH 1 -->
+
+<!-- BUGMETAEND -->
+<!-- REPORTHEADER -->
+<h3>Bug Summary</h3>
+<table class="simpletable">
+<tr><td class="rowname">File:</td><td>ling_class/EST_Relation_mls.cc</td></tr>
+<tr><td class="rowname">Location:</td><td><a href="#EndPath">line 69, column 5</a></td></tr>
+<tr><td class="rowname">Description:</td><td>Value stored to 'q' is never read</td></tr>
+</table>
+<!-- REPORTSUMMARYEXTRA -->
+<h3>Annotated Source Code</h3>
+<table class="code">
+<tr><td class="num" id="LN1">1</td><td class="line"><span class='comment'>/*************************************************************************/</span></td></tr>
+<tr><td class="num" id="LN2">2</td><td class="line"><span class='comment'>/*                                                                       */</span></td></tr>
+<tr><td class="num" id="LN3">3</td><td class="line"><span class='comment'>/*                Centre for Speech Technology Research                  */</span></td></tr>
+<tr><td class="num" id="LN4">4</td><td class="line"><span class='comment'>/*                     University of Edinburgh, UK                       */</span></td></tr>
+<tr><td class="num" id="LN5">5</td><td class="line"><span class='comment'>/*                         Copyright (c) 1999                            */</span></td></tr>
+<tr><td class="num" id="LN6">6</td><td class="line"><span class='comment'>/*                        All Rights Reserved.                           */</span></td></tr>
+<tr><td class="num" id="LN7">7</td><td class="line"><span class='comment'>/*                                                                       */</span></td></tr>
+<tr><td class="num" id="LN8">8</td><td class="line"><span class='comment'>/*  Permission is hereby granted, free of charge, to use and distribute  */</span></td></tr>
+<tr><td class="num" id="LN9">9</td><td class="line"><span class='comment'>/*  this software and its documentation without restriction, including   */</span></td></tr>
+<tr><td class="num" id="LN10">10</td><td class="line"><span class='comment'>/*  without limitation the rights to use, copy, modify, merge, publish,  */</span></td></tr>
+<tr><td class="num" id="LN11">11</td><td class="line"><span class='comment'>/*  distribute, sublicense, and/or sell copies of this work, and to      */</span></td></tr>
+<tr><td class="num" id="LN12">12</td><td class="line"><span class='comment'>/*  permit persons to whom this work is furnished to do so, subject to   */</span></td></tr>
+<tr><td class="num" id="LN13">13</td><td class="line"><span class='comment'>/*  the following conditions:                                            */</span></td></tr>
+<tr><td class="num" id="LN14">14</td><td class="line"><span class='comment'>/*   1. The code must retain the above copyright notice, this list of    */</span></td></tr>
+<tr><td class="num" id="LN15">15</td><td class="line"><span class='comment'>/*      conditions and the following disclaimer.                         */</span></td></tr>
+<tr><td class="num" id="LN16">16</td><td class="line"><span class='comment'>/*   2. Any modifications must be clearly marked as such.                */</span></td></tr>
+<tr><td class="num" id="LN17">17</td><td class="line"><span class='comment'>/*   3. Original authors' names are not deleted.                         */</span></td></tr>
+<tr><td class="num" id="LN18">18</td><td class="line"><span class='comment'>/*   4. The authors' names are not used to endorse or promote products   */</span></td></tr>
+<tr><td class="num" id="LN19">19</td><td class="line"><span class='comment'>/*      derived from this software without specific prior written        */</span></td></tr>
+<tr><td class="num" id="LN20">20</td><td class="line"><span class='comment'>/*      permission.                                                      */</span></td></tr>
+<tr><td class="num" id="LN21">21</td><td class="line"><span class='comment'>/*                                                                       */</span></td></tr>
+<tr><td class="num" id="LN22">22</td><td class="line"><span class='comment'>/*  THE UNIVERSITY OF EDINBURGH AND THE CONTRIBUTORS TO THIS WORK        */</span></td></tr>
+<tr><td class="num" id="LN23">23</td><td class="line"><span class='comment'>/*  DISCLAIM ALL WARRANTIES WITH REGARD TO THIS SOFTWARE, INCLUDING      */</span></td></tr>
+<tr><td class="num" id="LN24">24</td><td class="line"><span class='comment'>/*  ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS, IN NO EVENT   */</span></td></tr>
+<tr><td class="num" id="LN25">25</td><td class="line"><span class='comment'>/*  SHALL THE UNIVERSITY OF EDINBURGH NOR THE CONTRIBUTORS BE LIABLE     */</span></td></tr>
+<tr><td class="num" id="LN26">26</td><td class="line"><span class='comment'>/*  FOR ANY SPECIAL, INDIRECT OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES    */</span></td></tr>
+<tr><td class="num" id="LN27">27</td><td class="line"><span class='comment'>/*  WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN   */</span></td></tr>
+<tr><td class="num" id="LN28">28</td><td class="line"><span class='comment'>/*  AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION,          */</span></td></tr>
+<tr><td class="num" id="LN29">29</td><td class="line"><span class='comment'>/*  ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF       */</span></td></tr>
+<tr><td class="num" id="LN30">30</td><td class="line"><span class='comment'>/*  THIS SOFTWARE.                                                       */</span></td></tr>
+<tr><td class="num" id="LN31">31</td><td class="line"><span class='comment'>/*                                                                       */</span></td></tr>
+<tr><td class="num" id="LN32">32</td><td class="line"><span class='comment'>/*************************************************************************/</span></td></tr>
+<tr><td class="num" id="LN33">33</td><td class="line"><span class='comment'>/*                   Author :  Alan W Black                              */</span></td></tr>
+<tr><td class="num" id="LN34">34</td><td class="line"><span class='comment'>/*                   Date   :  April 1999                                */</span></td></tr>
+<tr><td class="num" id="LN35">35</td><td class="line"><span class='comment'>/*-----------------------------------------------------------------------*/</span></td></tr>
+<tr><td class="num" id="LN36">36</td><td class="line"><span class='comment'>/*  Multi-linear list relations                                          */</span></td></tr>
+<tr><td class="num" id="LN37">37</td><td class="line"><span class='comment'>/*                                                                       */</span></td></tr>
+<tr><td class="num" id="LN38">38</td><td class="line"><span class='comment'>/*  These are to allow to linear list relations to have relations        */</span></td></tr>
+<tr><td class="num" id="LN39">39</td><td class="line"><span class='comment'>/*  between one item in one list and a list of items in the other        */</span></td></tr>
+<tr><td class="num" id="LN40">40</td><td class="line"><span class='comment'>/*                                                                       */</span></td></tr>
+<tr><td class="num" id="LN41">41</td><td class="line"><span class='comment'>/*                                                                       */</span></td></tr>
+<tr><td class="num" id="LN42">42</td><td class="line"><span class='comment'>/*  Ehh I'll explain how I do this once its done                         */</span></td></tr>
+<tr><td class="num" id="LN43">43</td><td class="line"><span class='comment'>/*                                                                       */</span></td></tr>
+<tr><td class="num" id="LN44">44</td><td class="line"><span class='comment'>/*                                                                       */</span></td></tr>
+<tr><td class="num" id="LN45">45</td><td class="line"><span class='comment'>/*=======================================================================*/</span></td></tr>
+<tr><td class="num" id="LN46">46</td><td class="line"><span class='directive'>#include &lt;cstdlib&gt;</span></td></tr>
+<tr><td class="num" id="LN47">47</td><td class="line"><span class='directive'>#include &lt;cstdio&gt;</span></td></tr>
+<tr><td class="num" id="LN48">48</td><td class="line"><span class='directive'>#include "ling_class/EST_Item.h"</span></td></tr>
+<tr><td class="num" id="LN49">49</td><td class="line"> </td></tr>
+<tr><td class="num" id="LN50">50</td><td class="line"><span class='keyword'>int</span> linked(EST_Item *from, EST_Item *to)</td></tr>
+<tr><td class="num" id="LN51">51</td><td class="line">{</td></tr>
+<tr><td class="num" id="LN52">52</td><td class="line">    EST_Item *i;</td></tr>
+<tr><td class="num" id="LN53">53</td><td class="line"> </td></tr>
+<tr><td class="num" id="LN54">54</td><td class="line">    <span class='keyword'>for</span> (i=link1(from); i; i=next_link(i))</td></tr>
+<tr><td class="num" id="LN55">55</td><td class="line">	<span class='keyword'>if</span> (i == to)</td></tr>
+<tr><td class="num" id="LN56">56</td><td class="line">	    <span class='keyword'>return</span> <span class='macro'>TRUE<span class='expansion'>(1==1)</span></span>;</td></tr>
+<tr><td class="num" id="LN57">57</td><td class="line"> </td></tr>
+<tr><td class="num" id="LN58">58</td><td class="line">    <span class='keyword'>return</span> <span class='macro'>FALSE<span class='expansion'>(1==0)</span></span>;</td></tr>
+<tr><td class="num" id="LN59">59</td><td class="line">}</td></tr>
+<tr><td class="num" id="LN60">60</td><td class="line"> </td></tr>
+<tr><td class="num" id="LN61">61</td><td class="line"><span class='keyword'>void</span> add_link(EST_Item *from, EST_Item *to)</td></tr>
+<tr><td class="num" id="LN62">62</td><td class="line">{</td></tr>
+<tr><td class="num" id="LN63">63</td><td class="line">    EST_Item *d,*q;</td></tr>
+<tr><td class="num" id="LN64">64</td><td class="line"> </td></tr>
+<tr><td class="num" id="LN65">65</td><td class="line">    <span class='comment'>// structurally add it </span></td></tr>
+<tr><td class="num" id="LN66">66</td><td class="line">    d = from-&gt;down();</td></tr>
+<tr><td class="num" id="LN67">67</td><td class="line">    <span class='keyword'>if</span> (!d)</td></tr>
+<tr><td class="num" id="LN68">68</td><td class="line">	d = from-&gt;append_daughter();</td></tr>
+<tr><td class="num" id="LN69">69</td><td class="line">    q = <span class="mrange">d-&gt;append_daughter()-&gt;append_daughter(to)</span>;</td></tr>
+<tr><td class="num"></td><td class="line"><div id="EndPath" class="msg msgEvent" style="margin-left:5ex">Value stored to 'q' is never read</div></td></tr>
+<tr><td class="num" id="LN70">70</td><td class="line">    <span class='comment'>// Also add it to the simple list of the relation so traversal works</span></td></tr>
+<tr><td class="num" id="LN71">71</td><td class="line">    <span class='comment'>// append q </span></td></tr>
+<tr><td class="num" id="LN72">72</td><td class="line">    </td></tr>
+<tr><td class="num" id="LN73">73</td><td class="line">}</td></tr>
+<tr><td class="num" id="LN74">74</td><td class="line"> </td></tr>
+<tr><td class="num" id="LN75">75</td><td class="line"><span class='directive'>#if 0</span> </td></tr>
+<tr><td class="num" id="LN76">76</td><td class="line"><span class='comment'>/* nope all wrong  */</span></td></tr>
+<tr><td class="num" id="LN77">77</td><td class="line"><span class='keyword'>static</span> <span class='keyword'>void</span> mls_insert_up(EST_Item *c,EST_Item *d)</td></tr>
+<tr><td class="num" id="LN78">78</td><td class="line">{</td></tr>
+<tr><td class="num" id="LN79">79</td><td class="line">    <span class='keyword'>if</span> (c-&gt;up() == 0)</td></tr>
+<tr><td class="num" id="LN80">80</td><td class="line">	c-&gt;insert_above(d);</td></tr>
+<tr><td class="num" id="LN81">81</td><td class="line">    <span class='keyword'>else</span> </td></tr>
+<tr><td class="num" id="LN82">82</td><td class="line">	c-&gt;up()-&gt;last()-&gt;insert_after(d);</td></tr>
+<tr><td class="num" id="LN83">83</td><td class="line">}</td></tr>
+<tr><td class="num" id="LN84">84</td><td class="line"> </td></tr>
+<tr><td class="num" id="LN85">85</td><td class="line"><span class='keyword'>static</span> <span class='keyword'>void</span> mls_insert_below(EST_Item *c,EST_Item *d)</td></tr>
+<tr><td class="num" id="LN86">86</td><td class="line">{</td></tr>
+<tr><td class="num" id="LN87">87</td><td class="line">    <span class='keyword'>if</span> (c-&gt;down() == 0)</td></tr>
+<tr><td class="num" id="LN88">88</td><td class="line">	c-&gt;insert_below(d);</td></tr>
+<tr><td class="num" id="LN89">89</td><td class="line">    <span class='keyword'>else</span> </td></tr>
+<tr><td class="num" id="LN90">90</td><td class="line">	c-&gt;down()-&gt;last()-&gt;insert_after(d);</td></tr>
+<tr><td class="num" id="LN91">91</td><td class="line">}</td></tr>
+<tr><td class="num" id="LN92">92</td><td class="line"> </td></tr>
+<tr><td class="num" id="LN93">93</td><td class="line"><span class='keyword'>static</span> <span class='keyword'>void</span> mls_linked_down(EST_Item *c,EST_Item *d)</td></tr>
+<tr><td class="num" id="LN94">94</td><td class="line">{</td></tr>
+<tr><td class="num" id="LN95">95</td><td class="line">    <span class='keyword'>return</span> in_list(d,c-&gt;down());</td></tr>
+<tr><td class="num" id="LN96">96</td><td class="line">}</td></tr>
+<tr><td class="num" id="LN97">97</td><td class="line"> </td></tr>
+<tr><td class="num" id="LN98">98</td><td class="line"><span class='keyword'>static</span> <span class='keyword'>void</span> mls_linked_up(EST_Item *c,EST_Item *d)</td></tr>
+<tr><td class="num" id="LN99">99</td><td class="line">{</td></tr>
+<tr><td class="num" id="LN100">100</td><td class="line">    <span class='keyword'>return</span> in_list(d,c-&gt;up());</td></tr>
+<tr><td class="num" id="LN101">101</td><td class="line">}</td></tr>
+<tr><td class="num" id="LN102">102</td><td class="line"> </td></tr>
+<tr><td class="num" id="LN103">103</td><td class="line"><span class='keyword'>int</span> link_items(EST_Relation *mlsrel,EST_Item *i1, EST_item *i2)</td></tr>
+<tr><td class="num" id="LN104">104</td><td class="line">{</td></tr>
+<tr><td class="num" id="LN105">105</td><td class="line">    <span class='keyword'>if</span> ((i1-&gt;in_relation(mlsrel-&gt;name())) &amp;&amp;</td></tr>
+<tr><td class="num" id="LN106">106</td><td class="line">	(i2-&gt;in_relation(mlsrel-&gt;name())))</td></tr>
+<tr><td class="num" id="LN107">107</td><td class="line">    {</td></tr>
+<tr><td class="num" id="LN108">108</td><td class="line">	<span class='macro'>EST_error<span class='expansion'>(EST_error_where = __null), (*EST_error_func)</span></span>(<span class='string_literal'>"can't link two items already in %s\n"</span>,</td></tr>
+<tr><td class="num" id="LN109">109</td><td class="line">		  (<span class='keyword'>const</span> <span class='keyword'>char</span> *)mlsrel-&gt;name());</td></tr>
+<tr><td class="num" id="LN110">110</td><td class="line">	<span class='keyword'>return</span> <span class='macro'>FALSE<span class='expansion'>(1==0)</span></span>;</td></tr>
+<tr><td class="num" id="LN111">111</td><td class="line">    }</td></tr>
+<tr><td class="num" id="LN112">112</td><td class="line">    <span class='keyword'>else</span> <span class='keyword'>if</span> (i1-&gt;in_relation(mlsrel-&gt;name()))</td></tr>
+<tr><td class="num" id="LN113">113</td><td class="line">    {</td></tr>
+<tr><td class="num" id="LN114">114</td><td class="line">	EST_Item *c = mls_cluster(as(i1,mlsrel-&gt;name()));</td></tr>
+<tr><td class="num" id="LN115">115</td><td class="line">	<span class='keyword'>if</span> (mls_linked_down(c,i1))</td></tr>
+<tr><td class="num" id="LN116">116</td><td class="line">	    mls_insert_up(c,i2);</td></tr>
+<tr><td class="num" id="LN117">117</td><td class="line">	<span class='keyword'>else</span></td></tr>
+<tr><td class="num" id="LN118">118</td><td class="line">	    mls_insert_down(c,i2);</td></tr>
+<tr><td class="num" id="LN119">119</td><td class="line">    }</td></tr>
+<tr><td class="num" id="LN120">120</td><td class="line">    <span class='keyword'>else</span> <span class='keyword'>if</span> (i2-&gt;in_relation(mlsrel-&gt;name()))</td></tr>
+<tr><td class="num" id="LN121">121</td><td class="line">    {</td></tr>
+<tr><td class="num" id="LN122">122</td><td class="line">	EST_Item *c = mls_cluster(as(i2,mlsrel-&gt;name()));</td></tr>
+<tr><td class="num" id="LN123">123</td><td class="line">	<span class='keyword'>if</span> (mls_linked_down(c,i2))</td></tr>
+<tr><td class="num" id="LN124">124</td><td class="line">	    mls_insert_up(c,i1);</td></tr>
+<tr><td class="num" id="LN125">125</td><td class="line">	<span class='keyword'>else</span></td></tr>
+<tr><td class="num" id="LN126">126</td><td class="line">	    mls_insert_down(c,i1);</td></tr>
+<tr><td class="num" id="LN127">127</td><td class="line">    }</td></tr>
+<tr><td class="num" id="LN128">128</td><td class="line">    <span class='keyword'>else</span></td></tr>
+<tr><td class="num" id="LN129">129</td><td class="line">    {</td></tr>
+<tr><td class="num" id="LN130">130</td><td class="line">	<span class='comment'>// neither in MLS so create new cluster</span></td></tr>
+<tr><td class="num" id="LN131">131</td><td class="line">	EST_Item *c = mlsrel-&gt;append();</td></tr>
+<tr><td class="num" id="LN132">132</td><td class="line">	mls_insert_linked_up(c,i1);</td></tr>
+<tr><td class="num" id="LN133">133</td><td class="line">	mls_insert_linked_down(c,i1);</td></tr>
+<tr><td class="num" id="LN134">134</td><td class="line">    }</td></tr>
+<tr><td class="num" id="LN135">135</td><td class="line">    <span class='keyword'>return</span> <span class='macro'>TRUE<span class='expansion'>(1==1)</span></span>;</td></tr>
+<tr><td class="num" id="LN136">136</td><td class="line">}</td></tr>
+<tr><td class="num" id="LN137">137</td><td class="line"><span class='directive'>#endif</span></td></tr>
+<tr><td class="num" id="LN138">138</td><td class="line"> </td></tr>
+<tr><td class="num" id="LN139">139</td><td class="line"><span class='keyword'>void</span> remove_link(EST_Item *from, EST_Item *to)</td></tr>
+<tr><td class="num" id="LN140">140</td><td class="line">{</td></tr>
+<tr><td class="num" id="LN141">141</td><td class="line">    (<span class='keyword'>void</span>)from;</td></tr>
+<tr><td class="num" id="LN142">142</td><td class="line">    (<span class='keyword'>void</span>)to;</td></tr>
+<tr><td class="num" id="LN143">143</td><td class="line">    </td></tr>
+<tr><td class="num" id="LN144">144</td><td class="line">    fprintf(<span class='macro'>stderr<span class='expansion'>stderr</span></span>,<span class='string_literal'>"remove_link not written yet\n"</span>);</td></tr>
+<tr><td class="num" id="LN145">145</td><td class="line">}</td></tr>
+<tr><td class="num" id="LN146">146</td><td class="line"> </td></tr>
+</table></body></html>

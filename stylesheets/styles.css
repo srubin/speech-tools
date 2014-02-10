@@ -2,13 +2,12 @@
 
 body {
   padding:50px;
-  font:14px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color:#777;
+  font:12pt/1.5 Lato, "Liberation Sans", Helvetica, Arial, sans-serif;
   font-weight:300;
+  max-width: 80ex;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color:#222;
   margin:0 0 20px;
 }
 
@@ -24,23 +23,13 @@ h1 {
   font-size:28px;
 }
 
-h2 {
-  color:#393939;
-}
-
-h3, h4, h5, h6 {
-  color:#494949;
-}
-
 a {
-  color:#39c;
   font-weight:400;
   text-decoration:none;
 }
 
 a small {
   font-size:11px;
-  color:#777;
   margin-top:-0.6em;
   display:block;
 }
@@ -59,7 +48,6 @@ blockquote {
 
 code, pre {
   font-family:Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal;
-  color:#333;
   font-size:12px;
 }
 
@@ -83,12 +71,10 @@ th, td {
 }
 
 dt {
-  color:#444;
   font-weight:700;
 }
 
 th {
-  color:#444;
 }
 
 img {
@@ -131,7 +117,6 @@ header li {
 header ul a {
   line-height:1;
   font-size:11px;
-  color:#999;
   display:block;
   text-align:center;
   padding-top:6px;
@@ -139,7 +124,6 @@ header ul a {
 }
 
 strong {
-  color:#222;
   font-weight:700;
 }
 
@@ -156,7 +140,6 @@ header ul li + li + li {
 header ul a strong {
   font-size:14px;
   display:block;
-  color:#222;
 }
 
 section {
@@ -250,6 +233,5 @@ footer {
   body {
     padding:0.4in;
     font-size:12pt;
-    color:#444;
   }
 }

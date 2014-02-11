@@ -143,7 +143,7 @@ $(document).ready(function(){initNavTree('na__play__main_8cc_source.html','');})
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <a class="code" href="classEST__String.html">EST_String</a> in_file(<span class="stringliteral">&quot;-&quot;</span>), out_file(<span class="stringliteral">&quot;-&quot;</span>);</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <a class="code" href="classEST__TList.html">EST_StrList</a> files;</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <a class="code" href="classEST__Option.html">EST_Option</a> al;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <a class="code" href="classEST__UItem.html">EST_Litem</a> *<a class="code" href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a>;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <a class="code" href="classEST__UItem.html">EST_Litem</a> *p;</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <a class="code" href="EST__cmd__line_8h.html#a5eea16d0fa3d649df21c710bc6693ab1">parse_command_line</a></div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    (argc,argv,</div>
@@ -178,7 +178,7 @@ $(document).ready(function(){initNavTree('na__play__main_8cc_source.html','');})
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keywordflow">if</span> (al.<a class="code" href="classEST__TKVL.html#a78913afde7a04122a791476dbd7ee6f3">present</a>(<span class="stringliteral">&quot;-server&quot;</span>))</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    al.<a class="code" href="classEST__TKVL.html#a3f2e0255fc5c8b3fcc0c1ea8be8a0816">add_item</a>(<span class="stringliteral">&quot;-display&quot;</span>, al.<a class="code" href="classEST__TKVL.html#a25991a283aebf6751322256e5c4a8c3c">val</a>(<span class="stringliteral">&quot;-server&quot;</span>));</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keywordflow">for</span> (p = files.<a class="code" href="classEST__UList.html#a36cd9a03aa4677736edb4866364a204f">head</a>(); <a class="code" href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a>; )</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keywordflow">for</span> (p = files.<a class="code" href="classEST__UList.html#a36cd9a03aa4677736edb4866364a204f">head</a>(); p; )</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    {</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keywordflow">if</span> (al.<a class="code" href="classEST__TKVL.html#a78913afde7a04122a791476dbd7ee6f3">present</a>(<span class="stringliteral">&quot;-v&quot;</span>))</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        cout &lt;&lt; <span class="stringliteral">&quot;playing &quot;</span> &lt;&lt; files(p) &lt;&lt; endl;</div>
@@ -261,7 +261,6 @@ $(document).ready(function(){initNavTree('na__play__main_8cc_source.html','');})
 <div class="ttc" id="EST__rw__status_8h_html_a2c0d7bd3b9f1419e66f38ab761c86adb"><div class="ttname"><a href="EST__rw__status_8h.html#a2c0d7bd3b9f1419e66f38ab761c86adb">format_ok</a></div><div class="ttdeci">#define format_ok</div><div class="ttdef"><b>Definition:</b> <a href="EST__rw__status_8h_source.html#l00159">EST_rw_status.h:159</a></div></div>
 <div class="ttc" id="classEST__UList_html_a36cd9a03aa4677736edb4866364a204f"><div class="ttname"><a href="classEST__UList.html#a36cd9a03aa4677736edb4866364a204f">EST_UList::head</a></div><div class="ttdeci">EST_UItem * head() const </div><div class="ttdef"><b>Definition:</b> <a href="EST__UList_8h_source.html#l00096">EST_UList.h:96</a></div></div>
 <div class="ttc" id="gen__audio_8cc_html_a9c8600490e0a5e10a762ae65927fe90e"><div class="ttname"><a href="gen__audio_8cc.html#a9c8600490e0a5e10a762ae65927fe90e">options_supported_audio</a></div><div class="ttdeci">EST_String options_supported_audio(void)</div><div class="ttdef"><b>Definition:</b> <a href="gen__audio_8cc_source.html#l00246">gen_audio.cc:246</a></div></div>
-<div class="ttc" id="editline_8c_html_a5791904baf12239aadc3a8280a03e8c5"><div class="ttname"><a href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a></div><div class="ttdeci">void char * p</div><div class="ttdef"><b>Definition:</b> <a href="editline_8c_source.html#l01395">editline.c:1395</a></div></div>
 <div class="ttc" id="EST__cmd__line_8h_html_a5eea16d0fa3d649df21c710bc6693ab1"><div class="ttname"><a href="EST__cmd__line_8h.html#a5eea16d0fa3d649df21c710bc6693ab1">parse_command_line</a></div><div class="ttdeci">int parse_command_line(int argc, char *argv[], const EST_String &amp;usage, EST_StrList &amp;files, EST_Option &amp;al, int make_stdio=1)</div><div class="ttdef"><b>Definition:</b> <a href="cmd__line_8cc_source.html#l00101">cmd_line.cc:101</a></div></div>
 <div class="ttc" id="gen__audio_8cc_html_ad929cfa6c8f867980040d004194ae75f"><div class="ttname"><a href="gen__audio_8cc.html#ad929cfa6c8f867980040d004194ae75f">play_wave</a></div><div class="ttdeci">int play_wave(EST_Wave &amp;inwave, EST_Option &amp;al)</div><div class="ttdef"><b>Definition:</b> <a href="gen__audio_8cc_source.html#l00062">gen_audio.cc:62</a></div></div>
 <div class="ttc" id="EST__cmd__line__options_8h_html"><div class="ttname"><a href="EST__cmd__line__options_8h.html">EST_cmd_line_options.h</a></div></div>
@@ -273,7 +272,7 @@ $(document).ready(function(){initNavTree('na__play__main_8cc_source.html','');})
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_5c982d53a68cdbcd421152b4020263a9.html">main</a></li><li class="navelem"><a class="el" href="na__play__main_8cc.html">na_play_main.cc</a></li>
-    <li class="footer">Generated on Thu Jan 30 2014 00:27:12 for Edinburgh Speech Tools by
+    <li class="footer">Generated on Tue Feb 11 2014 12:00:38 for Edinburgh Speech Tools by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

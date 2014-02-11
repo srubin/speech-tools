@@ -155,9 +155,9 @@ Macros</h2></td></tr>
 <tr class="separator:a1e7dd00b0352779486bf50cd50e188f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2fb730cc8150c9d4a166194a735ca6f8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="siod__defs_8h.html#a2fb730cc8150c9d4a166194a735ca6f8">FLONMPNAME</a>(x)&#160;&#160;&#160;((*x).pname)</td></tr>
 <tr class="separator:a2fb730cc8150c9d4a166194a735ca6f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3289d0efed48a324b552523815d52382"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="siod__defs_8h.html#a3289d0efed48a324b552523815d52382">USERVAL</a>(x)&#160;&#160;&#160;((*x).<a class="el" href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">storage_as.user.p</a>)</td></tr>
+<tr class="memitem:a3289d0efed48a324b552523815d52382"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="siod__defs_8h.html#a3289d0efed48a324b552523815d52382">USERVAL</a>(x)&#160;&#160;&#160;((*x).storage_as.user.p)</td></tr>
 <tr class="separator:a3289d0efed48a324b552523815d52382"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a72460d0a5984ee7c33203986471c03d4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="siod__defs_8h.html#a72460d0a5984ee7c33203986471c03d4">UNTYPEDVAL</a>(x)&#160;&#160;&#160;((*x).<a class="el" href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">storage_as.user.p</a>)</td></tr>
+<tr class="memitem:a72460d0a5984ee7c33203986471c03d4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="siod__defs_8h.html#a72460d0a5984ee7c33203986471c03d4">UNTYPEDVAL</a>(x)&#160;&#160;&#160;((*x).storage_as.user.p)</td></tr>
 <tr class="separator:a72460d0a5984ee7c33203986471c03d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a263efce0e5cda1d387a1a43f94715445"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="siod__defs_8h.html#a263efce0e5cda1d387a1a43f94715445">NIL</a>&#160;&#160;&#160;((struct <a class="el" href="structobj.html">obj</a> *) 0)</td></tr>
 <tr class="separator:a263efce0e5cda1d387a1a43f94715445"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -171,7 +171,7 @@ Macros</h2></td></tr>
 <tr class="separator:a332a0b8e1f4c0f7f84b128e4464eb315"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a394faf7191f18552a20cb17ce14226f0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="siod__defs_8h.html#a394faf7191f18552a20cb17ce14226f0">TYPE</a>(x)&#160;&#160;&#160;(((x) == <a class="el" href="siod__defs_8h.html#a263efce0e5cda1d387a1a43f94715445">NIL</a>) ? 0 : ((*(x)).type))</td></tr>
 <tr class="separator:a394faf7191f18552a20cb17ce14226f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2998845b47230558efb7c5ff19a2f8a5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="siod__defs_8h.html#a2998845b47230558efb7c5ff19a2f8a5">TYPEP</a>(x, y)&#160;&#160;&#160;(<a class="el" href="siod__defs_8h.html#a394faf7191f18552a20cb17ce14226f0">TYPE</a>(x) == (y))</td></tr>
+<tr class="memitem:a2998845b47230558efb7c5ff19a2f8a5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="siod__defs_8h.html#a2998845b47230558efb7c5ff19a2f8a5">TYPEP</a>(x, y)&#160;&#160;&#160;( (x != NULL) &amp;&amp; (<a class="el" href="siod__defs_8h.html#a394faf7191f18552a20cb17ce14226f0">TYPE</a>(x) == (y)) )</td></tr>
 <tr class="separator:a2998845b47230558efb7c5ff19a2f8a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aab2376986733f660c37183f3acfdc33c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="siod__defs_8h.html#aab2376986733f660c37183f3acfdc33c">NTYPEP</a>(x, y)&#160;&#160;&#160;(<a class="el" href="siod__defs_8h.html#a394faf7191f18552a20cb17ce14226f0">TYPE</a>(x) != (y))</td></tr>
 <tr class="separator:aab2376986733f660c37183f3acfdc33c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -591,7 +591,7 @@ Typedefs</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">x</td><td>)</td>
-          <td>&#160;&#160;&#160;((*x).<a class="el" href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">storage_as.user.p</a>)</td>
+          <td>&#160;&#160;&#160;((*x).storage_as.user.p)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -609,7 +609,7 @@ Typedefs</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">x</td><td>)</td>
-          <td>&#160;&#160;&#160;((*x).<a class="el" href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">storage_as.user.p</a>)</td>
+          <td>&#160;&#160;&#160;((*x).storage_as.user.p)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -761,7 +761,7 @@ Typedefs</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;(<a class="el" href="siod__defs_8h.html#a394faf7191f18552a20cb17ce14226f0">TYPE</a>(x) == (y))</td>
+          <td></td><td>&#160;&#160;&#160;( (x != NULL) &amp;&amp; (<a class="el" href="siod__defs_8h.html#a394faf7191f18552a20cb17ce14226f0">TYPE</a>(x) == (y)) )</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -2076,7 +2076,7 @@ Typedefs</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="siod__defs_8h.html">siod_defs.h</a></li>
-    <li class="footer">Generated on Thu Jan 30 2014 00:27:14 for Edinburgh Speech Tools by
+    <li class="footer">Generated on Tue Feb 11 2014 12:00:40 for Edinburgh Speech Tools by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

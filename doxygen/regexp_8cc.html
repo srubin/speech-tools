@@ -146,13 +146,13 @@ Macros</h2></td></tr>
 <tr class="separator:a1354b70ac6803a06beebe84f61b5f95b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0e29f488071372aa0530842e60b64511"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="regexp_8cc.html#a0e29f488071372aa0530842e60b64511">CLOSE</a>&#160;&#160;&#160;30	/* <a class="el" href="regsub_8c.html#a52feda1a96d82746e70befbf82510b3e">no</a>	Analogous to OPEN. */</td></tr>
 <tr class="separator:a0e29f488071372aa0530842e60b64511"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a140367a510ad117b6e871c9042df9350"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="regexp_8cc.html#a140367a510ad117b6e871c9042df9350">OP</a>(<a class="el" href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a>)&#160;&#160;&#160;(*(<a class="el" href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a>))</td></tr>
+<tr class="memitem:a140367a510ad117b6e871c9042df9350"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="regexp_8cc.html#a140367a510ad117b6e871c9042df9350">OP</a>(p)&#160;&#160;&#160;(*(p))</td></tr>
 <tr class="separator:a140367a510ad117b6e871c9042df9350"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ace34a013c79732dd536c0ef9667cd25f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="regexp_8cc.html#ace34a013c79732dd536c0ef9667cd25f">NEXT</a>(<a class="el" href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a>)&#160;&#160;&#160;(((*((<a class="el" href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a>)+1)&amp;0377)&lt;&lt;8) + (*((<a class="el" href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a>)+2)&amp;0377))</td></tr>
+<tr class="memitem:ace34a013c79732dd536c0ef9667cd25f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="regexp_8cc.html#ace34a013c79732dd536c0ef9667cd25f">NEXT</a>(p)&#160;&#160;&#160;(((*((p)+1)&amp;0377)&lt;&lt;8) + (*((p)+2)&amp;0377))</td></tr>
 <tr class="separator:ace34a013c79732dd536c0ef9667cd25f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaff33cf370a7f01ee957363220b94bf5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="regexp_8cc.html#aaff33cf370a7f01ee957363220b94bf5">OPERAND</a>(<a class="el" href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a>)&#160;&#160;&#160;((<a class="el" href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a>) + 3)</td></tr>
+<tr class="memitem:aaff33cf370a7f01ee957363220b94bf5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="regexp_8cc.html#aaff33cf370a7f01ee957363220b94bf5">OPERAND</a>(p)&#160;&#160;&#160;((p) + 3)</td></tr>
 <tr class="separator:aaff33cf370a7f01ee957363220b94bf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9516e7f9f8711efcb0d381cb09e8f3c5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="regexp_8cc.html#a9516e7f9f8711efcb0d381cb09e8f3c5">UCHARAT</a>(<a class="el" href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a>)&#160;&#160;&#160;((int)*(unsigned char *)(<a class="el" href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a>))</td></tr>
+<tr class="memitem:a9516e7f9f8711efcb0d381cb09e8f3c5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="regexp_8cc.html#a9516e7f9f8711efcb0d381cb09e8f3c5">UCHARAT</a>(p)&#160;&#160;&#160;((int)*(unsigned char *)(p))</td></tr>
 <tr class="separator:a9516e7f9f8711efcb0d381cb09e8f3c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa2863f62dd03ec8d40a15fd30cb58ddf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="regexp_8cc.html#aa2863f62dd03ec8d40a15fd30cb58ddf">FAIL</a>(m)&#160;&#160;&#160;{ <a class="el" href="regexp_8h.html#a12ceba3002fcf1d651ee42cd9d7e13ee">hs_regerror</a>(m); <a class="el" href="regexp_8cc.html#a3184a425ee7a9067e61d6b81c1eead49">return</a>(NULL); }</td></tr>
 <tr class="separator:aa2863f62dd03ec8d40a15fd30cb58ddf"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -181,15 +181,15 @@ Functions</h2></td></tr>
 <tr class="separator:abe43fd8190b635daea138473d94074ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a08ab0f41e3b057663cb18c26d4c2dcd0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="editline_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="regexp_8cc.html#a08ab0f41e3b057663cb18c26d4c2dcd0">regnode</a> (char op)</td></tr>
 <tr class="separator:a08ab0f41e3b057663cb18c26d4c2dcd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a37a01728eb50b26440367a4b13fc840f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="editline_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="regexp_8cc.html#a37a01728eb50b26440367a4b13fc840f">regnext</a> (register char *<a class="el" href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a>)</td></tr>
+<tr class="memitem:a37a01728eb50b26440367a4b13fc840f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="editline_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="regexp_8cc.html#a37a01728eb50b26440367a4b13fc840f">regnext</a> (register char *p)</td></tr>
 <tr class="separator:a37a01728eb50b26440367a4b13fc840f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7ad65447bc7ff5bce6a7ac02e08139e2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="editline_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="regexp_8cc.html#a7ad65447bc7ff5bce6a7ac02e08139e2">regc</a> (char b)</td></tr>
 <tr class="separator:a7ad65447bc7ff5bce6a7ac02e08139e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7382f64891670191588a563ee82f34fe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="editline_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="regexp_8cc.html#a7382f64891670191588a563ee82f34fe">reginsert</a> (char op, char *opnd)</td></tr>
 <tr class="separator:a7382f64891670191588a563ee82f34fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2a47f4377a6ef6c7f769abe8016c4d94"><td class="memItemLeft" align="right" valign="top"><a class="el" href="editline_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="regexp_8cc.html#a2a47f4377a6ef6c7f769abe8016c4d94">regtail</a> (char *<a class="el" href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a>, char *<a class="el" href="siod__est_8cc.html#a4ae7d8960223d651225601ba63fea8c3">val</a>)</td></tr>
+<tr class="memitem:a2a47f4377a6ef6c7f769abe8016c4d94"><td class="memItemLeft" align="right" valign="top"><a class="el" href="editline_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="regexp_8cc.html#a2a47f4377a6ef6c7f769abe8016c4d94">regtail</a> (char *p, char *<a class="el" href="siod__est_8cc.html#a4ae7d8960223d651225601ba63fea8c3">val</a>)</td></tr>
 <tr class="separator:a2a47f4377a6ef6c7f769abe8016c4d94"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af3cbac70c461930d5fb3f6bef06e6ee9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="editline_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="regexp_8cc.html#af3cbac70c461930d5fb3f6bef06e6ee9">regoptail</a> (char *<a class="el" href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a>, char *<a class="el" href="siod__est_8cc.html#a4ae7d8960223d651225601ba63fea8c3">val</a>)</td></tr>
+<tr class="memitem:af3cbac70c461930d5fb3f6bef06e6ee9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="editline_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="regexp_8cc.html#af3cbac70c461930d5fb3f6bef06e6ee9">regoptail</a> (char *p, char *<a class="el" href="siod__est_8cc.html#a4ae7d8960223d651225601ba63fea8c3">val</a>)</td></tr>
 <tr class="separator:af3cbac70c461930d5fb3f6bef06e6ee9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a18ab1f55a7ae3e752829bfb2abd767c9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="strucths__regexp.html">hs_regexp</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="regexp_8cc.html#a18ab1f55a7ae3e752829bfb2abd767c9">hs_regcomp</a> (const char *exp)</td></tr>
 <tr class="separator:a18ab1f55a7ae3e752829bfb2abd767c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -213,7 +213,7 @@ Functions</h2></td></tr>
 <tr class="separator:ad923a5de7afc9d509869a0026c3931e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af5d5ae07a85feab40d4a301278bc2183"><td class="memItemLeft" align="right" valign="top"><a class="el" href="editline_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="regexp_8cc.html#af5d5ae07a85feab40d4a301278bc2183">regmatch</a> (char *<a class="el" href="regsub_8c.html#a6265fefb66ff5c526fa6bb2b80ab2871">prog</a>)</td></tr>
 <tr class="separator:af5d5ae07a85feab40d4a301278bc2183"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a98662b257a4c74e8e2234b3b8b09111f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="editline_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="regexp_8cc.html#a98662b257a4c74e8e2234b3b8b09111f">regrepeat</a> (char *<a class="el" href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a>)</td></tr>
+<tr class="memitem:a98662b257a4c74e8e2234b3b8b09111f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="editline_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">STATIC</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="regexp_8cc.html#a98662b257a4c74e8e2234b3b8b09111f">regrepeat</a> (char *p)</td></tr>
 <tr class="separator:a98662b257a4c74e8e2234b3b8b09111f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab797caf89a4fdfca1a68eeee4a355d20"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="regexp_8cc.html#ab797caf89a4fdfca1a68eeee4a355d20">hs_regexec</a> (const <a class="el" href="strucths__regexp.html">hs_regexp</a> *<a class="el" href="regsub_8c.html#a6265fefb66ff5c526fa6bb2b80ab2871">prog</a>, const char *string)</td></tr>
 <tr class="separator:ab797caf89a4fdfca1a68eeee4a355d20"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -466,8 +466,8 @@ Variables</h2></td></tr>
           <td class="memname">#define OP</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><a class="el" href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a></td><td>)</td>
-          <td>&#160;&#160;&#160;(*(<a class="el" href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a>))</td>
+          <td class="paramname">p</td><td>)</td>
+          <td>&#160;&#160;&#160;(*(p))</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -484,8 +484,8 @@ Variables</h2></td></tr>
           <td class="memname">#define NEXT</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><a class="el" href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a></td><td>)</td>
-          <td>&#160;&#160;&#160;(((*((<a class="el" href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a>)+1)&amp;0377)&lt;&lt;8) + (*((<a class="el" href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a>)+2)&amp;0377))</td>
+          <td class="paramname">p</td><td>)</td>
+          <td>&#160;&#160;&#160;(((*((p)+1)&amp;0377)&lt;&lt;8) + (*((p)+2)&amp;0377))</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -502,8 +502,8 @@ Variables</h2></td></tr>
           <td class="memname">#define OPERAND</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><a class="el" href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a></td><td>)</td>
-          <td>&#160;&#160;&#160;((<a class="el" href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a>) + 3)</td>
+          <td class="paramname">p</td><td>)</td>
+          <td>&#160;&#160;&#160;((p) + 3)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -520,8 +520,8 @@ Variables</h2></td></tr>
           <td class="memname">#define UCHARAT</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><a class="el" href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a></td><td>)</td>
-          <td>&#160;&#160;&#160;((int)*(unsigned char *)(<a class="el" href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a>))</td>
+          <td class="paramname">p</td><td>)</td>
+          <td>&#160;&#160;&#160;((int)*(unsigned char *)(p))</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1221,7 +1221,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_48e186528d8523b137164d01852e16c8.html">base_class</a></li><li class="navelem"><a class="el" href="dir_a2327e91f2ef855be238e739f607edbc.html">string</a></li><li class="navelem"><a class="el" href="regexp_8cc.html">regexp.cc</a></li>
-    <li class="footer">Generated on Thu Jan 30 2014 00:27:13 for Edinburgh Speech Tools by
+    <li class="footer">Generated on Tue Feb 11 2014 12:00:39 for Edinburgh Speech Tools by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

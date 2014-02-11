@@ -599,14 +599,14 @@ $(document).ready(function(){initNavTree('dtd_8c_source.html','');});
 <div class="line"><a name="l00505"></a><span class="lineno">  505</span>&#160;</div>
 <div class="line"><a name="l00506"></a><span class="lineno">  506</span>&#160;    <span class="keywordflow">return</span> &amp;e;</div>
 <div class="line"><a name="l00507"></a><span class="lineno">  507</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00508"></a><span class="lineno">  508</span>&#160;<span class="preprocessor"></span>    ElementDefinition e, *<a class="code" href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a>;</div>
+<div class="line"><a name="l00508"></a><span class="lineno">  508</span>&#160;<span class="preprocessor"></span>    ElementDefinition e, *p;</div>
 <div class="line"><a name="l00509"></a><span class="lineno">  509</span>&#160;</div>
 <div class="line"><a name="l00510"></a><span class="lineno">  510</span>&#160;    <span class="keywordflow">for</span>(p = &amp;dtd-&gt;elements, e = *p; e; p = &amp;e-&gt;next, e = *p)</div>
 <div class="line"><a name="l00511"></a><span class="lineno">  511</span>&#160;    <span class="keywordflow">if</span>(namelen == e-&gt;namelen &amp;&amp; *name == *e-&gt;name &amp;&amp;</div>
 <div class="line"><a name="l00512"></a><span class="lineno">  512</span>&#160;       memcmp(name, e-&gt;name, namelen*<span class="keyword">sizeof</span>(Char)) == 0)</div>
 <div class="line"><a name="l00513"></a><span class="lineno">  513</span>&#160;    {</div>
-<div class="line"><a name="l00514"></a><span class="lineno">  514</span>&#160;        *p = e-&gt;next;</div>
-<div class="line"><a name="l00515"></a><span class="lineno">  515</span>&#160;        e-&gt;next = dtd-&gt;elements;</div>
+<div class="line"><a name="l00514"></a><span class="lineno">  514</span>&#160;        *p = e-&gt;<a class="code" href="structelement__definition.html#a4353976265933f69765edd67c21fe1cf">next</a>;</div>
+<div class="line"><a name="l00515"></a><span class="lineno">  515</span>&#160;        e-&gt;<a class="code" href="structelement__definition.html#a4353976265933f69765edd67c21fe1cf">next</a> = dtd-&gt;elements;</div>
 <div class="line"><a name="l00516"></a><span class="lineno">  516</span>&#160;        dtd-&gt;elements = e;</div>
 <div class="line"><a name="l00517"></a><span class="lineno">  517</span>&#160;        <span class="keywordflow">return</span> e;</div>
 <div class="line"><a name="l00518"></a><span class="lineno">  518</span>&#160;    }</div>
@@ -896,6 +896,7 @@ $(document).ready(function(){initNavTree('dtd_8c_source.html','');});
 <div class="ttc" id="dtd_8h_html_a5fb3419478d92fc888d5b03dc38cdf54"><div class="ttname"><a href="dtd_8h.html#a5fb3419478d92fc888d5b03dc38cdf54">NextAttributeDefinition</a></div><div class="ttdeci">AttributeDefinition NextAttributeDefinition(ElementDefinition element, AttributeDefinition previous)</div><div class="ttdef"><b>Definition:</b> <a href="dtd_8c_source.html#l00640">dtd.c:640</a></div></div>
 <div class="ttc" id="dtd_8h_html_a0134edf879fd3d6b8fbe20404e0d5038"><div class="ttname"><a href="dtd_8h.html#a0134edf879fd3d6b8fbe20404e0d5038">FreeNotationDefinition</a></div><div class="ttdeci">XML_API void FreeNotationDefinition(NotationDefinition n)</div><div class="ttdef"><b>Definition:</b> <a href="dtd_8c_source.html#l00748">dtd.c:748</a></div></div>
 <div class="ttc" id="dtd_8h_html_ad19554766e46c2c06164e89fa724ff73"><div class="ttname"><a href="dtd_8h.html#ad19554766e46c2c06164e89fa724ff73">AttributeTypeName</a></div><div class="ttdeci">XML_API const char8 * AttributeTypeName[AT_enum_count]</div><div class="ttdef"><b>Definition:</b> <a href="dtd_8c_source.html#l00055">dtd.c:55</a></div></div>
+<div class="ttc" id="structelement__definition_html_a4353976265933f69765edd67c21fe1cf"><div class="ttname"><a href="structelement__definition.html#a4353976265933f69765edd67c21fe1cf">element_definition::next</a></div><div class="ttdeci">struct element_definition * next</div><div class="ttdef"><b>Definition:</b> <a href="dtd_8h_source.html#l00122">dtd.h:122</a></div></div>
 <div class="ttc" id="dtd_8h_html_a9627545db2beee28afdc8b4186a21176"><div class="ttname"><a href="dtd_8h.html#a9627545db2beee28afdc8b4186a21176">DefaultType</a></div><div class="ttdeci">enum default_type DefaultType</div><div class="ttdef"><b>Definition:</b> <a href="dtd_8h_source.html#l00133">dtd.h:133</a></div></div>
 <div class="ttc" id="dtd_8h_html_aa8896a152a5237fc86a80baa079ffd5d"><div class="ttname"><a href="dtd_8h.html#aa8896a152a5237fc86a80baa079ffd5d">FindNotationN</a></div><div class="ttdeci">XML_API NotationDefinition FindNotationN(Dtd dtd, const Char *name, int namelen)</div><div class="ttdef"><b>Definition:</b> <a href="dtd_8c_source.html#l00737">dtd.c:737</a></div></div>
 <div class="ttc" id="string16_8h_html"><div class="ttname"><a href="string16_8h.html">string16.h</a></div></div>
@@ -916,7 +917,6 @@ $(document).ready(function(){initNavTree('dtd_8c_source.html','');});
 <div class="ttc" id="charset_8h_html_ac9e1c0f508ae0f5f8a2b704a91e1ae86"><div class="ttname"><a href="charset_8h.html#ac9e1c0f508ae0f5f8a2b704a91e1ae86">char8</a></div><div class="ttdeci">char char8</div><div class="ttdef"><b>Definition:</b> <a href="charset_8h_source.html#l00031">charset.h:31</a></div></div>
 <div class="ttc" id="dtd_8h_html_a7710f7bfde7c06f521a73b281cb549e7"><div class="ttname"><a href="dtd_8h.html#a7710f7bfde7c06f521a73b281cb549e7">EntityURL</a></div><div class="ttdeci">XML_API const char8 * EntityURL(Entity e)</div><div class="ttdef"><b>Definition:</b> <a href="dtd_8c_source.html#l00269">dtd.c:269</a></div></div>
 <div class="ttc" id="string16_8h_html_a57288e80585ccf0cdf0bbcc28c9ac523"><div class="ttname"><a href="string16_8h.html#a57288e80585ccf0cdf0bbcc28c9ac523">strdup8</a></div><div class="ttdeci">STD_API char8 * strdup8(const char8 *s)</div><div class="ttdef"><b>Definition:</b> <a href="string16_8c_source.html#l00077">string16.c:77</a></div></div>
-<div class="ttc" id="editline_8c_html_a5791904baf12239aadc3a8280a03e8c5"><div class="ttname"><a href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a></div><div class="ttdeci">void char * p</div><div class="ttdef"><b>Definition:</b> <a href="editline_8c_source.html#l01395">editline.c:1395</a></div></div>
 <div class="ttc" id="system_8h_html_aa0f78a0a8a560e168e78b82281ee6a82"><div class="ttname"><a href="system_8h.html#aa0f78a0a8a560e168e78b82281ee6a82">Malloc</a></div><div class="ttdeci">void * Malloc(int bytes)</div><div class="ttdef"><b>Definition:</b> <a href="system_8c_source.html#l00019">system.c:19</a></div></div>
 <div class="ttc" id="dtd_8h_html_a5300ab84c26cc1a0db62e7f94543aaf3"><div class="ttname"><a href="dtd_8h.html#a5300ab84c26cc1a0db62e7f94543aaf3">RedefineNotation</a></div><div class="ttdeci">XML_API NotationDefinition RedefineNotation(NotationDefinition n, const char8 *publicid, const char8 *systemid)</div><div class="ttdef"><b>Definition:</b> <a href="dtd_8c_source.html#l00727">dtd.c:727</a></div></div>
 <div class="ttc" id="group__treetraversalfunctions_html_ga4ca89cc26d3cd32a41d6263241b4107d"><div class="ttname"><a href="group__treetraversalfunctions.html#ga4ca89cc26d3cd32a41d6263241b4107d">parent</a></div><div class="ttdeci">EST_Item * parent(const EST_Item *n)</div><div class="ttdoc">return parent of n </div><div class="ttdef"><b>Definition:</b> <a href="EST__Relation__tree_8h_source.html#l00053">EST_Relation_tree.h:53</a></div></div>
@@ -931,7 +931,7 @@ $(document).ready(function(){initNavTree('dtd_8c_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_2d40ef836e2c354003a14618b86a0a20.html">rxp</a></li><li class="navelem"><a class="el" href="dtd_8c.html">dtd.c</a></li>
-    <li class="footer">Generated on Thu Jan 30 2014 00:27:12 for Edinburgh Speech Tools by
+    <li class="footer">Generated on Tue Feb 11 2014 12:00:38 for Edinburgh Speech Tools by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

@@ -157,7 +157,7 @@ $(document).ready(function(){initNavTree('ch__track__main_8cc_source.html','');}
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <a class="code" href="classEST__TList.html">EST_StrList</a> files;</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <a class="code" href="classEST__Track.html">EST_Track</a> tr;</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <a class="code" href="classEST__TList.html">EST_TrackList</a> trlist;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <a class="code" href="classEST__UItem.html">EST_Litem</a> *<a class="code" href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a>;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <a class="code" href="classEST__UItem.html">EST_Litem</a> *p;</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <a class="code" href="EST__cmd__line_8h.html#a5eea16d0fa3d649df21c710bc6693ab1">parse_command_line</a>(</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    argc, argv, </div>
@@ -227,7 +227,7 @@ $(document).ready(function(){initNavTree('ch__track__main_8cc_source.html','');}
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;</div>
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    <span class="keywordflow">if</span> (al.<a class="code" href="classEST__TKVL.html#a78913afde7a04122a791476dbd7ee6f3">present</a>(<span class="stringliteral">&quot;-info&quot;</span>))</div>
 <div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    {</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    <span class="keywordflow">for</span> (p = trlist.<a class="code" href="classEST__UList.html#a36cd9a03aa4677736edb4866364a204f">head</a>(); <a class="code" href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a>; p = p-&gt;<a class="code" href="classEST__UItem.html#afc5292d4da883de227f5a92bb6df719d">next</a>())</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    <span class="keywordflow">for</span> (p = trlist.<a class="code" href="classEST__UList.html#a36cd9a03aa4677736edb4866364a204f">head</a>(); p; p = p-&gt;<a class="code" href="classEST__UItem.html#afc5292d4da883de227f5a92bb6df719d">next</a>())</div>
 <div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;        <a class="code" href="group__EST__Track__aux__functions.html#ga8343ea3913e86764ce145db57b610418">track_info</a>(trlist(p));</div>
 <div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    <a class="code" href="regerror_8c.html#a91e86bead1c0e6cf1ea1546b897c9e6f">exit</a>(0);</div>
 <div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    }</div>
@@ -247,7 +247,7 @@ $(document).ready(function(){initNavTree('ch__track__main_8cc_source.html','');}
 <div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    {</div>
 <div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    tr.<a class="code" href="classEST__Track.html#acc877739132e15c3fcd667dc0bc985e5">resize</a>(0, tr.<a class="code" href="classEST__Track.html#adcf56a7204cb8f8fcaf8059d7cc1e75e">num_channels</a>());</div>
 <div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    <span class="comment">// Reorg -- fix += to resize to largest num_channels (with warning)</span></div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    <span class="keywordflow">for</span> (p = trlist.<a class="code" href="classEST__UList.html#a36cd9a03aa4677736edb4866364a204f">head</a>(); <a class="code" href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a>; p = p-&gt;<a class="code" href="classEST__UItem.html#afc5292d4da883de227f5a92bb6df719d">next</a>())</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    <span class="keywordflow">for</span> (p = trlist.<a class="code" href="classEST__UList.html#a36cd9a03aa4677736edb4866364a204f">head</a>(); p; p = p-&gt;<a class="code" href="classEST__UItem.html#afc5292d4da883de227f5a92bb6df719d">next</a>())</div>
 <div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;        tr += trlist(p);</div>
 <div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    }</div>
 <div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;</div>
@@ -562,7 +562,6 @@ $(document).ready(function(){initNavTree('ch__track__main_8cc_source.html','');}
 <div class="ttc" id="classEST__UList_html_a36cd9a03aa4677736edb4866364a204f"><div class="ttname"><a href="classEST__UList.html#a36cd9a03aa4677736edb4866364a204f">EST_UList::head</a></div><div class="ttdeci">EST_UItem * head() const </div><div class="ttdef"><b>Definition:</b> <a href="EST__UList_8h_source.html#l00096">EST_UList.h:96</a></div></div>
 <div class="ttc" id="group__EST__Track__aux__functions_html_ga0a5935034e413705c5cd36a65f01883b"><div class="ttname"><a href="group__EST__Track__aux__functions.html#ga0a5935034e413705c5cd36a65f01883b">ParallelTracks</a></div><div class="ttdeci">void ParallelTracks(EST_Track &amp;a, EST_TrackList &amp;list, const EST_String &amp;style)</div><div class="ttdef"><b>Definition:</b> <a href="EST__track__aux_8cc_source.html#l00913">EST_track_aux.cc:913</a></div></div>
 <div class="ttc" id="group__EST__Track__aux__functions_html_ga2984220b2fd152ee67543259409293d6"><div class="ttname"><a href="group__EST__Track__aux__functions.html#ga2984220b2fd152ee67543259409293d6">differentiate</a></div><div class="ttdeci">EST_Track differentiate(EST_Track &amp;c, float samp_int=0.0)</div><div class="ttdef"><b>Definition:</b> <a href="EST__track__aux_8cc_source.html#l00251">EST_track_aux.cc:251</a></div></div>
-<div class="ttc" id="editline_8c_html_a5791904baf12239aadc3a8280a03e8c5"><div class="ttname"><a href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a></div><div class="ttdeci">void char * p</div><div class="ttdef"><b>Definition:</b> <a href="editline_8c_source.html#l01395">editline.c:1395</a></div></div>
 <div class="ttc" id="group__utilityfunctionsforstrings_html_ga0508dc52e28fefd039fc55994d9a56f1"><div class="ttname"><a href="group__utilityfunctionsforstrings.html#ga0508dc52e28fefd039fc55994d9a56f1">load_StrList</a></div><div class="ttdeci">EST_read_status load_StrList(EST_String filename, EST_StrList &amp;l)</div><div class="ttdoc">Load tokens from a file and return them in a EST_StrList. </div><div class="ttdef"><b>Definition:</b> <a href="EST__slist__aux_8cc_source.html#l00128">EST_slist_aux.cc:128</a></div></div>
 <div class="ttc" id="EST__cmd__line_8h_html_a5eea16d0fa3d649df21c710bc6693ab1"><div class="ttname"><a href="EST__cmd__line_8h.html#a5eea16d0fa3d649df21c710bc6693ab1">parse_command_line</a></div><div class="ttdeci">int parse_command_line(int argc, char *argv[], const EST_String &amp;usage, EST_StrList &amp;files, EST_Option &amp;al, int make_stdio=1)</div><div class="ttdef"><b>Definition:</b> <a href="cmd__line_8cc_source.html#l00101">cmd_line.cc:101</a></div></div>
 <div class="ttc" id="classEST__Track_html"><div class="ttname"><a href="classEST__Track.html">EST_Track</a></div><div class="ttdef"><b>Definition:</b> <a href="EST__Track_8h_source.html#l00089">EST_Track.h:89</a></div></div>
@@ -575,7 +574,7 @@ $(document).ready(function(){initNavTree('ch__track__main_8cc_source.html','');}
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_5c982d53a68cdbcd421152b4020263a9.html">main</a></li><li class="navelem"><a class="el" href="ch__track__main_8cc.html">ch_track_main.cc</a></li>
-    <li class="footer">Generated on Thu Jan 30 2014 00:27:12 for Edinburgh Speech Tools by
+    <li class="footer">Generated on Tue Feb 11 2014 12:00:38 for Edinburgh Speech Tools by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

@@ -20,7 +20,6 @@ var dir_9149c22d61f827031fb74d99d3cec555 =
     [ "named_enum_regression.cc", "named__enum__regression_8cc.html", "named__enum__regression_8cc" ],
     [ "pathname_example.cc", "pathname__example_8cc.html", "pathname__example_8cc" ],
     [ "pathname_regression.cc", "pathname__regression_8cc.html", "pathname__regression_8cc" ],
-    [ "program_example.cc", "program__example_8cc.html", null ],
     [ "sigpr_example.cc", "sigpr__example_8cc.html", "sigpr__example_8cc" ],
     [ "sigpr_regression.cc", "sigpr__regression_8cc.html", "sigpr__regression_8cc" ],
     [ "string_example.cc", "string__example_8cc.html", "string__example_8cc" ],

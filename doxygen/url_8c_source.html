@@ -223,8 +223,8 @@ $(document).ready(function(){initNavTree('url_8c_source.html','');});
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    <span class="comment">/* DOS: translate C:\a\b to file:/C:/a/b/ */</span></div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    <span class="comment">/* XXX should we escape anything? */</span></div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    {</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    <span class="keywordtype">char</span> *<a class="code" href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a>;</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    <span class="keywordflow">for</span>(p=buf; *<a class="code" href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a>; p++)</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    <span class="keywordtype">char</span> *p;</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    <span class="keywordflow">for</span>(p=buf; *p; p++)</div>
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    <span class="keywordflow">if</span>(*p == <span class="charliteral">&#39;\\&#39;</span>)</div>
 <div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;        *p = <span class="charliteral">&#39;/&#39;</span>;</div>
 <div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    }</div>
@@ -237,8 +237,8 @@ $(document).ready(function(){initNavTree('url_8c_source.html','');});
 <div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    <span class="comment">/* Mac: translate a:b to file:/a/b/ */</span></div>
 <div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    <span class="comment">/* XXX should escape spaces and slashes, at least */</span></div>
 <div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    {</div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;    <span class="keywordtype">char</span> *<a class="code" href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a>;</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    <span class="keywordflow">for</span>(p=buf; *<a class="code" href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a>; p++)</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;    <span class="keywordtype">char</span> *p;</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    <span class="keywordflow">for</span>(p=buf; *p; p++)</div>
 <div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;        <span class="keywordflow">if</span>(*p == <span class="charliteral">&#39;:&#39;</span>)</div>
 <div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;        *p = <span class="charliteral">&#39;/&#39;</span>;</div>
 <div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    <span class="comment">/* Mac getcwd (always?) has a trailing separator, which we here bash */</span></div>
@@ -277,7 +277,7 @@ $(document).ready(function(){initNavTree('url_8c_source.html','');});
 <div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;    <span class="keywordtype">char</span> *base_scheme=0, *base_host=0, *base_path=0;</div>
 <div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;    <span class="keywordtype">char</span> *default_base=0;</div>
 <div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;    <span class="keywordtype">int</span> port, base_port, merged_port, i, j;</div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;    <span class="keywordtype">char</span> *<a class="code" href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a>;</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;    <span class="keywordtype">char</span> *p;</div>
 <div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;    </div>
 <div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;    <span class="comment">/* First see if we have an absolute URL */</span></div>
 <div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;</div>
@@ -572,7 +572,7 @@ $(document).ready(function(){initNavTree('url_8c_source.html','');});
 <div class="line"><a name="l00478"></a><span class="lineno">  478</span>&#160;    {</div>
 <div class="line"><a name="l00479"></a><span class="lineno">  479</span>&#160;    <a class="code" href="rateconv_8cc.html#a4cfc63e05db4883dc4b60a1245a9ffc5">WORD</a> version = MAKEWORD(1, 1);</div>
 <div class="line"><a name="l00480"></a><span class="lineno">  480</span>&#160;    WSADATA wsaData;</div>
-<div class="line"><a name="l00481"></a><span class="lineno">  481</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="siod_8h.html#a669c6661e022454c1ece3da610ed8bba">err</a> = WSAStartup(version, &amp;wsaData);</div>
+<div class="line"><a name="l00481"></a><span class="lineno">  481</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="siod_8h.html#a75c18836092fb77b1d09351765cc8e1b">err</a> = WSAStartup(version, &amp;wsaData);</div>
 <div class="line"><a name="l00482"></a><span class="lineno">  482</span>&#160;    <span class="keywordflow">if</span> (err)</div>
 <div class="line"><a name="l00483"></a><span class="lineno">  483</span>&#160;    {</div>
 <div class="line"><a name="l00484"></a><span class="lineno">  484</span>&#160;        <a class="code" href="url_8c.html#afc8f01fec20fa763b29662ac23613b3f">LT_ERROR</a>(LEFILE, <span class="stringliteral">&quot;Error: can&#39;t init HTTP interface\n&quot;</span>);</div>
@@ -789,8 +789,8 @@ $(document).ready(function(){initNavTree('url_8c_source.html','');});
 <div class="line"><a name="l00695"></a><span class="lineno">  695</span>&#160;</div>
 <div class="line"><a name="l00696"></a><span class="lineno">  696</span>&#160;    file = <a class="code" href="string16_8h.html#a57288e80585ccf0cdf0bbcc28c9ac523">strdup8</a>(path);</div>
 <div class="line"><a name="l00697"></a><span class="lineno">  697</span>&#160;    {</div>
-<div class="line"><a name="l00698"></a><span class="lineno">  698</span>&#160;    <span class="keywordtype">char</span> *<a class="code" href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a>;</div>
-<div class="line"><a name="l00699"></a><span class="lineno">  699</span>&#160;    <span class="keywordflow">for</span>(p=file; *<a class="code" href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a>; p++)</div>
+<div class="line"><a name="l00698"></a><span class="lineno">  698</span>&#160;    <span class="keywordtype">char</span> *p;</div>
+<div class="line"><a name="l00699"></a><span class="lineno">  699</span>&#160;    <span class="keywordflow">for</span>(p=file; *p; p++)</div>
 <div class="line"><a name="l00700"></a><span class="lineno">  700</span>&#160;        <span class="keywordflow">if</span>(*p == <span class="charliteral">&#39;/&#39;</span>)</div>
 <div class="line"><a name="l00701"></a><span class="lineno">  701</span>&#160;        *p = <span class="charliteral">&#39;\\&#39;</span>;</div>
 <div class="line"><a name="l00702"></a><span class="lineno">  702</span>&#160;    }</div>
@@ -805,8 +805,8 @@ $(document).ready(function(){initNavTree('url_8c_source.html','');});
 <div class="line"><a name="l00711"></a><span class="lineno">  711</span>&#160;</div>
 <div class="line"><a name="l00712"></a><span class="lineno">  712</span>&#160;    file = <a class="code" href="string16_8h.html#a57288e80585ccf0cdf0bbcc28c9ac523">strdup8</a>(path);</div>
 <div class="line"><a name="l00713"></a><span class="lineno">  713</span>&#160;    {</div>
-<div class="line"><a name="l00714"></a><span class="lineno">  714</span>&#160;    <span class="keywordtype">char</span> *<a class="code" href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a>;</div>
-<div class="line"><a name="l00715"></a><span class="lineno">  715</span>&#160;    <span class="keywordflow">for</span>(p=file; *<a class="code" href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a>; p++)</div>
+<div class="line"><a name="l00714"></a><span class="lineno">  714</span>&#160;    <span class="keywordtype">char</span> *p;</div>
+<div class="line"><a name="l00715"></a><span class="lineno">  715</span>&#160;    <span class="keywordflow">for</span>(p=file; *p; p++)</div>
 <div class="line"><a name="l00716"></a><span class="lineno">  716</span>&#160;        <span class="keywordflow">if</span>(*p == <span class="charliteral">&#39;/&#39;</span>)</div>
 <div class="line"><a name="l00717"></a><span class="lineno">  717</span>&#160;        *p = <span class="charliteral">&#39;:&#39;</span>;</div>
 <div class="line"><a name="l00718"></a><span class="lineno">  718</span>&#160;    }</div>
@@ -840,7 +840,7 @@ $(document).ready(function(){initNavTree('url_8c_source.html','');});
 <div class="line"><a name="l00746"></a><span class="lineno">  746</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="siod_8h.html#aeac25be2f519b49ecd2778aa9f86b5d5">parse_url</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *url, </div>
 <div class="line"><a name="l00747"></a><span class="lineno">  747</span>&#160;              <span class="keywordtype">char</span> **<a class="code" href="url_8c.html#ac386fe0902e2c7802ee782d8aaca75e5">scheme</a>, <span class="keywordtype">char</span> **host, <span class="keywordtype">int</span> *port, <span class="keywordtype">char</span> **path)</div>
 <div class="line"><a name="l00748"></a><span class="lineno">  748</span>&#160;{</div>
-<div class="line"><a name="l00749"></a><span class="lineno">  749</span>&#160;    <span class="keywordtype">char</span> *<a class="code" href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a>, *q;</div>
+<div class="line"><a name="l00749"></a><span class="lineno">  749</span>&#160;    <span class="keywordtype">char</span> *p, *q;</div>
 <div class="line"><a name="l00750"></a><span class="lineno">  750</span>&#160;    <span class="keywordtype">int</span> warned = 0;</div>
 <div class="line"><a name="l00751"></a><span class="lineno">  751</span>&#160;</div>
 <div class="line"><a name="l00752"></a><span class="lineno">  752</span>&#160;    *scheme = *host = *path = 0;</div>
@@ -848,7 +848,7 @@ $(document).ready(function(){initNavTree('url_8c_source.html','');});
 <div class="line"><a name="l00754"></a><span class="lineno">  754</span>&#160;</div>
 <div class="line"><a name="l00755"></a><span class="lineno">  755</span>&#160;    <span class="comment">/* Does it start with a scheme? */</span></div>
 <div class="line"><a name="l00756"></a><span class="lineno">  756</span>&#160;    </div>
-<div class="line"><a name="l00757"></a><span class="lineno">  757</span>&#160;    <span class="keywordflow">for</span>(p = (<span class="keywordtype">char</span> *)url; *<a class="code" href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a>; p++)</div>
+<div class="line"><a name="l00757"></a><span class="lineno">  757</span>&#160;    <span class="keywordflow">for</span>(p = (<span class="keywordtype">char</span> *)url; *p; p++)</div>
 <div class="line"><a name="l00758"></a><span class="lineno">  758</span>&#160;    <span class="keywordflow">if</span>(*p == <span class="charliteral">&#39;:&#39;</span> || *p == <span class="charliteral">&#39;/&#39;</span>)</div>
 <div class="line"><a name="l00759"></a><span class="lineno">  759</span>&#160;        <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00760"></a><span class="lineno">  760</span>&#160;</div>
@@ -866,7 +866,7 @@ $(document).ready(function(){initNavTree('url_8c_source.html','');});
 <div class="line"><a name="l00772"></a><span class="lineno">  772</span>&#160;    {</div>
 <div class="line"><a name="l00773"></a><span class="lineno">  773</span>&#160;    url += 2;</div>
 <div class="line"><a name="l00774"></a><span class="lineno">  774</span>&#160;</div>
-<div class="line"><a name="l00775"></a><span class="lineno">  775</span>&#160;    <span class="keywordflow">for</span>(p = (<span class="keywordtype">char</span> *)url; *<a class="code" href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a>; p++)</div>
+<div class="line"><a name="l00775"></a><span class="lineno">  775</span>&#160;    <span class="keywordflow">for</span>(p = (<span class="keywordtype">char</span> *)url; *p; p++)</div>
 <div class="line"><a name="l00776"></a><span class="lineno">  776</span>&#160;        <span class="keywordflow">if</span>(*p == <span class="charliteral">&#39;/&#39;</span>)</div>
 <div class="line"><a name="l00777"></a><span class="lineno">  777</span>&#160;        <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00778"></a><span class="lineno">  778</span>&#160;</div>
@@ -879,12 +879,12 @@ $(document).ready(function(){initNavTree('url_8c_source.html','');});
 <div class="line"><a name="l00785"></a><span class="lineno">  785</span>&#160;    <span class="keywordflow">if</span>(q &lt; p-1 &amp;&amp; *q == <span class="charliteral">&#39;:&#39;</span>)</div>
 <div class="line"><a name="l00786"></a><span class="lineno">  786</span>&#160;        *port = atoi(q+1);</div>
 <div class="line"><a name="l00787"></a><span class="lineno">  787</span>&#160;    <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00788"></a><span class="lineno">  788</span>&#160;        q = <a class="code" href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a>;</div>
+<div class="line"><a name="l00788"></a><span class="lineno">  788</span>&#160;        q = p;</div>
 <div class="line"><a name="l00789"></a><span class="lineno">  789</span>&#160;</div>
 <div class="line"><a name="l00790"></a><span class="lineno">  790</span>&#160;    *host = <a class="code" href="system_8h.html#aa0f78a0a8a560e168e78b82281ee6a82">Malloc</a>(q - url + 1);</div>
 <div class="line"><a name="l00791"></a><span class="lineno">  791</span>&#160;    strncpy(*host, url, q - url);</div>
 <div class="line"><a name="l00792"></a><span class="lineno">  792</span>&#160;    (*host)[q - url] = <span class="charliteral">&#39;\0&#39;</span>;</div>
-<div class="line"><a name="l00793"></a><span class="lineno">  793</span>&#160;    url = <a class="code" href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a>;</div>
+<div class="line"><a name="l00793"></a><span class="lineno">  793</span>&#160;    url = p;</div>
 <div class="line"><a name="l00794"></a><span class="lineno">  794</span>&#160;    }</div>
 <div class="line"><a name="l00795"></a><span class="lineno">  795</span>&#160;</div>
 <div class="line"><a name="l00796"></a><span class="lineno">  796</span>&#160;    <span class="comment">/* The rest is the path */</span></div>
@@ -896,7 +896,7 @@ $(document).ready(function(){initNavTree('url_8c_source.html','');});
 <div class="line"><a name="l00802"></a><span class="lineno">  802</span>&#160;</div>
 <div class="line"><a name="l00803"></a><span class="lineno">  803</span>&#160;    <span class="comment">/* Windoze users have a tendency to use backslashes instead of slashes */</span></div>
 <div class="line"><a name="l00804"></a><span class="lineno">  804</span>&#160;</div>
-<div class="line"><a name="l00805"></a><span class="lineno">  805</span>&#160;    <span class="keywordflow">for</span>(p=*path; *<a class="code" href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a>; p++)</div>
+<div class="line"><a name="l00805"></a><span class="lineno">  805</span>&#160;    <span class="keywordflow">for</span>(p=*path; *p; p++)</div>
 <div class="line"><a name="l00806"></a><span class="lineno">  806</span>&#160;    <span class="keywordflow">if</span>(*p == <span class="charliteral">&#39;\\&#39;</span>)</div>
 <div class="line"><a name="l00807"></a><span class="lineno">  807</span>&#160;    {</div>
 <div class="line"><a name="l00808"></a><span class="lineno">  808</span>&#160;        <span class="keywordflow">if</span>(!warned)</div>
@@ -913,11 +913,10 @@ $(document).ready(function(){initNavTree('url_8c_source.html','');});
 <div class="ttc" id="string16_8h_html_a374bf1376d0ea5939d19ca37a9e16eb6"><div class="ttname"><a href="string16_8h.html#a374bf1376d0ea5939d19ca37a9e16eb6">strlen8</a></div><div class="ttdeci">#define strlen8(s)</div><div class="ttdef"><b>Definition:</b> <a href="string16_8h_source.html#l00051">string16.h:51</a></div></div>
 <div class="ttc" id="url_8c_html_a2d11f6f90df5c5f3f62affc5858f457d"><div class="ttname"><a href="url_8c.html#a2d11f6f90df5c5f3f62affc5858f457d">NSCHEME</a></div><div class="ttdeci">#define NSCHEME</div><div class="ttdef"><b>Definition:</b> <a href="url_8c_source.html#l00111">url.c:111</a></div></div>
 <div class="ttc" id="url_8c_html_a590f7a4438870828769311865bbac864"><div class="ttname"><a href="url_8c.html#a590f7a4438870828769311865bbac864">Strerror</a></div><div class="ttdeci">#define Strerror()</div><div class="ttdef"><b>Definition:</b> <a href="url_8c_source.html#l00041">url.c:41</a></div></div>
-<div class="ttc" id="siod_8h_html_a669c6661e022454c1ece3da610ed8bba"><div class="ttname"><a href="siod_8h.html#a669c6661e022454c1ece3da610ed8bba">err</a></div><div class="ttdeci">LISP err(const char *message, LISP x)</div><div class="ttdef"><b>Definition:</b> <a href="slib_8cc_source.html#l00615">slib.cc:615</a></div></div>
 <div class="ttc" id="url_8c_html_aeee7ff2318bd6eb35a746ce8b7013267"><div class="ttname"><a href="url_8c.html#aeee7ff2318bd6eb35a746ce8b7013267">WARN1</a></div><div class="ttdeci">#define WARN1(err, format, arg)</div><div class="ttdef"><b>Definition:</b> <a href="url_8c_source.html#l00039">url.c:39</a></div></div>
 <div class="ttc" id="url_8c_html_a2928e2a36695755888f12e087b59438f"><div class="ttname"><a href="url_8c.html#a2928e2a36695755888f12e087b59438f">LT_ERROR3</a></div><div class="ttdeci">#define LT_ERROR3(err, format, arg1, arg2, arg3)</div><div class="ttdef"><b>Definition:</b> <a href="url_8c_source.html#l00037">url.c:37</a></div></div>
 <div class="ttc" id="url_8c_html_aaadd5da2ea313ddc6ea9d6777adab245"><div class="ttname"><a href="url_8c.html#aaadd5da2ea313ddc6ea9d6777adab245">LT_ERROR1</a></div><div class="ttdeci">#define LT_ERROR1(err, format, arg)</div><div class="ttdef"><b>Definition:</b> <a href="url_8c_source.html#l00035">url.c:35</a></div></div>
-<div class="ttc" id="stdio16_8h_html_ac43e13285f17b2cf024a9e19d47ce6e3"><div class="ttname"><a href="stdio16_8h.html#ac43e13285f17b2cf024a9e19d47ce6e3">MakeFILE16FromFILE</a></div><div class="ttdeci">STD_API FILE16 * MakeFILE16FromFILE(FILE *f, const char *type)</div><div class="ttdef"><b>Definition:</b> <a href="stdio16_8c_source.html#l00661">stdio16.c:661</a></div></div>
+<div class="ttc" id="stdio16_8h_html_ac43e13285f17b2cf024a9e19d47ce6e3"><div class="ttname"><a href="stdio16_8h.html#ac43e13285f17b2cf024a9e19d47ce6e3">MakeFILE16FromFILE</a></div><div class="ttdeci">STD_API FILE16 * MakeFILE16FromFILE(FILE *f, const char *type)</div><div class="ttdef"><b>Definition:</b> <a href="stdio16_8c_source.html#l00654">stdio16.c:654</a></div></div>
 <div class="ttc" id="url_8c_html_a13277f58d45ccfd24fff1aefc2614f83"><div class="ttname"><a href="url_8c.html#a13277f58d45ccfd24fff1aefc2614f83">GETWD</a></div><div class="ttdeci">#define GETWD(buf)</div><div class="ttdef"><b>Definition:</b> <a href="url_8c_source.html#l00049">url.c:49</a></div></div>
 <div class="ttc" id="stdio16_8h_html_af4c1c7d74eb826a92521c40fe94d0862"><div class="ttname"><a href="stdio16_8h.html#af4c1c7d74eb826a92521c40fe94d0862">SetCloseUnderlying</a></div><div class="ttdeci">STD_API void SetCloseUnderlying(FILE16 *file, int cu)</div><div class="ttdef"><b>Definition:</b> <a href="stdio16_8c_source.html#l00347">stdio16.c:347</a></div></div>
 <div class="ttc" id="url_8c_html_aa8fb70e300257efc36693f32fc48be60"><div class="ttname"><a href="url_8c.html#aa8fb70e300257efc36693f32fc48be60">WARN</a></div><div class="ttdeci">#define WARN(err, format)</div><div class="ttdef"><b>Definition:</b> <a href="url_8c_source.html#l00038">url.c:38</a></div></div>
@@ -928,6 +927,7 @@ $(document).ready(function(){initNavTree('url_8c_source.html','');});
 <div class="ttc" id="system_8h_html_ab57918ffecf49fc7c5c95682f83605f2"><div class="ttname"><a href="system_8h.html#ab57918ffecf49fc7c5c95682f83605f2">Free</a></div><div class="ttdeci">void Free(void *mem)</div><div class="ttdef"><b>Definition:</b> <a href="system_8c_source.html#l00035">system.c:35</a></div></div>
 <div class="ttc" id="regerror_8c_html_a20a6d30d76bef587ebad8cb70f9009ca"><div class="ttname"><a href="regerror_8c.html#a20a6d30d76bef587ebad8cb70f9009ca">s</a></div><div class="ttdeci">void const char * s</div><div class="ttdef"><b>Definition:</b> <a href="regerror_8c_source.html#l00007">regerror.c:7</a></div></div>
 <div class="ttc" id="url_8c_html_ac386fe0902e2c7802ee782d8aaca75e5"><div class="ttname"><a href="url_8c.html#ac386fe0902e2c7802ee782d8aaca75e5">scheme</a></div><div class="ttdeci">char * scheme</div><div class="ttdef"><b>Definition:</b> <a href="url_8c_source.html#l00105">url.c:105</a></div></div>
+<div class="ttc" id="siod_8h_html_a75c18836092fb77b1d09351765cc8e1b"><div class="ttname"><a href="siod_8h.html#a75c18836092fb77b1d09351765cc8e1b">err</a></div><div class="ttdeci">void err(const char *message, LISP x) EST_NORETURN</div><div class="ttdef"><b>Definition:</b> <a href="slib_8cc_source.html#l00616">slib.cc:616</a></div></div>
 <div class="ttc" id="url_8c_html_a7a8ee50bed2820353e1fe2ef3b5f3298"><div class="ttname"><a href="url_8c.html#a7a8ee50bed2820353e1fe2ef3b5f3298">LT_ERROR2</a></div><div class="ttdeci">#define LT_ERROR2(err, format, arg1, arg2)</div><div class="ttdef"><b>Definition:</b> <a href="url_8c_source.html#l00036">url.c:36</a></div></div>
 <div class="ttc" id="regsub_8c_html_a86c78564531bafa810c65f20086bae0c"><div class="ttname"><a href="regsub_8c.html#a86c78564531bafa810c65f20086bae0c">c</a></div><div class="ttdeci">register char c</div><div class="ttdef"><b>Definition:</b> <a href="regsub_8c_source.html#l00043">regsub.c:43</a></div></div>
 <div class="ttc" id="stdio16_8h_html_ab28c3f3ca42ac0148e2412372dd865ee"><div class="ttname"><a href="stdio16_8h.html#ab28c3f3ca42ac0148e2412372dd865ee">GetFILE</a></div><div class="ttdeci">STD_API FILE * GetFILE(FILE16 *file)</div><div class="ttdef"><b>Definition:</b> <a href="stdio16_8c_source.html#l00339">stdio16.c:339</a></div></div>
@@ -941,7 +941,6 @@ $(document).ready(function(){initNavTree('url_8c_source.html','');});
 <div class="ttc" id="regerror_8c_html_a3942d3333e06c84b5ed8461cbd9667fd"><div class="ttname"><a href="regerror_8c.html#a3942d3333e06c84b5ed8461cbd9667fd">fprintf</a></div><div class="ttdeci">fprintf(stderr,&quot;regexp(3): %s\n&quot;, s)</div></div>
 <div class="ttc" id="rateconv_8cc_html_a4cfc63e05db4883dc4b60a1245a9ffc5"><div class="ttname"><a href="rateconv_8cc.html#a4cfc63e05db4883dc4b60a1245a9ffc5">WORD</a></div><div class="ttdeci">#define WORD</div><div class="ttdef"><b>Definition:</b> <a href="rateconv_8cc_source.html#l00172">rateconv.cc:172</a></div></div>
 <div class="ttc" id="string16_8h_html_a57288e80585ccf0cdf0bbcc28c9ac523"><div class="ttname"><a href="string16_8h.html#a57288e80585ccf0cdf0bbcc28c9ac523">strdup8</a></div><div class="ttdeci">STD_API char8 * strdup8(const char8 *s)</div><div class="ttdef"><b>Definition:</b> <a href="string16_8c_source.html#l00077">string16.c:77</a></div></div>
-<div class="ttc" id="editline_8c_html_a5791904baf12239aadc3a8280a03e8c5"><div class="ttname"><a href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a></div><div class="ttdeci">void char * p</div><div class="ttdef"><b>Definition:</b> <a href="editline_8c_source.html#l01395">editline.c:1395</a></div></div>
 <div class="ttc" id="system_8h_html_aa0f78a0a8a560e168e78b82281ee6a82"><div class="ttname"><a href="system_8h.html#aa0f78a0a8a560e168e78b82281ee6a82">Malloc</a></div><div class="ttdeci">void * Malloc(int bytes)</div><div class="ttdef"><b>Definition:</b> <a href="system_8c_source.html#l00019">system.c:19</a></div></div>
 <div class="ttc" id="url_8h_html"><div class="ttname"><a href="url_8h.html">url.h</a></div></div>
 <div class="ttc" id="siod_8h_html_aeac25be2f519b49ecd2778aa9f86b5d5"><div class="ttname"><a href="siod_8h.html#aeac25be2f519b49ecd2778aa9f86b5d5">parse_url</a></div><div class="ttdeci">int parse_url(const EST_String &amp;url, EST_String &amp;protocol, EST_String &amp;host, EST_String &amp;port, EST_String &amp;path)</div><div class="ttdef"><b>Definition:</b> <a href="io_8cc_source.html#l00080">io.cc:80</a></div></div>
@@ -952,7 +951,7 @@ $(document).ready(function(){initNavTree('url_8c_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_2d40ef836e2c354003a14618b86a0a20.html">rxp</a></li><li class="navelem"><a class="el" href="url_8c.html">url.c</a></li>
-    <li class="footer">Generated on Thu Jan 30 2014 00:27:12 for Edinburgh Speech Tools by
+    <li class="footer">Generated on Tue Feb 11 2014 12:00:38 for Edinburgh Speech Tools by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

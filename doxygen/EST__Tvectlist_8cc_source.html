@@ -140,7 +140,7 @@ $(document).ready(function(){initNavTree('EST__Tvectlist_8cc_source.html','');})
 <div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="EST__TVector_8h.html#a46c2f36bd7b721f58a2f1413d0426bf5">   46</a></span>&#160;<a class="code" href="classEST__TVector.html">EST_TVector&lt;T&gt;</a> &amp;<a class="code" href="EST__Tvectlist_8cc.html#af5f5fbfc01d24a6e5d2a7022f1c9c5c7">set</a>(<a class="code" href="classEST__TVector.html">EST_TVector&lt;T&gt;</a> &amp;v, <span class="keyword">const</span> <a class="code" href="classEST__TList.html">EST_TList&lt;T&gt;</a> &amp;in)</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;{</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  v.<a class="code" href="classEST__TVector.html#a42a360f6927f04fc74e6816f8f5144f1">resize</a>(in.<a class="code" href="classEST__UList.html#a157db3e634c5c8faad11d2a79729419d">length</a>(), <a class="code" href="EST__bool_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>);</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <a class="code" href="classEST__UItem.html">EST_Litem</a> *<a class="code" href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a>;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <a class="code" href="classEST__UItem.html">EST_Litem</a> *p;</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <span class="keywordtype">int</span> i = 0;</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="keywordflow">for</span> (p = in.<a class="code" href="classEST__UList.html#a36cd9a03aa4677736edb4866364a204f">head</a>(); p!= 0; p = p-&gt;<a class="code" href="classEST__UItem.html#afc5292d4da883de227f5a92bb6df719d">next</a>(), ++i)</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    v.<a class="code" href="classEST__TVector.html#adc2ef5a187a87849db746fc46f71dd7c">a_no_check</a>(i) = in.<a class="code" href="classEST__TList.html#a0e62c9a9be3f3f4aa21ce4b3d674bad6">item</a>(p);</div>
@@ -151,7 +151,7 @@ $(document).ready(function(){initNavTree('EST__Tvectlist_8cc_source.html','');})
 <div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="EST__Tvectlist_8cc.html#a2e853027945beaa2fa458087b05bbb2d">   57</a></span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">class</span> T&gt; <a class="code" href="classEST__TVector.html">EST_TVector&lt;T&gt;</a> &amp;<a class="code" href="EST__Tvectlist_8cc.html#a2e853027945beaa2fa458087b05bbb2d">copy</a>(<a class="code" href="classEST__TVector.html">EST_TVector&lt;T&gt;</a> a,<span class="keyword">const</span> <a class="code" href="classEST__TList.html">EST_TList&lt;T&gt;</a> &amp;in)</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;{</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    a.<a class="code" href="classEST__TVector.html#a42a360f6927f04fc74e6816f8f5144f1">resize</a>(in.<a class="code" href="classEST__UList.html#a157db3e634c5c8faad11d2a79729419d">length</a>(), <a class="code" href="EST__bool_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>);</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <a class="code" href="classEST__UItem.html">EST_Litem</a> *<a class="code" href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a>;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <a class="code" href="classEST__UItem.html">EST_Litem</a> *p;</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordtype">int</span> i = 0;</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordflow">for</span> (p = in.<a class="code" href="classEST__UList.html#a36cd9a03aa4677736edb4866364a204f">head</a>(); p!= 0; p = p-&gt;<a class="code" href="classEST__UItem.html#afc5292d4da883de227f5a92bb6df719d">next</a>(), ++i)</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    a[i] = in.<a class="code" href="classEST__TList.html#a0e62c9a9be3f3f4aa21ce4b3d674bad6">item</a>(p);</div>
@@ -173,7 +173,6 @@ $(document).ready(function(){initNavTree('EST__Tvectlist_8cc_source.html','');})
 <div class="ttc" id="classEST__TVector_html"><div class="ttname"><a href="classEST__TVector.html">EST_TVector</a></div><div class="ttdoc">Template vector. </div><div class="ttdef"><b>Definition:</b> <a href="EST__TVector_8h_source.html#l00145">EST_TVector.h:145</a></div></div>
 <div class="ttc" id="classEST__TList_html_a0e62c9a9be3f3f4aa21ce4b3d674bad6"><div class="ttname"><a href="classEST__TList.html#a0e62c9a9be3f3f4aa21ce4b3d674bad6">EST_TList::item</a></div><div class="ttdeci">T &amp; item(const EST_Litem *p)</div><div class="ttdef"><b>Definition:</b> <a href="EST__TList_8h_source.html#l00139">EST_TList.h:139</a></div></div>
 <div class="ttc" id="classEST__UList_html_a36cd9a03aa4677736edb4866364a204f"><div class="ttname"><a href="classEST__UList.html#a36cd9a03aa4677736edb4866364a204f">EST_UList::head</a></div><div class="ttdeci">EST_UItem * head() const </div><div class="ttdef"><b>Definition:</b> <a href="EST__UList_8h_source.html#l00096">EST_UList.h:96</a></div></div>
-<div class="ttc" id="editline_8c_html_a5791904baf12239aadc3a8280a03e8c5"><div class="ttname"><a href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a></div><div class="ttdeci">void char * p</div><div class="ttdef"><b>Definition:</b> <a href="editline_8c_source.html#l01395">editline.c:1395</a></div></div>
 <div class="ttc" id="classEST__TList_html"><div class="ttname"><a href="classEST__TList.html">EST_TList</a></div><div class="ttdef"><b>Definition:</b> <a href="EST__TList_8h_source.html#l00061">EST_TList.h:61</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -181,7 +180,7 @@ $(document).ready(function(){initNavTree('EST__Tvectlist_8cc_source.html','');})
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_48e186528d8523b137164d01852e16c8.html">base_class</a></li><li class="navelem"><a class="el" href="EST__Tvectlist_8cc.html">EST_Tvectlist.cc</a></li>
-    <li class="footer">Generated on Thu Jan 30 2014 00:27:11 for Edinburgh Speech Tools by
+    <li class="footer">Generated on Tue Feb 11 2014 12:00:37 for Edinburgh Speech Tools by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

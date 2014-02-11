@@ -26,7 +26,7 @@ var group__estlingclasses =
       [ "S", "classEST__Features.html#ab80b5c20a21b5425a50ab6251c7de79f", null ],
       [ "S", "classEST__Features.html#abad3f311f8f1727bfe9bbac282b692ca", null ],
       [ "A", "classEST__Features.html#a285e0e0870d5e0e8d2fe7d444b90d125", null ],
-      [ "A", "classEST__Features.html#ac4d2471c3ff05d235a20378c1c72beaa", null ],
+      [ "A", "classEST__Features.html#a16ad86b8a86b833e628ffa537e97572f", null ],
       [ "set", "classEST__Features.html#a0f478d4efb79b82b7de7527b7b6029f2", null ],
       [ "set", "classEST__Features.html#ae80af8cb93f4bc54a6ceffbc9bc804d1", null ],
       [ "set", "classEST__Features.html#afeaf09bb6b539b243b724bcb8658481c", null ],

@@ -14,6 +14,14 @@ var estmanuals =
       [ "Synopsis", "ch_track_manual.html#synopsis", null ],
       [ "Options", "ch_track_manual.html#options", null ]
     ] ],
+    [ "ch_lab", "ch_lab_manual.html", [
+      [ "Synopsis", "ch_lab_manual.html#synopsis", null ],
+      [ "Options", "ch_lab_manual.html#options", null ]
+    ] ],
+    [ "ch_utt", "ch_utt_manual.html", [
+      [ "Synopsis", "ch_utt_manual.html#synopsis", null ],
+      [ "Options", "ch_utt_manual.html#options", null ]
+    ] ],
     [ "tilt_analysis", "tilt_analysis_manual.html", [
       [ "Synopsis", "tilt_analysis_manual.html#synopsis", null ],
       [ "Options", "tilt_analysis_manual.html#options", null ],
@@ -26,6 +34,11 @@ var estmanuals =
       [ "Options", "tilt_synthesis_manual.html#options", null ],
       [ "Input Intonation Files", "tilt_synthesis_manual.html#tilt_synthesis-input", null ]
     ] ],
+    [ "sig2fv", "sig2fv_manual.html", [
+      [ "Synopsis", "sig2fv_manual.html#synopsis", null ],
+      [ "Options", "sig2fv_manual.html#options", null ],
+      [ "Examples", "sig2fv_manual.html#sig2fv-examples", null ]
+    ] ],
     [ "spectgen", "spectgen_manual.html", [
       [ "Synopsis", "spectgen_manual.html#synopsis", null ],
       [ "Options", "spectgen_manual.html#options", null ]
@@ -33,6 +46,10 @@ var estmanuals =
     [ "sigfilter", "sigfilter_manual.html", [
       [ "Synopsis", "sigfilter_manual.html#synopsis", null ],
       [ "Options", "sigfilter_manual.html#options", null ]
+    ] ],
+    [ "design_filter", "design_filter_manual.html", [
+      [ "Synopsis", "design_filter_manual.html#synopsis", null ],
+      [ "Options", "design_filter_manual.html#options", null ]
     ] ],
     [ "pitchmark", "pitchmark_manual.html", [
       [ "Synopsis", "pitchmark_manual.html#synopsis", null ],
@@ -69,6 +86,11 @@ var estmanuals =
       [ "Options", "wagon_manual.html#options", null ],
       [ "Building Trees", "wagon_manual.html#wagon-build-trees", null ]
     ] ],
+    [ "wagon_test", "wagon_test_manual.html", [
+      [ "Synopsis", "wagon_test_manual.html#synopsis", null ],
+      [ "Options", "wagon_test_manual.html#options", null ],
+      [ "Testing trees", "wagon_test_manual.html#wagon_test-testing", null ]
+    ] ],
     [ "ols", "ols_manual.html", [
       [ "Synopsis", "ols_manual.html#synopsis", null ],
       [ "Options", "ols_manual.html#options", null ]
@@ -84,6 +106,10 @@ var estmanuals =
     [ "wfst_train", "wfst_train_manual.html", [
       [ "Synopsis", "wfst_train_manual.html#synopsis", null ],
       [ "Options", "wfst_train_manual.html#options", null ]
+    ] ],
+    [ "wfst_run", "wfst_run_manual.html", [
+      [ "Synopsis", "wfst_run_manual.html#synopsis", null ],
+      [ "Options", "wfst_run_manual.html#options", null ]
     ] ],
     [ "scfg_make", "scfg_make_manual.html", [
       [ "Synopsis", "scfg_make_manual.html#synopsis", null ],
@@ -117,5 +143,9 @@ var estmanuals =
     [ "xml_parser", "xml_parser_manual.html", [
       [ "Synopsis", "xml_parser_manual.html#synopsis", null ],
       [ "Options", "xml_parser_manual.html#options", null ]
+    ] ],
+    [ "align", "align_manual.html", [
+      [ "Synopsis", "align_manual.html#synopsis", null ],
+      [ "Options", "align_manual.html#options", null ]
     ] ]
 ];

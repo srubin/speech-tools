@@ -9,7 +9,6 @@ var searchData=
   ['pitchmark_2ecc',['pitchmark.cc',['../pitchmark_8cc.html',1,'']]],
   ['pitchmark_5fmain_2ecc',['pitchmark_main.cc',['../pitchmark__main_8cc.html',1,'']]],
   ['pitchmark_5fman_2edox',['pitchmark_man.dox',['../pitchmark__man_8dox.html',1,'']]],
-  ['program_5fexample_2ecc',['program_example.cc',['../program__example_8cc.html',1,'']]],
   ['program_5fmain_2ecc',['program_main.cc',['../program__main_8cc.html',1,'']]],
   ['pulseaudio_2ecc',['pulseaudio.cc',['../pulseaudio_8cc.html',1,'']]]
 ];

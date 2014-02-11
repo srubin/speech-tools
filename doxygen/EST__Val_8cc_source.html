@@ -155,7 +155,7 @@ $(document).ready(function(){initNavTree('EST__Val_8cc_source.html','');});
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    t=c.t; </div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;}</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
-<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="classEST__Val.html#a1901f5621438ada771c2c6630c107a94">   64</a></span>&#160;<a class="code" href="classEST__Val.html#ad0315f4d8c73187b7461fcb2924f8b38">EST_Val::EST_Val</a>(<a class="code" href="EST__Val_8h.html#a007e0b1bd8348b55e86520102b01d903">val_type</a> type,<span class="keywordtype">void</span> *<a class="code" href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a>, <span class="keywordtype">void</span> (*f)(<span class="keywordtype">void</span> *))</div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="classEST__Val.html#a1901f5621438ada771c2c6630c107a94">   64</a></span>&#160;<a class="code" href="classEST__Val.html#ad0315f4d8c73187b7461fcb2924f8b38">EST_Val::EST_Val</a>(<a class="code" href="EST__Val_8h.html#a007e0b1bd8348b55e86520102b01d903">val_type</a> type,<span class="keywordtype">void</span> *p, <span class="keywordtype">void</span> (*f)(<span class="keywordtype">void</span> *))</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;{</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    t=<a class="code" href="classEST__Val.html#a657e1734fda6dc75790770fd2bb17bfc">type</a>;</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    v.pval = <span class="keyword">new</span> <a class="code" href="classEST__Contents.html">EST_Contents</a>;</div>
@@ -257,7 +257,6 @@ $(document).ready(function(){initNavTree('EST__Val_8cc_source.html','');});
 <div class="ttc" id="EST__Val_8cc_html_a01799428d5ced00fecf4ab01af6152c7"><div class="ttname"><a href="EST__Val_8cc.html#a01799428d5ced00fecf4ab01af6152c7">val_int</a></div><div class="ttdeci">val_type val_int</div><div class="ttdef"><b>Definition:</b> <a href="EST__Val_8cc_source.html#l00044">EST_Val.cc:44</a></div></div>
 <div class="ttc" id="classEST__Val_html_ad0315f4d8c73187b7461fcb2924f8b38"><div class="ttname"><a href="classEST__Val.html#ad0315f4d8c73187b7461fcb2924f8b38">EST_Val::EST_Val</a></div><div class="ttdeci">EST_Val()</div><div class="ttdef"><b>Definition:</b> <a href="EST__Val_8h_source.html#l00093">EST_Val.h:93</a></div></div>
 <div class="ttc" id="classEST__Val_html_a9b670ecd9e6ac8cebe576bf46ef6926e"><div class="ttname"><a href="classEST__Val.html#a9b670ecd9e6ac8cebe576bf46ef6926e">EST_Val::fval</a></div><div class="ttdeci">float fval</div><div class="ttdef"><b>Definition:</b> <a href="EST__Val_8h_source.html#l00080">EST_Val.h:80</a></div></div>
-<div class="ttc" id="editline_8c_html_a5791904baf12239aadc3a8280a03e8c5"><div class="ttname"><a href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a></div><div class="ttdeci">void char * p</div><div class="ttdef"><b>Definition:</b> <a href="editline_8c_source.html#l01395">editline.c:1395</a></div></div>
 <div class="ttc" id="EST__Val_8cc_html_a3ba35c90331d1f870a329f0a6503a581"><div class="ttname"><a href="EST__Val_8cc.html#a3ba35c90331d1f870a329f0a6503a581">val_unset</a></div><div class="ttdeci">val_type val_unset</div><div class="ttdef"><b>Definition:</b> <a href="EST__Val_8cc_source.html#l00043">EST_Val.cc:43</a></div></div>
 <div class="ttc" id="classEST__Val_html_ab1504f1ad0fd5cf984a5cf9665387f73"><div class="ttname"><a href="classEST__Val.html#ab1504f1ad0fd5cf984a5cf9665387f73">EST_Val::operator=</a></div><div class="ttdeci">EST_Val &amp; operator=(const int i)</div><div class="ttdef"><b>Definition:</b> <a href="EST__Val_8h_source.html#l00177">EST_Val.h:177</a></div></div>
 <div class="ttc" id="classEST__Val_html_af93e9259bd732c1b29fa6ded68934efa"><div class="ttname"><a href="classEST__Val.html#af93e9259bd732c1b29fa6ded68934efa">EST_Val::~EST_Val</a></div><div class="ttdeci">~EST_Val(void)</div><div class="ttdef"><b>Definition:</b> <a href="EST__Val_8cc_source.html#l00071">EST_Val.cc:71</a></div></div>
@@ -269,7 +268,7 @@ $(document).ready(function(){initNavTree('EST__Val_8cc_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_48e186528d8523b137164d01852e16c8.html">base_class</a></li><li class="navelem"><a class="el" href="EST__Val_8cc.html">EST_Val.cc</a></li>
-    <li class="footer">Generated on Thu Jan 30 2014 00:27:11 for Edinburgh Speech Tools by
+    <li class="footer">Generated on Tue Feb 11 2014 12:00:37 for Edinburgh Speech Tools by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

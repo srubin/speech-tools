@@ -146,7 +146,7 @@ $(document).ready(function(){initNavTree('EST__ilist__aux_8cc_source.html','');}
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
 <div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="EST__string__aux_8h.html#a92c3dff3e5a16f4bdeabe1a89c98308e">   53</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="EST__ilist__aux_8cc.html#a92c3dff3e5a16f4bdeabe1a89c98308e">ilist_member</a>(<span class="keyword">const</span> <a class="code" href="classEST__TList.html">EST_IList</a> &amp;l,<span class="keywordtype">int</span> i)</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;{</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <a class="code" href="classEST__UItem.html">EST_Litem</a> *<a class="code" href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a>;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <a class="code" href="classEST__UItem.html">EST_Litem</a> *p;</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordflow">for</span> (p = l.<a class="code" href="classEST__UList.html#a36cd9a03aa4677736edb4866364a204f">head</a>(); p != 0; p = p-&gt;<a class="code" href="classEST__UItem.html#afc5292d4da883de227f5a92bb6df719d">next</a>())</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordflow">if</span> (l.<a class="code" href="classEST__TList.html#a0e62c9a9be3f3f4aa21ce4b3d674bad6">item</a>(p) == i)</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="EST__bool_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>;</div>
@@ -156,7 +156,7 @@ $(document).ready(function(){initNavTree('EST__ilist__aux_8cc_source.html','');}
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
 <div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="EST__string__aux_8h.html#a17e25b7fe71034561ce2959d9018e791">   63</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="EST__ilist__aux_8cc.html#a17e25b7fe71034561ce2959d9018e791">ilist_index</a>(<span class="keyword">const</span> <a class="code" href="classEST__TList.html">EST_IList</a> &amp;l,<span class="keywordtype">int</span> i)</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;{</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <a class="code" href="classEST__UItem.html">EST_Litem</a> *<a class="code" href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a>;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <a class="code" href="classEST__UItem.html">EST_Litem</a> *p;</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordtype">int</span> j=0;</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordflow">for</span> (p = l.<a class="code" href="classEST__UList.html#a36cd9a03aa4677736edb4866364a204f">head</a>(); p != 0; p = p-&gt;<a class="code" href="classEST__UItem.html#afc5292d4da883de227f5a92bb6df719d">next</a>())</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    {</div>
@@ -177,7 +177,7 @@ $(document).ready(function(){initNavTree('EST__ilist__aux_8cc_source.html','');}
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    v.<a class="code" href="classEST__TSimpleVector.html#a92d3bb2b0244dcf2632a6c4151e583ee">resize</a>(len);</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="comment">//EST_TBI *p;</span></div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <a class="code" href="classEST__UItem.html">EST_Litem</a> *<a class="code" href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a>;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <a class="code" href="classEST__UItem.html">EST_Litem</a> *p;</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keywordflow">for</span> (p = l.<a class="code" href="classEST__UList.html#a36cd9a03aa4677736edb4866364a204f">head</a>(),i=0; p != 0; p = p-&gt;<a class="code" href="classEST__UItem.html#afc5292d4da883de227f5a92bb6df719d">next</a>(),i++)</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    v[i] = l(p);</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;}</div>
@@ -221,7 +221,6 @@ $(document).ready(function(){initNavTree('EST__ilist__aux_8cc_source.html','');}
 <div class="ttc" id="EST__types_8h_html"><div class="ttname"><a href="EST__types_8h.html">EST_types.h</a></div></div>
 <div class="ttc" id="EST__ilist__aux_8cc_html_a92c3dff3e5a16f4bdeabe1a89c98308e"><div class="ttname"><a href="EST__ilist__aux_8cc.html#a92c3dff3e5a16f4bdeabe1a89c98308e">ilist_member</a></div><div class="ttdeci">int ilist_member(const EST_IList &amp;l, int i)</div><div class="ttdef"><b>Definition:</b> <a href="EST__ilist__aux_8cc_source.html#l00053">EST_ilist_aux.cc:53</a></div></div>
 <div class="ttc" id="classEST__UList_html_a36cd9a03aa4677736edb4866364a204f"><div class="ttname"><a href="classEST__UList.html#a36cd9a03aa4677736edb4866364a204f">EST_UList::head</a></div><div class="ttdeci">EST_UItem * head() const </div><div class="ttdef"><b>Definition:</b> <a href="EST__UList_8h_source.html#l00096">EST_UList.h:96</a></div></div>
-<div class="ttc" id="editline_8c_html_a5791904baf12239aadc3a8280a03e8c5"><div class="ttname"><a href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a></div><div class="ttdeci">void char * p</div><div class="ttdef"><b>Definition:</b> <a href="editline_8c_source.html#l01395">editline.c:1395</a></div></div>
 <div class="ttc" id="EST__bool_8h_html_aa8cecfc5c5c054d2875c03e77b7be15d"><div class="ttname"><a href="EST__bool_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a></div><div class="ttdeci">#define TRUE</div><div class="ttdef"><b>Definition:</b> <a href="EST__bool_8h_source.html#l00118">EST_bool.h:118</a></div></div>
 <div class="ttc" id="EST__Token_8h_html"><div class="ttname"><a href="EST__Token_8h.html">EST_Token.h</a></div></div>
 <div class="ttc" id="classEST__TList_html_a3dac6678c648eb208e3bd492c48e56ce"><div class="ttname"><a href="classEST__TList.html#a3dac6678c648eb208e3bd492c48e56ce">EST_TList::clear</a></div><div class="ttdeci">void clear(void)</div><div class="ttdoc">remove all items in list </div><div class="ttdef"><b>Definition:</b> <a href="EST__TList_8h_source.html#l00244">EST_TList.h:244</a></div></div>
@@ -235,7 +234,7 @@ $(document).ready(function(){initNavTree('EST__ilist__aux_8cc_source.html','');}
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_48e186528d8523b137164d01852e16c8.html">base_class</a></li><li class="navelem"><a class="el" href="EST__ilist__aux_8cc.html">EST_ilist_aux.cc</a></li>
-    <li class="footer">Generated on Thu Jan 30 2014 00:27:11 for Edinburgh Speech Tools by
+    <li class="footer">Generated on Tue Feb 11 2014 12:00:37 for Edinburgh Speech Tools by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

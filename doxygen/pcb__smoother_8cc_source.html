@@ -286,7 +286,7 @@ $(document).ready(function(){initNavTree('pcb__smoother_8cc_source.html','');});
 <div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;    <span class="keywordflow">for</span> (i = 0; i &lt; delay / 2; i++)</div>
 <div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;        p_array[out++] = ms-&gt;<a class="code" href="structMs__Op.html#a9a7c86cce723c6d0c90a131575670c51">breaker</a>;</div>
 <div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;</div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;    <span class="keyword">delete</span> inarray;</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;    <span class="keyword">delete</span>[] inarray;</div>
 <div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;}</div>
 <div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;</div>
 <div class="line"><a name="l00198"></a><span class="lineno"><a class="line" href="pcb__smoother_8cc.html#a32a7cd51f51329463327f6c98abf654f">  198</a></span>&#160;<span class="keywordtype">float</span> <a class="code" href="pcb__smoother_8cc.html#a32a7cd51f51329463327f6c98abf654f">median</a> (<span class="keywordtype">int</span> *counter, <span class="keywordtype">float</span> valin, <span class="keywordtype">float</span> valbuf[], <span class="keywordtype">int</span> lmed, <span class="keywordtype">int</span> mmed)</div>
@@ -344,31 +344,31 @@ $(document).ready(function(){initNavTree('pcb__smoother_8cc_source.html','');});
 <div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;    <span class="keywordtype">float</span> valout = 0.0, weight[<a class="code" href="pcb__smoother_8cc.html#aabf4f709c8199e41cf279c77112345fe">MAX_LEN</a>];</div>
 <div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;</div>
 <div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;    <span class="keywordflow">for</span> (i = par-&gt;<a class="code" href="structMs__Op.html#af3374590ddef68451a4059baa1685dd2">window_length</a> - 1; i &gt; 0; i--)</div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;    valhan[i] = valhan[i - 1];</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;      valhan[i] = valhan[i - 1];</div>
 <div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;    valhan[0] = valin;</div>
 <div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;    <span class="keywordflow">if</span> (*counter &gt; 0) {</div>
-<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;    (*counter)--;</div>
-<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;    <span class="keywordflow">return</span> (0.0);</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;      (*counter)--;</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;      <span class="keywordflow">return</span> (0.0);</div>
 <div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;    }</div>
 <div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;    <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;    *counter = -1;</div>
-<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;    <span class="keywordflow">for</span> (i = 0; i &lt; par-&gt;<a class="code" href="structMs__Op.html#af3374590ddef68451a4059baa1685dd2">window_length</a>; i++)</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;      *counter = -1;</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;      <span class="keywordflow">for</span> (i = 0; i &lt; par-&gt;<a class="code" href="structMs__Op.html#af3374590ddef68451a4059baa1685dd2">window_length</a>; i++)</div>
 <div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;        <span class="keywordflow">if</span> (valhan[i] == par-&gt;<a class="code" href="structMs__Op.html#a9a7c86cce723c6d0c90a131575670c51">breaker</a>)</div>
-<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;        k++;</div>
-<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;    <span class="keywordflow">if</span> (!k)</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;          k++;</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;      <span class="keywordflow">if</span> (!k) {</div>
 <div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;        <span class="keywordflow">for</span> (i = 0; i &lt; par-&gt;<a class="code" href="structMs__Op.html#af3374590ddef68451a4059baa1685dd2">window_length</a>; i++)</div>
-<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;        valout += valhan[i] * win_coeff[i];</div>
-<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (k &lt;= par-&gt;<a class="code" href="structMs__Op.html#af3374590ddef68451a4059baa1685dd2">window_length</a> / 2 &amp;&amp; par-&gt;<a class="code" href="structMs__Op.html#a6fc7d041b9d1a54effe8363d3bb859d4">extrapolate</a>) {</div>
-<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;        <a class="code" href="pcb__smoother_8cc.html#ad3219a2f8685df1d81d73e9e58ff0ba2">mk_window_coeffs</a> (par-&gt;<a class="code" href="structMs__Op.html#af3374590ddef68451a4059baa1685dd2">window_length</a> - k, weight);</div>
-<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;        <span class="keywordflow">for</span> (i = 0, j = 0; i &lt; par-&gt;<a class="code" href="structMs__Op.html#af3374590ddef68451a4059baa1685dd2">window_length</a>; i++)</div>
-<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;        <span class="keywordflow">if</span> (valhan[i] != par-&gt;<a class="code" href="structMs__Op.html#a9a7c86cce723c6d0c90a131575670c51">breaker</a>)</div>
-<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;            valout += valhan[i] * weight[j++];</div>
-<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;    }</div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;    <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;        valout = par-&gt;<a class="code" href="structMs__Op.html#a9a7c86cce723c6d0c90a131575670c51">breaker</a>;</div>
-<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;    <span class="keywordflow">return</span> (valout);</div>
-<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;    }</div>
-<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;          valout += valhan[i] * win_coeff[i];</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;      }</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;      <span class="keywordflow">else</span> <span class="keywordflow">if</span> (k &lt;= par-&gt;<a class="code" href="structMs__Op.html#af3374590ddef68451a4059baa1685dd2">window_length</a> / 2 &amp;&amp; par-&gt;<a class="code" href="structMs__Op.html#a6fc7d041b9d1a54effe8363d3bb859d4">extrapolate</a>) {</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;        <a class="code" href="pcb__smoother_8cc.html#ad3219a2f8685df1d81d73e9e58ff0ba2">mk_window_coeffs</a> (par-&gt;<a class="code" href="structMs__Op.html#af3374590ddef68451a4059baa1685dd2">window_length</a> - k, weight);</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;        <span class="keywordflow">for</span> (i = 0, j = 0; i &lt; par-&gt;<a class="code" href="structMs__Op.html#af3374590ddef68451a4059baa1685dd2">window_length</a>; i++)</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;          <span class="keywordflow">if</span> (valhan[i] != par-&gt;<a class="code" href="structMs__Op.html#a9a7c86cce723c6d0c90a131575670c51">breaker</a>)</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;              valout += valhan[i] * weight[j++];</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;      }</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;      <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;        valout = par-&gt;<a class="code" href="structMs__Op.html#a9a7c86cce723c6d0c90a131575670c51">breaker</a>;</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;      <span class="keywordflow">return</span> (valout);</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;    }</div>
 <div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;}</div>
 <div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;</div>
 <div class="line"><a name="l00280"></a><span class="lineno"><a class="line" href="pcb__smoother_8cc.html#acfd4211559acccc33a4f680d2745a851">  280</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="pcb__smoother_8cc.html#acfd4211559acccc33a4f680d2745a851">initialise_parameters</a> (<span class="keyword">struct</span> <a class="code" href="structMs__Op.html">Ms_Op</a> *p_par)</div>
@@ -422,7 +422,7 @@ $(document).ready(function(){initNavTree('pcb__smoother_8cc_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_4e987781a80a0c7eeb63a1873937f9af.html">sigpr</a></li><li class="navelem"><a class="el" href="dir_6d3f0075e60438d9b4f2c365294c3da6.html">pda</a></li><li class="navelem"><a class="el" href="pcb__smoother_8cc.html">pcb_smoother.cc</a></li>
-    <li class="footer">Generated on Thu Jan 30 2014 00:27:12 for Edinburgh Speech Tools by
+    <li class="footer">Generated on Tue Feb 11 2014 12:00:38 for Edinburgh Speech Tools by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

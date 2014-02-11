@@ -221,7 +221,7 @@ $(document).ready(function(){initNavTree('smooth__pda_8cc_source.html','');});
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    }</div>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    }</div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    <span class="keyword">delete</span> a;</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    <span class="keyword">delete</span>[] a;</div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;}</div>
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;</div>
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="structMs__Op.html#aed664662f6749239f1a56dbd0bac9ff0">interp</a>(<span class="keyword">const</span> <a class="code" href="classEST__Track.html">EST_Track</a> &amp;<a class="code" href="regsub_8c.html#a86c78564531bafa810c65f20086bae0c">c</a>, <span class="keyword">const</span> <a class="code" href="classEST__Track.html">EST_Track</a> &amp;speech, <span class="keywordtype">int</span> fill,</div>
@@ -229,7 +229,7 @@ $(document).ready(function(){initNavTree('smooth__pda_8cc_source.html','');});
 <div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;{</div>
 <div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    <span class="comment">// Interpolate between unvoiced sections, and ensure breaks</span></div>
 <div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    <span class="comment">// during silences</span></div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    <span class="keywordtype">int</span> i, n, <a class="code" href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a>;</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    <span class="keywordtype">int</span> i, n, p;</div>
 <div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    <span class="keywordtype">float</span> m;</div>
 <div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    <span class="keywordtype">float</span> n_val, p_val;</div>
 <div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;    <span class="keywordtype">float</span> f = c.<a class="code" href="classEST__Track.html#a8e82f8418cef847213854a2f72448edc">shift</a>();</div>
@@ -316,7 +316,6 @@ $(document).ready(function(){initNavTree('smooth__pda_8cc_source.html','');});
 <div class="ttc" id="classEST__Track_html_a8e82f8418cef847213854a2f72448edc"><div class="ttname"><a href="classEST__Track.html#a8e82f8418cef847213854a2f72448edc">EST_Track::shift</a></div><div class="ttdeci">float shift() const </div><div class="ttdef"><b>Definition:</b> <a href="EST__Track_8cc_source.html#l00601">EST_Track.cc:601</a></div></div>
 <div class="ttc" id="structMs__Op_html_af3374590ddef68451a4059baa1685dd2"><div class="ttname"><a href="structMs__Op.html#af3374590ddef68451a4059baa1685dd2">Ms_Op::window_length</a></div><div class="ttdeci">int window_length</div><div class="ttdef"><b>Definition:</b> <a href="array__smoother_8h_source.html#l00068">array_smoother.h:68</a></div></div>
 <div class="ttc" id="classEST__Track_html_afab68783d589517afdc385430f9fe8c2"><div class="ttname"><a href="classEST__Track.html#afab68783d589517afdc385430f9fe8c2">EST_Track::empty</a></div><div class="ttdeci">int empty() const </div><div class="ttdoc">returns true if no values are set in the frame </div><div class="ttdef"><b>Definition:</b> <a href="EST__Track_8cc_source.html#l01037">EST_Track.cc:1037</a></div></div>
-<div class="ttc" id="editline_8c_html_a5791904baf12239aadc3a8280a03e8c5"><div class="ttname"><a href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a></div><div class="ttdeci">void char * p</div><div class="ttdef"><b>Definition:</b> <a href="editline_8c_source.html#l01395">editline.c:1395</a></div></div>
 <div class="ttc" id="EST__defines__win32_8h_html_ab36ade30e86b0025d9fc58bd7d361aa5"><div class="ttname"><a href="EST__defines__win32_8h.html#ab36ade30e86b0025d9fc58bd7d361aa5">isnanf</a></div><div class="ttdeci">#define isnanf(N)</div><div class="ttdef"><b>Definition:</b> <a href="EST__defines__win32_8h_source.html#l00049">EST_defines_win32.h:49</a></div></div>
 <div class="ttc" id="classEST__Track_html"><div class="ttname"><a href="classEST__Track.html">EST_Track</a></div><div class="ttdef"><b>Definition:</b> <a href="EST__Track_8h_source.html#l00089">EST_Track.h:89</a></div></div>
 <div class="ttc" id="structMs__Op_html_a6fc7d041b9d1a54effe8363d3bb859d4"><div class="ttname"><a href="structMs__Op.html#a6fc7d041b9d1a54effe8363d3bb859d4">Ms_Op::extrapolate</a></div><div class="ttdeci">int extrapolate</div><div class="ttdef"><b>Definition:</b> <a href="array__smoother_8h_source.html#l00065">array_smoother.h:65</a></div></div>
@@ -327,7 +326,7 @@ $(document).ready(function(){initNavTree('smooth__pda_8cc_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_4e987781a80a0c7eeb63a1873937f9af.html">sigpr</a></li><li class="navelem"><a class="el" href="dir_6d3f0075e60438d9b4f2c365294c3da6.html">pda</a></li><li class="navelem"><a class="el" href="smooth__pda_8cc.html">smooth_pda.cc</a></li>
-    <li class="footer">Generated on Thu Jan 30 2014 00:27:12 for Edinburgh Speech Tools by
+    <li class="footer">Generated on Tue Feb 11 2014 12:00:39 for Edinburgh Speech Tools by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

@@ -150,7 +150,7 @@ $(document).ready(function(){initNavTree('pulseaudio_8cc_source.html','');});
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;{</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordtype">short</span> *waveform;</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordtype">int</span> num_samples;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="siod_8h.html#a669c6661e022454c1ece3da610ed8bba">err</a>, pa_ret;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="siod_8h.html#a75c18836092fb77b1d09351765cc8e1b">err</a>, pa_ret;</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="regexp_8cc.html#afb8d513d0298d2695018eb494b092786">ret</a> = -1;</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    pa_simple *<a class="code" href="regerror_8c.html#a20a6d30d76bef587ebad8cb70f9009ca">s</a> = NULL;</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    pa_sample_spec ss;</div>
@@ -241,11 +241,11 @@ $(document).ready(function(){initNavTree('pulseaudio_8cc_source.html','');});
 <div class="ttc" id="classEST__Wave_html"><div class="ttname"><a href="classEST__Wave.html">EST_Wave</a></div><div class="ttdoc">A class for storing digital waveforms. The waveform is stored as an array of 16 bit shorts...</div><div class="ttdef"><b>Definition:</b> <a href="EST__Wave_8h_source.html#l00064">EST_Wave.h:64</a></div></div>
 <div class="ttc" id="pulseaudio_8cc_html_a9de5e7b0bbed32127845264de486280a"><div class="ttname"><a href="pulseaudio_8cc.html#a9de5e7b0bbed32127845264de486280a">pulse_supported</a></div><div class="ttdeci">int pulse_supported</div><div class="ttdef"><b>Definition:</b> <a href="pulseaudio_8cc_source.html#l00128">pulseaudio.cc:128</a></div></div>
 <div class="ttc" id="EST__Wave_8h_html"><div class="ttname"><a href="EST__Wave_8h.html">EST_Wave.h</a></div></div>
-<div class="ttc" id="siod_8h_html_a669c6661e022454c1ece3da610ed8bba"><div class="ttname"><a href="siod_8h.html#a669c6661e022454c1ece3da610ed8bba">err</a></div><div class="ttdeci">LISP err(const char *message, LISP x)</div><div class="ttdef"><b>Definition:</b> <a href="slib_8cc_source.html#l00615">slib.cc:615</a></div></div>
 <div class="ttc" id="regexp_8cc_html_afb8d513d0298d2695018eb494b092786"><div class="ttname"><a href="regexp_8cc.html#afb8d513d0298d2695018eb494b092786">ret</a></div><div class="ttdeci">else ret</div><div class="ttdef"><b>Definition:</b> <a href="regexp_8cc_source.html#l00313">regexp.cc:313</a></div></div>
 <div class="ttc" id="audioP_8h_html_acc443b577967ca386f578957d0699139"><div class="ttname"><a href="audioP_8h.html#acc443b577967ca386f578957d0699139">record_pulse_wave</a></div><div class="ttdeci">int record_pulse_wave(EST_Wave &amp;inwave, EST_Option &amp;al)</div><div class="ttdef"><b>Definition:</b> <a href="pulseaudio_8cc_source.html#l00138">pulseaudio.cc:138</a></div></div>
 <div class="ttc" id="regerror_8c_html_a20a6d30d76bef587ebad8cb70f9009ca"><div class="ttname"><a href="regerror_8c.html#a20a6d30d76bef587ebad8cb70f9009ca">s</a></div><div class="ttdeci">void const char * s</div><div class="ttdef"><b>Definition:</b> <a href="regerror_8c_source.html#l00007">regerror.c:7</a></div></div>
 <div class="ttc" id="classEST__Wave_html_aff0238847e68a291259f226f0285d9c8"><div class="ttname"><a href="classEST__Wave.html#aff0238847e68a291259f226f0285d9c8">EST_Wave::num_samples</a></div><div class="ttdeci">int num_samples() const </div><div class="ttdoc">return the number of samples in the waveform </div><div class="ttdef"><b>Definition:</b> <a href="EST__Wave_8h_source.html#l00143">EST_Wave.h:143</a></div></div>
+<div class="ttc" id="siod_8h_html_a75c18836092fb77b1d09351765cc8e1b"><div class="ttname"><a href="siod_8h.html#a75c18836092fb77b1d09351765cc8e1b">err</a></div><div class="ttdeci">void err(const char *message, LISP x) EST_NORETURN</div><div class="ttdef"><b>Definition:</b> <a href="slib_8cc_source.html#l00616">slib.cc:616</a></div></div>
 <div class="ttc" id="audioP_8h_html_a05bcf754d4d9d9d514ac3d142925fc40"><div class="ttname"><a href="audioP_8h.html#a05bcf754d4d9d9d514ac3d142925fc40">play_pulse_wave</a></div><div class="ttdeci">int play_pulse_wave(EST_Wave &amp;inwave, EST_Option &amp;al)</div><div class="ttdef"><b>Definition:</b> <a href="pulseaudio_8cc_source.html#l00130">pulseaudio.cc:130</a></div></div>
 <div class="ttc" id="classEST__Wave_html_a1a8447477bf9282800715161d50c8030"><div class="ttname"><a href="classEST__Wave.html#a1a8447477bf9282800715161d50c8030">EST_Wave::values</a></div><div class="ttdeci">const EST_SMatrix &amp; values() const </div><div class="ttdef"><b>Definition:</b> <a href="EST__Wave_8h_source.html#l00177">EST_Wave.h:177</a></div></div>
 <div class="ttc" id="EST__bool_8h_html_aa93f0eb578d23995850d61f7d61c55c1"><div class="ttname"><a href="EST__bool_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a></div><div class="ttdeci">#define FALSE</div><div class="ttdef"><b>Definition:</b> <a href="EST__bool_8h_source.html#l00119">EST_bool.h:119</a></div></div>
@@ -261,7 +261,7 @@ $(document).ready(function(){initNavTree('pulseaudio_8cc_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a5f32cf82ad289a7dac212f63f40f55b.html">audio</a></li><li class="navelem"><a class="el" href="pulseaudio_8cc.html">pulseaudio.cc</a></li>
-    <li class="footer">Generated on Thu Jan 30 2014 00:27:11 for Edinburgh Speech Tools by
+    <li class="footer">Generated on Tue Feb 11 2014 12:00:37 for Edinburgh Speech Tools by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

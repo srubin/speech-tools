@@ -176,7 +176,7 @@ $(document).ready(function(){initNavTree('EST__Item_8cc_source.html','');});
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;{</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    p_relation = 0;</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    p_contents = 0;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    n=<a class="code" href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a>=u=d=0;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    n=p=u=d=0;</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <a class="code" href="classEST__Item.html#a6b16de3154f0e513e56f9d1bc2dad319">set_contents</a>(0);</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;}</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
@@ -189,7 +189,7 @@ $(document).ready(function(){initNavTree('EST__Item_8cc_source.html','');});
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="comment">// to)</span></div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    p_relation = 0;</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    p_contents = 0;</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    n=<a class="code" href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a>=u=d=0;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    n=p=u=d=0;</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <a class="code" href="classEST__Item.html#a6b16de3154f0e513e56f9d1bc2dad319">set_contents</a>(0);  <span class="comment">// get an empty contents structure</span></div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    *p_contents = *s.p_contents;</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;}</div>
@@ -209,10 +209,10 @@ $(document).ready(function(){initNavTree('EST__Item_8cc_source.html','');});
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <span class="comment">// Tidy up pointers to this</span></div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <span class="keywordflow">if</span> (n != 0) </div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    { </div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    n-&gt;p = <a class="code" href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a>;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    n-&gt;p = p;</div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    n-&gt;u = u;  <span class="comment">// when deleting first daughter.</span></div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    }</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a> != 0) <a class="code" href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a>-&gt;n = n;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <span class="keywordflow">if</span> (p != 0) p-&gt;n = n;</div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    <span class="keywordflow">if</span> (u != 0) u-&gt;d = n; </div>
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;</div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    <span class="keywordflow">if</span> (p_relation)</div>
@@ -220,7 +220,7 @@ $(document).ready(function(){initNavTree('EST__Item_8cc_source.html','');});
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    <span class="keywordflow">if</span> (p_relation-&gt;p_head == <span class="keyword">this</span>)</div>
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;        p_relation-&gt;p_head = n;</div>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    <span class="keywordflow">if</span> (p_relation-&gt;p_tail == <span class="keyword">this</span>)</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;        p_relation-&gt;p_tail = <a class="code" href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a>;</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;        p_relation-&gt;p_tail = p;</div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    }</div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;</div>
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    <span class="comment">// A little cleverer with the daughters</span></div>
@@ -237,7 +237,7 @@ $(document).ready(function(){initNavTree('EST__Item_8cc_source.html','');});
 <div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;{</div>
 <div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    p_relation = rel;</div>
 <div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    p_contents = 0;</div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;    n=<a class="code" href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a>=u=d=0;</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;    n=p=u=d=0;</div>
 <div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;}</div>
 <div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;</div>
 <div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;<span class="comment">// all internal ids are found by getting the next id number from</span></div>
@@ -257,7 +257,7 @@ $(document).ready(function(){initNavTree('EST__Item_8cc_source.html','');});
 <div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;{</div>
 <div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    p_relation = rel;</div>
 <div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    p_contents = 0;</div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    n=<a class="code" href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a>=u=d=0;</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    n=p=u=d=0;</div>
 <div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;    <a class="code" href="classEST__Item.html#a6b16de3154f0e513e56f9d1bc2dad319">set_contents</a>(li-&gt;<a class="code" href="classEST__Item.html#a5e3d9117a3d53964417867897996d12e">contents</a>());</div>
 <div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;</div>
 <div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;    assign_id(<span class="keyword">this</span>);</div>
@@ -352,10 +352,10 @@ $(document).ready(function(){initNavTree('EST__Item_8cc_source.html','');});
 <div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;    <a class="code" href="classEST__Item.html">EST_Item</a> *new_node = <span class="keyword">new</span> <a class="code" href="classEST__Item.html#ada76f47172acfbf7e90ab2ec032d6eb6">EST_Item</a>(p_relation,si);</div>
 <div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;    </div>
 <div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;    new_node-&gt;n = <span class="keyword">this</span>;</div>
-<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;    new_node-&gt;p = this-&gt;<a class="code" href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a>;</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;    new_node-&gt;p = this-&gt;p;</div>
 <div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;    <span class="keywordflow">if</span> (new_node-&gt;p != 0)</div>
 <div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;    new_node-&gt;p-&gt;n = new_node;</div>
-<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;    this-&gt;<a class="code" href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a> = new_node;</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;    this-&gt;p = new_node;</div>
 <div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;    <span class="comment">// This makes an assumption that we represent trees with only</span></div>
 <div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;    <span class="comment">// the first daughter pointing to the parent</span></div>
 <div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;    <span class="keywordflow">if</span> (this-&gt;u)</div>
@@ -654,78 +654,97 @@ $(document).ready(function(){initNavTree('EST__Item_8cc_source.html','');});
 <div class="line"><a name="l00560"></a><span class="lineno">  560</span>&#160;<span class="keyword"></span>{</div>
 <div class="line"><a name="l00561"></a><span class="lineno">  561</span>&#160;    <span class="comment">// Return FALSE if this node and its neighbours aren&#39;t</span></div>
 <div class="line"><a name="l00562"></a><span class="lineno">  562</span>&#160;    <span class="comment">// properly linked</span></div>
-<div class="line"><a name="l00563"></a><span class="lineno">  563</span>&#160;</div>
-<div class="line"><a name="l00564"></a><span class="lineno">  564</span>&#160;    <span class="keywordflow">if</span> (<span class="keyword">this</span> == 0)</div>
-<div class="line"><a name="l00565"></a><span class="lineno">  565</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="EST__bool_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>;</div>
-<div class="line"><a name="l00566"></a><span class="lineno">  566</span>&#160;    <span class="keywordflow">if</span> (((d == 0) || (d-&gt;u == <span class="keyword">this</span>)) &amp;&amp;</div>
-<div class="line"><a name="l00567"></a><span class="lineno">  567</span>&#160;    ((n == 0) || (n-&gt;p == <span class="keyword">this</span>)) &amp;&amp;</div>
-<div class="line"><a name="l00568"></a><span class="lineno">  568</span>&#160;    (d-&gt;<a class="code" href="classEST__Item.html#a4cf6d014bcd74415491ccfb74aab0541">verify</a>()) &amp;&amp;</div>
-<div class="line"><a name="l00569"></a><span class="lineno">  569</span>&#160;    (n-&gt;<a class="code" href="classEST__Item.html#a4cf6d014bcd74415491ccfb74aab0541">verify</a>()))</div>
-<div class="line"><a name="l00570"></a><span class="lineno">  570</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="EST__bool_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>;</div>
-<div class="line"><a name="l00571"></a><span class="lineno">  571</span>&#160;    <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00572"></a><span class="lineno">  572</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="EST__bool_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
-<div class="line"><a name="l00573"></a><span class="lineno">  573</span>&#160;}</div>
-<div class="line"><a name="l00574"></a><span class="lineno">  574</span>&#160;</div>
-<div class="line"><a name="l00575"></a><span class="lineno"><a class="line" href="group__treebuildfunctions.html#ga71396628aee8f1ab3b8074ef9510a370">  575</a></span>&#160;<a class="code" href="classEST__Item.html">EST_Item</a> *<a class="code" href="group__treebuildfunctions.html#ga71396628aee8f1ab3b8074ef9510a370">append_daughter</a>(<a class="code" href="classEST__Item.html">EST_Item</a> *n, <a class="code" href="classEST__Item.html">EST_Item</a> *<a class="code" href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a>)</div>
-<div class="line"><a name="l00576"></a><span class="lineno">  576</span>&#160;{ </div>
-<div class="line"><a name="l00577"></a><span class="lineno">  577</span>&#160;    <span class="keywordflow">return</span> n-&gt;<a class="code" href="classEST__Item.html#a10c21d16af5ee720e4228cc0e5e044a6">append_daughter</a>(p); </div>
-<div class="line"><a name="l00578"></a><span class="lineno">  578</span>&#160;}</div>
-<div class="line"><a name="l00579"></a><span class="lineno">  579</span>&#160;</div>
-<div class="line"><a name="l00580"></a><span class="lineno"><a class="line" href="group__treebuildfunctions.html#ga2455362bd6dbab0a0f7fea4f24160326">  580</a></span>&#160;<a class="code" href="classEST__Item.html">EST_Item</a> *<a class="code" href="group__treebuildfunctions.html#ga71396628aee8f1ab3b8074ef9510a370">append_daughter</a>(<a class="code" href="classEST__Item.html">EST_Item</a> *n,<span class="keyword">const</span> <span class="keywordtype">char</span> *relname, <a class="code" href="classEST__Item.html">EST_Item</a> *<a class="code" href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a>)</div>
-<div class="line"><a name="l00581"></a><span class="lineno">  581</span>&#160;{ </div>
-<div class="line"><a name="l00582"></a><span class="lineno">  582</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="group__treebuildfunctions.html#ga71396628aee8f1ab3b8074ef9510a370">append_daughter</a>(<a class="code" href="EST__Item_8h.html#a1e76821cfc016c1b5475d471a6d3424e">as</a>(n,relname),p);</div>
-<div class="line"><a name="l00583"></a><span class="lineno">  583</span>&#160;}</div>
-<div class="line"><a name="l00584"></a><span class="lineno">  584</span>&#160;</div>
-<div class="line"><a name="l00585"></a><span class="lineno"><a class="line" href="group__treebuildfunctions.html#ga4ce970d5572bf8577ec6f1498dc4b98f">  585</a></span>&#160;<a class="code" href="classEST__Item.html">EST_Item</a> *<a class="code" href="group__treebuildfunctions.html#ga4ce970d5572bf8577ec6f1498dc4b98f">prepend_daughter</a>(<a class="code" href="classEST__Item.html">EST_Item</a> *n, <a class="code" href="classEST__Item.html">EST_Item</a> *<a class="code" href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a>)</div>
-<div class="line"><a name="l00586"></a><span class="lineno">  586</span>&#160;{ </div>
-<div class="line"><a name="l00587"></a><span class="lineno">  587</span>&#160;    <span class="keywordflow">return</span> n-&gt;<a class="code" href="classEST__Item.html#abf14007bdf8568a4640dc983ff16d858">prepend_daughter</a>(p); </div>
-<div class="line"><a name="l00588"></a><span class="lineno">  588</span>&#160;}</div>
-<div class="line"><a name="l00589"></a><span class="lineno">  589</span>&#160;</div>
-<div class="line"><a name="l00590"></a><span class="lineno"><a class="line" href="group__treebuildfunctions.html#gaaf13e0e0e736a445abb8f58c8f8de9b9">  590</a></span>&#160;<a class="code" href="classEST__Item.html">EST_Item</a> *<a class="code" href="group__treebuildfunctions.html#ga4ce970d5572bf8577ec6f1498dc4b98f">prepend_daughter</a>(<a class="code" href="classEST__Item.html">EST_Item</a> *n, <span class="keyword">const</span> <span class="keywordtype">char</span> *relname, <a class="code" href="classEST__Item.html">EST_Item</a> *<a class="code" href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a>)</div>
-<div class="line"><a name="l00591"></a><span class="lineno">  591</span>&#160;{ </div>
-<div class="line"><a name="l00592"></a><span class="lineno">  592</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="group__treebuildfunctions.html#ga4ce970d5572bf8577ec6f1498dc4b98f">prepend_daughter</a>(<a class="code" href="EST__Item_8h.html#a1e76821cfc016c1b5475d471a6d3424e">as</a>(n,relname),p); </div>
-<div class="line"><a name="l00593"></a><span class="lineno">  593</span>&#160;}</div>
-<div class="line"><a name="l00594"></a><span class="lineno">  594</span>&#160;</div>
-<div class="line"><a name="l00595"></a><span class="lineno"><a class="line" href="EST__Item_8cc.html#a829e51eadc723693a0dbed733545db6d">  595</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="EST__Item_8h.html#a829e51eadc723693a0dbed733545db6d">remove_item</a>(<a class="code" href="classEST__Item.html">EST_Item</a> *l, <span class="keyword">const</span> <span class="keywordtype">char</span> *relname)</div>
-<div class="line"><a name="l00596"></a><span class="lineno">  596</span>&#160;{</div>
-<div class="line"><a name="l00597"></a><span class="lineno">  597</span>&#160;    <a class="code" href="classEST__Item.html">EST_Item</a> *lr = l-&gt;<a class="code" href="classEST__Item.html#a17c9f2ffac06a9665c57add9eeb208b0">as_relation</a>(relname);</div>
-<div class="line"><a name="l00598"></a><span class="lineno">  598</span>&#160;    <a class="code" href="classEST__Relation.html">EST_Relation</a> *r = lr-&gt;<a class="code" href="classEST__Item.html#ac6b03d0916cd5b51c0ec8e704911559d">relation</a>();</div>
-<div class="line"><a name="l00599"></a><span class="lineno">  599</span>&#160;</div>
-<div class="line"><a name="l00600"></a><span class="lineno">  600</span>&#160;    <span class="keywordflow">if</span> ((lr != 0) &amp;&amp; (r != 0))</div>
-<div class="line"><a name="l00601"></a><span class="lineno">  601</span>&#160;    r-&gt;<a class="code" href="classEST__Relation.html#a330448fe625856ba8f5ca8b62c9e6980">remove_item</a>(lr);</div>
+<div class="line"><a name="l00563"></a><span class="lineno">  563</span>&#160;    <span class="keywordtype">bool</span> verif_d = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00564"></a><span class="lineno">  564</span>&#160;    <span class="keywordtype">bool</span> verif_n = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00565"></a><span class="lineno">  565</span>&#160;    <span class="keywordflow">if</span> (<span class="keyword">this</span> == 0)</div>
+<div class="line"><a name="l00566"></a><span class="lineno">  566</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="EST__bool_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>;</div>
+<div class="line"><a name="l00567"></a><span class="lineno">  567</span>&#160;    <span class="comment">/* if there is no &quot;d&quot; it&#39;s all right */</span></div>
+<div class="line"><a name="l00568"></a><span class="lineno">  568</span>&#160;    <span class="keywordflow">if</span> (d == 0) {</div>
+<div class="line"><a name="l00569"></a><span class="lineno">  569</span>&#160;      verif_d = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00570"></a><span class="lineno">  570</span>&#160;    } <span class="keywordflow">else</span> { <span class="comment">/* if there is &quot;d&quot;, then check it */</span></div>
+<div class="line"><a name="l00571"></a><span class="lineno">  571</span>&#160;        <span class="keywordflow">if</span> ( (d-&gt;u == <span class="keyword">this</span>) &amp;&amp; d-&gt;<a class="code" href="classEST__Item.html#a4cf6d014bcd74415491ccfb74aab0541">verify</a>() ) {</div>
+<div class="line"><a name="l00572"></a><span class="lineno">  572</span>&#160;          verif_d = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00573"></a><span class="lineno">  573</span>&#160;        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00574"></a><span class="lineno">  574</span>&#160;          verif_d = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00575"></a><span class="lineno">  575</span>&#160;        }</div>
+<div class="line"><a name="l00576"></a><span class="lineno">  576</span>&#160;    }</div>
+<div class="line"><a name="l00577"></a><span class="lineno">  577</span>&#160;    <span class="comment">/* idem for &quot;n&quot; */</span></div>
+<div class="line"><a name="l00578"></a><span class="lineno">  578</span>&#160;    <span class="keywordflow">if</span> (n == 0) {</div>
+<div class="line"><a name="l00579"></a><span class="lineno">  579</span>&#160;        verif_n = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00580"></a><span class="lineno">  580</span>&#160;    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00581"></a><span class="lineno">  581</span>&#160;        <span class="keywordflow">if</span> ( (n-&gt;p == <span class="keyword">this</span>) &amp;&amp; n-&gt;<a class="code" href="classEST__Item.html#a4cf6d014bcd74415491ccfb74aab0541">verify</a>() ) {</div>
+<div class="line"><a name="l00582"></a><span class="lineno">  582</span>&#160;            verif_n = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00583"></a><span class="lineno">  583</span>&#160;        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00584"></a><span class="lineno">  584</span>&#160;            verif_n = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00585"></a><span class="lineno">  585</span>&#160;        }</div>
+<div class="line"><a name="l00586"></a><span class="lineno">  586</span>&#160;    }</div>
+<div class="line"><a name="l00587"></a><span class="lineno">  587</span>&#160;    <span class="comment">/* if both d and n are ok, then return ok */</span></div>
+<div class="line"><a name="l00588"></a><span class="lineno">  588</span>&#160;    <span class="keywordflow">if</span> (verif_d &amp;&amp; verif_n) </div>
+<div class="line"><a name="l00589"></a><span class="lineno">  589</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="EST__bool_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>;</div>
+<div class="line"><a name="l00590"></a><span class="lineno">  590</span>&#160;    <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00591"></a><span class="lineno">  591</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="EST__bool_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
+<div class="line"><a name="l00592"></a><span class="lineno">  592</span>&#160;}</div>
+<div class="line"><a name="l00593"></a><span class="lineno">  593</span>&#160;</div>
+<div class="line"><a name="l00594"></a><span class="lineno"><a class="line" href="group__treebuildfunctions.html#ga71396628aee8f1ab3b8074ef9510a370">  594</a></span>&#160;<a class="code" href="classEST__Item.html">EST_Item</a> *<a class="code" href="group__treebuildfunctions.html#ga71396628aee8f1ab3b8074ef9510a370">append_daughter</a>(<a class="code" href="classEST__Item.html">EST_Item</a> *n, <a class="code" href="classEST__Item.html">EST_Item</a> *p)</div>
+<div class="line"><a name="l00595"></a><span class="lineno">  595</span>&#160;{ </div>
+<div class="line"><a name="l00596"></a><span class="lineno">  596</span>&#160;    <span class="keywordflow">return</span> n-&gt;<a class="code" href="classEST__Item.html#a10c21d16af5ee720e4228cc0e5e044a6">append_daughter</a>(p); </div>
+<div class="line"><a name="l00597"></a><span class="lineno">  597</span>&#160;}</div>
+<div class="line"><a name="l00598"></a><span class="lineno">  598</span>&#160;</div>
+<div class="line"><a name="l00599"></a><span class="lineno"><a class="line" href="group__treebuildfunctions.html#ga2455362bd6dbab0a0f7fea4f24160326">  599</a></span>&#160;<a class="code" href="classEST__Item.html">EST_Item</a> *<a class="code" href="group__treebuildfunctions.html#ga71396628aee8f1ab3b8074ef9510a370">append_daughter</a>(<a class="code" href="classEST__Item.html">EST_Item</a> *n,<span class="keyword">const</span> <span class="keywordtype">char</span> *relname, <a class="code" href="classEST__Item.html">EST_Item</a> *p)</div>
+<div class="line"><a name="l00600"></a><span class="lineno">  600</span>&#160;{ </div>
+<div class="line"><a name="l00601"></a><span class="lineno">  601</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="group__treebuildfunctions.html#ga71396628aee8f1ab3b8074ef9510a370">append_daughter</a>(<a class="code" href="EST__Item_8h.html#a1e76821cfc016c1b5475d471a6d3424e">as</a>(n,relname),p);</div>
 <div class="line"><a name="l00602"></a><span class="lineno">  602</span>&#160;}</div>
 <div class="line"><a name="l00603"></a><span class="lineno">  603</span>&#160;</div>
-<div class="line"><a name="l00604"></a><span class="lineno"><a class="line" href="classEST__Item.html#aa805ff90603cdebada29380d9a443676">  604</a></span>&#160;<a class="code" href="classEST__Item.html">EST_Item</a> &amp;<a class="code" href="classEST__Item.html#aa805ff90603cdebada29380d9a443676">EST_Item::operator=</a>(<span class="keyword">const</span> <a class="code" href="classEST__Item.html">EST_Item</a> &amp;s)</div>
-<div class="line"><a name="l00605"></a><span class="lineno">  605</span>&#160;{</div>
-<div class="line"><a name="l00606"></a><span class="lineno">  606</span>&#160;    <a class="code" href="EST__Tvectlist_8cc.html#a2e853027945beaa2fa458087b05bbb2d">copy</a>(s);</div>
-<div class="line"><a name="l00607"></a><span class="lineno">  607</span>&#160;    <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
-<div class="line"><a name="l00608"></a><span class="lineno">  608</span>&#160;}</div>
-<div class="line"><a name="l00609"></a><span class="lineno">  609</span>&#160;</div>
-<div class="line"><a name="l00610"></a><span class="lineno"><a class="line" href="EST__Item_8cc.html#ae2d836df39eb876b0e8c727bd966785c">  610</a></span>&#160;ostream&amp; <a class="code" href="EST__FeatureData_8cc.html#a0c83c8229027435b6dc95159a8794f1c">operator &lt;&lt; </a>(ostream &amp;s, <span class="keyword">const</span> <a class="code" href="classEST__Item.html">EST_Item</a> &amp;a)</div>
-<div class="line"><a name="l00611"></a><span class="lineno">  611</span>&#160;{</div>
-<div class="line"><a name="l00612"></a><span class="lineno">  612</span>&#160;    a.<a class="code" href="classEST__Item.html#addc65de19b1fc8c3ec607800bbd851f9">features</a>().<a class="code" href="classEST__Features.html#ad247cb26b0e9a6a6f0114d0550f88ae3">save</a>(s);</div>
-<div class="line"><a name="l00613"></a><span class="lineno">  613</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="regerror_8c.html#a20a6d30d76bef587ebad8cb70f9009ca">s</a>;</div>
-<div class="line"><a name="l00614"></a><span class="lineno">  614</span>&#160;}</div>
-<div class="line"><a name="l00615"></a><span class="lineno">  615</span>&#160;</div>
-<div class="line"><a name="l00616"></a><span class="lineno">  616</span>&#160;</div>
-<div class="line"><a name="l00617"></a><span class="lineno"><a class="line" href="EST__Item_8cc.html#a567266f0351ad318014e01dc430699cb">  617</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="EST__Item_8h.html#a567266f0351ad318014e01dc430699cb">evaluate</a>(<a class="code" href="classEST__Item.html">EST_Item</a> *a,<a class="code" href="classEST__Features.html">EST_Features</a> &amp;f)</div>
-<div class="line"><a name="l00618"></a><span class="lineno">  618</span>&#160;{</div>
-<div class="line"><a name="l00619"></a><span class="lineno">  619</span>&#160;    <a class="code" href="classEST__TRwStructIterator.html">EST_Features::RwEntries</a> <a class="code" href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a>;</div>
-<div class="line"><a name="l00620"></a><span class="lineno">  620</span>&#160;</div>
-<div class="line"><a name="l00621"></a><span class="lineno">  621</span>&#160;    <span class="keywordflow">for</span>(p.<a class="code" href="classEST__TRwIterator.html#ac2b008c4a73ecb8448f5baa5004fdd28">begin</a>(f); <a class="code" href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a>; ++<a class="code" href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a>)</div>
-<div class="line"><a name="l00622"></a><span class="lineno">  622</span>&#160;      <span class="keywordflow">if</span> (p-&gt;v.type() == <a class="code" href="EST__Item_8h.html#aa61383a08cc7ad494589d8d9721c062d">val_type_featfunc</a>)</div>
-<div class="line"><a name="l00623"></a><span class="lineno">  623</span>&#160;    {</div>
-<div class="line"><a name="l00624"></a><span class="lineno">  624</span>&#160;      <span class="keywordflow">if</span> (<a class="code" href="EST__Item_8h.html#abf47afc7f7e626033be42a46b391f6b7">featfunc</a>(p-&gt;v) != NULL)</div>
-<div class="line"><a name="l00625"></a><span class="lineno">  625</span>&#160;        p-&gt;v = (<a class="code" href="EST__Item_8h.html#abf47afc7f7e626033be42a46b391f6b7">featfunc</a>(p-&gt;v))(a);</div>
-<div class="line"><a name="l00626"></a><span class="lineno">  626</span>&#160;      <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00627"></a><span class="lineno">  627</span>&#160;        {</div>
-<div class="line"><a name="l00628"></a><span class="lineno">  628</span>&#160;          <a class="code" href="regerror_8c.html#a3942d3333e06c84b5ed8461cbd9667fd">fprintf</a>(stderr, <span class="stringliteral">&quot;NULL %s function\n&quot;</span>, (<span class="keyword">const</span> <span class="keywordtype">char</span> *) p-&gt;k );</div>
-<div class="line"><a name="l00629"></a><span class="lineno">  629</span>&#160;          p-&gt;v = <a class="code" href="classEST__Features.html#ad451995b2109ecec60fdce6e965db769">EST_Features::feature_default_value</a>;</div>
-<div class="line"><a name="l00630"></a><span class="lineno">  630</span>&#160;        }</div>
-<div class="line"><a name="l00631"></a><span class="lineno">  631</span>&#160;    }</div>
-<div class="line"><a name="l00632"></a><span class="lineno">  632</span>&#160;}</div>
-<div class="line"><a name="l00633"></a><span class="lineno">  633</span>&#160;</div>
-<div class="line"><a name="l00634"></a><span class="lineno">  634</span>&#160;<a class="code" href="EST__Val__defs_8h.html#a3dc04b1a064f3c05768b36ae056dfc74">VAL_REGISTER_CLASS_NODEL</a>(item,<a class="code" href="classEST__Item.html">EST_Item</a>)</div>
+<div class="line"><a name="l00604"></a><span class="lineno"><a class="line" href="group__treebuildfunctions.html#ga4ce970d5572bf8577ec6f1498dc4b98f">  604</a></span>&#160;<a class="code" href="classEST__Item.html">EST_Item</a> *<a class="code" href="group__treebuildfunctions.html#ga4ce970d5572bf8577ec6f1498dc4b98f">prepend_daughter</a>(<a class="code" href="classEST__Item.html">EST_Item</a> *n, <a class="code" href="classEST__Item.html">EST_Item</a> *p)</div>
+<div class="line"><a name="l00605"></a><span class="lineno">  605</span>&#160;{ </div>
+<div class="line"><a name="l00606"></a><span class="lineno">  606</span>&#160;    <span class="keywordflow">return</span> n-&gt;<a class="code" href="classEST__Item.html#abf14007bdf8568a4640dc983ff16d858">prepend_daughter</a>(p); </div>
+<div class="line"><a name="l00607"></a><span class="lineno">  607</span>&#160;}</div>
+<div class="line"><a name="l00608"></a><span class="lineno">  608</span>&#160;</div>
+<div class="line"><a name="l00609"></a><span class="lineno"><a class="line" href="group__treebuildfunctions.html#gaaf13e0e0e736a445abb8f58c8f8de9b9">  609</a></span>&#160;<a class="code" href="classEST__Item.html">EST_Item</a> *<a class="code" href="group__treebuildfunctions.html#ga4ce970d5572bf8577ec6f1498dc4b98f">prepend_daughter</a>(<a class="code" href="classEST__Item.html">EST_Item</a> *n, <span class="keyword">const</span> <span class="keywordtype">char</span> *relname, <a class="code" href="classEST__Item.html">EST_Item</a> *p)</div>
+<div class="line"><a name="l00610"></a><span class="lineno">  610</span>&#160;{ </div>
+<div class="line"><a name="l00611"></a><span class="lineno">  611</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="group__treebuildfunctions.html#ga4ce970d5572bf8577ec6f1498dc4b98f">prepend_daughter</a>(<a class="code" href="EST__Item_8h.html#a1e76821cfc016c1b5475d471a6d3424e">as</a>(n,relname),p); </div>
+<div class="line"><a name="l00612"></a><span class="lineno">  612</span>&#160;}</div>
+<div class="line"><a name="l00613"></a><span class="lineno">  613</span>&#160;</div>
+<div class="line"><a name="l00614"></a><span class="lineno"><a class="line" href="EST__Item_8cc.html#a829e51eadc723693a0dbed733545db6d">  614</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="EST__Item_8h.html#a829e51eadc723693a0dbed733545db6d">remove_item</a>(<a class="code" href="classEST__Item.html">EST_Item</a> *l, <span class="keyword">const</span> <span class="keywordtype">char</span> *relname)</div>
+<div class="line"><a name="l00615"></a><span class="lineno">  615</span>&#160;{</div>
+<div class="line"><a name="l00616"></a><span class="lineno">  616</span>&#160;    <a class="code" href="classEST__Item.html">EST_Item</a> *lr = l-&gt;<a class="code" href="classEST__Item.html#a17c9f2ffac06a9665c57add9eeb208b0">as_relation</a>(relname);</div>
+<div class="line"><a name="l00617"></a><span class="lineno">  617</span>&#160;    <a class="code" href="classEST__Relation.html">EST_Relation</a> *r = lr-&gt;<a class="code" href="classEST__Item.html#ac6b03d0916cd5b51c0ec8e704911559d">relation</a>();</div>
+<div class="line"><a name="l00618"></a><span class="lineno">  618</span>&#160;</div>
+<div class="line"><a name="l00619"></a><span class="lineno">  619</span>&#160;    <span class="keywordflow">if</span> ((lr != 0) &amp;&amp; (r != 0))</div>
+<div class="line"><a name="l00620"></a><span class="lineno">  620</span>&#160;    r-&gt;<a class="code" href="classEST__Relation.html#a330448fe625856ba8f5ca8b62c9e6980">remove_item</a>(lr);</div>
+<div class="line"><a name="l00621"></a><span class="lineno">  621</span>&#160;}</div>
+<div class="line"><a name="l00622"></a><span class="lineno">  622</span>&#160;</div>
+<div class="line"><a name="l00623"></a><span class="lineno"><a class="line" href="classEST__Item.html#aa805ff90603cdebada29380d9a443676">  623</a></span>&#160;<a class="code" href="classEST__Item.html">EST_Item</a> &amp;<a class="code" href="classEST__Item.html#aa805ff90603cdebada29380d9a443676">EST_Item::operator=</a>(<span class="keyword">const</span> <a class="code" href="classEST__Item.html">EST_Item</a> &amp;s)</div>
+<div class="line"><a name="l00624"></a><span class="lineno">  624</span>&#160;{</div>
+<div class="line"><a name="l00625"></a><span class="lineno">  625</span>&#160;    <a class="code" href="EST__Tvectlist_8cc.html#a2e853027945beaa2fa458087b05bbb2d">copy</a>(s);</div>
+<div class="line"><a name="l00626"></a><span class="lineno">  626</span>&#160;    <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a name="l00627"></a><span class="lineno">  627</span>&#160;}</div>
+<div class="line"><a name="l00628"></a><span class="lineno">  628</span>&#160;</div>
+<div class="line"><a name="l00629"></a><span class="lineno"><a class="line" href="EST__Item_8cc.html#ae2d836df39eb876b0e8c727bd966785c">  629</a></span>&#160;ostream&amp; <a class="code" href="EST__FeatureData_8cc.html#a0c83c8229027435b6dc95159a8794f1c">operator &lt;&lt; </a>(ostream &amp;s, <span class="keyword">const</span> <a class="code" href="classEST__Item.html">EST_Item</a> &amp;a)</div>
+<div class="line"><a name="l00630"></a><span class="lineno">  630</span>&#160;{</div>
+<div class="line"><a name="l00631"></a><span class="lineno">  631</span>&#160;    a.<a class="code" href="classEST__Item.html#addc65de19b1fc8c3ec607800bbd851f9">features</a>().<a class="code" href="classEST__Features.html#ad247cb26b0e9a6a6f0114d0550f88ae3">save</a>(s);</div>
+<div class="line"><a name="l00632"></a><span class="lineno">  632</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="regerror_8c.html#a20a6d30d76bef587ebad8cb70f9009ca">s</a>;</div>
+<div class="line"><a name="l00633"></a><span class="lineno">  633</span>&#160;}</div>
+<div class="line"><a name="l00634"></a><span class="lineno">  634</span>&#160;</div>
+<div class="line"><a name="l00635"></a><span class="lineno">  635</span>&#160;</div>
+<div class="line"><a name="l00636"></a><span class="lineno"><a class="line" href="EST__Item_8cc.html#a567266f0351ad318014e01dc430699cb">  636</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="EST__Item_8h.html#a567266f0351ad318014e01dc430699cb">evaluate</a>(<a class="code" href="classEST__Item.html">EST_Item</a> *a,<a class="code" href="classEST__Features.html">EST_Features</a> &amp;f)</div>
+<div class="line"><a name="l00637"></a><span class="lineno">  637</span>&#160;{</div>
+<div class="line"><a name="l00638"></a><span class="lineno">  638</span>&#160;    <a class="code" href="classEST__TRwStructIterator.html">EST_Features::RwEntries</a> p;</div>
+<div class="line"><a name="l00639"></a><span class="lineno">  639</span>&#160;</div>
+<div class="line"><a name="l00640"></a><span class="lineno">  640</span>&#160;    <span class="keywordflow">for</span>(p.<a class="code" href="classEST__TRwIterator.html#ac2b008c4a73ecb8448f5baa5004fdd28">begin</a>(f); p; ++p)</div>
+<div class="line"><a name="l00641"></a><span class="lineno">  641</span>&#160;      <span class="keywordflow">if</span> (p-&gt;v.type() == <a class="code" href="EST__Item_8h.html#aa61383a08cc7ad494589d8d9721c062d">val_type_featfunc</a>)</div>
+<div class="line"><a name="l00642"></a><span class="lineno">  642</span>&#160;    {</div>
+<div class="line"><a name="l00643"></a><span class="lineno">  643</span>&#160;      <span class="keywordflow">if</span> (<a class="code" href="EST__Item_8h.html#abf47afc7f7e626033be42a46b391f6b7">featfunc</a>(p-&gt;v) != NULL)</div>
+<div class="line"><a name="l00644"></a><span class="lineno">  644</span>&#160;        p-&gt;v = (<a class="code" href="EST__Item_8h.html#abf47afc7f7e626033be42a46b391f6b7">featfunc</a>(p-&gt;v))(a);</div>
+<div class="line"><a name="l00645"></a><span class="lineno">  645</span>&#160;      <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00646"></a><span class="lineno">  646</span>&#160;        {</div>
+<div class="line"><a name="l00647"></a><span class="lineno">  647</span>&#160;          <a class="code" href="regerror_8c.html#a3942d3333e06c84b5ed8461cbd9667fd">fprintf</a>(stderr, <span class="stringliteral">&quot;NULL %s function\n&quot;</span>, (<span class="keyword">const</span> <span class="keywordtype">char</span> *) p-&gt;k );</div>
+<div class="line"><a name="l00648"></a><span class="lineno">  648</span>&#160;          p-&gt;v = <a class="code" href="classEST__Features.html#ad451995b2109ecec60fdce6e965db769">EST_Features::feature_default_value</a>;</div>
+<div class="line"><a name="l00649"></a><span class="lineno">  649</span>&#160;        }</div>
+<div class="line"><a name="l00650"></a><span class="lineno">  650</span>&#160;    }</div>
+<div class="line"><a name="l00651"></a><span class="lineno">  651</span>&#160;}</div>
+<div class="line"><a name="l00652"></a><span class="lineno">  652</span>&#160;</div>
+<div class="line"><a name="l00653"></a><span class="lineno">  653</span>&#160;<a class="code" href="EST__Val__defs_8h.html#a3dc04b1a064f3c05768b36ae056dfc74">VAL_REGISTER_CLASS_NODEL</a>(item,<a class="code" href="classEST__Item.html">EST_Item</a>)</div>
 <div class="ttc" id="EST__Item_8h_html_a535ce3b03608ec8a4e1cac6b5b7fe27f"><div class="ttname"><a href="EST__Item_8h.html#a535ce3b03608ec8a4e1cac6b5b7fe27f">EST_register_feature_functions</a></div><div class="ttdeci">#define EST_register_feature_functions(PACKAGE)</div><div class="ttdef"><b>Definition:</b> <a href="EST__Item_8h_source.html#l00442">EST_Item.h:442</a></div></div>
 <div class="ttc" id="classEST__Item_html_afe187df139e9a98d6ed11d95a339e678"><div class="ttname"><a href="classEST__Item.html#afe187df139e9a98d6ed11d95a339e678">EST_Item::insert_below</a></div><div class="ttdeci">EST_Item * insert_below(EST_Item *li=0)</div><div class="ttdef"><b>Definition:</b> <a href="EST__Item_8cc_source.html#l00280">EST_Item.cc:280</a></div></div>
 <div class="ttc" id="classEST__Relation_html_ae1624681ffa9d0a12c52162a5084a0ef"><div class="ttname"><a href="classEST__Relation.html#ae1624681ffa9d0a12c52162a5084a0ef">EST_Relation::head</a></div><div class="ttdeci">EST_Item * head() const </div><div class="ttdef"><b>Definition:</b> <a href="EST__Relation_8h_source.html#l00122">EST_Relation.h:122</a></div></div>
@@ -736,15 +755,15 @@ $(document).ready(function(){initNavTree('EST__Item_8cc_source.html','');});
 <div class="ttc" id="classEST__Relation_html"><div class="ttname"><a href="classEST__Relation.html">EST_Relation</a></div><div class="ttdef"><b>Definition:</b> <a href="EST__Relation_8h_source.html#l00064">EST_Relation.h:64</a></div></div>
 <div class="ttc" id="classEST__Item_html_a90b3e1e29cfb4a2adb67aba523f48b33"><div class="ttname"><a href="classEST__Item.html#a90b3e1e29cfb4a2adb67aba523f48b33">EST_Item::evaluate_features</a></div><div class="ttdeci">void evaluate_features()</div><div class="ttdef"><b>Definition:</b> <a href="EST__Item_8cc_source.html#l00172">EST_Item.cc:172</a></div></div>
 <div class="ttc" id="classEST__Item_html"><div class="ttname"><a href="classEST__Item.html">EST_Item</a></div><div class="ttdef"><b>Definition:</b> <a href="EST__Item_8h_source.html#l00083">EST_Item.h:83</a></div></div>
-<div class="ttc" id="classEST__Item_html_aa805ff90603cdebada29380d9a443676"><div class="ttname"><a href="classEST__Item.html#aa805ff90603cdebada29380d9a443676">EST_Item::operator=</a></div><div class="ttdeci">EST_Item &amp; operator=(const EST_Item &amp;s)</div><div class="ttdef"><b>Definition:</b> <a href="EST__Item_8cc_source.html#l00604">EST_Item.cc:604</a></div></div>
+<div class="ttc" id="classEST__Item_html_aa805ff90603cdebada29380d9a443676"><div class="ttname"><a href="classEST__Item.html#aa805ff90603cdebada29380d9a443676">EST_Item::operator=</a></div><div class="ttdeci">EST_Item &amp; operator=(const EST_Item &amp;s)</div><div class="ttdef"><b>Definition:</b> <a href="EST__Item_8cc_source.html#l00623">EST_Item.cc:623</a></div></div>
 <div class="ttc" id="ling__class__init_8h_html"><div class="ttname"><a href="ling__class__init_8h.html">ling_class_init.h</a></div></div>
 <div class="ttc" id="classEST__Item_html_a6b16de3154f0e513e56f9d1bc2dad319"><div class="ttname"><a href="classEST__Item.html#a6b16de3154f0e513e56f9d1bc2dad319">EST_Item::set_contents</a></div><div class="ttdeci">void set_contents(EST_Item_Content *li)</div><div class="ttdef"><b>Definition:</b> <a href="EST__Item_8cc_source.html#l00202">EST_Item.cc:202</a></div></div>
-<div class="ttc" id="group__treebuildfunctions_html_ga71396628aee8f1ab3b8074ef9510a370"><div class="ttname"><a href="group__treebuildfunctions.html#ga71396628aee8f1ab3b8074ef9510a370">append_daughter</a></div><div class="ttdeci">EST_Item * append_daughter(EST_Item *n, EST_Item *p=0)</div><div class="ttdef"><b>Definition:</b> <a href="EST__Item_8cc_source.html#l00575">EST_Item.cc:575</a></div></div>
+<div class="ttc" id="group__treebuildfunctions_html_ga71396628aee8f1ab3b8074ef9510a370"><div class="ttname"><a href="group__treebuildfunctions.html#ga71396628aee8f1ab3b8074ef9510a370">append_daughter</a></div><div class="ttdeci">EST_Item * append_daughter(EST_Item *n, EST_Item *p=0)</div><div class="ttdef"><b>Definition:</b> <a href="EST__Item_8cc_source.html#l00594">EST_Item.cc:594</a></div></div>
 <div class="ttc" id="EST__Item_8h_html_a1e76821cfc016c1b5475d471a6d3424e"><div class="ttname"><a href="EST__Item_8h.html#a1e76821cfc016c1b5475d471a6d3424e">as</a></div><div class="ttdeci">EST_Item * as(const EST_Item *n, const char *relname)</div><div class="ttdef"><b>Definition:</b> <a href="EST__Item_8h_source.html#l00414">EST_Item.h:414</a></div></div>
 <div class="ttc" id="classEST__Item_html_aeb43c9b92599721d2c90765ecd58dbc0"><div class="ttname"><a href="classEST__Item.html#aeb43c9b92599721d2c90765ecd58dbc0">EST_Item::last</a></div><div class="ttdeci">EST_Item * last() const </div><div class="ttdef"><b>Definition:</b> <a href="EST__Item_8cc_source.html#l00329">EST_Item.cc:329</a></div></div>
 <div class="ttc" id="classEST__Item_html_a9e1be030eb216f0631d994e0bf97b41a"><div class="ttname"><a href="classEST__Item.html#a9e1be030eb216f0631d994e0bf97b41a">EST_Item::first</a></div><div class="ttdeci">EST_Item * first() const </div><div class="ttdef"><b>Definition:</b> <a href="EST__Item_8cc_source.html#l00339">EST_Item.cc:339</a></div></div>
 <div class="ttc" id="classEST__Item_html_a86b40607464d119a32a5d9897eabe52a"><div class="ttname"><a href="classEST__Item.html#a86b40607464d119a32a5d9897eabe52a">EST_Item::insert_above</a></div><div class="ttdeci">EST_Item * insert_above(EST_Item *li=0)</div><div class="ttdef"><b>Definition:</b> <a href="EST__Item_8cc_source.html#l00294">EST_Item.cc:294</a></div></div>
-<div class="ttc" id="group__treebuildfunctions_html_ga4ce970d5572bf8577ec6f1498dc4b98f"><div class="ttname"><a href="group__treebuildfunctions.html#ga4ce970d5572bf8577ec6f1498dc4b98f">prepend_daughter</a></div><div class="ttdeci">EST_Item * prepend_daughter(EST_Item *n, EST_Item *p=0)</div><div class="ttdef"><b>Definition:</b> <a href="EST__Item_8cc_source.html#l00585">EST_Item.cc:585</a></div></div>
+<div class="ttc" id="group__treebuildfunctions_html_ga4ce970d5572bf8577ec6f1498dc4b98f"><div class="ttname"><a href="group__treebuildfunctions.html#ga4ce970d5572bf8577ec6f1498dc4b98f">prepend_daughter</a></div><div class="ttdeci">EST_Item * prepend_daughter(EST_Item *n, EST_Item *p=0)</div><div class="ttdef"><b>Definition:</b> <a href="EST__Item_8cc_source.html#l00604">EST_Item.cc:604</a></div></div>
 <div class="ttc" id="classEST__Item_html_a10c21d16af5ee720e4228cc0e5e044a6"><div class="ttname"><a href="classEST__Item.html#a10c21d16af5ee720e4228cc0e5e044a6">EST_Item::append_daughter</a></div><div class="ttdeci">EST_Item * append_daughter(EST_Item *li=0)</div><div class="ttdef"><b>Definition:</b> <a href="EST__Item_8cc_source.html#l00425">EST_Item.cc:425</a></div></div>
 <div class="ttc" id="classEST__Relation_html_a330448fe625856ba8f5ca8b62c9e6980"><div class="ttname"><a href="classEST__Relation.html#a330448fe625856ba8f5ca8b62c9e6980">EST_Relation::remove_item</a></div><div class="ttdeci">void remove_item(EST_Item *item)</div><div class="ttdef"><b>Definition:</b> <a href="EST__Relation_8cc_source.html#l00179">EST_Relation.cc:179</a></div></div>
 <div class="ttc" id="EST__Relation_8h_html"><div class="ttname"><a href="EST__Relation_8h.html">EST_Relation.h</a></div></div>
@@ -771,7 +790,7 @@ $(document).ready(function(){initNavTree('EST__Item_8cc_source.html','');});
 <div class="ttc" id="classEST__Relation_html_a0fb9883b8419631dc6992b048045cd80"><div class="ttname"><a href="classEST__Relation.html#a0fb9883b8419631dc6992b048045cd80">EST_Relation::name</a></div><div class="ttdeci">const EST_String &amp; name() const </div><div class="ttdef"><b>Definition:</b> <a href="EST__Relation_8h_source.html#l00119">EST_Relation.h:119</a></div></div>
 <div class="ttc" id="regsub_8c_html_a86c78564531bafa810c65f20086bae0c"><div class="ttname"><a href="regsub_8c.html#a86c78564531bafa810c65f20086bae0c">c</a></div><div class="ttdeci">register char c</div><div class="ttdef"><b>Definition:</b> <a href="regsub_8c_source.html#l00043">regsub.c:43</a></div></div>
 <div class="ttc" id="classEST__Item_html_ad5e7de68d5f86d95ca32a5db717519eb"><div class="ttname"><a href="classEST__Item.html#ad5e7de68d5f86d95ca32a5db717519eb">EST_Item::relation_name</a></div><div class="ttdeci">const EST_String &amp; relation_name() const </div><div class="ttdoc">The relation name of this particular item. </div><div class="ttdef"><b>Definition:</b> <a href="EST__Item_8cc_source.html#l00196">EST_Item.cc:196</a></div></div>
-<div class="ttc" id="EST__Item_8h_html_a567266f0351ad318014e01dc430699cb"><div class="ttname"><a href="EST__Item_8h.html#a567266f0351ad318014e01dc430699cb">evaluate</a></div><div class="ttdeci">void evaluate(EST_Item *a, EST_Features &amp;f)</div><div class="ttdef"><b>Definition:</b> <a href="EST__Item_8cc_source.html#l00617">EST_Item.cc:617</a></div></div>
+<div class="ttc" id="EST__Item_8h_html_a567266f0351ad318014e01dc430699cb"><div class="ttname"><a href="EST__Item_8h.html#a567266f0351ad318014e01dc430699cb">evaluate</a></div><div class="ttdeci">void evaluate(EST_Item *a, EST_Features &amp;f)</div><div class="ttdef"><b>Definition:</b> <a href="EST__Item_8cc_source.html#l00636">EST_Item.cc:636</a></div></div>
 <div class="ttc" id="EST__Val__defs_8h_html_a3dc04b1a064f3c05768b36ae056dfc74"><div class="ttname"><a href="EST__Val__defs_8h.html#a3dc04b1a064f3c05768b36ae056dfc74">VAL_REGISTER_CLASS_NODEL</a></div><div class="ttdeci">#define VAL_REGISTER_CLASS_NODEL(NAME, CLASS)</div><div class="ttdef"><b>Definition:</b> <a href="EST__Val__defs_8h_source.html#l00133">EST_Val_defs.h:133</a></div></div>
 <div class="ttc" id="classEST__Item_html_a5e3d9117a3d53964417867897996d12e"><div class="ttname"><a href="classEST__Item.html#a5e3d9117a3d53964417867897996d12e">EST_Item::contents</a></div><div class="ttdeci">EST_Item_Content * contents() const </div><div class="ttdef"><b>Definition:</b> <a href="EST__Item_8h_source.html#l00239">EST_Item.h:239</a></div></div>
 <div class="ttc" id="classEST__Item_html_a8d9a8d94219558d3d493d8b7e6584713"><div class="ttname"><a href="classEST__Item.html#a8d9a8d94219558d3d493d8b7e6584713">EST_Item::insert_before</a></div><div class="ttdeci">EST_Item * insert_before(EST_Item *li=0)</div><div class="ttdef"><b>Definition:</b> <a href="EST__Item_8cc_source.html#l00255">EST_Item.cc:255</a></div></div>
@@ -798,14 +817,13 @@ $(document).ready(function(){initNavTree('EST__Item_8cc_source.html','');});
 <div class="ttc" id="regerror_8c_html_a3942d3333e06c84b5ed8461cbd9667fd"><div class="ttname"><a href="regerror_8c.html#a3942d3333e06c84b5ed8461cbd9667fd">fprintf</a></div><div class="ttdeci">fprintf(stderr,&quot;regexp(3): %s\n&quot;, s)</div></div>
 <div class="ttc" id="classEST__Features_html_ad451995b2109ecec60fdce6e965db769"><div class="ttname"><a href="classEST__Features.html#ad451995b2109ecec60fdce6e965db769">EST_Features::feature_default_value</a></div><div class="ttdeci">static EST_Val feature_default_value</div><div class="ttdef"><b>Definition:</b> <a href="EST__Features_8h_source.html#l00071">EST_Features.h:71</a></div></div>
 <div class="ttc" id="classEST__Item_html_abcd668a62ceb09a88aa7bafa94aa6cb2"><div class="ttname"><a href="classEST__Item.html#abcd668a62ceb09a88aa7bafa94aa6cb2">EST_Item::first_leaf</a></div><div class="ttdeci">EST_Item * first_leaf() const </div><div class="ttdef"><b>Definition:</b> <a href="EST__Item_8cc_source.html#l00386">EST_Item.cc:386</a></div></div>
-<div class="ttc" id="editline_8c_html_a5791904baf12239aadc3a8280a03e8c5"><div class="ttname"><a href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a></div><div class="ttdeci">void char * p</div><div class="ttdef"><b>Definition:</b> <a href="editline_8c_source.html#l01395">editline.c:1395</a></div></div>
 <div class="ttc" id="group__treetraversalfunctions_html_ga55dc80065958e842aab5bdc9f2fee614"><div class="ttname"><a href="group__treetraversalfunctions.html#ga55dc80065958e842aab5bdc9f2fee614">last_leaf_in_tree</a></div><div class="ttdeci">EST_Item * last_leaf_in_tree(const EST_Item *root)</div><div class="ttdef"><b>Definition:</b> <a href="EST__Item_8cc_source.html#l00415">EST_Item.cc:415</a></div></div>
 <div class="ttc" id="classEST__Item_html_a80e92225938b0f539940b020513730e0"><div class="ttname"><a href="classEST__Item.html#a80e92225938b0f539940b020513730e0">EST_Item::length</a></div><div class="ttdeci">int length() const </div><div class="ttdef"><b>Definition:</b> <a href="EST__Item_8cc_source.html#l00228">EST_Item.cc:228</a></div></div>
 <div class="ttc" id="EST__bool_8h_html_aa8cecfc5c5c054d2875c03e77b7be15d"><div class="ttname"><a href="EST__bool_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a></div><div class="ttdeci">#define TRUE</div><div class="ttdef"><b>Definition:</b> <a href="EST__bool_8h_source.html#l00118">EST_bool.h:118</a></div></div>
 <div class="ttc" id="group__treetraversalfunctions_html_ga4ca89cc26d3cd32a41d6263241b4107d"><div class="ttname"><a href="group__treetraversalfunctions.html#ga4ca89cc26d3cd32a41d6263241b4107d">parent</a></div><div class="ttdeci">EST_Item * parent(const EST_Item *n)</div><div class="ttdoc">return parent of n </div><div class="ttdef"><b>Definition:</b> <a href="EST__Relation__tree_8h_source.html#l00053">EST_Relation_tree.h:53</a></div></div>
 <div class="ttc" id="classEST__Utterance_html"><div class="ttname"><a href="classEST__Utterance.html">EST_Utterance</a></div><div class="ttdef"><b>Definition:</b> <a href="EST__Utterance_8h_source.html#l00053">EST_Utterance.h:53</a></div></div>
 <div class="ttc" id="classEST__Item_html_a75a037dafc794ba0e01d8edc5bd006d7"><div class="ttname"><a href="classEST__Item.html#a75a037dafc794ba0e01d8edc5bd006d7">EST_Item::next_leaf</a></div><div class="ttdeci">EST_Item * next_leaf() const </div><div class="ttdef"><b>Definition:</b> <a href="EST__Item_8cc_source.html#l00358">EST_Item.cc:358</a></div></div>
-<div class="ttc" id="EST__Item_8h_html_a829e51eadc723693a0dbed733545db6d"><div class="ttname"><a href="EST__Item_8h.html#a829e51eadc723693a0dbed733545db6d">remove_item</a></div><div class="ttdeci">void remove_item(EST_Item *l, const char *relname)</div><div class="ttdef"><b>Definition:</b> <a href="EST__Item_8cc_source.html#l00595">EST_Item.cc:595</a></div></div>
+<div class="ttc" id="EST__Item_8h_html_a829e51eadc723693a0dbed733545db6d"><div class="ttname"><a href="EST__Item_8h.html#a829e51eadc723693a0dbed733545db6d">remove_item</a></div><div class="ttdeci">void remove_item(EST_Item *l, const char *relname)</div><div class="ttdef"><b>Definition:</b> <a href="EST__Item_8cc_source.html#l00614">EST_Item.cc:614</a></div></div>
 <div class="ttc" id="classEST__String_html_a28521d4e37cfc369003f22590642fd11"><div class="ttname"><a href="classEST__String.html#a28521d4e37cfc369003f22590642fd11">EST_String::Empty</a></div><div class="ttdeci">static const EST_String Empty</div><div class="ttdoc">Constant empty string. </div><div class="ttdef"><b>Definition:</b> <a href="EST__String_8h_source.html#l00112">EST_String.h:112</a></div></div>
 <div class="ttc" id="classEST__Item__Content_html_ad4f8beddb49526b9890e3ce45ead63b6"><div class="ttname"><a href="classEST__Item__Content.html#ad4f8beddb49526b9890e3ce45ead63b6">EST_Item_Content::unref_relation</a></div><div class="ttdeci">int unref_relation(const EST_String &amp;relname)</div><div class="ttdef"><b>Definition:</b> <a href="EST__Item__Content_8cc_source.html#l00064">EST_Item_Content.cc:64</a></div></div>
 <div class="ttc" id="EST__string__aux_8h_html"><div class="ttname"><a href="EST__string__aux_8h.html">EST_string_aux.h</a></div><div class="ttdoc">Utility EST_String Functions header file. </div></div>
@@ -820,7 +838,7 @@ $(document).ready(function(){initNavTree('EST__Item_8cc_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_e549dd66bffc6cff8239c1003cf64b45.html">ling_class</a></li><li class="navelem"><a class="el" href="EST__Item_8cc.html">EST_Item.cc</a></li>
-    <li class="footer">Generated on Thu Jan 30 2014 00:27:12 for Edinburgh Speech Tools by
+    <li class="footer">Generated on Tue Feb 11 2014 12:00:38 for Edinburgh Speech Tools by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

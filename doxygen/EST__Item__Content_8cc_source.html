@@ -185,9 +185,9 @@ $(document).ready(function(){initNavTree('EST__Item__Content_8cc_source.html',''
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;{</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="comment">// Unreference from all relations and delete</span></div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <a class="code" href="classEST__Item.html">EST_Item</a> *np;</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <a class="code" href="classEST__UItem.html">EST_Litem</a> *<a class="code" href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a>;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <a class="code" href="classEST__UItem.html">EST_Litem</a> *p;</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="keywordflow">for</span> (p=relations.list.head(); <a class="code" href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a>;)</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="keywordflow">for</span> (p=relations.list.head(); p;)</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    {</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    np = ::item(relations.list(p).v);</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    p=p-&gt;<a class="code" href="classEST__UItem.html#afc5292d4da883de227f5a92bb6df719d">next</a>();</div>
@@ -206,11 +206,11 @@ $(document).ready(function(){initNavTree('EST__Item__Content_8cc_source.html',''
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;</div>
 <div class="line"><a name="l00113"></a><span class="lineno"><a class="line" href="EST__Item__Content_8cc.html#a5a49a8c4fed6a8f9bdbf7f35b362d50b">  113</a></span>&#160;ostream&amp; <a class="code" href="EST__FeatureData_8cc.html#a0c83c8229027435b6dc95159a8794f1c">operator &lt;&lt; </a>(ostream &amp;<a class="code" href="regerror_8c.html#a20a6d30d76bef587ebad8cb70f9009ca">s</a>, <span class="keyword">const</span> <a class="code" href="classEST__Item__Content.html">EST_Item_Content</a> &amp;a)</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;{</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <a class="code" href="classEST__UItem.html">EST_Litem</a> *<a class="code" href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a>;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <a class="code" href="classEST__UItem.html">EST_Litem</a> *p;</div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    s &lt;&lt; a.<a class="code" href="classEST__Item__Content.html#ae13b36a3f9b2c38dd092d1b3dc32c6ec">name</a>() &lt;&lt; <span class="stringliteral">&quot; ; &quot;</span>;</div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    s &lt;&lt; a.<a class="code" href="classEST__Item__Content.html#a70b2ff3a72411bd80e1f882a73e2cc84">f</a>;</div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    s &lt;&lt; <span class="stringliteral">&quot;Relations&quot;</span>;</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <span class="keywordflow">for</span> (p=a.<a class="code" href="classEST__Item__Content.html#a22c10575ff1de4854f59fa1a21c20720">relations</a>.<a class="code" href="classEST__TKVL.html#a401bc7ba5fc806f6cab393c7be0a8151">list</a>.<a class="code" href="classEST__UList.html#a36cd9a03aa4677736edb4866364a204f">head</a>(); <a class="code" href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a>; p = p-&gt;<a class="code" href="classEST__UItem.html#afc5292d4da883de227f5a92bb6df719d">next</a>())</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <span class="keywordflow">for</span> (p=a.<a class="code" href="classEST__Item__Content.html#a22c10575ff1de4854f59fa1a21c20720">relations</a>.<a class="code" href="classEST__TKVL.html#a401bc7ba5fc806f6cab393c7be0a8151">list</a>.<a class="code" href="classEST__UList.html#a36cd9a03aa4677736edb4866364a204f">head</a>(); p; p = p-&gt;<a class="code" href="classEST__UItem.html#afc5292d4da883de227f5a92bb6df719d">next</a>())</div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    s &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; a.<a class="code" href="classEST__Item__Content.html#a22c10575ff1de4854f59fa1a21c20720">relations</a>.<a class="code" href="classEST__TKVL.html#a401bc7ba5fc806f6cab393c7be0a8151">list</a>(p).k;</div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    s &lt;&lt; endl;</div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="regerror_8c.html#a20a6d30d76bef587ebad8cb70f9009ca">s</a>;</div>
@@ -237,7 +237,6 @@ $(document).ready(function(){initNavTree('EST__Item__Content_8cc_source.html',''
 <div class="ttc" id="EST__error_8h_html"><div class="ttname"><a href="EST__error_8h.html">EST_error.h</a></div></div>
 <div class="ttc" id="classEST__UList_html_a36cd9a03aa4677736edb4866364a204f"><div class="ttname"><a href="classEST__UList.html#a36cd9a03aa4677736edb4866364a204f">EST_UList::head</a></div><div class="ttdeci">EST_UItem * head() const </div><div class="ttdef"><b>Definition:</b> <a href="EST__UList_8h_source.html#l00096">EST_UList.h:96</a></div></div>
 <div class="ttc" id="classEST__Item__Content_html_a48374c027d335b9b9f748f347d5743d1"><div class="ttname"><a href="classEST__Item__Content.html#a48374c027d335b9b9f748f347d5743d1">EST_Item_Content::operator=</a></div><div class="ttdeci">EST_Item_Content &amp; operator=(const EST_Item_Content &amp;a)</div><div class="ttdef"><b>Definition:</b> <a href="EST__Item__Content_8cc_source.html#l00107">EST_Item_Content.cc:107</a></div></div>
-<div class="ttc" id="editline_8c_html_a5791904baf12239aadc3a8280a03e8c5"><div class="ttname"><a href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a></div><div class="ttdeci">void char * p</div><div class="ttdef"><b>Definition:</b> <a href="editline_8c_source.html#l01395">editline.c:1395</a></div></div>
 <div class="ttc" id="EST__bool_8h_html_aa8cecfc5c5c054d2875c03e77b7be15d"><div class="ttname"><a href="EST__bool_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a></div><div class="ttdeci">#define TRUE</div><div class="ttdef"><b>Definition:</b> <a href="EST__bool_8h_source.html#l00118">EST_bool.h:118</a></div></div>
 <div class="ttc" id="classEST__Item__Content_html_ad4f8beddb49526b9890e3ce45ead63b6"><div class="ttname"><a href="classEST__Item__Content.html#ad4f8beddb49526b9890e3ce45ead63b6">EST_Item_Content::unref_relation</a></div><div class="ttdeci">int unref_relation(const EST_String &amp;relname)</div><div class="ttdef"><b>Definition:</b> <a href="EST__Item__Content_8cc_source.html#l00064">EST_Item_Content.cc:64</a></div></div>
 <div class="ttc" id="classEST__String_html"><div class="ttname"><a href="classEST__String.html">EST_String</a></div><div class="ttdef"><b>Definition:</b> <a href="EST__String_8h_source.html#l00071">EST_String.h:71</a></div></div>
@@ -248,7 +247,7 @@ $(document).ready(function(){initNavTree('EST__Item__Content_8cc_source.html',''
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_e549dd66bffc6cff8239c1003cf64b45.html">ling_class</a></li><li class="navelem"><a class="el" href="EST__Item__Content_8cc.html">EST_Item_Content.cc</a></li>
-    <li class="footer">Generated on Thu Jan 30 2014 00:27:12 for Edinburgh Speech Tools by
+    <li class="footer">Generated on Tue Feb 11 2014 12:00:38 for Edinburgh Speech Tools by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

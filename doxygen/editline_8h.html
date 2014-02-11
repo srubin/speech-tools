@@ -146,13 +146,13 @@ Macros</h2></td></tr>
 <tr class="separator:abee2d741bacd1acde5c48661ec71356e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a30d41e9e7e52e2d4f1e778fc7ae544bd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="editline_8h.html#a30d41e9e7e52e2d4f1e778fc7ae544bd">SCREEN_INC</a>&#160;&#160;&#160;256</td></tr>
 <tr class="separator:a30d41e9e7e52e2d4f1e778fc7ae544bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1900984ccac75858a1deb84631366298"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="editline_8h.html#a1900984ccac75858a1deb84631366298">COPYFROMTO</a>(new, <a class="el" href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a>, <a class="el" href="regsub_8c.html#a560caa016d417ade4263383b7a0b449d">len</a>)&#160;&#160;&#160;(void)memcpy((char *)(new), (char *)(<a class="el" href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a>), (int)(<a class="el" href="regsub_8c.html#a560caa016d417ade4263383b7a0b449d">len</a>))</td></tr>
+<tr class="memitem:a1900984ccac75858a1deb84631366298"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="editline_8h.html#a1900984ccac75858a1deb84631366298">COPYFROMTO</a>(new, p, <a class="el" href="regsub_8c.html#a560caa016d417ade4263383b7a0b449d">len</a>)&#160;&#160;&#160;(void)memcpy((char *)(new), (char *)(p), (int)(<a class="el" href="regsub_8c.html#a560caa016d417ade4263383b7a0b449d">len</a>))</td></tr>
 <tr class="separator:a1900984ccac75858a1deb84631366298"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a15b5b34775f082e2b874ac7c9a4b9e1d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="editline_8h.html#a15b5b34775f082e2b874ac7c9a4b9e1d">DISPOSE</a>(<a class="el" href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a>)&#160;&#160;&#160;<a class="el" href="walloc_8c.html#a94b50eb23ef1bf35d8fb07e716f1f9ed">wfree</a>(<a class="el" href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a>)</td></tr>
+<tr class="memitem:a15b5b34775f082e2b874ac7c9a4b9e1d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="editline_8h.html#a15b5b34775f082e2b874ac7c9a4b9e1d">DISPOSE</a>(p)&#160;&#160;&#160;<a class="el" href="walloc_8c.html#a94b50eb23ef1bf35d8fb07e716f1f9ed">wfree</a>(p)</td></tr>
 <tr class="separator:a15b5b34775f082e2b874ac7c9a4b9e1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8040f4496808a15e07d5f55a01bd23ad"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="editline_8h.html#a8040f4496808a15e07d5f55a01bd23ad">NEW</a>(T, <a class="el" href="regsub_8c.html#a86c78564531bafa810c65f20086bae0c">c</a>)&#160;&#160;&#160;<a class="el" href="EST__walloc_8h.html#a9029f7544ccdae5305754e18b80ae7cc">walloc</a>(T,<a class="el" href="regsub_8c.html#a86c78564531bafa810c65f20086bae0c">c</a>)</td></tr>
 <tr class="separator:a8040f4496808a15e07d5f55a01bd23ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8dcc6bd0bc6b3cd66631c0211e25516c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="editline_8h.html#a8dcc6bd0bc6b3cd66631c0211e25516c">RENEW</a>(<a class="el" href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a>, T, <a class="el" href="regsub_8c.html#a86c78564531bafa810c65f20086bae0c">c</a>)&#160;&#160;&#160;(<a class="el" href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a> = <a class="el" href="EST__walloc_8h.html#add5e5ddb7ab543bcda61423ddc358319">wrealloc</a>(<a class="el" href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a>,T,<a class="el" href="regsub_8c.html#a86c78564531bafa810c65f20086bae0c">c</a>))</td></tr>
+<tr class="memitem:a8dcc6bd0bc6b3cd66631c0211e25516c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="editline_8h.html#a8dcc6bd0bc6b3cd66631c0211e25516c">RENEW</a>(p, T, <a class="el" href="regsub_8c.html#a86c78564531bafa810c65f20086bae0c">c</a>)&#160;&#160;&#160;(p = <a class="el" href="EST__walloc_8h.html#add5e5ddb7ab543bcda61423ddc358319">wrealloc</a>(p,T,<a class="el" href="regsub_8c.html#a86c78564531bafa810c65f20086bae0c">c</a>))</td></tr>
 <tr class="separator:a8dcc6bd0bc6b3cd66631c0211e25516c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6b60a5f6eb6351e20dcadce454fbea6e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="editline_8h.html#a6b60a5f6eb6351e20dcadce454fbea6e">STRDUP</a>(<a class="el" href="ctype16_8c.html#a207fd5507206d307cd63f95374fcd00d">X</a>)&#160;&#160;&#160;<a class="el" href="walloc_8c.html#aea941f874babb85ff5f23a9050261216">wstrdup</a>(<a class="el" href="ctype16_8c.html#a207fd5507206d307cd63f95374fcd00d">X</a>)</td></tr>
 <tr class="separator:a6b60a5f6eb6351e20dcadce454fbea6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -187,7 +187,7 @@ Functions</h2></td></tr>
 <tr class="separator:a8f97541b06a5c6b1851916d7ff65de70"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a88ff9e5d21b587431015023a9ae4ae8d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="editline_8h.html#a88ff9e5d21b587431015023a9ae4ae8d">rl_ttyset</a> (int Reset)</td></tr>
 <tr class="separator:a88ff9e5d21b587431015023a9ae4ae8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a94e43cd1136d164e377145be97c94594"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="editline_8h.html#a94e43cd1136d164e377145be97c94594">rl_add_slash</a> (char *path, char *<a class="el" href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a>)</td></tr>
+<tr class="memitem:a94e43cd1136d164e377145be97c94594"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="editline_8h.html#a94e43cd1136d164e377145be97c94594">rl_add_slash</a> (char *path, char *p)</td></tr>
 <tr class="separator:a94e43cd1136d164e377145be97c94594"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3ce838b69c0be1ee3f5b55e56e63391d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="editline_8h.html#a3ce838b69c0be1ee3f5b55e56e63391d">el_is_directory</a> (char *path)</td></tr>
 <tr class="separator:a3ce838b69c0be1ee3f5b55e56e63391d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -195,7 +195,7 @@ Functions</h2></td></tr>
 <tr class="separator:a3fa4fc95b517a875a201f8719cce3a30"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a56e34737e26e67a09305ff87ccdac8bf"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="editline_8h.html#a56e34737e26e67a09305ff87ccdac8bf">readline</a> (<a class="el" href="editline_8h.html#a0c33b494a68ce28497e7ce8e5e95feff">CONST</a> char *prompt)</td></tr>
 <tr class="separator:a56e34737e26e67a09305ff87ccdac8bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afa92c72aba5896583d7983e96c665a08"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="editline_8h.html#afa92c72aba5896583d7983e96c665a08">add_history</a> (char *<a class="el" href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a>)</td></tr>
+<tr class="memitem:afa92c72aba5896583d7983e96c665a08"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="editline_8h.html#afa92c72aba5896583d7983e96c665a08">add_history</a> (char *p)</td></tr>
 <tr class="separator:afa92c72aba5896583d7983e96c665a08"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8ffe7f823186a9778927c4b68440a27c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="editline_8h.html#a8ffe7f823186a9778927c4b68440a27c">read_history</a> (const char *history_file)</td></tr>
 <tr class="separator:a8ffe7f823186a9778927c4b68440a27c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -412,7 +412,7 @@ Variables</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><a class="el" href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a>, </td>
+          <td class="paramname">p, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -423,7 +423,7 @@ Variables</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;(void)memcpy((char *)(new), (char *)(<a class="el" href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a>), (int)(<a class="el" href="regsub_8c.html#a560caa016d417ade4263383b7a0b449d">len</a>))</td>
+          <td></td><td>&#160;&#160;&#160;(void)memcpy((char *)(new), (char *)(p), (int)(<a class="el" href="regsub_8c.html#a560caa016d417ade4263383b7a0b449d">len</a>))</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -440,8 +440,8 @@ Variables</h2></td></tr>
           <td class="memname">#define DISPOSE</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><a class="el" href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a></td><td>)</td>
-          <td>&#160;&#160;&#160;<a class="el" href="walloc_8c.html#a94b50eb23ef1bf35d8fb07e716f1f9ed">wfree</a>(<a class="el" href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a>)</td>
+          <td class="paramname">p</td><td>)</td>
+          <td>&#160;&#160;&#160;<a class="el" href="walloc_8c.html#a94b50eb23ef1bf35d8fb07e716f1f9ed">wfree</a>(p)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -486,7 +486,7 @@ Variables</h2></td></tr>
           <td class="memname">#define RENEW</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><a class="el" href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a>, </td>
+          <td class="paramname">p, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -503,7 +503,7 @@ Variables</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;(<a class="el" href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a> = <a class="el" href="EST__walloc_8h.html#add5e5ddb7ab543bcda61423ddc358319">wrealloc</a>(<a class="el" href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a>,T,<a class="el" href="regsub_8c.html#a86c78564531bafa810c65f20086bae0c">c</a>))</td>
+          <td></td><td>&#160;&#160;&#160;(p = <a class="el" href="EST__walloc_8h.html#add5e5ddb7ab543bcda61423ddc358319">wrealloc</a>(p,T,<a class="el" href="regsub_8c.html#a86c78564531bafa810c65f20086bae0c">c</a>))</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -770,6 +770,8 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="editline_8c_source.html#l01394">1394</a> of file <a class="el" href="editline_8c_source.html">editline.c</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a8ffe7f823186a9778927c4b68440a27c"></a>
@@ -821,7 +823,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="editline_8c_source.html#l01464">1464</a> of file <a class="el" href="editline_8c_source.html">editline.c</a>.</p>
+<p>Definition at line <a class="el" href="editline_8c_source.html#l01463">1463</a> of file <a class="el" href="editline_8c_source.html">editline.c</a>.</p>
 
 </div>
 </div>
@@ -838,7 +840,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="editline_8c_source.html#l01459">1459</a> of file <a class="el" href="editline_8c_source.html">editline.c</a>.</p>
+<p>Definition at line <a class="el" href="editline_8c_source.html#l01458">1458</a> of file <a class="el" href="editline_8c_source.html">editline.c</a>.</p>
 
 </div>
 </div>
@@ -866,7 +868,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="editline_8c_source.html#l01966">1966</a> of file <a class="el" href="editline_8c_source.html">editline.c</a>.</p>
+<p>Definition at line <a class="el" href="editline_8c_source.html#l01965">1965</a> of file <a class="el" href="editline_8c_source.html">editline.c</a>.</p>
 
 </div>
 </div>
@@ -1003,7 +1005,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_530ac7e1661b082aa2511ca8069b8725.html">siod</a></li><li class="navelem"><a class="el" href="editline_8h.html">editline.h</a></li>
-    <li class="footer">Generated on Thu Jan 30 2014 00:27:14 for Edinburgh Speech Tools by
+    <li class="footer">Generated on Tue Feb 11 2014 12:00:40 for Edinburgh Speech Tools by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

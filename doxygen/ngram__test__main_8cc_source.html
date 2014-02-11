@@ -142,7 +142,7 @@ $(document).ready(function(){initNavTree('ngram__test__main_8cc_source.html','')
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <a class="code" href="classEST__Option.html">EST_Option</a> al, op;</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <a class="code" href="classEST__String.html">EST_String</a> wordlist_file, script_file, in_file, format;</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <a class="code" href="classEST__String.html">EST_String</a> prev_tag, prev_prev_tag, last_tag;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <a class="code" href="classEST__UItem.html">EST_Litem</a> *<a class="code" href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a>;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <a class="code" href="classEST__UItem.html">EST_Litem</a> *p;</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="comment">//EST_Ngrammar::representation_t representation = </span></div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="comment">//EST_Ngrammar::dense;</span></div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
@@ -310,7 +310,7 @@ $(document).ready(function(){initNavTree('ngram__test__main_8cc_source.html','')
 <div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;    cout &lt;&lt; <span class="stringliteral">&quot;==================&quot;</span> &lt;&lt; endl;</div>
 <div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;    }</div>
 <div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;</div>
-<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;    <span class="keywordflow">for</span> (p = script.<a class="code" href="classEST__UList.html#a36cd9a03aa4677736edb4866364a204f">head</a>(); <a class="code" href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a>; p = p-&gt;<a class="code" href="classEST__UItem.html#afc5292d4da883de227f5a92bb6df719d">next</a>())</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;    <span class="keywordflow">for</span> (p = script.<a class="code" href="classEST__UList.html#a36cd9a03aa4677736edb4866364a204f">head</a>(); p; p = p-&gt;<a class="code" href="classEST__UItem.html#afc5292d4da883de227f5a92bb6df719d">next</a>())</div>
 <div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;    {</div>
 <div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;    <span class="comment">// test each file</span></div>
 <div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="ngrammar__utils_8cc.html#ae483cf8c38a5a176c87e47e37ee001fe">test_stats</a>(ngrammar,</div>
@@ -421,7 +421,6 @@ $(document).ready(function(){initNavTree('ngram__test__main_8cc_source.html','')
 <div class="ttc" id="classEST__Option_html"><div class="ttname"><a href="classEST__Option.html">EST_Option</a></div><div class="ttdef"><b>Definition:</b> <a href="EST__Option_8h_source.html#l00050">EST_Option.h:50</a></div></div>
 <div class="ttc" id="EST__rw__status_8h_html_a2c0d7bd3b9f1419e66f38ab761c86adb"><div class="ttname"><a href="EST__rw__status_8h.html#a2c0d7bd3b9f1419e66f38ab761c86adb">format_ok</a></div><div class="ttdeci">#define format_ok</div><div class="ttdef"><b>Definition:</b> <a href="EST__rw__status_8h_source.html#l00159">EST_rw_status.h:159</a></div></div>
 <div class="ttc" id="classEST__UList_html_a36cd9a03aa4677736edb4866364a204f"><div class="ttname"><a href="classEST__UList.html#a36cd9a03aa4677736edb4866364a204f">EST_UList::head</a></div><div class="ttdeci">EST_UItem * head() const </div><div class="ttdef"><b>Definition:</b> <a href="EST__UList_8h_source.html#l00096">EST_UList.h:96</a></div></div>
-<div class="ttc" id="editline_8c_html_a5791904baf12239aadc3a8280a03e8c5"><div class="ttname"><a href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a></div><div class="ttdeci">void char * p</div><div class="ttdef"><b>Definition:</b> <a href="editline_8c_source.html#l01395">editline.c:1395</a></div></div>
 <div class="ttc" id="EST__Ngrammar_8h_html_aacff0f0360a347d1dbaf463ae9687303"><div class="ttname"><a href="EST__Ngrammar_8h.html#aacff0f0360a347d1dbaf463ae9687303">SENTENCE_START_MARKER</a></div><div class="ttdeci">#define SENTENCE_START_MARKER</div><div class="ttdef"><b>Definition:</b> <a href="EST__Ngrammar_8h_source.html#l00059">EST_Ngrammar.h:59</a></div></div>
 <div class="ttc" id="group__utilityfunctionsforstrings_html_ga0508dc52e28fefd039fc55994d9a56f1"><div class="ttname"><a href="group__utilityfunctionsforstrings.html#ga0508dc52e28fefd039fc55994d9a56f1">load_StrList</a></div><div class="ttdeci">EST_read_status load_StrList(EST_String filename, EST_StrList &amp;l)</div><div class="ttdoc">Load tokens from a file and return them in a EST_StrList. </div><div class="ttdef"><b>Definition:</b> <a href="EST__slist__aux_8cc_source.html#l00128">EST_slist_aux.cc:128</a></div></div>
 <div class="ttc" id="EST__cmd__line_8h_html_a5eea16d0fa3d649df21c710bc6693ab1"><div class="ttname"><a href="EST__cmd__line_8h.html#a5eea16d0fa3d649df21c710bc6693ab1">parse_command_line</a></div><div class="ttdeci">int parse_command_line(int argc, char *argv[], const EST_String &amp;usage, EST_StrList &amp;files, EST_Option &amp;al, int make_stdio=1)</div><div class="ttdef"><b>Definition:</b> <a href="cmd__line_8cc_source.html#l00101">cmd_line.cc:101</a></div></div>
@@ -435,7 +434,7 @@ $(document).ready(function(){initNavTree('ngram__test__main_8cc_source.html','')
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_5c982d53a68cdbcd421152b4020263a9.html">main</a></li><li class="navelem"><a class="el" href="ngram__test__main_8cc.html">ngram_test_main.cc</a></li>
-    <li class="footer">Generated on Thu Jan 30 2014 00:27:12 for Edinburgh Speech Tools by
+    <li class="footer">Generated on Tue Feb 11 2014 12:00:38 for Edinburgh Speech Tools by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

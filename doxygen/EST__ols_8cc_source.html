@@ -359,9 +359,9 @@ $(document).ready(function(){initNavTree('EST__ols_8cc_source.html','');});
 <div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;        <a class="code" href="classEST__FMatrix.html">EST_FMatrix</a> pred;</div>
 <div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;        included.<a class="code" href="classEST__TVector.html#adc2ef5a187a87849db746fc46f71dd7c">a_no_check</a>(i) = <a class="code" href="EST__bool_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>;</div>
 <div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;        <span class="keywordflow">if</span> (!<a class="code" href="EST__multistats_8h.html#a61c523614c7e26635ad5915c56f7085d">robust_ols</a>(X,Y,included,coeffsl))</div>
-<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="EST__bool_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;  <span class="comment">// failed for some reason</span></div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="EST__bool_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;  <span class="comment">// failed for some reason</span></div>
 <div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;        <a class="code" href="EST__multistats_8h.html#abe236b778463ea44f186a3e10df0b553">ols_apply</a>(Xtest,coeffsl,pred);</div>
-<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;            <a class="code" href="EST__multistats_8h.html#a8694b81ef366e8f06e6e09b2c4b7a797">ols_test</a>(Ytest,pred,cor,rmse);</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;        <a class="code" href="EST__multistats_8h.html#a8694b81ef366e8f06e6e09b2c4b7a797">ols_test</a>(Ytest,pred,cor,rmse);</div>
 <div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;            printf(<span class="stringliteral">&quot;tested %d %s %f best %f\n&quot;</span>,</div>
 <div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;                   i,(<span class="keyword">const</span> <span class="keywordtype">char</span> *)feat_names.<a class="code" href="classEST__TList.html#a4d6fa93e196f0550a6d8fa391d76b0ec">nth</a>(i),cor,bscore);</div>
 <div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;        <span class="keywordflow">if</span> (fabs(cor) &gt; bscore)</div>
@@ -385,58 +385,61 @@ $(document).ready(function(){initNavTree('EST__ols_8cc_source.html','');});
 <div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;    <span class="comment">// Others probably want this function too</span></div>
 <div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;    <span class="comment">// return correlation and RMSE for col 0 in real and predicted</span></div>
 <div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;    <span class="keywordtype">int</span> i;</div>
-<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;    <span class="keywordtype">float</span> <a class="code" href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a>,r;</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;    <span class="keywordtype">float</span> p,r;</div>
 <div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;    <a class="code" href="classEST__SuffStats.html">EST_SuffStats</a> x,y,xx,yy,xy,se,e;</div>
 <div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;    <span class="keywordtype">double</span> <a class="code" href="group__EST__Track__aux__functions.html#ga03b14525b7ec007338d9150a537a3e4f">error</a>;</div>
 <div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;    <span class="keywordtype">double</span> v1,v2,v3;</div>
 <div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;</div>
 <div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;    <span class="keywordflow">if</span> (real.<a class="code" href="classEST__TMatrix.html#ad0d3c943e51fb813e0dc14c86f782045">num_rows</a>() != predicted.<a class="code" href="classEST__TMatrix.html#ad0d3c943e51fb813e0dc14c86f782045">num_rows</a>())</div>
-<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="EST__bool_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;  <span class="comment">// can&#39;t do this</span></div>
-<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;</div>
-<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;    <span class="keywordflow">for</span> (i=0; i &lt; real.<a class="code" href="classEST__TMatrix.html#ad0d3c943e51fb813e0dc14c86f782045">num_rows</a>(); i++)</div>
-<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;    {</div>
-<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;    r = real(i,0);</div>
-<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;    p = predicted(i,0);</div>
-<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;    x += <a class="code" href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a>;</div>
-<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;    y += r;</div>
-<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;    error = p-r;</div>
-<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;    se += error*<a class="code" href="group__EST__Track__aux__functions.html#ga03b14525b7ec007338d9150a537a3e4f">error</a>;</div>
-<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;    e += fabs(error);</div>
-<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;    xx += p*<a class="code" href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a>;</div>
-<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;    yy += r*r;</div>
-<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;    xy += p*r;</div>
-<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;    }</div>
-<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;</div>
-<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;    rmse = sqrt(se.<a class="code" href="classEST__SuffStats.html#ad854f0a905ee8d60b775188b9582c3ca">mean</a>());</div>
-<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;</div>
-<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;    v1 = xx.<a class="code" href="classEST__SuffStats.html#ad854f0a905ee8d60b775188b9582c3ca">mean</a>()-(x.<a class="code" href="classEST__SuffStats.html#ad854f0a905ee8d60b775188b9582c3ca">mean</a>()*x.<a class="code" href="classEST__SuffStats.html#ad854f0a905ee8d60b775188b9582c3ca">mean</a>());</div>
-<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;    v2 = yy.<a class="code" href="classEST__SuffStats.html#ad854f0a905ee8d60b775188b9582c3ca">mean</a>()-(y.<a class="code" href="classEST__SuffStats.html#ad854f0a905ee8d60b775188b9582c3ca">mean</a>()*y.<a class="code" href="classEST__SuffStats.html#ad854f0a905ee8d60b775188b9582c3ca">mean</a>());</div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;    {</div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;        correlation = 0;</div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="EST__bool_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;  <span class="comment">// can&#39;t do this</span></div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;    }</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;</div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;    <span class="keywordflow">for</span> (i=0; i &lt; real.<a class="code" href="classEST__TMatrix.html#ad0d3c943e51fb813e0dc14c86f782045">num_rows</a>(); i++)</div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;    {</div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;    r = real(i,0);</div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;    p = predicted(i,0);</div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;    x += p;</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;    y += r;</div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;    error = p-r;</div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;    se += error*<a class="code" href="group__EST__Track__aux__functions.html#ga03b14525b7ec007338d9150a537a3e4f">error</a>;</div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;    e += fabs(error);</div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;    xx += p*p;</div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;    yy += r*r;</div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;    xy += p*r;</div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;    }</div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;</div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;    rmse = sqrt(se.<a class="code" href="classEST__SuffStats.html#ad854f0a905ee8d60b775188b9582c3ca">mean</a>());</div>
 <div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;</div>
-<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;    v3 = v1*v2;</div>
-<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;</div>
-<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;    <span class="keywordflow">if</span> (v3 &lt;= 0)</div>
-<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;    {   <span class="comment">// happens when there&#39;s very little variation in x</span></div>
-<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;    correlation = 0;</div>
-<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;    rmse = se.<a class="code" href="classEST__SuffStats.html#ad854f0a905ee8d60b775188b9582c3ca">mean</a>();</div>
-<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="EST__bool_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
-<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;    }</div>
-<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;    <span class="comment">// Pearson&#39;s product moment correlation coefficient</span></div>
-<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;    correlation = (xy.<a class="code" href="classEST__SuffStats.html#ad854f0a905ee8d60b775188b9582c3ca">mean</a>() - (x.<a class="code" href="classEST__SuffStats.html#ad854f0a905ee8d60b775188b9582c3ca">mean</a>()*y.<a class="code" href="classEST__SuffStats.html#ad854f0a905ee8d60b775188b9582c3ca">mean</a>()))/ sqrt(v3);</div>
-<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;</div>
-<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;    <span class="comment">// I hate to have to do this but it is necessary.</span></div>
-<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;    <span class="comment">// When the the variation of X is very small v1*v2 approaches</span></div>
-<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;    <span class="comment">// 0 (the negative and equals case is caught above) but that</span></div>
-<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;    <span class="comment">// may not be enough when v1 or v2 are very small but positive.</span></div>
-<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;    <span class="comment">// So I catch it here.  If I knew more math I&#39;d be able to describe</span></div>
-<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;    <span class="comment">// this better but the code would remain the same.</span></div>
-<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;    <span class="keywordflow">if</span> ((correlation &lt;= 1.0) &amp;&amp; (correlation &gt;= -1.0))</div>
-<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="EST__bool_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>;</div>
-<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;    <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;    {</div>
-<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;    correlation = 0;</div>
-<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="EST__bool_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
-<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;    }</div>
-<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;}</div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;    v1 = xx.<a class="code" href="classEST__SuffStats.html#ad854f0a905ee8d60b775188b9582c3ca">mean</a>()-(x.<a class="code" href="classEST__SuffStats.html#ad854f0a905ee8d60b775188b9582c3ca">mean</a>()*x.<a class="code" href="classEST__SuffStats.html#ad854f0a905ee8d60b775188b9582c3ca">mean</a>());</div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;    v2 = yy.<a class="code" href="classEST__SuffStats.html#ad854f0a905ee8d60b775188b9582c3ca">mean</a>()-(y.<a class="code" href="classEST__SuffStats.html#ad854f0a905ee8d60b775188b9582c3ca">mean</a>()*y.<a class="code" href="classEST__SuffStats.html#ad854f0a905ee8d60b775188b9582c3ca">mean</a>());</div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;</div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;    v3 = v1*v2;</div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;</div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;    <span class="keywordflow">if</span> (v3 &lt;= 0)</div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;    {   <span class="comment">// happens when there&#39;s very little variation in x</span></div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;    correlation = 0;</div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;    rmse = se.<a class="code" href="classEST__SuffStats.html#ad854f0a905ee8d60b775188b9582c3ca">mean</a>();</div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="EST__bool_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;    }</div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;    <span class="comment">// Pearson&#39;s product moment correlation coefficient</span></div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;    correlation = (xy.<a class="code" href="classEST__SuffStats.html#ad854f0a905ee8d60b775188b9582c3ca">mean</a>() - (x.<a class="code" href="classEST__SuffStats.html#ad854f0a905ee8d60b775188b9582c3ca">mean</a>()*y.<a class="code" href="classEST__SuffStats.html#ad854f0a905ee8d60b775188b9582c3ca">mean</a>()))/ sqrt(v3);</div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;</div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;    <span class="comment">// I hate to have to do this but it is necessary.</span></div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;    <span class="comment">// When the the variation of X is very small v1*v2 approaches</span></div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;    <span class="comment">// 0 (the negative and equals case is caught above) but that</span></div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;    <span class="comment">// may not be enough when v1 or v2 are very small but positive.</span></div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;    <span class="comment">// So I catch it here.  If I knew more math I&#39;d be able to describe</span></div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;    <span class="comment">// this better but the code would remain the same.</span></div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;    <span class="keywordflow">if</span> ((correlation &lt;= 1.0) &amp;&amp; (correlation &gt;= -1.0))</div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="EST__bool_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>;</div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;    <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;    {</div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;    correlation = 0;</div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="EST__bool_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;    }</div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;}</div>
 <div class="ttc" id="classEST__TMatrix_html_af8c4b7eed4aa9a555e12df2fb1ac3264"><div class="ttname"><a href="classEST__TMatrix.html#af8c4b7eed4aa9a555e12df2fb1ac3264">EST_TMatrix::a_no_check</a></div><div class="ttdeci">INLINE const T &amp; a_no_check(int row, int col) const </div><div class="ttdoc">const access with no bounds check, care recommend </div><div class="ttdef"><b>Definition:</b> <a href="EST__TMatrix_8h_source.html#l00181">EST_TMatrix.h:181</a></div></div>
 <div class="ttc" id="EST__multistats_8h_html_a8694b81ef366e8f06e6e09b2c4b7a797"><div class="ttname"><a href="EST__multistats_8h.html#a8694b81ef366e8f06e6e09b2c4b7a797">ols_test</a></div><div class="ttdeci">int ols_test(const EST_FMatrix &amp;real, const EST_FMatrix &amp;predicted, float &amp;correlation, float &amp;rmse)</div><div class="ttdef"><b>Definition:</b> <a href="EST__ols_8cc_source.html#l00286">EST_ols.cc:286</a></div></div>
 <div class="ttc" id="classEST__TMatrix_html_a3e7bf2fa066b4fd0f627709b6aff45b8"><div class="ttname"><a href="classEST__TMatrix.html#a3e7bf2fa066b4fd0f627709b6aff45b8">EST_TMatrix::num_columns</a></div><div class="ttdeci">int num_columns() const </div><div class="ttdoc">return number of columns </div><div class="ttdef"><b>Definition:</b> <a href="EST__TMatrix_8h_source.html#l00178">EST_TMatrix.h:178</a></div></div>
@@ -462,7 +465,6 @@ $(document).ready(function(){initNavTree('EST__ols_8cc_source.html','');});
 <div class="ttc" id="classEST__SuffStats_html"><div class="ttname"><a href="classEST__SuffStats.html">EST_SuffStats</a></div><div class="ttdef"><b>Definition:</b> <a href="EST__simplestats_8h_source.html#l00136">EST_simplestats.h:136</a></div></div>
 <div class="ttc" id="classEST__TSimpleMatrix_html_a315d47f4050c203fee80ad25d86696a5"><div class="ttname"><a href="classEST__TSimpleMatrix.html#a315d47f4050c203fee80ad25d86696a5">EST_TSimpleMatrix::resize</a></div><div class="ttdeci">void resize(int rows, int cols, int set=1)</div><div class="ttdoc">resize matrix </div><div class="ttdef"><b>Definition:</b> <a href="EST__TSimpleMatrix_8cc_source.html#l00083">EST_TSimpleMatrix.cc:83</a></div></div>
 <div class="ttc" id="classEST__TMatrix_html_ad0d3c943e51fb813e0dc14c86f782045"><div class="ttname"><a href="classEST__TMatrix.html#ad0d3c943e51fb813e0dc14c86f782045">EST_TMatrix::num_rows</a></div><div class="ttdeci">int num_rows() const </div><div class="ttdoc">return number of rows </div><div class="ttdef"><b>Definition:</b> <a href="EST__TMatrix_8h_source.html#l00176">EST_TMatrix.h:176</a></div></div>
-<div class="ttc" id="editline_8c_html_a5791904baf12239aadc3a8280a03e8c5"><div class="ttname"><a href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a></div><div class="ttdeci">void char * p</div><div class="ttdef"><b>Definition:</b> <a href="editline_8c_source.html#l01395">editline.c:1395</a></div></div>
 <div class="ttc" id="EST__bool_8h_html_aa8cecfc5c5c054d2875c03e77b7be15d"><div class="ttname"><a href="EST__bool_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a></div><div class="ttdeci">#define TRUE</div><div class="ttdef"><b>Definition:</b> <a href="EST__bool_8h_source.html#l00118">EST_bool.h:118</a></div></div>
 <div class="ttc" id="classEST__TSimpleVector_html_a92d3bb2b0244dcf2632a6c4151e583ee"><div class="ttname"><a href="classEST__TSimpleVector.html#a92d3bb2b0244dcf2632a6c4151e583ee">EST_TSimpleVector::resize</a></div><div class="ttdeci">void resize(int n, int set=1)</div><div class="ttdoc">resize vector </div><div class="ttdef"><b>Definition:</b> <a href="EST__TSimpleVector_8cc_source.html#l00067">EST_TSimpleVector.cc:67</a></div></div>
 <div class="ttc" id="classEST__FMatrix_html"><div class="ttname"><a href="classEST__FMatrix.html">EST_FMatrix</a></div><div class="ttdef"><b>Definition:</b> <a href="EST__FMatrix_8h_source.html#l00058">EST_FMatrix.h:58</a></div></div>
@@ -473,7 +475,7 @@ $(document).ready(function(){initNavTree('EST__ols_8cc_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a2a5b97680f4688c5edec2038dd4832f.html">stats</a></li><li class="navelem"><a class="el" href="EST__ols_8cc.html">EST_ols.cc</a></li>
-    <li class="footer">Generated on Thu Jan 30 2014 00:27:13 for Edinburgh Speech Tools by
+    <li class="footer">Generated on Tue Feb 11 2014 12:00:39 for Edinburgh Speech Tools by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

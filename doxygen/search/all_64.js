@@ -181,7 +181,7 @@ var searchData=
   ['description',['description',['../structInfo.html#a4ba8fca35d84da214c79a4a0c6339040',1,'Info::description()'],['../structTS__Info.html#a9c604a767ad7cee517c5d1161c503f2b',1,'TS_Info::description()'],['../classEST__Window.html#a0d612d3849bc31d49f97ef54bb9f119f',1,'EST_Window::description()']]],
   ['design_5ffilter_5fmain_2ecc',['design_filter_main.cc',['../design__filter__main_8cc.html',1,'']]],
   ['design_5ffilter_5fman_2edox',['design_filter_man.dox',['../design__filter__man_8dox.html',1,'']]],
-  ['design_5ffilter',['design_filter',['../design_filter_manual.html',1,'']]],
+  ['design_5ffilter',['design_filter',['../design_filter_manual.html',1,'estmanuals']]],
   ['design_5ffir_5ffilter',['design_FIR_filter',['../group__FilterDesign.html#ga032399891e7562bbff60a6b62cc27348',1,'design_FIR_filter(const EST_FVector &amp;freq_response, int filter_order):&#160;filter.cc'],['../group__FilterDesign.html#ga032399891e7562bbff60a6b62cc27348',1,'design_FIR_filter(const EST_FVector &amp;frequency_response, int filter_order):&#160;filter.cc']]],
   ['design_5fhigh_5for_5flow_5fpass_5ffir_5ffilter',['design_high_or_low_pass_FIR_filter',['../filter_8cc.html#a2a579d4c29be0fbcc0f43bba856aff78',1,'filter.cc']]],
   ['design_5fhighpass_5ffir_5ffilter',['design_highpass_FIR_filter',['../group__FilterDesign.html#ga0e6b2d0bf174fdc27506d0aa31b2c07c',1,'design_highpass_FIR_filter(int sample_rate, int freq, int order):&#160;filter.cc'],['../group__FilterDesign.html#ga0e6b2d0bf174fdc27506d0aa31b2c07c',1,'design_highpass_FIR_filter(int sample_rate, int freq, int order):&#160;filter.cc']]],

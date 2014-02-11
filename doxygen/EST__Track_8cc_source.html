@@ -336,11 +336,11 @@ $(document).ready(function(){initNavTree('EST__Track_8cc_source.html','');});
 <div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> map_to_channels(<a class="code" href="classEST__TList.html">EST_StrList</a> &amp;channel_map, </div>
 <div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;             <a class="code" href="classEST__TList.html">EST_StrList</a> &amp;channel_names)</div>
 <div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;{</div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;    <a class="code" href="classEST__UItem.html">EST_Litem</a> *<a class="code" href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a>;</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;    <a class="code" href="classEST__UItem.html">EST_Litem</a> *p;</div>
 <div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;    <a class="code" href="classEST__String.html">EST_String</a> b, type, first, last;</div>
 <div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;    <span class="keywordtype">int</span> n_f, n_l;</div>
 <div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;</div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;    <span class="keywordflow">for</span> (p = channel_map.<a class="code" href="classEST__UList.html#a36cd9a03aa4677736edb4866364a204f">head</a>(); <a class="code" href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a>; p = p-&gt;<a class="code" href="classEST__UItem.html#afc5292d4da883de227f5a92bb6df719d">next</a>())</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;    <span class="keywordflow">for</span> (p = channel_map.<a class="code" href="classEST__UList.html#a36cd9a03aa4677736edb4866364a204f">head</a>(); p; p = p-&gt;<a class="code" href="classEST__UItem.html#afc5292d4da883de227f5a92bb6df719d">next</a>())</div>
 <div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;    {</div>
 <div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;    b = channel_map(p);</div>
 <div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;    <span class="keywordflow">if</span> (b.<a class="code" href="classEST__String.html#a30561ff762b925bbec535f148853364e">matches</a>(<span class="stringliteral">&quot;$&quot;</span>, 0))</div>
@@ -381,7 +381,7 @@ $(document).ready(function(){initNavTree('EST__Track_8cc_source.html','');});
 <div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;    <a class="code" href="classEST__TList.html">EST_StrList</a> x;</div>
 <div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;    map_to_channels(new_channels, x);</div>
 <div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;    <span class="keywordtype">int</span> i;</div>
-<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;    <a class="code" href="classEST__UItem.html">EST_Litem</a> *<a class="code" href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a>;</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;    <a class="code" href="classEST__UItem.html">EST_Litem</a> *p;</div>
 <div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;</div>
 <div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;    <span class="keywordtype">int</span> new_num_channels;</div>
 <div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;    new_num_channels = x.<a class="code" href="classEST__UList.html#a157db3e634c5c8faad11d2a79729419d">length</a>();</div>
@@ -393,7 +393,7 @@ $(document).ready(function(){initNavTree('EST__Track_8cc_source.html','');});
 <div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;    p_channel_names.resize(new_num_channels);</div>
 <div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;    <span class="comment">// this ensures the new channels have a default name</span></div>
 <div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;</div>
-<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;    <span class="keywordflow">for</span> (i = 0, p = x.<a class="code" href="classEST__UList.html#a36cd9a03aa4677736edb4866364a204f">head</a>(); <a class="code" href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a> ; p = p-&gt;<a class="code" href="classEST__UItem.html#afc5292d4da883de227f5a92bb6df719d">next</a>(), ++i)</div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;    <span class="keywordflow">for</span> (i = 0, p = x.<a class="code" href="classEST__UList.html#a36cd9a03aa4677736edb4866364a204f">head</a>(); p ; p = p-&gt;<a class="code" href="classEST__UItem.html#afc5292d4da883de227f5a92bb6df719d">next</a>(), ++i)</div>
 <div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;    set_channel_name(x(p), i);</div>
 <div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;</div>
 <div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;    p_values.resize(new_num_frames, new_num_channels, set);</div>
@@ -407,7 +407,7 @@ $(document).ready(function(){initNavTree('EST__Track_8cc_source.html','');});
 <div class="line"><a name="l00313"></a><span class="lineno"><a class="line" href="classEST__Track.html#aac924bd760f8f893ee3b49f0b58a449b">  313</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classEST__Track.html#aac924bd760f8f893ee3b49f0b58a449b">EST_Track::resize_aux</a>(<a class="code" href="classEST__TList.html">EST_StrList</a> &amp;new_aux_channels, <span class="keywordtype">bool</span> <a class="code" href="EST__Tvectlist_8cc.html#af5f5fbfc01d24a6e5d2a7022f1c9c5c7">set</a>)</div>
 <div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;{</div>
 <div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;    <span class="keywordtype">int</span> i;</div>
-<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;    <a class="code" href="classEST__UItem.html">EST_Litem</a> *<a class="code" href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a>;</div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;    <a class="code" href="classEST__UItem.html">EST_Litem</a> *p;</div>
 <div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;</div>
 <div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;    <span class="keywordtype">int</span> new_num_channels;</div>
 <div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;    new_num_channels = new_aux_channels.<a class="code" href="classEST__UList.html#a157db3e634c5c8faad11d2a79729419d">length</a>();</div>
@@ -415,7 +415,7 @@ $(document).ready(function(){initNavTree('EST__Track_8cc_source.html','');});
 <div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;    p_aux_names.resize(new_num_channels);</div>
 <div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;</div>
 <div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;    <span class="comment">// this ensures the new channels have a default name</span></div>
-<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;    <span class="keywordflow">for</span> (i = 0, p = new_aux_channels.<a class="code" href="classEST__UList.html#a36cd9a03aa4677736edb4866364a204f">head</a>(); <a class="code" href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a> ; p = p-&gt;<a class="code" href="classEST__UItem.html#afc5292d4da883de227f5a92bb6df719d">next</a>(), ++i)</div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;    <span class="keywordflow">for</span> (i = 0, p = new_aux_channels.<a class="code" href="classEST__UList.html#a36cd9a03aa4677736edb4866364a204f">head</a>(); p ; p = p-&gt;<a class="code" href="classEST__UItem.html#afc5292d4da883de227f5a92bb6df719d">next</a>(), ++i)</div>
 <div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;    set_aux_channel_name(new_aux_channels(p), i);</div>
 <div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;</div>
 <div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;    p_aux.resize(num_frames(), new_num_channels, set);</div>
@@ -830,7 +830,7 @@ $(document).ready(function(){initNavTree('EST__Track_8cc_source.html','');});
 <div class="line"><a name="l00736"></a><span class="lineno"><a class="line" href="classEST__Track.html#a5aa3277774d0275701666ec525df36e8">  736</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="classEST__Track.html#a5aa3277774d0275701666ec525df36e8">EST_Track::interp_value</a>(<span class="keywordtype">float</span> x, <span class="keywordtype">float</span> fl)</div>
 <div class="line"><a name="l00737"></a><span class="lineno">  737</span>&#160;{</div>
 <div class="line"><a name="l00738"></a><span class="lineno">  738</span>&#160;    <span class="keywordtype">int</span> i;</div>
-<div class="line"><a name="l00739"></a><span class="lineno">  739</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a>, n;</div>
+<div class="line"><a name="l00739"></a><span class="lineno">  739</span>&#160;    <span class="keywordtype">int</span> p, n;</div>
 <div class="line"><a name="l00740"></a><span class="lineno">  740</span>&#160;    <span class="keywordtype">float</span> cf;</div>
 <div class="line"><a name="l00741"></a><span class="lineno">  741</span>&#160;    </div>
 <div class="line"><a name="l00742"></a><span class="lineno">  742</span>&#160;    <span class="keywordflow">if</span> (p_equal_space)</div>
@@ -1732,11 +1732,10 @@ $(document).ready(function(){initNavTree('EST__Track_8cc_source.html','');});
 <div class="ttc" id="classEST__String_html_a69df8f68d20bb7a2a4b820efa3b0bde9"><div class="ttname"><a href="classEST__String.html#a69df8f68d20bb7a2a4b820efa3b0bde9">EST_String::after</a></div><div class="ttdeci">EST_String after(int pos, int len=1) const </div><div class="ttdoc">Part after pos+len. </div><div class="ttdef"><b>Definition:</b> <a href="EST__String_8h_source.html#l00317">EST_String.h:317</a></div></div>
 <div class="ttc" id="classEST__String_html_ae67ad0b525e224f9862f31ba74854e8b"><div class="ttname"><a href="classEST__String.html#ae67ad0b525e224f9862f31ba74854e8b">EST_String::before</a></div><div class="ttdeci">EST_String before(int pos, int len=0) const </div><div class="ttdoc">Part before position. </div><div class="ttdef"><b>Definition:</b> <a href="EST__String_8h_source.html#l00285">EST_String.h:285</a></div></div>
 <div class="ttc" id="classEST__Track_html_afab68783d589517afdc385430f9fe8c2"><div class="ttname"><a href="classEST__Track.html#afab68783d589517afdc385430f9fe8c2">EST_Track::empty</a></div><div class="ttdeci">int empty() const </div><div class="ttdoc">returns true if no values are set in the frame </div><div class="ttdef"><b>Definition:</b> <a href="EST__Track_8cc_source.html#l01037">EST_Track.cc:1037</a></div></div>
-<div class="ttc" id="editline_8c_html_a5791904baf12239aadc3a8280a03e8c5"><div class="ttname"><a href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a></div><div class="ttdeci">void char * p</div><div class="ttdef"><b>Definition:</b> <a href="editline_8c_source.html#l01395">editline.c:1395</a></div></div>
 <div class="ttc" id="siod__est_8h_html_a4ae7d8960223d651225601ba63fea8c3"><div class="ttname"><a href="siod__est_8h.html#a4ae7d8960223d651225601ba63fea8c3">val</a></div><div class="ttdeci">class EST_Val &amp; val(LISP x)</div><div class="ttdef"><b>Definition:</b> <a href="siod__est_8cc_source.html#l00155">siod_est.cc:155</a></div></div>
 <div class="ttc" id="EST__bool_8h_html_aa8cecfc5c5c054d2875c03e77b7be15d"><div class="ttname"><a href="EST__bool_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a></div><div class="ttdeci">#define TRUE</div><div class="ttdef"><b>Definition:</b> <a href="EST__bool_8h_source.html#l00118">EST_bool.h:118</a></div></div>
 <div class="ttc" id="classEST__THandle_html"><div class="ttname"><a href="classEST__THandle.html">EST_THandle&lt; EST_TrackMap, EST_TrackMap &gt;</a></div></div>
-<div class="ttc" id="classEST__String_html_a30561ff762b925bbec535f148853364e"><div class="ttname"><a href="classEST__String.html#a30561ff762b925bbec535f148853364e">EST_String::matches</a></div><div class="ttdeci">int matches(const char *e, int pos=0) const </div><div class="ttdoc">Exactly match this string? </div><div class="ttdef"><b>Definition:</b> <a href="EST__String_8cc_source.html#l00652">EST_String.cc:652</a></div></div>
+<div class="ttc" id="classEST__String_html_a30561ff762b925bbec535f148853364e"><div class="ttname"><a href="classEST__String.html#a30561ff762b925bbec535f148853364e">EST_String::matches</a></div><div class="ttdeci">int matches(const char *e, int pos=0) const </div><div class="ttdoc">Exactly match this string? </div><div class="ttdef"><b>Definition:</b> <a href="EST__String_8cc_source.html#l00650">EST_String.cc:650</a></div></div>
 <div class="ttc" id="classEST__Track_html_aae5e26c895d5aa90916cedaf18848e37"><div class="ttname"><a href="classEST__Track.html#aae5e26c895d5aa90916cedaf18848e37">EST_Track::set_equal_space</a></div><div class="ttdeci">void set_equal_space(bool t)</div><div class="ttdef"><b>Definition:</b> <a href="EST__Track_8h_source.html#l00674">EST_Track.h:674</a></div></div>
 <div class="ttc" id="classEST__Track_html"><div class="ttname"><a href="classEST__Track.html">EST_Track</a></div><div class="ttdef"><b>Definition:</b> <a href="EST__Track_8h_source.html#l00089">EST_Track.h:89</a></div></div>
 <div class="ttc" id="classEST__Track_html_a0664829b7fa8f07c797da9306ca76dd3"><div class="ttname"><a href="classEST__Track.html#a0664829b7fa8f07c797da9306ca76dd3">EST_Track::operator|=</a></div><div class="ttdeci">EST_Track &amp; operator|=(const EST_Track &amp;a)</div><div class="ttdef"><b>Definition:</b> <a href="EST__Track_8cc_source.html#l00361">EST_Track.cc:361</a></div></div>
@@ -1759,7 +1758,7 @@ $(document).ready(function(){initNavTree('EST__Track_8cc_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_0b40697db5b0e6bdaab126f26ffd8789.html">speech_class</a></li><li class="navelem"><a class="el" href="EST__Track_8cc.html">EST_Track.cc</a></li>
-    <li class="footer">Generated on Thu Jan 30 2014 00:27:13 for Edinburgh Speech Tools by
+    <li class="footer">Generated on Tue Feb 11 2014 12:00:39 for Edinburgh Speech Tools by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

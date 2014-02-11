@@ -414,45 +414,46 @@ $(document).ready(function(){initNavTree('EST__Chunk_8cc_source.html','');});
 <div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;{</div>
 <div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;  <span class="keywordflow">if</span> (!cp.ptr || cp.ptr-&gt;size &lt; newsize)</div>
 <div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;    {</div>
-<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;      <span class="keywordflow">if</span> (cp.ptr)</div>
-<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;    <a class="code" href="EST__Chunk_8cc.html#aa39b5b94643be5815131306e3930f3c7">cp_make_updatable</a>(cp);</div>
-<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;      <a class="code" href="classEST__Chunk.html">EST_Chunk</a> *newchunk = <span class="keyword">new</span>(newsize) <a class="code" href="classEST__Chunk.html">EST_Chunk</a>;</div>
-<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;      memcpy(newchunk-&gt;memory, cp.ptr-&gt;memory, cp.ptr-&gt;size);</div>
-<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;      cp = newchunk;</div>
-<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;    }</div>
-<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;}</div>
-<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;</div>
-<div class="line"><a name="l00331"></a><span class="lineno"><a class="line" href="EST__Chunk_8cc.html#ab7daa94eb29a91801e5e32e168acb9a1">  331</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="EST__Chunk_8cc.html#a2f1a2437b991f78d54b0f6b164c29f5a">grow_chunk</a>(<a class="code" href="classEST__ChunkPtr.html">EST_ChunkPtr</a> &amp;cp, <a class="code" href="classEST__Chunk.html#ad3ac0012d781663e9a0a31a4da99369a">EST_Chunk::EST_chunk_size</a> inuse, <a class="code" href="classEST__Chunk.html#ad3ac0012d781663e9a0a31a4da99369a">EST_Chunk::EST_chunk_size</a> newsize)</div>
-<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;{</div>
-<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;  <span class="keywordflow">if</span> (!cp.ptr || cp.ptr-&gt;size &lt; newsize)</div>
-<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;    {</div>
-<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;      <span class="keywordflow">if</span> (cp.ptr)</div>
-<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;    <a class="code" href="EST__Chunk_8cc.html#aa39b5b94643be5815131306e3930f3c7">cp_make_updatable</a>(cp, inuse);</div>
-<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;      <a class="code" href="classEST__Chunk.html">EST_Chunk</a> *newchunk = <span class="keyword">new</span>(newsize) <a class="code" href="classEST__Chunk.html">EST_Chunk</a>;</div>
-<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;      memcpy(newchunk-&gt;memory, cp.ptr-&gt;memory, inuse);</div>
-<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;      cp = newchunk;</div>
-<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;    }</div>
-<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;}</div>
-<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;</div>
-<div class="line"><a name="l00343"></a><span class="lineno"><a class="line" href="EST__Chunk_8cc.html#a19b6c478b44aa9ce6474ca89d6e522e2">  343</a></span>&#160;ostream &amp;<a class="code" href="EST__FeatureData_8cc.html#a0c83c8229027435b6dc95159a8794f1c">operator &lt;&lt; </a>(ostream &amp;<a class="code" href="regerror_8c.html#a20a6d30d76bef587ebad8cb70f9009ca">s</a>, <span class="keyword">const</span> <a class="code" href="classEST__Chunk.html">EST_Chunk</a> &amp;ch)</div>
-<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;{</div>
-<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;  <span class="keywordtype">char</span> buff[21];</div>
-<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;</div>
-<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;  <span class="keywordflow">if</span> (ch.size&lt;20)</div>
-<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;    {</div>
-<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;    memcpy(buff, ch.memory, ch.size);</div>
-<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;    buff[ch.size]=<span class="charliteral">&#39;\0&#39;</span>;</div>
-<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;    }</div>
-<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;  <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;    {</div>
-<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;    memcpy(buff, ch.memory, 20);</div>
-<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;    buff[20]=<span class="charliteral">&#39;\0&#39;</span>;</div>
-<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;    }</div>
-<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;    </div>
-<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;  <span class="keywordflow">return</span> (s&lt;&lt; <span class="stringliteral">&quot;[&quot;</span> &lt;&lt; ch.size &lt;&lt; <span class="stringliteral">&quot;!&quot;</span> &lt;&lt; ch.count &lt;&lt; <span class="stringliteral">&quot;!&quot;</span> &lt;&lt; buff &lt;&lt; <span class="stringliteral">&quot;]&quot;</span>);</div>
-<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;}</div>
-<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;</div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;      <a class="code" href="classEST__Chunk.html">EST_Chunk</a> *newchunk = <span class="keyword">new</span>(newsize) <a class="code" href="classEST__Chunk.html">EST_Chunk</a>;</div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;      <span class="keywordflow">if</span> (cp.ptr) {</div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;    <a class="code" href="EST__Chunk_8cc.html#aa39b5b94643be5815131306e3930f3c7">cp_make_updatable</a>(cp);</div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;        memcpy(newchunk-&gt;memory, cp.ptr-&gt;memory, cp.ptr-&gt;size);</div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;      }</div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;      cp = newchunk;</div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;    }</div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;}</div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;</div>
+<div class="line"><a name="l00332"></a><span class="lineno"><a class="line" href="EST__Chunk_8cc.html#ab7daa94eb29a91801e5e32e168acb9a1">  332</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="EST__Chunk_8cc.html#a2f1a2437b991f78d54b0f6b164c29f5a">grow_chunk</a>(<a class="code" href="classEST__ChunkPtr.html">EST_ChunkPtr</a> &amp;cp, <a class="code" href="classEST__Chunk.html#ad3ac0012d781663e9a0a31a4da99369a">EST_Chunk::EST_chunk_size</a> inuse, <a class="code" href="classEST__Chunk.html#ad3ac0012d781663e9a0a31a4da99369a">EST_Chunk::EST_chunk_size</a> newsize)</div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;{</div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;  <span class="keywordflow">if</span> (!cp.ptr || cp.ptr-&gt;size &lt; newsize)</div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;    {</div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;      <span class="keywordflow">if</span> (cp.ptr)</div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;    <a class="code" href="EST__Chunk_8cc.html#aa39b5b94643be5815131306e3930f3c7">cp_make_updatable</a>(cp, inuse);</div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;      <a class="code" href="classEST__Chunk.html">EST_Chunk</a> *newchunk = <span class="keyword">new</span>(newsize) <a class="code" href="classEST__Chunk.html">EST_Chunk</a>;</div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;      memcpy(newchunk-&gt;memory, cp.ptr-&gt;memory, inuse);</div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;      cp = newchunk;</div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;    }</div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;}</div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;</div>
+<div class="line"><a name="l00344"></a><span class="lineno"><a class="line" href="EST__Chunk_8cc.html#a19b6c478b44aa9ce6474ca89d6e522e2">  344</a></span>&#160;ostream &amp;<a class="code" href="EST__FeatureData_8cc.html#a0c83c8229027435b6dc95159a8794f1c">operator &lt;&lt; </a>(ostream &amp;<a class="code" href="regerror_8c.html#a20a6d30d76bef587ebad8cb70f9009ca">s</a>, <span class="keyword">const</span> <a class="code" href="classEST__Chunk.html">EST_Chunk</a> &amp;ch)</div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;{</div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;  <span class="keywordtype">char</span> buff[21];</div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;</div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;  <span class="keywordflow">if</span> (ch.size&lt;20)</div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;    {</div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;    memcpy(buff, ch.memory, ch.size);</div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;    buff[ch.size]=<span class="charliteral">&#39;\0&#39;</span>;</div>
+<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;    }</div>
+<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;  <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;    {</div>
+<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;    memcpy(buff, ch.memory, 20);</div>
+<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;    buff[20]=<span class="charliteral">&#39;\0&#39;</span>;</div>
+<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;    }</div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;    </div>
+<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;  <span class="keywordflow">return</span> (s&lt;&lt; <span class="stringliteral">&quot;[&quot;</span> &lt;&lt; ch.size &lt;&lt; <span class="stringliteral">&quot;!&quot;</span> &lt;&lt; ch.count &lt;&lt; <span class="stringliteral">&quot;!&quot;</span> &lt;&lt; buff &lt;&lt; <span class="stringliteral">&quot;]&quot;</span>);</div>
+<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;}</div>
 <div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;</div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;</div>
 <div class="ttc" id="EST__Chunk_8cc_html_aaf183ccfef34134d302eb4843280416a"><div class="ttname"><a href="EST__Chunk_8cc.html#aaf183ccfef34134d302eb4843280416a">chunk_allocate</a></div><div class="ttdeci">EST_ChunkPtr chunk_allocate(int bytes)</div><div class="ttdef"><b>Definition:</b> <a href="EST__Chunk_8cc_source.html#l00239">EST_Chunk.cc:239</a></div></div>
 <div class="ttc" id="EST__walloc_8h_html_a9029f7544ccdae5305754e18b80ae7cc"><div class="ttname"><a href="EST__walloc_8h.html#a9029f7544ccdae5305754e18b80ae7cc">walloc</a></div><div class="ttdeci">#define walloc(TYPE, SIZE)</div><div class="ttdef"><b>Definition:</b> <a href="EST__walloc_8h_source.html#l00049">EST_walloc.h:49</a></div></div>
 <div class="ttc" id="regerror_8c_html_a91e86bead1c0e6cf1ea1546b897c9e6f"><div class="ttname"><a href="regerror_8c.html#a91e86bead1c0e6cf1ea1546b897c9e6f">exit</a></div><div class="ttdeci">exit(1)</div></div>
@@ -469,7 +470,7 @@ $(document).ready(function(){initNavTree('EST__Chunk_8cc_source.html','');});
 <div class="ttc" id="EST__Chunk_8cc_html_aa39b5b94643be5815131306e3930f3c7"><div class="ttname"><a href="EST__Chunk_8cc.html#aa39b5b94643be5815131306e3930f3c7">cp_make_updatable</a></div><div class="ttdeci">void cp_make_updatable(EST_ChunkPtr &amp;cp, EST_Chunk::EST_chunk_size inuse)</div><div class="ttdef"><b>Definition:</b> <a href="EST__Chunk_8cc_source.html#l00288">EST_Chunk.cc:288</a></div></div>
 <div class="ttc" id="structold__tbuffer_html_a6c6d74e5a0ed84e6b4eeef878b6f5a8c"><div class="ttname"><a href="structold__tbuffer.html#a6c6d74e5a0ed84e6b4eeef878b6f5a8c">old_tbuffer::size</a></div><div class="ttdeci">unsigned int size</div><div class="ttdef"><b>Definition:</b> <a href="EST__TBuffer_8h_source.html#l00060">EST_TBuffer.h:60</a></div></div>
 <div class="ttc" id="EST__Chunk_8h_html_ab58eb270e0fd72b6bad933fb0ca6d6f9"><div class="ttname"><a href="EST__Chunk_8h.html#ab58eb270e0fd72b6bad933fb0ca6d6f9">CHUNK_WARN</a></div><div class="ttdeci">#define CHUNK_WARN(WHAT)</div><div class="ttdef"><b>Definition:</b> <a href="EST__Chunk_8h_source.html#l00061">EST_Chunk.h:61</a></div></div>
-<div class="ttc" id="EST__walloc_8h_html_a94b50eb23ef1bf35d8fb07e716f1f9ed"><div class="ttname"><a href="EST__walloc_8h.html#a94b50eb23ef1bf35d8fb07e716f1f9ed">wfree</a></div><div class="ttdeci">void wfree(void *p)</div><div class="ttdef"><b>Definition:</b> <a href="walloc_8c_source.html#l00146">walloc.c:146</a></div></div>
+<div class="ttc" id="EST__walloc_8h_html_a94b50eb23ef1bf35d8fb07e716f1f9ed"><div class="ttname"><a href="EST__walloc_8h.html#a94b50eb23ef1bf35d8fb07e716f1f9ed">wfree</a></div><div class="ttdeci">void wfree(void *p)</div><div class="ttdef"><b>Definition:</b> <a href="walloc_8c_source.html#l00161">walloc.c:161</a></div></div>
 <div class="ttc" id="classEST__ChunkPtr_html_a002971681c04f80fda85bd699e029e30"><div class="ttname"><a href="classEST__ChunkPtr.html#a002971681c04f80fda85bd699e029e30">EST_ChunkPtr::operator()</a></div><div class="ttdeci">char &amp; operator()(int i) CII(</div><div class="ttdef"><b>Definition:</b> <a href="EST__Chunk_8h_source.html#l00225">EST_Chunk.h:225</a></div></div>
 <div class="ttc" id="EST__Chunk_8h_html_a523eaf5b650f38c307a6aab7f957fa2b"><div class="ttname"><a href="EST__Chunk_8h.html#a523eaf5b650f38c307a6aab7f957fa2b">MAX_CHUNK_SIZE</a></div><div class="ttdeci">#define MAX_CHUNK_SIZE</div><div class="ttdef"><b>Definition:</b> <a href="EST__Chunk_8h_source.html#l00112">EST_Chunk.h:112</a></div></div>
 <div class="ttc" id="EST__FeatureData_8cc_html_a0c83c8229027435b6dc95159a8794f1c"><div class="ttname"><a href="EST__FeatureData_8cc.html#a0c83c8229027435b6dc95159a8794f1c">operator&lt;&lt;</a></div><div class="ttdeci">ostream &amp; operator&lt;&lt;(ostream &amp;st, const EST_FeatureData &amp;d)</div><div class="ttdef"><b>Definition:</b> <a href="EST__FeatureData_8cc_source.html#l00495">EST_FeatureData.cc:495</a></div></div>
@@ -479,7 +480,7 @@ $(document).ready(function(){initNavTree('EST__Chunk_8cc_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_48e186528d8523b137164d01852e16c8.html">base_class</a></li><li class="navelem"><a class="el" href="dir_a2327e91f2ef855be238e739f607edbc.html">string</a></li><li class="navelem"><a class="el" href="EST__Chunk_8cc.html">EST_Chunk.cc</a></li>
-    <li class="footer">Generated on Thu Jan 30 2014 00:27:11 for Edinburgh Speech Tools by
+    <li class="footer">Generated on Tue Feb 11 2014 12:00:37 for Edinburgh Speech Tools by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

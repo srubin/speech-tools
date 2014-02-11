@@ -6,7 +6,7 @@ var searchData=
   ['scfg_5fparse',['scfg_parse',['../scfg_parse_manual.html',1,'estmanuals']]],
   ['scfg_5ftest',['scfg_test',['../scfg_test_manual.html',1,'estmanuals']]],
   ['scfg_5ftrain',['scfg_train',['../scfg_train_manual.html',1,'estmanuals']]],
-  ['sig2fv',['sig2fv',['../sig2fv_manual.html',1,'']]],
+  ['sig2fv',['sig2fv',['../sig2fv_manual.html',1,'estmanuals']]],
   ['sigfilter',['sigfilter',['../sigfilter_manual.html',1,'estmanuals']]],
   ['siod',['siod',['../siod_manual.html',1,'estmanuals']]],
   ['spectgen',['spectgen',['../spectgen_manual.html',1,'estmanuals']]]

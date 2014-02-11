@@ -157,7 +157,7 @@ Functions</h2></td></tr>
 <tr class="separator:abd0f5ef8a781f69794e3ac11d364550e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a567266f0351ad318014e01dc430699cb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="EST__Item_8h.html#a567266f0351ad318014e01dc430699cb">evaluate</a> (<a class="el" href="classEST__Item.html">EST_Item</a> *a, <a class="el" href="classEST__Features.html">EST_Features</a> &amp;f)</td></tr>
 <tr class="separator:a567266f0351ad318014e01dc430699cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abeba71a90310f799674a3fc1aec00499"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="EST__Item_8h.html#abeba71a90310f799674a3fc1aec00499">EST_register_feature_function_package</a> (const char *name, void(*init_fn)(<a class="el" href="classEST__FeatureFunctionPackage.html">EST_FeatureFunctionPackage</a> &amp;<a class="el" href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a>))</td></tr>
+<tr class="memitem:abeba71a90310f799674a3fc1aec00499"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="EST__Item_8h.html#abeba71a90310f799674a3fc1aec00499">EST_register_feature_function_package</a> (const char *name, void(*init_fn)(<a class="el" href="classEST__FeatureFunctionPackage.html">EST_FeatureFunctionPackage</a> &amp;p))</td></tr>
 <tr class="separator:abeba71a90310f799674a3fc1aec00499"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a30bdd434698da89cc740c18637dd6abe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="EST__Item_8h.html#a30bdd434698da89cc740c18637dd6abe">register_featfunc</a> (const <a class="el" href="classEST__String.html">EST_String</a> &amp;name, const <a class="el" href="EST__Item_8h.html#a63d8e21bf953006c5a57aa4f29f03eee">EST_Item_featfunc</a> func)</td></tr>
 <tr class="separator:a30bdd434698da89cc740c18637dd6abe"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -186,12 +186,11 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span> { \</div>
-<div class="line">     extern <span class="keywordtype">void</span> register_ ## PACKAGE ## _feature_functions(<a class="code" href="classEST__FeatureFunctionPackage.html">EST_FeatureFunctionPackage</a> &amp;<a class="code" href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a>); <a class="code" href="EST__Item_8h.html#abeba71a90310f799674a3fc1aec00499">\</a></div>
+<div class="line">     extern <span class="keywordtype">void</span> register_ ## PACKAGE ## _feature_functions(<a class="code" href="classEST__FeatureFunctionPackage.html">EST_FeatureFunctionPackage</a> &amp;p); <a class="code" href="EST__Item_8h.html#abeba71a90310f799674a3fc1aec00499">\</a></div>
 <div class="line"><a class="code" href="EST__Item_8h.html#abeba71a90310f799674a3fc1aec00499">     EST_register_feature_function_package</a>( #PACKAGE , register_ ## PACKAGE ## _feature_functions); \</div>
 <div class="line">     } <span class="keywordflow">while</span>(0)</div>
 <div class="ttc" id="classEST__FeatureFunctionPackage_html"><div class="ttname"><a href="classEST__FeatureFunctionPackage.html">EST_FeatureFunctionPackage</a></div><div class="ttdef"><b>Definition:</b> <a href="EST__FeatureFunctionPackage_8h_source.html#l00047">EST_FeatureFunctionPackage.h:47</a></div></div>
 <div class="ttc" id="EST__Item_8h_html_abeba71a90310f799674a3fc1aec00499"><div class="ttname"><a href="EST__Item_8h.html#abeba71a90310f799674a3fc1aec00499">EST_register_feature_function_package</a></div><div class="ttdeci">void EST_register_feature_function_package(const char *name, void(*init_fn)(EST_FeatureFunctionPackage &amp;p))</div><div class="ttdef"><b>Definition:</b> <a href="item__feats_8cc_source.html#l00088">item_feats.cc:88</a></div></div>
-<div class="ttc" id="editline_8c_html_a5791904baf12239aadc3a8280a03e8c5"><div class="ttname"><a href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a></div><div class="ttdeci">void char * p</div><div class="ttdef"><b>Definition:</b> <a href="editline_8c_source.html#l01395">editline.c:1395</a></div></div>
 </div><!-- fragment -->
 <p>Definition at line <a class="el" href="EST__Item_8h_source.html#l00442">442</a> of file <a class="el" href="EST__Item_8h_source.html">EST_Item.h</a>.</p>
 
@@ -371,7 +370,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="EST__Item_8cc_source.html#l00595">595</a> of file <a class="el" href="EST__Item_8cc_source.html">EST_Item.cc</a>.</p>
+<p>Definition at line <a class="el" href="EST__Item_8cc_source.html#l00614">614</a> of file <a class="el" href="EST__Item_8cc_source.html">EST_Item.cc</a>.</p>
 
 </div>
 </div>
@@ -455,7 +454,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="EST__Item_8cc_source.html#l00617">617</a> of file <a class="el" href="EST__Item_8cc_source.html">EST_Item.cc</a>.</p>
+<p>Definition at line <a class="el" href="EST__Item_8cc_source.html#l00636">636</a> of file <a class="el" href="EST__Item_8cc_source.html">EST_Item.cc</a>.</p>
 
 </div>
 </div>
@@ -472,7 +471,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">void(*)(<a class="el" href="classEST__FeatureFunctionPackage.html">EST_FeatureFunctionPackage</a> &amp;<a class="el" href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a>)&#160;</td>
+          <td class="paramtype">void(*)(<a class="el" href="classEST__FeatureFunctionPackage.html">EST_FeatureFunctionPackage</a> &amp;p)&#160;</td>
           <td class="paramname"><em>init_fn</em>&#160;</td>
         </tr>
         <tr>
@@ -582,7 +581,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_08fac542a33482c50f8ff908d1ee3a63.html">ling_class</a></li><li class="navelem"><a class="el" href="EST__Item_8h.html">EST_Item.h</a></li>
-    <li class="footer">Generated on Thu Jan 30 2014 00:27:13 for Edinburgh Speech Tools by
+    <li class="footer">Generated on Tue Feb 11 2014 12:00:40 for Edinburgh Speech Tools by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

@@ -268,7 +268,7 @@ $(document).ready(function(){initNavTree('EST__multistats_8cc_source.html','');}
 <div class="line"><a name="l00174"></a><span class="lineno"><a class="line" href="EST__multistats_8cc.html#ab441b30a0dd6141ecaefcd8fb1bdf9a2">  174</a></span>&#160;<a class="code" href="classEST__FMatrix.html">EST_FMatrix</a> <a class="code" href="EST__multistats_8h.html#a90f1b36c85e9501f3d37fc7a9d651430">penrose_distance</a>(<a class="code" href="classEST__FMatrix.html">EST_FMatrix</a> &amp;gu, <a class="code" href="classEST__FVector.html">EST_FVector</a> &amp;gv)</div>
 <div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;{</div>
 <div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    <span class="keywordtype">int</span> i, j, k;</div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a> = gu.<a class="code" href="classEST__TMatrix.html#a3e7bf2fa066b4fd0f627709b6aff45b8">num_columns</a>();</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    <span class="keywordtype">int</span> p = gu.<a class="code" href="classEST__TMatrix.html#a3e7bf2fa066b4fd0f627709b6aff45b8">num_columns</a>();</div>
 <div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;    <span class="keywordtype">int</span> n = gu.<a class="code" href="classEST__TMatrix.html#ad0d3c943e51fb813e0dc14c86f782045">num_rows</a>();</div>
 <div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;    <a class="code" href="classEST__FMatrix.html">EST_FMatrix</a> P(n, n);</div>
 <div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;    </div>
@@ -278,9 +278,9 @@ $(document).ready(function(){initNavTree('EST__multistats_8cc_source.html','');}
 <div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;    <span class="keywordflow">for</span> (j = 0; j &lt; n; ++j)</div>
 <div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;    {</div>
 <div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;        P(i, j) = 0.0;</div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;        <span class="keywordflow">for</span> (k = 0; k &lt; <a class="code" href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a>; ++k)</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;        <span class="keywordflow">for</span> (k = 0; k &lt; p; ++k)</div>
 <div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;          P(i, j) += pow(gu(i, k) - gu(j, k), <span class="keywordtype">float</span>(2.0)) / gv(k);</div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;        P(i, j) /= <a class="code" href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a>;</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;        P(i, j) /= p;</div>
 <div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;    }</div>
 <div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;    <span class="keywordflow">return</span> P;</div>
 <div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;}</div>
@@ -387,7 +387,6 @@ $(document).ready(function(){initNavTree('EST__multistats_8cc_source.html','');}
 <div class="ttc" id="EST__multistats_8h_html"><div class="ttname"><a href="EST__multistats_8h.html">EST_multistats.h</a></div></div>
 <div class="ttc" id="EST__multistats_8h_html_a03353d9571d798924e62b242a0a8e36d"><div class="ttname"><a href="EST__multistats_8h.html#a03353d9571d798924e62b242a0a8e36d">sample_covariance</a></div><div class="ttdeci">EST_FMatrix sample_covariance(EST_FMatrix &amp;m)</div><div class="ttdef"><b>Definition:</b> <a href="EST__multistats_8cc_source.html#l00113">EST_multistats.cc:113</a></div></div>
 <div class="ttc" id="classEST__TMatrix_html_ad0d3c943e51fb813e0dc14c86f782045"><div class="ttname"><a href="classEST__TMatrix.html#ad0d3c943e51fb813e0dc14c86f782045">EST_TMatrix::num_rows</a></div><div class="ttdeci">int num_rows() const </div><div class="ttdoc">return number of rows </div><div class="ttdef"><b>Definition:</b> <a href="EST__TMatrix_8h_source.html#l00176">EST_TMatrix.h:176</a></div></div>
-<div class="ttc" id="editline_8c_html_a5791904baf12239aadc3a8280a03e8c5"><div class="ttname"><a href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a></div><div class="ttdeci">void char * p</div><div class="ttdef"><b>Definition:</b> <a href="editline_8c_source.html#l01395">editline.c:1395</a></div></div>
 <div class="ttc" id="vec__mat__aux_8cc_html_a273034f2be664dca880e10d3e16d156e"><div class="ttname"><a href="vec__mat__aux_8cc.html#a273034f2be664dca880e10d3e16d156e">sum</a></div><div class="ttdeci">float sum(const EST_FMatrix &amp;a)</div><div class="ttdoc">sum of elements </div><div class="ttdef"><b>Definition:</b> <a href="vec__mat__aux_8cc_source.html#l00152">vec_mat_aux.cc:152</a></div></div>
 <div class="ttc" id="vec__mat__aux_8cc_html_a9d52ce301d9ebd9aeca0bbcb8762459a"><div class="ttname"><a href="vec__mat__aux_8cc.html#a9d52ce301d9ebd9aeca0bbcb8762459a">inverse</a></div><div class="ttdeci">int inverse(const EST_FMatrix &amp;a, EST_FMatrix &amp;inv)</div><div class="ttdoc">inverse </div><div class="ttdef"><b>Definition:</b> <a href="vec__mat__aux_8cc_source.html#l00303">vec_mat_aux.cc:303</a></div></div>
 <div class="ttc" id="EST__multistats_8h_html_a2315e5e5993c70d68e71346d15e1dc61"><div class="ttname"><a href="EST__multistats_8h.html#a2315e5e5993c70d68e71346d15e1dc61">normalise</a></div><div class="ttdeci">EST_FMatrix normalise(EST_FMatrix &amp;m, EST_FVector &amp;sub, EST_FVector &amp;div)</div><div class="ttdef"><b>Definition:</b> <a href="EST__multistats_8cc_source.html#l00159">EST_multistats.cc:159</a></div></div>
@@ -398,7 +397,7 @@ $(document).ready(function(){initNavTree('EST__multistats_8cc_source.html','');}
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a2a5b97680f4688c5edec2038dd4832f.html">stats</a></li><li class="navelem"><a class="el" href="EST__multistats_8cc.html">EST_multistats.cc</a></li>
-    <li class="footer">Generated on Thu Jan 30 2014 00:27:13 for Edinburgh Speech Tools by
+    <li class="footer">Generated on Tue Feb 11 2014 12:00:39 for Edinburgh Speech Tools by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

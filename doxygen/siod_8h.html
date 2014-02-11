@@ -144,7 +144,7 @@ Functions</h2></td></tr>
 <tr class="separator:abc14e3d334dfc05f74b41aaf27e1dbbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa6db9a45292a3679ed2f1d1d414116b9"><td class="memItemLeft" align="right" valign="top">LISP&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="siod_8h.html#aa6db9a45292a3679ed2f1d1d414116b9">flocons</a> (double x)</td></tr>
 <tr class="separator:aa6db9a45292a3679ed2f1d1d414116b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a56036279e670aec9b8fe7b91b57a4c99"><td class="memItemLeft" align="right" valign="top">FILE *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="siod_8h.html#a56036279e670aec9b8fe7b91b57a4c99">get_c_file</a> (LISP <a class="el" href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a>, FILE *deflt)</td></tr>
+<tr class="memitem:a56036279e670aec9b8fe7b91b57a4c99"><td class="memItemLeft" align="right" valign="top">FILE *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="siod_8h.html#a56036279e670aec9b8fe7b91b57a4c99">get_c_file</a> (LISP p, FILE *deflt)</td></tr>
 <tr class="separator:a56036279e670aec9b8fe7b91b57a4c99"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9676ed59f218fac1275843ef78c08e6c"><td class="memItemLeft" align="right" valign="top">LISP&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="siod_8h.html#a9676ed59f218fac1275843ef78c08e6c">siod_make_typed_cell</a> (long type, void *<a class="el" href="regerror_8c.html#a20a6d30d76bef587ebad8cb70f9009ca">s</a>)</td></tr>
 <tr class="separator:a9676ed59f218fac1275843ef78c08e6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -248,12 +248,12 @@ Functions</h2></td></tr>
 <tr class="separator:a6d943dd37087847ccc1c1d81645e4f90"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeac25be2f519b49ecd2778aa9f86b5d5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="siod_8h.html#aeac25be2f519b49ecd2778aa9f86b5d5">parse_url</a> (const <a class="el" href="classEST__String.html">EST_String</a> &amp;url, <a class="el" href="classEST__String.html">EST_String</a> &amp;protocol, <a class="el" href="classEST__String.html">EST_String</a> &amp;host, <a class="el" href="classEST__String.html">EST_String</a> &amp;port, <a class="el" href="classEST__String.html">EST_String</a> &amp;path)</td></tr>
 <tr class="separator:aeac25be2f519b49ecd2778aa9f86b5d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a669c6661e022454c1ece3da610ed8bba"><td class="memItemLeft" align="right" valign="top">LISP&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="siod_8h.html#a669c6661e022454c1ece3da610ed8bba">err</a> (const char *message, LISP x)</td></tr>
-<tr class="separator:a669c6661e022454c1ece3da610ed8bba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac9be82c7b4d67d06fd3c4ac734e688ae"><td class="memItemLeft" align="right" valign="top">LISP&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="siod_8h.html#ac9be82c7b4d67d06fd3c4ac734e688ae">err</a> (const char *message, const char *<a class="el" href="regerror_8c.html#a20a6d30d76bef587ebad8cb70f9009ca">s</a>)</td></tr>
-<tr class="separator:ac9be82c7b4d67d06fd3c4ac734e688ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa6a7980dd6e74143b646854d8963cc6a"><td class="memItemLeft" align="right" valign="top">LISP&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="siod_8h.html#aa6a7980dd6e74143b646854d8963cc6a">errswitch</a> (void)</td></tr>
-<tr class="separator:aa6a7980dd6e74143b646854d8963cc6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75c18836092fb77b1d09351765cc8e1b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="siod_8h.html#a75c18836092fb77b1d09351765cc8e1b">err</a> (const char *message, LISP x) <a class="el" href="EST__common_8h.html#afcc8beb308660c321930c8d1a12908a1">EST_NORETURN</a></td></tr>
+<tr class="separator:a75c18836092fb77b1d09351765cc8e1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2ac2136ffba4702ee4ec1a618db68f3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="siod_8h.html#ab2ac2136ffba4702ee4ec1a618db68f3">err</a> (const char *message, const char *<a class="el" href="regerror_8c.html#a20a6d30d76bef587ebad8cb70f9009ca">s</a>) <a class="el" href="EST__common_8h.html#afcc8beb308660c321930c8d1a12908a1">EST_NORETURN</a></td></tr>
+<tr class="separator:ab2ac2136ffba4702ee4ec1a618db68f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a354c154fb46757473ff27a97922dd44f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="siod_8h.html#a354c154fb46757473ff27a97922dd44f">errswitch</a> (void) <a class="el" href="EST__common_8h.html#afcc8beb308660c321930c8d1a12908a1">EST_NORETURN</a></td></tr>
+<tr class="separator:a354c154fb46757473ff27a97922dd44f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a068d1a2316345039392aca87125d6d63"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="siod_8h.html#a068d1a2316345039392aca87125d6d63">siod_list_to_strlist</a> (LISP l, <a class="el" href="EST__types_8h.html#ab0c16c72c8664133d4fad8384016eee0">EST_StrList</a> &amp;a)</td></tr>
 <tr class="separator:a068d1a2316345039392aca87125d6d63"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4a2cb70c7a41c17105fa707859a4d1d7"><td class="memItemLeft" align="right" valign="top">LISP&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="siod_8h.html#a4a2cb70c7a41c17105fa707859a4d1d7">siod_strlist_to_list</a> (<a class="el" href="EST__types_8h.html#ab0c16c72c8664133d4fad8384016eee0">EST_StrList</a> &amp;a)</td></tr>
@@ -320,7 +320,7 @@ Functions</h2></td></tr>
 <tr class="separator:a8b5a63057a181d1e476b79654dc96337"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8e23715c530d6595b8938ea6c41ecb62"><td class="memItemLeft" align="right" valign="top">LISP&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="siod_8h.html#a8e23715c530d6595b8938ea6c41ecb62">fopen_c</a> (const char *name, const char *how)</td></tr>
 <tr class="separator:a8e23715c530d6595b8938ea6c41ecb62"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5411921bc079c09067ada4644f6c5da7"><td class="memItemLeft" align="right" valign="top">LISP&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="siod_8h.html#a5411921bc079c09067ada4644f6c5da7">fclose_l</a> (LISP <a class="el" href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a>)</td></tr>
+<tr class="memitem:a5411921bc079c09067ada4644f6c5da7"><td class="memItemLeft" align="right" valign="top">LISP&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="siod_8h.html#a5411921bc079c09067ada4644f6c5da7">fclose_l</a> (LISP p)</td></tr>
 <tr class="separator:a5411921bc079c09067ada4644f6c5da7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0576a51fb2f2c25ae83d52dedb31517b"><td class="memItemLeft" align="right" valign="top">LISP&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="siod_8h.html#a0576a51fb2f2c25ae83d52dedb31517b">lprin1f</a> (LISP exp, FILE *f)</td></tr>
 <tr class="separator:a0576a51fb2f2c25ae83d52dedb31517b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -443,7 +443,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="slib_8cc_source.html#l00246">246</a> of file <a class="el" href="slib_8cc_source.html">slib.cc</a>.</p>
+<p>Definition at line <a class="el" href="slib_8cc_source.html#l00247">247</a> of file <a class="el" href="slib_8cc_source.html">slib.cc</a>.</p>
 
 </div>
 </div>
@@ -461,7 +461,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="slib_8cc_source.html#l00254">254</a> of file <a class="el" href="slib_8cc_source.html">slib.cc</a>.</p>
+<p>Definition at line <a class="el" href="slib_8cc_source.html#l00255">255</a> of file <a class="el" href="slib_8cc_source.html">slib.cc</a>.</p>
 
 </div>
 </div>
@@ -479,7 +479,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="slib_8cc_source.html#l00645">645</a> of file <a class="el" href="slib_8cc_source.html">slib.cc</a>.</p>
+<p>Definition at line <a class="el" href="slib_8cc_source.html#l00646">646</a> of file <a class="el" href="slib_8cc_source.html">slib.cc</a>.</p>
 
 </div>
 </div>
@@ -497,7 +497,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="slib_8cc_source.html#l01867">1867</a> of file <a class="el" href="slib_8cc_source.html">slib.cc</a>.</p>
+<p>Definition at line <a class="el" href="slib_8cc_source.html#l01868">1868</a> of file <a class="el" href="slib_8cc_source.html">slib.cc</a>.</p>
 
 </div>
 </div>
@@ -515,7 +515,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="slib_8cc_source.html#l01871">1871</a> of file <a class="el" href="slib_8cc_source.html">slib.cc</a>.</p>
+<p>Definition at line <a class="el" href="slib_8cc_source.html#l01872">1872</a> of file <a class="el" href="slib_8cc_source.html">slib.cc</a>.</p>
 
 </div>
 </div>
@@ -533,7 +533,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="slib_8cc_source.html#l01875">1875</a> of file <a class="el" href="slib_8cc_source.html">slib.cc</a>.</p>
+<p>Definition at line <a class="el" href="slib_8cc_source.html#l01876">1876</a> of file <a class="el" href="slib_8cc_source.html">slib.cc</a>.</p>
 
 </div>
 </div>
@@ -551,7 +551,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="slib_8cc_source.html#l00680">680</a> of file <a class="el" href="slib_8cc_source.html">slib.cc</a>.</p>
+<p>Definition at line <a class="el" href="slib_8cc_source.html#l00681">681</a> of file <a class="el" href="slib_8cc_source.html">slib.cc</a>.</p>
 
 </div>
 </div>
@@ -579,7 +579,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="slib__file_8cc_source.html#l00347">347</a> of file <a class="el" href="slib__file_8cc_source.html">slib_file.cc</a>.</p>
+<p>Definition at line <a class="el" href="slib__file_8cc_source.html#l00348">348</a> of file <a class="el" href="slib__file_8cc_source.html">slib_file.cc</a>.</p>
 
 </div>
 </div>
@@ -607,7 +607,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="slib_8cc_source.html#l01970">1970</a> of file <a class="el" href="slib_8cc_source.html">slib.cc</a>.</p>
+<p>Definition at line <a class="el" href="slib_8cc_source.html#l01971">1971</a> of file <a class="el" href="slib_8cc_source.html">slib.cc</a>.</p>
 
 </div>
 </div>
@@ -625,7 +625,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="slib_8cc_source.html#l00735">735</a> of file <a class="el" href="slib_8cc_source.html">slib.cc</a>.</p>
+<p>Definition at line <a class="el" href="slib_8cc_source.html#l00736">736</a> of file <a class="el" href="slib_8cc_source.html">slib.cc</a>.</p>
 
 </div>
 </div>
@@ -643,7 +643,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="slib_8cc_source.html#l00741">741</a> of file <a class="el" href="slib_8cc_source.html">slib.cc</a>.</p>
+<p>Definition at line <a class="el" href="slib_8cc_source.html#l00742">742</a> of file <a class="el" href="slib_8cc_source.html">slib.cc</a>.</p>
 
 </div>
 </div>
@@ -747,7 +747,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="slib_8cc_source.html#l00897">897</a> of file <a class="el" href="slib_8cc_source.html">slib.cc</a>.</p>
+<p>Definition at line <a class="el" href="slib_8cc_source.html#l00898">898</a> of file <a class="el" href="slib_8cc_source.html">slib.cc</a>.</p>
 
 </div>
 </div>
@@ -781,7 +781,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="slib_8cc_source.html#l00903">903</a> of file <a class="el" href="slib_8cc_source.html">slib.cc</a>.</p>
+<p>Definition at line <a class="el" href="slib_8cc_source.html#l00904">904</a> of file <a class="el" href="slib_8cc_source.html">slib.cc</a>.</p>
 
 </div>
 </div>
@@ -815,7 +815,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="slib_8cc_source.html#l00905">905</a> of file <a class="el" href="slib_8cc_source.html">slib.cc</a>.</p>
+<p>Definition at line <a class="el" href="slib_8cc_source.html#l00906">906</a> of file <a class="el" href="slib_8cc_source.html">slib.cc</a>.</p>
 
 </div>
 </div>
@@ -849,7 +849,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="slib_8cc_source.html#l00907">907</a> of file <a class="el" href="slib_8cc_source.html">slib.cc</a>.</p>
+<p>Definition at line <a class="el" href="slib_8cc_source.html#l00908">908</a> of file <a class="el" href="slib_8cc_source.html">slib.cc</a>.</p>
 
 </div>
 </div>
@@ -883,7 +883,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="slib_8cc_source.html#l00909">909</a> of file <a class="el" href="slib_8cc_source.html">slib.cc</a>.</p>
+<p>Definition at line <a class="el" href="slib_8cc_source.html#l00910">910</a> of file <a class="el" href="slib_8cc_source.html">slib.cc</a>.</p>
 
 </div>
 </div>
@@ -917,7 +917,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="slib_8cc_source.html#l00911">911</a> of file <a class="el" href="slib_8cc_source.html">slib.cc</a>.</p>
+<p>Definition at line <a class="el" href="slib_8cc_source.html#l00912">912</a> of file <a class="el" href="slib_8cc_source.html">slib.cc</a>.</p>
 
 </div>
 </div>
@@ -951,7 +951,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="slib_8cc_source.html#l00913">913</a> of file <a class="el" href="slib_8cc_source.html">slib.cc</a>.</p>
+<p>Definition at line <a class="el" href="slib_8cc_source.html#l00914">914</a> of file <a class="el" href="slib_8cc_source.html">slib.cc</a>.</p>
 
 </div>
 </div>
@@ -985,7 +985,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="slib_8cc_source.html#l00915">915</a> of file <a class="el" href="slib_8cc_source.html">slib.cc</a>.</p>
+<p>Definition at line <a class="el" href="slib_8cc_source.html#l00916">916</a> of file <a class="el" href="slib_8cc_source.html">slib.cc</a>.</p>
 
 </div>
 </div>
@@ -1019,7 +1019,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="slib_8cc_source.html#l00917">917</a> of file <a class="el" href="slib_8cc_source.html">slib.cc</a>.</p>
+<p>Definition at line <a class="el" href="slib_8cc_source.html#l00918">918</a> of file <a class="el" href="slib_8cc_source.html">slib.cc</a>.</p>
 
 </div>
 </div>
@@ -1065,7 +1065,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="slib_8cc_source.html#l00932">932</a> of file <a class="el" href="slib_8cc_source.html">slib.cc</a>.</p>
+<p>Definition at line <a class="el" href="slib_8cc_source.html#l00933">933</a> of file <a class="el" href="slib_8cc_source.html">slib.cc</a>.</p>
 
 </div>
 </div>
@@ -1129,7 +1129,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="slib_8cc_source.html#l00953">953</a> of file <a class="el" href="slib_8cc_source.html">slib.cc</a>.</p>
+<p>Definition at line <a class="el" href="slib_8cc_source.html#l00954">954</a> of file <a class="el" href="slib_8cc_source.html">slib.cc</a>.</p>
 
 </div>
 </div>
@@ -1157,7 +1157,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="slib_8cc_source.html#l01380">1380</a> of file <a class="el" href="slib_8cc_source.html">slib.cc</a>.</p>
+<p>Definition at line <a class="el" href="slib_8cc_source.html#l01381">1381</a> of file <a class="el" href="slib_8cc_source.html">slib.cc</a>.</p>
 
 </div>
 </div>
@@ -1191,7 +1191,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="slib_8cc_source.html#l01513">1513</a> of file <a class="el" href="slib_8cc_source.html">slib.cc</a>.</p>
+<p>Definition at line <a class="el" href="slib_8cc_source.html#l01514">1514</a> of file <a class="el" href="slib_8cc_source.html">slib.cc</a>.</p>
 
 </div>
 </div>
@@ -1225,7 +1225,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="slib_8cc_source.html#l01493">1493</a> of file <a class="el" href="slib_8cc_source.html">slib.cc</a>.</p>
+<p>Definition at line <a class="el" href="slib_8cc_source.html#l01494">1494</a> of file <a class="el" href="slib_8cc_source.html">slib.cc</a>.</p>
 
 </div>
 </div>
@@ -1259,7 +1259,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="slib_8cc_source.html#l01503">1503</a> of file <a class="el" href="slib_8cc_source.html">slib.cc</a>.</p>
+<p>Definition at line <a class="el" href="slib_8cc_source.html#l01504">1504</a> of file <a class="el" href="slib_8cc_source.html">slib.cc</a>.</p>
 
 </div>
 </div>
@@ -1277,7 +1277,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="slib_8cc_source.html#l00577">577</a> of file <a class="el" href="slib_8cc_source.html">slib.cc</a>.</p>
+<p>Definition at line <a class="el" href="slib_8cc_source.html#l00578">578</a> of file <a class="el" href="slib_8cc_source.html">slib.cc</a>.</p>
 
 </div>
 </div>
@@ -1295,7 +1295,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="slib_8cc_source.html#l00328">328</a> of file <a class="el" href="slib_8cc_source.html">slib.cc</a>.</p>
+<p>Definition at line <a class="el" href="slib_8cc_source.html#l00329">329</a> of file <a class="el" href="slib_8cc_source.html">slib.cc</a>.</p>
 
 </div>
 </div>
@@ -2027,12 +2027,12 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a669c6661e022454c1ece3da610ed8bba"></a>
+<a class="anchor" id="a75c18836092fb77b1d09351765cc8e1b"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">LISP err </td>
+          <td class="memname">void err </td>
           <td>(</td>
           <td class="paramtype">const char *&#160;</td>
           <td class="paramname"><em>message</em>, </td>
@@ -2051,16 +2051,16 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="slib_8cc_source.html#l00615">615</a> of file <a class="el" href="slib_8cc_source.html">slib.cc</a>.</p>
+<p>Definition at line <a class="el" href="slib_8cc_source.html#l00616">616</a> of file <a class="el" href="slib_8cc_source.html">slib.cc</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ac9be82c7b4d67d06fd3c4ac734e688ae"></a>
+<a class="anchor" id="ab2ac2136ffba4702ee4ec1a618db68f3"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">LISP err </td>
+          <td class="memname">void err </td>
           <td>(</td>
           <td class="paramtype">const char *&#160;</td>
           <td class="paramname"><em>message</em>, </td>
@@ -2079,16 +2079,16 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="slib_8cc_source.html#l00620">620</a> of file <a class="el" href="slib_8cc_source.html">slib.cc</a>.</p>
+<p>Definition at line <a class="el" href="slib_8cc_source.html#l00621">621</a> of file <a class="el" href="slib_8cc_source.html">slib.cc</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="aa6a7980dd6e74143b646854d8963cc6a"></a>
+<a class="anchor" id="a354c154fb46757473ff27a97922dd44f"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">LISP errswitch </td>
+          <td class="memname">void errswitch </td>
           <td>(</td>
           <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -2097,7 +2097,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="slib_8cc_source.html#l00625">625</a> of file <a class="el" href="slib_8cc_source.html">slib.cc</a>.</p>
+<p>Definition at line <a class="el" href="slib_8cc_source.html#l00626">626</a> of file <a class="el" href="slib_8cc_source.html">slib.cc</a>.</p>
 
 </div>
 </div>
@@ -2178,7 +2178,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="slib_8cc_source.html#l01834">1834</a> of file <a class="el" href="slib_8cc_source.html">slib.cc</a>.</p>
+<p>Definition at line <a class="el" href="slib_8cc_source.html#l01835">1835</a> of file <a class="el" href="slib_8cc_source.html">slib.cc</a>.</p>
 
 </div>
 </div>
@@ -2214,7 +2214,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="slib_8cc_source.html#l00798">798</a> of file <a class="el" href="slib_8cc_source.html">slib.cc</a>.</p>
+<p>Definition at line <a class="el" href="slib_8cc_source.html#l00799">799</a> of file <a class="el" href="slib_8cc_source.html">slib.cc</a>.</p>
 
 </div>
 </div>
@@ -2232,7 +2232,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="slib_8cc_source.html#l00766">766</a> of file <a class="el" href="slib_8cc_source.html">slib.cc</a>.</p>
+<p>Definition at line <a class="el" href="slib_8cc_source.html#l00767">767</a> of file <a class="el" href="slib_8cc_source.html">slib.cc</a>.</p>
 
 </div>
 </div>
@@ -2260,7 +2260,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="slib_8cc_source.html#l00810">810</a> of file <a class="el" href="slib_8cc_source.html">slib.cc</a>.</p>
+<p>Definition at line <a class="el" href="slib_8cc_source.html#l00811">811</a> of file <a class="el" href="slib_8cc_source.html">slib.cc</a>.</p>
 
 </div>
 </div>
@@ -2288,7 +2288,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="slib_8cc_source.html#l00818">818</a> of file <a class="el" href="slib_8cc_source.html">slib.cc</a>.</p>
+<p>Definition at line <a class="el" href="slib_8cc_source.html#l00819">819</a> of file <a class="el" href="slib_8cc_source.html">slib.cc</a>.</p>
 
 </div>
 </div>
@@ -2306,7 +2306,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="slib_8cc_source.html#l01276">1276</a> of file <a class="el" href="slib_8cc_source.html">slib.cc</a>.</p>
+<p>Definition at line <a class="el" href="slib_8cc_source.html#l01277">1277</a> of file <a class="el" href="slib_8cc_source.html">slib.cc</a>.</p>
 
 </div>
 </div>
@@ -2380,7 +2380,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="slib__list_8cc_source.html#l00170">170</a> of file <a class="el" href="slib__list_8cc_source.html">slib_list.cc</a>.</p>
+<p>Definition at line <a class="el" href="slib__list_8cc_source.html#l00171">171</a> of file <a class="el" href="slib__list_8cc_source.html">slib_list.cc</a>.</p>
 
 </div>
 </div>
@@ -2408,7 +2408,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="slib__list_8cc_source.html#l00176">176</a> of file <a class="el" href="slib__list_8cc_source.html">slib_list.cc</a>.</p>
+<p>Definition at line <a class="el" href="slib__list_8cc_source.html#l00177">177</a> of file <a class="el" href="slib__list_8cc_source.html">slib_list.cc</a>.</p>
 
 </div>
 </div>
@@ -2694,7 +2694,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="slib_8cc_source.html#l01385">1385</a> of file <a class="el" href="slib_8cc_source.html">slib.cc</a>.</p>
+<p>Definition at line <a class="el" href="slib_8cc_source.html#l01386">1386</a> of file <a class="el" href="slib_8cc_source.html">slib.cc</a>.</p>
 
 </div>
 </div>
@@ -2856,7 +2856,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="slib__file_8cc_source.html#l00252">252</a> of file <a class="el" href="slib__file_8cc_source.html">slib_file.cc</a>.</p>
+<p>Definition at line <a class="el" href="slib__file_8cc_source.html#l00253">253</a> of file <a class="el" href="slib__file_8cc_source.html">slib_file.cc</a>.</p>
 
 </div>
 </div>
@@ -2874,7 +2874,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="slib__file_8cc_source.html#l00327">327</a> of file <a class="el" href="slib__file_8cc_source.html">slib_file.cc</a>.</p>
+<p>Definition at line <a class="el" href="slib__file_8cc_source.html#l00328">328</a> of file <a class="el" href="slib__file_8cc_source.html">slib_file.cc</a>.</p>
 
 </div>
 </div>
@@ -2902,7 +2902,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="slib__file_8cc_source.html#l00469">469</a> of file <a class="el" href="slib__file_8cc_source.html">slib_file.cc</a>.</p>
+<p>Definition at line <a class="el" href="slib__file_8cc_source.html#l00470">470</a> of file <a class="el" href="slib__file_8cc_source.html">slib_file.cc</a>.</p>
 
 </div>
 </div>
@@ -2938,7 +2938,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="slib__file_8cc_source.html#l00546">546</a> of file <a class="el" href="slib__file_8cc_source.html">slib_file.cc</a>.</p>
+<p>Definition at line <a class="el" href="slib__file_8cc_source.html#l00547">547</a> of file <a class="el" href="slib__file_8cc_source.html">slib_file.cc</a>.</p>
 
 </div>
 </div>
@@ -2984,7 +2984,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="slib__file_8cc_source.html#l00551">551</a> of file <a class="el" href="slib__file_8cc_source.html">slib_file.cc</a>.</p>
+<p>Definition at line <a class="el" href="slib__file_8cc_source.html#l00552">552</a> of file <a class="el" href="slib__file_8cc_source.html">slib_file.cc</a>.</p>
 
 </div>
 </div>
@@ -3002,7 +3002,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="slib_8cc_source.html#l01805">1805</a> of file <a class="el" href="slib_8cc_source.html">slib.cc</a>.</p>
+<p>Definition at line <a class="el" href="slib_8cc_source.html#l01806">1806</a> of file <a class="el" href="slib_8cc_source.html">slib.cc</a>.</p>
 
 </div>
 </div>
@@ -3020,7 +3020,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="slib_8cc_source.html#l01599">1599</a> of file <a class="el" href="slib_8cc_source.html">slib.cc</a>.</p>
+<p>Definition at line <a class="el" href="slib_8cc_source.html#l01600">1600</a> of file <a class="el" href="slib_8cc_source.html">slib.cc</a>.</p>
 
 </div>
 </div>
@@ -3060,7 +3060,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="slib_8cc_source.html#l01632">1632</a> of file <a class="el" href="slib_8cc_source.html">slib.cc</a>.</p>
+<p>Definition at line <a class="el" href="slib_8cc_source.html#l01633">1633</a> of file <a class="el" href="slib_8cc_source.html">slib.cc</a>.</p>
 
 </div>
 </div>
@@ -3088,7 +3088,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="slib__file_8cc_source.html#l00630">630</a> of file <a class="el" href="slib__file_8cc_source.html">slib_file.cc</a>.</p>
+<p>Definition at line <a class="el" href="slib__file_8cc_source.html#l00631">631</a> of file <a class="el" href="slib__file_8cc_source.html">slib_file.cc</a>.</p>
 
 </div>
 </div>
@@ -3146,7 +3146,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="slib_8cc_source.html#l00399">399</a> of file <a class="el" href="slib_8cc_source.html">slib.cc</a>.</p>
+<p>Definition at line <a class="el" href="slib_8cc_source.html#l00400">400</a> of file <a class="el" href="slib_8cc_source.html">slib.cc</a>.</p>
 
 </div>
 </div>
@@ -3182,7 +3182,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="slib_8cc_source.html#l01939">1939</a> of file <a class="el" href="slib_8cc_source.html">slib.cc</a>.</p>
+<p>Definition at line <a class="el" href="slib_8cc_source.html#l01940">1940</a> of file <a class="el" href="slib_8cc_source.html">slib.cc</a>.</p>
 
 </div>
 </div>
@@ -3228,7 +3228,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="slib_8cc_source.html#l00457">457</a> of file <a class="el" href="slib_8cc_source.html">slib.cc</a>.</p>
+<p>Definition at line <a class="el" href="slib_8cc_source.html#l00458">458</a> of file <a class="el" href="slib_8cc_source.html">slib.cc</a>.</p>
 
 </div>
 </div>
@@ -3246,7 +3246,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="slib__file_8cc_source.html#l00554">554</a> of file <a class="el" href="slib__file_8cc_source.html">slib_file.cc</a>.</p>
+<p>Definition at line <a class="el" href="slib__file_8cc_source.html#l00555">555</a> of file <a class="el" href="slib__file_8cc_source.html">slib_file.cc</a>.</p>
 
 </div>
 </div>
@@ -3303,7 +3303,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="slib_8cc_source.html#l00273">273</a> of file <a class="el" href="slib_8cc_source.html">slib.cc</a>.</p>
+<p>Definition at line <a class="el" href="slib_8cc_source.html#l00274">274</a> of file <a class="el" href="slib_8cc_source.html">slib.cc</a>.</p>
 
 </div>
 </div>
@@ -3317,7 +3317,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="slib_8cc_source.html#l00274">274</a> of file <a class="el" href="slib_8cc_source.html">slib.cc</a>.</p>
+<p>Definition at line <a class="el" href="slib_8cc_source.html#l00275">275</a> of file <a class="el" href="slib_8cc_source.html">slib.cc</a>.</p>
 
 </div>
 </div>
@@ -3331,7 +3331,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="slib_8cc_source.html#l00173">173</a> of file <a class="el" href="slib_8cc_source.html">slib.cc</a>.</p>
+<p>Definition at line <a class="el" href="slib_8cc_source.html#l00174">174</a> of file <a class="el" href="slib_8cc_source.html">slib.cc</a>.</p>
 
 </div>
 </div>
@@ -3345,7 +3345,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="slib_8cc_source.html#l00174">174</a> of file <a class="el" href="slib_8cc_source.html">slib.cc</a>.</p>
+<p>Definition at line <a class="el" href="slib_8cc_source.html#l00175">175</a> of file <a class="el" href="slib_8cc_source.html">slib.cc</a>.</p>
 
 </div>
 </div>
@@ -3359,7 +3359,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="slib_8cc_source.html#l00175">175</a> of file <a class="el" href="slib_8cc_source.html">slib.cc</a>.</p>
+<p>Definition at line <a class="el" href="slib_8cc_source.html#l00176">176</a> of file <a class="el" href="slib_8cc_source.html">slib.cc</a>.</p>
 
 </div>
 </div>
@@ -3369,7 +3369,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="siod_8h.html">siod.h</a></li>
-    <li class="footer">Generated on Thu Jan 30 2014 00:27:14 for Edinburgh Speech Tools by
+    <li class="footer">Generated on Tue Feb 11 2014 12:00:40 for Edinburgh Speech Tools by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

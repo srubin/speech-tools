@@ -144,7 +144,7 @@ $(document).ready(function(){initNavTree('viterbi__main_8cc_source.html','');});
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="EST__relation__compare_8h.html#a261dfaa2e05cba500f21bbd733498c4e">print_results</a>(<a class="code" href="classEST__Relation.html">EST_Relation</a> &amp;wstream);</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keyword">static</span> <span class="keywordtype">bool</span> do_search(<a class="code" href="classEST__Relation.html">EST_Relation</a> &amp;wstream);</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="keyword">static</span> <a class="code" href="classEST__VTPath.html">EST_VTPath</a> *vit_npath(<a class="code" href="classEST__VTPath.html">EST_VTPath</a> *<a class="code" href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a>,<a class="code" href="classEST__VTCandidate.html">EST_VTCandidate</a> *<a class="code" href="regsub_8c.html#a86c78564531bafa810c65f20086bae0c">c</a>,<a class="code" href="classEST__Features.html">EST_Features</a> &amp;f);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="keyword">static</span> <a class="code" href="classEST__VTPath.html">EST_VTPath</a> *vit_npath(<a class="code" href="classEST__VTPath.html">EST_VTPath</a> *p,<a class="code" href="classEST__VTCandidate.html">EST_VTCandidate</a> *<a class="code" href="regsub_8c.html#a86c78564531bafa810c65f20086bae0c">c</a>,<a class="code" href="classEST__Features.html">EST_Features</a> &amp;f);</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="keyword">static</span> <a class="code" href="classEST__VTCandidate.html">EST_VTCandidate</a> *vit_candlist(<a class="code" href="classEST__Item.html">EST_Item</a> *<a class="code" href="regerror_8c.html#a20a6d30d76bef587ebad8cb70f9009ca">s</a>,<a class="code" href="classEST__Features.html">EST_Features</a> &amp;f);</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> top_n_candidates(<a class="code" href="classEST__VTCandidate.html">EST_VTCandidate</a>* &amp;all_c);</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> load_vocab(<span class="keyword">const</span> <a class="code" href="classEST__String.html">EST_String</a> &amp;vfile);</div>
@@ -159,13 +159,13 @@ $(document).ready(function(){initNavTree('viterbi__main_8cc_source.html','');});
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> load_given(<span class="keyword">const</span> <a class="code" href="classEST__String.html">EST_String</a> &amp;filename,</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;               <span class="keyword">const</span> <span class="keywordtype">int</span> ngram_order);</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;               </div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="keyword">static</span> <span class="keywordtype">double</span> find_gram_prob(<a class="code" href="classEST__VTPath.html">EST_VTPath</a> *<a class="code" href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a>,<span class="keywordtype">int</span> *state);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="keyword">static</span> <span class="keywordtype">double</span> find_gram_prob(<a class="code" href="classEST__VTPath.html">EST_VTPath</a> *p,<span class="keywordtype">int</span> *state);</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="comment">// special stuff for non-sliding window ngrams</span></div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="keyword">static</span> <span class="keywordtype">double</span> find_extra_gram_prob(<a class="code" href="classEST__VTPath.html">EST_VTPath</a> *<a class="code" href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a>,<span class="keywordtype">int</span> *state, <span class="keywordtype">int</span> <a class="code" href="EST__item__aux_8h.html#a24a0abdfceda510975e3224b94389012">time</a>);</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> get_history(<a class="code" href="classEST__TVector.html">EST_StrVector</a> &amp;history, <a class="code" href="classEST__VTPath.html">EST_VTPath</a> *<a class="code" href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a>);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="keyword">static</span> <span class="keywordtype">double</span> find_extra_gram_prob(<a class="code" href="classEST__VTPath.html">EST_VTPath</a> *p,<span class="keywordtype">int</span> *state, <span class="keywordtype">int</span> <a class="code" href="EST__item__aux_8h.html#a24a0abdfceda510975e3224b94389012">time</a>);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> get_history(<a class="code" href="classEST__TVector.html">EST_StrVector</a> &amp;history, <a class="code" href="classEST__VTPath.html">EST_VTPath</a> *p);</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> fill_window(<a class="code" href="classEST__TVector.html">EST_StrVector</a> &amp;window,<a class="code" href="classEST__TVector.html">EST_StrVector</a> &amp;history,</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;            <a class="code" href="classEST__VTPath.html">EST_VTPath</a> *<a class="code" href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a>,<span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="EST__item__aux_8h.html#a24a0abdfceda510975e3224b94389012">time</a>);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;            <a class="code" href="classEST__VTPath.html">EST_VTPath</a> *p,<span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="EST__item__aux_8h.html#a24a0abdfceda510975e3224b94389012">time</a>);</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="keyword">static</span> <span class="keywordtype">int</span> is_a_special(<span class="keyword">const</span> <a class="code" href="classEST__String.html">EST_String</a> &amp;<a class="code" href="regerror_8c.html#a20a6d30d76bef587ebad8cb70f9009ca">s</a>, <span class="keywordtype">int</span> &amp;<a class="code" href="siod__est_8h.html#a4ae7d8960223d651225601ba63fea8c3">val</a>);</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="keyword">static</span> <span class="keywordtype">int</span> max_history=0;</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
@@ -491,7 +491,7 @@ $(document).ready(function(){initNavTree('viterbi__main_8cc_source.html','');});
 <div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;{</div>
 <div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;</div>
 <div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;    <a class="code" href="classEST__String.html">EST_String</a> word, pos;</div>
-<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;    <a class="code" href="classEST__UItem.html">EST_Litem</a> *<a class="code" href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a>;</div>
+<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;    <a class="code" href="classEST__UItem.html">EST_Litem</a> *p;</div>
 <div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;    <span class="keywordtype">int</span> i,j;</div>
 <div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;</div>
 <div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="EST__svec__aux_8cc.html#a8e488a3c3daecd7690c51a8522c06bd5">load_TList_of_StrVector</a>(given,filename,ngram_order-1) != 0)</div>
@@ -501,7 +501,7 @@ $(document).ready(function(){initNavTree('viterbi__main_8cc_source.html','');});
 <div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;    }</div>
 <div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;</div>
 <div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;    <span class="comment">// set max history</span></div>
-<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;    <span class="keywordflow">for</span> (p = given.head(); <a class="code" href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a>; p = p-&gt;<a class="code" href="classEST__UItem.html#afc5292d4da883de227f5a92bb6df719d">next</a>())</div>
+<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;    <span class="keywordflow">for</span> (p = given.head(); p; p = p-&gt;<a class="code" href="classEST__UItem.html#afc5292d4da883de227f5a92bb6df719d">next</a>())</div>
 <div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;    {</div>
 <div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;    <span class="keywordflow">for</span>(i=0;i&lt;given(p).length();i++)</div>
 <div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;        <span class="keywordflow">if</span>( is_a_special( given(p)(i), j) &amp;&amp; (-j &gt; max_history))</div>
@@ -542,7 +542,7 @@ $(document).ready(function(){initNavTree('viterbi__main_8cc_source.html','');});
 <div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;    <span class="comment">// Return a list of new candidates from this point </span></div>
 <div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;    <span class="keywordtype">double</span> prob=1.0,prob2=1.0;</div>
 <div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;    <span class="keywordtype">int</span> i;</div>
-<div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;    <a class="code" href="classEST__UItem.html">EST_Litem</a> *<a class="code" href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a>;</div>
+<div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;    <a class="code" href="classEST__UItem.html">EST_Litem</a> *p;</div>
 <div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;    <span class="keywordtype">int</span> observe;</div>
 <div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;    <a class="code" href="classEST__VTCandidate.html">EST_VTCandidate</a> *all_c = 0;</div>
 <div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;    <a class="code" href="classEST__VTCandidate.html">EST_VTCandidate</a> *<a class="code" href="regsub_8c.html#a86c78564531bafa810c65f20086bae0c">c</a>;</div>
@@ -611,7 +611,7 @@ $(document).ready(function(){initNavTree('viterbi__main_8cc_source.html','');});
 <div class="line"><a name="l00517"></a><span class="lineno">  517</span>&#160;    (void)f;</div>
 <div class="line"><a name="l00518"></a><span class="lineno">  518</span>&#160;</div>
 <div class="line"><a name="l00519"></a><span class="lineno">  519</span>&#160;    np-&gt;<a class="code" href="classEST__VTPath.html#a8b151f5ba13d54d7bb1a3b753344c6d3">c</a> = <a class="code" href="regsub_8c.html#a86c78564531bafa810c65f20086bae0c">c</a>;</div>
-<div class="line"><a name="l00520"></a><span class="lineno">  520</span>&#160;    np-&gt;<a class="code" href="classEST__VTPath.html#a596b9c03394f326b7c1f0192d2450e41">from</a> = <a class="code" href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a>;</div>
+<div class="line"><a name="l00520"></a><span class="lineno">  520</span>&#160;    np-&gt;<a class="code" href="classEST__VTPath.html#a596b9c03394f326b7c1f0192d2450e41">from</a> = p;</div>
 <div class="line"><a name="l00521"></a><span class="lineno">  521</span>&#160;</div>
 <div class="line"><a name="l00522"></a><span class="lineno">  522</span>&#160;    <span class="comment">// are we using extra info ?</span></div>
 <div class="line"><a name="l00523"></a><span class="lineno">  523</span>&#160;    <span class="keywordflow">if</span>(<a class="code" href="viterbi__main_8cc.html#a35fc43b79a5fa8806c2d35728a155e54">using_given</a>)</div>
@@ -800,7 +800,7 @@ $(document).ready(function(){initNavTree('viterbi__main_8cc_source.html','');});
 <div class="line"><a name="l00706"></a><span class="lineno">  706</span>&#160;    <span class="comment">// keep the n most likely candidates</span></div>
 <div class="line"><a name="l00707"></a><span class="lineno">  707</span>&#160;    <span class="comment">// avoiding a full sort of the (potentially long) list</span></div>
 <div class="line"><a name="l00708"></a><span class="lineno">  708</span>&#160;</div>
-<div class="line"><a name="l00709"></a><span class="lineno">  709</span>&#160;    <a class="code" href="classEST__VTCandidate.html">EST_VTCandidate</a> *top_c=NULL,*<a class="code" href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a>,*q,*this_best, *prev_to_best;</div>
+<div class="line"><a name="l00709"></a><span class="lineno">  709</span>&#160;    <a class="code" href="classEST__VTCandidate.html">EST_VTCandidate</a> *top_c=NULL,*p,*q,*this_best, *prev_to_best;</div>
 <div class="line"><a name="l00710"></a><span class="lineno">  710</span>&#160;    <span class="keywordtype">int</span> i;</div>
 <div class="line"><a name="l00711"></a><span class="lineno">  711</span>&#160;    <span class="keywordflow">if</span>(n_beam &lt; 1)</div>
 <div class="line"><a name="l00712"></a><span class="lineno">  712</span>&#160;    <span class="keywordflow">return</span>; <span class="comment">// do nothing</span></div>
@@ -818,12 +818,12 @@ $(document).ready(function(){initNavTree('viterbi__main_8cc_source.html','');});
 <div class="line"><a name="l00724"></a><span class="lineno">  724</span>&#160;</div>
 <div class="line"><a name="l00725"></a><span class="lineno">  725</span>&#160;    <span class="comment">// find best candidate in all_c</span></div>
 <div class="line"><a name="l00726"></a><span class="lineno">  726</span>&#160;    q=NULL;;</div>
-<div class="line"><a name="l00727"></a><span class="lineno">  727</span>&#160;    <span class="keywordflow">for</span>(p=all_c;p!= NULL;q=<a class="code" href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a>,p=p-&gt;next)</div>
+<div class="line"><a name="l00727"></a><span class="lineno">  727</span>&#160;    <span class="keywordflow">for</span>(p=all_c;p!= NULL;q=p,p=p-&gt;<a class="code" href="classEST__VTCandidate.html#a1d34d9c3a90c5257a7f6e01cbea1fb05">next</a>)</div>
 <div class="line"><a name="l00728"></a><span class="lineno">  728</span>&#160;    {</div>
 <div class="line"><a name="l00729"></a><span class="lineno">  729</span>&#160;        <span class="comment">//cerr &lt;&lt; &quot;item : &quot; &lt;&lt; p-&gt;score &lt;&lt; endl;</span></div>
 <div class="line"><a name="l00730"></a><span class="lineno">  730</span>&#160;        <span class="keywordflow">if</span>(p-&gt;score &gt; this_best-&gt;score)</div>
 <div class="line"><a name="l00731"></a><span class="lineno">  731</span>&#160;        {</div>
-<div class="line"><a name="l00732"></a><span class="lineno">  732</span>&#160;        this_best = <a class="code" href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a>;</div>
+<div class="line"><a name="l00732"></a><span class="lineno">  732</span>&#160;        this_best = p;</div>
 <div class="line"><a name="l00733"></a><span class="lineno">  733</span>&#160;        prev_to_best=q;</div>
 <div class="line"><a name="l00734"></a><span class="lineno">  734</span>&#160;        }</div>
 <div class="line"><a name="l00735"></a><span class="lineno">  735</span>&#160;    }</div>
@@ -930,7 +930,6 @@ $(document).ready(function(){initNavTree('viterbi__main_8cc_source.html','');});
 <div class="ttc" id="classEST__Relation_html_a87b849f488a55c3af5f1e879cdd22023"><div class="ttname"><a href="classEST__Relation.html#a87b849f488a55c3af5f1e879cdd22023">EST_Relation::append</a></div><div class="ttdeci">EST_Item * append(EST_Item *si)</div><div class="ttdef"><b>Definition:</b> <a href="EST__Relation_8cc_source.html#l00088">EST_Relation.cc:88</a></div></div>
 <div class="ttc" id="classEST__String_html_a69df8f68d20bb7a2a4b820efa3b0bde9"><div class="ttname"><a href="classEST__String.html#a69df8f68d20bb7a2a4b820efa3b0bde9">EST_String::after</a></div><div class="ttdeci">EST_String after(int pos, int len=1) const </div><div class="ttdoc">Part after pos+len. </div><div class="ttdef"><b>Definition:</b> <a href="EST__String_8h_source.html#l00317">EST_String.h:317</a></div></div>
 <div class="ttc" id="classEST__String_html_ae67ad0b525e224f9862f31ba74854e8b"><div class="ttname"><a href="classEST__String.html#ae67ad0b525e224f9862f31ba74854e8b">EST_String::before</a></div><div class="ttdeci">EST_String before(int pos, int len=0) const </div><div class="ttdoc">Part before position. </div><div class="ttdef"><b>Definition:</b> <a href="EST__String_8h_source.html#l00285">EST_String.h:285</a></div></div>
-<div class="ttc" id="editline_8c_html_a5791904baf12239aadc3a8280a03e8c5"><div class="ttname"><a href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a></div><div class="ttdeci">void char * p</div><div class="ttdef"><b>Definition:</b> <a href="editline_8c_source.html#l01395">editline.c:1395</a></div></div>
 <div class="ttc" id="EST__Ngrammar_8h_html_aacff0f0360a347d1dbaf463ae9687303"><div class="ttname"><a href="EST__Ngrammar_8h.html#aacff0f0360a347d1dbaf463ae9687303">SENTENCE_START_MARKER</a></div><div class="ttdeci">#define SENTENCE_START_MARKER</div><div class="ttdef"><b>Definition:</b> <a href="EST__Ngrammar_8h_source.html#l00059">EST_Ngrammar.h:59</a></div></div>
 <div class="ttc" id="siod__est_8h_html_a4ae7d8960223d651225601ba63fea8c3"><div class="ttname"><a href="siod__est_8h.html#a4ae7d8960223d651225601ba63fea8c3">val</a></div><div class="ttdeci">class EST_Val &amp; val(LISP x)</div><div class="ttdef"><b>Definition:</b> <a href="siod__est_8cc_source.html#l00155">siod_est.cc:155</a></div></div>
 <div class="ttc" id="EST__bool_8h_html_aa8cecfc5c5c054d2875c03e77b7be15d"><div class="ttname"><a href="EST__bool_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a></div><div class="ttdeci">#define TRUE</div><div class="ttdef"><b>Definition:</b> <a href="EST__bool_8h_source.html#l00118">EST_bool.h:118</a></div></div>
@@ -947,7 +946,7 @@ $(document).ready(function(){initNavTree('viterbi__main_8cc_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_5c982d53a68cdbcd421152b4020263a9.html">main</a></li><li class="navelem"><a class="el" href="viterbi__main_8cc.html">viterbi_main.cc</a></li>
-    <li class="footer">Generated on Thu Jan 30 2014 00:27:12 for Edinburgh Speech Tools by
+    <li class="footer">Generated on Tue Feb 11 2014 12:00:38 for Edinburgh Speech Tools by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

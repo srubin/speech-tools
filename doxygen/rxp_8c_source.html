@@ -103,8 +103,8 @@ $(document).ready(function(){initNavTree('rxp_8c_source.html','');});
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="stdio16_8h.html">stdio16.h</a>&quot;</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keywordtype">int</span> <a class="code" href="rxp_8c.html#a77946566fc7421f22b199345132c8cec">attr_compare</a>(<span class="keyword">const</span> <span class="keywordtype">void</span> *a, <span class="keyword">const</span> <span class="keywordtype">void</span> *b);</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keywordtype">void</span> <a class="code" href="rxp_8c.html#a10664711344565b757c0e5297c6f3b77">print_tree</a>(Parser <a class="code" href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a>, XBit bit);</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keywordtype">void</span> <a class="code" href="rxp_8c.html#a26f6459aa489e2525c00c53a8f190a36">print_bit</a>(Parser <a class="code" href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a>, XBit bit);</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keywordtype">void</span> <a class="code" href="rxp_8c.html#a10664711344565b757c0e5297c6f3b77">print_tree</a>(Parser p, XBit bit);</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keywordtype">void</span> <a class="code" href="rxp_8c.html#a26f6459aa489e2525c00c53a8f190a36">print_bit</a>(Parser p, XBit bit);</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keywordtype">void</span> <a class="code" href="rxp_8c.html#a8bdac76923c6a03594330ec5ce2745a4">print_attrs</a>(ElementDefinition e, Attribute a);</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keywordtype">void</span> <a class="code" href="rxp_8c.html#af98ce039d721f87614e5da594c5938bb">print_text</a>(Char *text);</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keywordtype">void</span> <a class="code" href="rxp_8c.html#a915746a2bf53b65239f3d69324e67a50">print_text_bit</a>(Char *text);</div>
@@ -120,7 +120,7 @@ $(document).ready(function(){initNavTree('rxp_8c_source.html','');});
 <div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="rxp_8c.html#a3c04138a5bfe5d72780bb7e82a18e627">   26</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="align__main_8cc.html#a3c04138a5bfe5d72780bb7e82a18e627">main</a>(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span> **argv)</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;{</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordtype">int</span> i;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    Parser <a class="code" href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a>;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    Parser p;</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordtype">char</span> *<a class="code" href="regerror_8c.html#a20a6d30d76bef587ebad8cb70f9009ca">s</a>;</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    Entity ent = 0;</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
@@ -317,7 +317,7 @@ $(document).ready(function(){initNavTree('rxp_8c_source.html','');});
 <div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;    }</div>
 <div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;}</div>
 <div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;</div>
-<div class="line"><a name="l00226"></a><span class="lineno"><a class="line" href="rxp_8c.html#a10664711344565b757c0e5297c6f3b77">  226</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="rxp_8c.html#a10664711344565b757c0e5297c6f3b77">print_tree</a>(Parser <a class="code" href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a>, XBit bit)</div>
+<div class="line"><a name="l00226"></a><span class="lineno"><a class="line" href="rxp_8c.html#a10664711344565b757c0e5297c6f3b77">  226</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="rxp_8c.html#a10664711344565b757c0e5297c6f3b77">print_tree</a>(Parser p, XBit bit)</div>
 <div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;{</div>
 <div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;    <span class="keywordtype">int</span> i;</div>
 <div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;    <span class="keyword">struct </span><a class="code" href="structxbit.html">xbit</a> endbit;</div>
@@ -333,7 +333,7 @@ $(document).ready(function(){initNavTree('rxp_8c_source.html','');});
 <div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;    }</div>
 <div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;}</div>
 <div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;</div>
-<div class="line"><a name="l00242"></a><span class="lineno"><a class="line" href="rxp_8c.html#a26f6459aa489e2525c00c53a8f190a36">  242</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="rxp_8c.html#a26f6459aa489e2525c00c53a8f190a36">print_bit</a>(Parser <a class="code" href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a>, XBit bit)</div>
+<div class="line"><a name="l00242"></a><span class="lineno"><a class="line" href="rxp_8c.html#a26f6459aa489e2525c00c53a8f190a36">  242</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="rxp_8c.html#a26f6459aa489e2525c00c53a8f190a36">print_bit</a>(Parser p, XBit bit)</div>
 <div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;{</div>
 <div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span> *sys, *pub;</div>
 <div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;</div>
@@ -616,7 +616,7 @@ $(document).ready(function(){initNavTree('rxp_8c_source.html','');});
 <div class="ttc" id="charset_8h_html_a613dc7b62a2441303d7bd3c9f363d485"><div class="ttname"><a href="charset_8h.html#a613dc7b62a2441303d7bd3c9f363d485">CharacterEncodingNameAndByteOrder</a></div><div class="ttdeci">STD_API const char8 * CharacterEncodingNameAndByteOrder[CE_enum_count]</div><div class="ttdef"><b>Definition:</b> <a href="charset_8c_source.html#l00193">charset.c:193</a></div></div>
 <div class="ttc" id="rxp_8c_html_aa22d33b053db927825bcfa2f6f247abb"><div class="ttname"><a href="rxp_8c.html#aa22d33b053db927825bcfa2f6f247abb">entity_open</a></div><div class="ttdeci">InputSource entity_open(Entity ent, void *arg)</div><div class="ttdef"><b>Definition:</b> <a href="rxp_8c_source.html#l00484">rxp.c:484</a></div></div>
 <div class="ttc" id="structxbit_html"><div class="ttname"><a href="structxbit.html">xbit</a></div><div class="ttdef"><b>Definition:</b> <a href="xmlparser_8h_source.html#l00065">xmlparser.h:65</a></div></div>
-<div class="ttc" id="stdio16_8h_html_ac43e13285f17b2cf024a9e19d47ce6e3"><div class="ttname"><a href="stdio16_8h.html#ac43e13285f17b2cf024a9e19d47ce6e3">MakeFILE16FromFILE</a></div><div class="ttdeci">STD_API FILE16 * MakeFILE16FromFILE(FILE *f, const char *type)</div><div class="ttdef"><b>Definition:</b> <a href="stdio16_8c_source.html#l00661">stdio16.c:661</a></div></div>
+<div class="ttc" id="stdio16_8h_html_ac43e13285f17b2cf024a9e19d47ce6e3"><div class="ttname"><a href="stdio16_8h.html#ac43e13285f17b2cf024a9e19d47ce6e3">MakeFILE16FromFILE</a></div><div class="ttdeci">STD_API FILE16 * MakeFILE16FromFILE(FILE *f, const char *type)</div><div class="ttdef"><b>Definition:</b> <a href="stdio16_8c_source.html#l00654">stdio16.c:654</a></div></div>
 <div class="ttc" id="charset_8h_html"><div class="ttname"><a href="charset_8h.html">charset.h</a></div></div>
 <div class="ttc" id="xmlparser_8h_html_a1d3995ad8aad9274622f58ffaa7576b8"><div class="ttname"><a href="xmlparser_8h.html#a1d3995ad8aad9274622f58ffaa7576b8">ReadXTree</a></div><div class="ttdeci">XBit ReadXTree(Parser p)</div><div class="ttdef"><b>Definition:</b> <a href="xmlparser_8c_source.html#l00535">xmlparser.c:535</a></div></div>
 <div class="ttc" id="input_8h_html_ad8d7d2809a209b8f128fb6cf1c8b2f37"><div class="ttname"><a href="input_8h.html#ad8d7d2809a209b8f128fb6cf1c8b2f37">NewInputSource</a></div><div class="ttdeci">XML_API InputSource NewInputSource(Entity e, FILE16 *f16)</div><div class="ttdef"><b>Definition:</b> <a href="input_8c_source.html#l00088">input.c:88</a></div></div>
@@ -685,7 +685,6 @@ $(document).ready(function(){initNavTree('rxp_8c_source.html','');});
 <div class="ttc" id="xmlparser_8h_html_aaf492adabae81784c6aa10070a070dc2abbc0d7480af07aa8e32af749343aaa67"><div class="ttname"><a href="xmlparser_8h.html#aaf492adabae81784c6aa10070a070dc2abbc0d7480af07aa8e32af749343aaa67">XBIT_dtd</a></div><div class="ttdef"><b>Definition:</b> <a href="xmlparser_8h_source.html#l00035">xmlparser.h:35</a></div></div>
 <div class="ttc" id="xmlparser_8h_html_aa54d96d0872a862bf1be391a111190d0"><div class="ttname"><a href="xmlparser_8h.html#aa54d96d0872a862bf1be391a111190d0">XBitTypeName</a></div><div class="ttdeci">XML_API const char8 * XBitTypeName[XBIT_enum_count]</div><div class="ttdef"><b>Definition:</b> <a href="xmlparser_8c_source.html#l00118">xmlparser.c:118</a></div></div>
 <div class="ttc" id="string16_8h_html_a57288e80585ccf0cdf0bbcc28c9ac523"><div class="ttname"><a href="string16_8h.html#a57288e80585ccf0cdf0bbcc28c9ac523">strdup8</a></div><div class="ttdeci">STD_API char8 * strdup8(const char8 *s)</div><div class="ttdef"><b>Definition:</b> <a href="string16_8c_source.html#l00077">string16.c:77</a></div></div>
-<div class="ttc" id="editline_8c_html_a5791904baf12239aadc3a8280a03e8c5"><div class="ttname"><a href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a></div><div class="ttdeci">void char * p</div><div class="ttdef"><b>Definition:</b> <a href="editline_8c_source.html#l01395">editline.c:1395</a></div></div>
 <div class="ttc" id="rxp_8c_html_af98ce039d721f87614e5da594c5938bb"><div class="ttname"><a href="rxp_8c.html#af98ce039d721f87614e5da594c5938bb">print_text</a></div><div class="ttdeci">void print_text(Char *text)</div><div class="ttdef"><b>Definition:</b> <a href="rxp_8c_source.html#l00435">rxp.c:435</a></div></div>
 <div class="ttc" id="charset_8h_html_a75ee61cace3f7a792b7ad44cc6092494"><div class="ttname"><a href="charset_8h.html#a75ee61cace3f7a792b7ad44cc6092494">FindEncoding</a></div><div class="ttdeci">STD_API CharacterEncoding FindEncoding(char8 *name)</div><div class="ttdef"><b>Definition:</b> <a href="charset_8c_source.html#l00335">charset.c:335</a></div></div>
 <div class="ttc" id="xmlparser_8h_html_aaf492adabae81784c6aa10070a070dc2a2c540aa029b1b1c8edf9e824ee05bc26"><div class="ttname"><a href="xmlparser_8h.html#aaf492adabae81784c6aa10070a070dc2a2c540aa029b1b1c8edf9e824ee05bc26">XBIT_pcdata</a></div><div class="ttdef"><b>Definition:</b> <a href="xmlparser_8h_source.html#l00036">xmlparser.h:36</a></div></div>
@@ -701,7 +700,7 @@ $(document).ready(function(){initNavTree('rxp_8c_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_2d40ef836e2c354003a14618b86a0a20.html">rxp</a></li><li class="navelem"><a class="el" href="rxp_8c.html">rxp.c</a></li>
-    <li class="footer">Generated on Thu Jan 30 2014 00:27:12 for Edinburgh Speech Tools by
+    <li class="footer">Generated on Tue Feb 11 2014 12:00:38 for Edinburgh Speech Tools by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

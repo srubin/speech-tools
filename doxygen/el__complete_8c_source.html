@@ -142,7 +142,7 @@ $(document).ready(function(){initNavTree('el__complete_8c_source.html','');});
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor"></span><span class="comment">/*</span></div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="comment">**  Return an allocated copy of a string.</span></div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="comment">*/</span></div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keywordtype">char</span> * strdup(<span class="keywordtype">char</span> *<a class="code" href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a>)</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keywordtype">char</span> * strdup(<span class="keywordtype">char</span> *p)</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;{</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordtype">char</span>    *<span class="keyword">new</span>;</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
@@ -174,7 +174,7 @@ $(document).ready(function(){initNavTree('el__complete_8c_source.html','');});
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="preprocessor">#if !defined(SYSTEM_IS_WIN32)</span></div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="preprocessor"></span>    <span class="keywordtype">char</span>    **av;</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keywordtype">char</span>    **neww;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordtype">char</span>    *<a class="code" href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a>;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordtype">char</span>    *p;</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    DIR     *dp;</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <a class="code" href="el__unix_8h.html#a3a74d4c86c300c74152eb215b0a23cd9">DIRENTRY</a>    *ep;</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <a class="code" href="editline_8h.html#ad02296af025b2e52b7bd17af35fef3c8">ESIZE_T</a> ac;</div>
@@ -268,7 +268,7 @@ $(document).ready(function(){initNavTree('el__complete_8c_source.html','');});
 <div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;    <span class="keywordtype">char</span>    *dir;</div>
 <div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;    <span class="keywordtype">char</span>    *file;</div>
 <div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    <span class="keywordtype">char</span>    *neww;</div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    <span class="keywordtype">char</span>    *<a class="code" href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a>;</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    <span class="keywordtype">char</span>    *p;</div>
 <div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;    <a class="code" href="editline_8h.html#ad02296af025b2e52b7bd17af35fef3c8">ESIZE_T</a> ac;</div>
 <div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;    <a class="code" href="editline_8h.html#ad02296af025b2e52b7bd17af35fef3c8">ESIZE_T</a> <a class="code" href="EST__item__aux_8h.html#abe91569564d8df0636e143ad34bc4803">end</a>;</div>
 <div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;    <a class="code" href="editline_8h.html#ad02296af025b2e52b7bd17af35fef3c8">ESIZE_T</a> i;</div>
@@ -325,7 +325,7 @@ $(document).ready(function(){initNavTree('el__complete_8c_source.html','');});
 <div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;    <span class="keywordflow">for</span> (i = 0; i &lt; ac; i++)</div>
 <div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;    <a class="code" href="editline_8h.html#a15b5b34775f082e2b874ac7c9a4b9e1d">DISPOSE</a>(av[i]);</div>
 <div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;    <a class="code" href="editline_8h.html#a15b5b34775f082e2b874ac7c9a4b9e1d">DISPOSE</a>(av);</div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a>;</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;    <span class="keywordflow">return</span> p;</div>
 <div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;}</div>
 <div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;</div>
 <div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;<span class="comment">/*</span></div>
@@ -375,9 +375,8 @@ $(document).ready(function(){initNavTree('el__complete_8c_source.html','');});
 <div class="ttc" id="editline_8h_html_a15b5b34775f082e2b874ac7c9a4b9e1d"><div class="ttname"><a href="editline_8h.html#a15b5b34775f082e2b874ac7c9a4b9e1d">DISPOSE</a></div><div class="ttdeci">#define DISPOSE(p)</div><div class="ttdef"><b>Definition:</b> <a href="editline_8h_source.html#l00115">editline.h:115</a></div></div>
 <div class="ttc" id="editline_8h_html"><div class="ttname"><a href="editline_8h.html">editline.h</a></div></div>
 <div class="ttc" id="editline_8h_html_a1900984ccac75858a1deb84631366298"><div class="ttname"><a href="editline_8h.html#a1900984ccac75858a1deb84631366298">COPYFROMTO</a></div><div class="ttdeci">#define COPYFROMTO(new, p, len)</div><div class="ttdef"><b>Definition:</b> <a href="editline_8h_source.html#l00111">editline.h:111</a></div></div>
-<div class="ttc" id="EST__String_8cc_html_a7e1681179b2082b78a1228e9b124b6d1"><div class="ttname"><a href="EST__String_8cc.html#a7e1681179b2082b78a1228e9b124b6d1">compare</a></div><div class="ttdeci">int compare(const EST_String &amp;a, const EST_String &amp;b)</div><div class="ttdef"><b>Definition:</b> <a href="EST__String_8cc_source.html#l01124">EST_String.cc:1124</a></div></div>
-<div class="ttc" id="editline_8c_html_a5791904baf12239aadc3a8280a03e8c5"><div class="ttname"><a href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a></div><div class="ttdeci">void char * p</div><div class="ttdef"><b>Definition:</b> <a href="editline_8c_source.html#l01395">editline.c:1395</a></div></div>
-<div class="ttc" id="EST__walloc_8h_html_a94b50eb23ef1bf35d8fb07e716f1f9ed"><div class="ttname"><a href="EST__walloc_8h.html#a94b50eb23ef1bf35d8fb07e716f1f9ed">wfree</a></div><div class="ttdeci">void wfree(void *p)</div><div class="ttdef"><b>Definition:</b> <a href="walloc_8c_source.html#l00146">walloc.c:146</a></div></div>
+<div class="ttc" id="EST__String_8cc_html_a7e1681179b2082b78a1228e9b124b6d1"><div class="ttname"><a href="EST__String_8cc.html#a7e1681179b2082b78a1228e9b124b6d1">compare</a></div><div class="ttdeci">int compare(const EST_String &amp;a, const EST_String &amp;b)</div><div class="ttdef"><b>Definition:</b> <a href="EST__String_8cc_source.html#l01130">EST_String.cc:1130</a></div></div>
+<div class="ttc" id="EST__walloc_8h_html_a94b50eb23ef1bf35d8fb07e716f1f9ed"><div class="ttname"><a href="EST__walloc_8h.html#a94b50eb23ef1bf35d8fb07e716f1f9ed">wfree</a></div><div class="ttdeci">void wfree(void *p)</div><div class="ttdef"><b>Definition:</b> <a href="walloc_8c_source.html#l00161">walloc.c:161</a></div></div>
 <div class="ttc" id="el__complete_8c_html_a7793592f0d929f24d42912c1e111dbc8"><div class="ttname"><a href="el__complete_8c.html#a7793592f0d929f24d42912c1e111dbc8">FindMatches</a></div><div class="ttdeci">STATIC int FindMatches(char *dir, char *file, char ***avp)</div><div class="ttdef"><b>Definition:</b> <a href="el__complete_8c_source.html#l00078">el_complete.c:78</a></div></div>
 <div class="ttc" id="editline_8h_html_aa6d214d398e2122f8f369dcc3630fa1c"><div class="ttname"><a href="editline_8h.html#aa6d214d398e2122f8f369dcc3630fa1c">rl_complete</a></div><div class="ttdeci">char * rl_complete(char *pathname, int *unique)</div><div class="ttdef"><b>Definition:</b> <a href="el__complete_8c_source.html#l00171">el_complete.c:171</a></div></div>
 <div class="ttc" id="regsub_8c_html_a560caa016d417ade4263383b7a0b449d"><div class="ttname"><a href="regsub_8c.html#a560caa016d417ade4263383b7a0b449d">len</a></div><div class="ttdeci">register int len</div><div class="ttdef"><b>Definition:</b> <a href="regsub_8c_source.html#l00045">regsub.c:45</a></div></div>
@@ -387,7 +386,7 @@ $(document).ready(function(){initNavTree('el__complete_8c_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_530ac7e1661b082aa2511ca8069b8725.html">siod</a></li><li class="navelem"><a class="el" href="el__complete_8c.html">el_complete.c</a></li>
-    <li class="footer">Generated on Thu Jan 30 2014 00:27:12 for Edinburgh Speech Tools by
+    <li class="footer">Generated on Tue Feb 11 2014 12:00:39 for Edinburgh Speech Tools by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

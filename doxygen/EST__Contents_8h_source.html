@@ -172,7 +172,7 @@ $(document).ready(function(){initNavTree('EST__Contents_8h_source.html','');});
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;         <span class="keyword">delete</span> content_data;}</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="classEST__Contents.html#acc4f78a8a8a34f094b5dcae4170d48c3">   80</a></span>&#160;    <a class="code" href="classEST__Contents.html#acc4f78a8a8a34f094b5dcae4170d48c3">EST_Contents</a>() { content_data = 0; }</div>
-<div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="classEST__Contents.html#af6c9924f40f503404c80772dea9a3b6e">   81</a></span>&#160;    <a class="code" href="classEST__Contents.html#af6c9924f40f503404c80772dea9a3b6e">EST_Contents</a>(<span class="keywordtype">void</span> *<a class="code" href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a>,<span class="keywordtype">void</span> (*free_func)(<span class="keywordtype">void</span> *p))</div>
+<div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="classEST__Contents.html#af6c9924f40f503404c80772dea9a3b6e">   81</a></span>&#160;    <a class="code" href="classEST__Contents.html#af6c9924f40f503404c80772dea9a3b6e">EST_Contents</a>(<span class="keywordtype">void</span> *p,<span class="keywordtype">void</span> (*free_func)(<span class="keywordtype">void</span> *p))</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;         { content_data = <span class="keyword">new</span> <a class="code" href="classEST__Content__Data.html">EST_Content_Data</a>(p,free_func); }</div>
 <div class="line"><a name="l00083"></a><span class="lineno"><a class="line" href="classEST__Contents.html#a7fe0a58452866e9d3afbe4e74364312b">   83</a></span>&#160;    <a class="code" href="classEST__Contents.html#a7fe0a58452866e9d3afbe4e74364312b">~EST_Contents</a>() { unref_contents(); }</div>
 <div class="line"><a name="l00084"></a><span class="lineno"><a class="line" href="classEST__Contents.html#a65de1317df37eeee48c7a73adee2a2c6">   84</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classEST__Contents.html#a65de1317df37eeee48c7a73adee2a2c6">set_contents</a>(<span class="keywordtype">void</span> *p,<span class="keywordtype">void</span> (*free_func)(<span class="keywordtype">void</span> *p))</div>
@@ -208,14 +208,13 @@ $(document).ready(function(){initNavTree('EST__Contents_8h_source.html','');});
 <div class="ttc" id="classEST__Contents_html_a265e0717b3de5313ae899821c03912e9"><div class="ttname"><a href="classEST__Contents.html#a265e0717b3de5313ae899821c03912e9">EST_Contents::refs</a></div><div class="ttdeci">int refs() const </div><div class="ttdef"><b>Definition:</b> <a href="EST__Contents_8h_source.html#l00089">EST_Contents.h:89</a></div></div>
 <div class="ttc" id="classEST__Content__Data_html_a94d57416938a9d7cf0168d22f6d2e244"><div class="ttname"><a href="classEST__Content__Data.html#a94d57416938a9d7cf0168d22f6d2e244">EST_Content_Data::operator=</a></div><div class="ttdeci">EST_Content_Data &amp; operator=(const EST_Content_Data &amp;c)</div><div class="ttdef"><b>Definition:</b> <a href="EST__Contents_8h_source.html#l00066">EST_Contents.h:66</a></div></div>
 <div class="ttc" id="classEST__Contents_html_a65de1317df37eeee48c7a73adee2a2c6"><div class="ttname"><a href="classEST__Contents.html#a65de1317df37eeee48c7a73adee2a2c6">EST_Contents::set_contents</a></div><div class="ttdeci">void set_contents(void *p, void(*free_func)(void *p))</div><div class="ttdef"><b>Definition:</b> <a href="EST__Contents_8h_source.html#l00084">EST_Contents.h:84</a></div></div>
-<div class="ttc" id="editline_8c_html_a5791904baf12239aadc3a8280a03e8c5"><div class="ttname"><a href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a></div><div class="ttdeci">void char * p</div><div class="ttdef"><b>Definition:</b> <a href="editline_8c_source.html#l01395">editline.c:1395</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="EST__Contents_8h.html">EST_Contents.h</a></li>
-    <li class="footer">Generated on Thu Jan 30 2014 00:27:11 for Edinburgh Speech Tools by
+    <li class="footer">Generated on Tue Feb 11 2014 12:00:38 for Edinburgh Speech Tools by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

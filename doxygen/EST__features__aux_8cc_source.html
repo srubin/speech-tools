@@ -152,7 +152,7 @@ $(document).ready(function(){initNavTree('EST__features__aux_8cc_source.html',''
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordtype">int</span> work_to_do = 1;</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    (void)field;</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <a class="code" href="classEST__TRwStructIterator.html">EST_Features::RwEntries</a> <a class="code" href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a>;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <a class="code" href="classEST__TRwStructIterator.html">EST_Features::RwEntries</a> p;</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <a class="code" href="classEST__TRwStructIterator.html">EST_Features::RwEntries</a> n;</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <a class="code" href="classEST__TKVI.html">EST_Features::Entry</a> e;</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
@@ -161,9 +161,9 @@ $(document).ready(function(){initNavTree('EST__features__aux_8cc_source.html',''
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordflow">while</span>(work_to_do)</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    {</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    work_to_do = 0;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordflow">for</span> (p.<a class="code" href="classEST__TRwIterator.html#ac2b008c4a73ecb8448f5baa5004fdd28">begin</a>(f); <a class="code" href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a>; ++<a class="code" href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a>)</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordflow">for</span> (p.<a class="code" href="classEST__TRwIterator.html#ac2b008c4a73ecb8448f5baa5004fdd28">begin</a>(f); p; ++p)</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    {</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        n = <a class="code" href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a>;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        n = p;</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        n++;</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        <span class="keywordflow">if</span> (n == 0)</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        <span class="keywordflow">break</span>;</div>
@@ -178,7 +178,7 @@ $(document).ready(function(){initNavTree('EST__features__aux_8cc_source.html',''
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        <span class="keywordflow">if</span> (n_score &gt; p_score)</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        {</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        cout &lt;&lt; <span class="stringliteral">&quot;swapping\n&quot;</span>;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        e = *<a class="code" href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a>;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        e = *p;</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        *p = *n;</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        *n = e;</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        work_to_do = 1;</div>
@@ -206,7 +206,6 @@ $(document).ready(function(){initNavTree('EST__features__aux_8cc_source.html',''
 <div class="ttc" id="EST__error_8h_html"><div class="ttname"><a href="EST__error_8h.html">EST_error.h</a></div></div>
 <div class="ttc" id="EST__get__function__template_8h_html_aa25af6c0c978f5411b035b2fe3e5110b"><div class="ttname"><a href="EST__get__function__template_8h.html#aa25af6c0c978f5411b035b2fe3e5110b">defineGetFunction</a></div><div class="ttdeci">#define defineGetFunction(FTYPE, VAL, RTYPE, NAME)</div><div class="ttdef"><b>Definition:</b> <a href="EST__get__function__template_8h_source.html#l00043">EST_get_function_template.h:43</a></div></div>
 <div class="ttc" id="EST__features__aux_8h_html"><div class="ttname"><a href="EST__features__aux_8h.html">EST_features_aux.h</a></div></div>
-<div class="ttc" id="editline_8c_html_a5791904baf12239aadc3a8280a03e8c5"><div class="ttname"><a href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a></div><div class="ttdeci">void char * p</div><div class="ttdef"><b>Definition:</b> <a href="editline_8c_source.html#l01395">editline.c:1395</a></div></div>
 <div class="ttc" id="siod__est_8h_html_a4ae7d8960223d651225601ba63fea8c3"><div class="ttname"><a href="siod__est_8h.html#a4ae7d8960223d651225601ba63fea8c3">val</a></div><div class="ttdeci">class EST_Val &amp; val(LISP x)</div><div class="ttdef"><b>Definition:</b> <a href="siod__est_8cc_source.html#l00155">siod_est.cc:155</a></div></div>
 <div class="ttc" id="EST__features__aux_8h_html_a84eb32e45638f8b7e439c4cbf4190026"><div class="ttname"><a href="EST__features__aux_8h.html#a84eb32e45638f8b7e439c4cbf4190026">getVal</a></div><div class="ttdeci">EST_Val getVal(const EST_Features &amp;f, const EST_String name, const EST_Val &amp;def, EST_feat_status &amp;status)</div><div class="ttdoc">Return the value as an EST_Val. </div></div>
 <div class="ttc" id="EST__features__aux_8cc_html_adf626c49d8af52c22162832dbffb8da8"><div class="ttname"><a href="EST__features__aux_8cc.html#adf626c49d8af52c22162832dbffb8da8">value_sort</a></div><div class="ttdeci">void value_sort(EST_Features &amp;f, const EST_String &amp;field)</div><div class="ttdef"><b>Definition:</b> <a href="EST__features__aux_8cc_source.html#l00056">EST_features_aux.cc:56</a></div></div>
@@ -217,7 +216,7 @@ $(document).ready(function(){initNavTree('EST__features__aux_8cc_source.html',''
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_48e186528d8523b137164d01852e16c8.html">base_class</a></li><li class="navelem"><a class="el" href="EST__features__aux_8cc.html">EST_features_aux.cc</a></li>
-    <li class="footer">Generated on Thu Jan 30 2014 00:27:11 for Edinburgh Speech Tools by
+    <li class="footer">Generated on Tue Feb 11 2014 12:00:37 for Edinburgh Speech Tools by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

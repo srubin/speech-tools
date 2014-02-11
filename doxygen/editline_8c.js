@@ -95,7 +95,7 @@ var editline_8c =
     [ "rl_reset_terminal", "editline_8c.html#a2e3968919bff5bb2b81a1c31096a51f8", null ],
     [ "rl_initialize", "editline_8c.html#ae8c0fa6ec5eb45518b7ecf8025e22214", null ],
     [ "readline", "editline_8c.html#a56e34737e26e67a09305ff87ccdac8bf", null ],
-    [ "hist_add", "editline_8c.html#aea0a4dd8838ab7a430bf11611e20f9e7", null ],
+    [ "add_history", "editline_8c.html#afa92c72aba5896583d7983e96c665a08", null ],
     [ "el_redisplay", "editline_8c.html#ae978a2b4a6c518490f69ad515ae92eff", null ],
     [ "el_current_sym", "editline_8c.html#a195799b49f2f2aa527d4a3c63327e72e", null ],
     [ "el_bind_key_in_metamap", "editline_8c.html#a3d20b3a54c2bea0d41102c427149bcdd", null ],
@@ -139,6 +139,5 @@ var editline_8c =
     [ "RequireNLforWrap", "editline_8c.html#a7dd26c57a03f6c86d0521ea3d227d026", null ],
     [ "el_intr_pending", "editline_8c.html#ad63f892b40ba546ac9ad247286b4230d", null ],
     [ "el_no_echo", "editline_8c.html#a01cf7f92d2ff384ed4146e71f00981d4", null ],
-    [ "rl_meta_chars", "editline_8c.html#acefdb589d500e0a7c9c478247f08c574", null ],
-    [ "p", "editline_8c.html#a5791904baf12239aadc3a8280a03e8c5", null ]
+    [ "rl_meta_chars", "editline_8c.html#acefdb589d500e0a7c9c478247f08c574", null ]
 ];

@@ -616,7 +616,7 @@ $(document).ready(function(){initNavTree('EST__FMatrix_8cc_source.html','');});
 <div class="line"><a name="l00522"></a><span class="lineno">  522</span>&#160;    <a class="code" href="classEST__TList.html">EST_StrList</a> sl;</div>
 <div class="line"><a name="l00523"></a><span class="lineno">  523</span>&#160;    <span class="keywordtype">int</span> i, j, n_rows=0, n_cols=0;</div>
 <div class="line"><a name="l00524"></a><span class="lineno">  524</span>&#160;    <a class="code" href="classEST__String.html">EST_String</a> t;</div>
-<div class="line"><a name="l00525"></a><span class="lineno">  525</span>&#160;    <a class="code" href="classEST__UItem.html">EST_Litem</a> *<a class="code" href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a>;</div>
+<div class="line"><a name="l00525"></a><span class="lineno">  525</span>&#160;    <a class="code" href="classEST__UItem.html">EST_Litem</a> *p;</div>
 <div class="line"><a name="l00526"></a><span class="lineno">  526</span>&#160;    <span class="keywordflow">if</span> (((filename == <span class="stringliteral">&quot;-&quot;</span>) ? ts.<a class="code" href="classEST__TokenStream.html#aaf6820e7304f08749e9b725133fbf8c9">open</a>(cin) : ts.<a class="code" href="classEST__TokenStream.html#aaf6820e7304f08749e9b725133fbf8c9">open</a>(filename)) != 0)</div>
 <div class="line"><a name="l00527"></a><span class="lineno">  527</span>&#160;    {</div>
 <div class="line"><a name="l00528"></a><span class="lineno">  528</span>&#160;        cerr &lt;&lt; <span class="stringliteral">&quot;Can&#39;t open fmatrix file &quot;</span> &lt;&lt; filename &lt;&lt; endl;</div>
@@ -1084,8 +1084,7 @@ $(document).ready(function(){initNavTree('EST__FMatrix_8cc_source.html','');});
 <div class="ttc" id="classEST__TMatrix_html_ad0d3c943e51fb813e0dc14c86f782045"><div class="ttname"><a href="classEST__TMatrix.html#ad0d3c943e51fb813e0dc14c86f782045">EST_TMatrix::num_rows</a></div><div class="ttdeci">int num_rows() const </div><div class="ttdoc">return number of rows </div><div class="ttdef"><b>Definition:</b> <a href="EST__TMatrix_8h_source.html#l00176">EST_TMatrix.h:176</a></div></div>
 <div class="ttc" id="classEST__TSimpleMatrix_html"><div class="ttname"><a href="classEST__TSimpleMatrix.html">EST_TSimpleMatrix</a></div><div class="ttdoc">A subclass of EST_TMatrix which copies using memcopy. </div><div class="ttdef"><b>Definition:</b> <a href="EST__TSimpleMatrix_8h_source.html#l00057">EST_TSimpleMatrix.h:57</a></div></div>
 <div class="ttc" id="EST__FMatrix_8cc_html_accbf186098ccca84b259321823cfea94"><div class="ttname"><a href="EST__FMatrix_8cc.html#accbf186098ccca84b259321823cfea94">operator!=</a></div><div class="ttdeci">int operator!=(const EST_FVector &amp;fv1, const EST_FVector &amp;fv2)</div><div class="ttdef"><b>Definition:</b> <a href="EST__FMatrix_8cc_source.html#l00194">EST_FMatrix.cc:194</a></div></div>
-<div class="ttc" id="editline_8c_html_a5791904baf12239aadc3a8280a03e8c5"><div class="ttname"><a href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a></div><div class="ttdeci">void char * p</div><div class="ttdef"><b>Definition:</b> <a href="editline_8c_source.html#l01395">editline.c:1395</a></div></div>
-<div class="ttc" id="EST__walloc_8h_html_a94b50eb23ef1bf35d8fb07e716f1f9ed"><div class="ttname"><a href="EST__walloc_8h.html#a94b50eb23ef1bf35d8fb07e716f1f9ed">wfree</a></div><div class="ttdeci">void wfree(void *p)</div><div class="ttdef"><b>Definition:</b> <a href="walloc_8c_source.html#l00146">walloc.c:146</a></div></div>
+<div class="ttc" id="EST__walloc_8h_html_a94b50eb23ef1bf35d8fb07e716f1f9ed"><div class="ttname"><a href="EST__walloc_8h.html#a94b50eb23ef1bf35d8fb07e716f1f9ed">wfree</a></div><div class="ttdeci">void wfree(void *p)</div><div class="ttdef"><b>Definition:</b> <a href="walloc_8c_source.html#l00161">walloc.c:161</a></div></div>
 <div class="ttc" id="EST__bool_8h_html_aa8cecfc5c5c054d2875c03e77b7be15d"><div class="ttname"><a href="EST__bool_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a></div><div class="ttdeci">#define TRUE</div><div class="ttdef"><b>Definition:</b> <a href="EST__bool_8h_source.html#l00118">EST_bool.h:118</a></div></div>
 <div class="ttc" id="classEST__FMatrix_html_a3904004a1314ebb2f5bc285b9a30cc37"><div class="ttname"><a href="classEST__FMatrix.html#a3904004a1314ebb2f5bc285b9a30cc37">EST_FMatrix::est_load</a></div><div class="ttdeci">EST_read_status est_load(const EST_String &amp;filename)</div><div class="ttdoc">Load from file in est format (binary/ascii defined in file itself) </div><div class="ttdef"><b>Definition:</b> <a href="EST__FMatrix_8cc_source.html#l00437">EST_FMatrix.cc:437</a></div></div>
 <div class="ttc" id="EST__Token_8h_html"><div class="ttname"><a href="EST__Token_8h.html">EST_Token.h</a></div></div>
@@ -1103,7 +1102,7 @@ $(document).ready(function(){initNavTree('EST__FMatrix_8cc_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_48e186528d8523b137164d01852e16c8.html">base_class</a></li><li class="navelem"><a class="el" href="EST__FMatrix_8cc.html">EST_FMatrix.cc</a></li>
-    <li class="footer">Generated on Thu Jan 30 2014 00:27:11 for Edinburgh Speech Tools by
+    <li class="footer">Generated on Tue Feb 11 2014 12:00:37 for Edinburgh Speech Tools by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

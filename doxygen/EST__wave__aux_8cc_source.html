@@ -193,13 +193,13 @@ $(document).ready(function(){initNavTree('EST__wave__aux_8cc_source.html','');})
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="keywordtype">int</span> num_samples = multi.<a class="code" href="classEST__Wave.html#aff0238847e68a291259f226f0285d9c8">num_samples</a>();</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="keywordtype">short</span> *buf = <span class="keyword">new</span> <span class="keywordtype">short</span> [num_samples];</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <a class="code" href="classEST__UItem.html">EST_Litem</a> *<a class="code" href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a>;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <a class="code" href="classEST__UItem.html">EST_Litem</a> *p;</div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    single.<a class="code" href="classEST__Wave.html#a42bd1bc9ad1ecddff7a0588f89ea3512">resize</a>(num_samples, ch_list.<a class="code" href="classEST__UList.html#a157db3e634c5c8faad11d2a79729419d">length</a>());</div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    single.<a class="code" href="classEST__Wave.html#aed0a4723e7291c994a367468dfd6dabd">set_sample_rate</a>(multi.<a class="code" href="classEST__Wave.html#ada84e2aeaa593131c40818e09d5d99f1">sample_rate</a>());</div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    single.<a class="code" href="classEST__Wave.html#a10bb3dd7eaab3b2b1c421f5e18c4e155">set_file_type</a>(multi.<a class="code" href="classEST__Wave.html#a02a9c30bb39519256f6b88f97a70e3fc">file_type</a>());</div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="keywordflow">for</span> (i = 0, p = ch_list.<a class="code" href="classEST__UList.html#a36cd9a03aa4677736edb4866364a204f">head</a>(); <a class="code" href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a>; p = p-&gt;<a class="code" href="classEST__UItem.html#afc5292d4da883de227f5a92bb6df719d">next</a>(), ++i)</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="keywordflow">for</span> (i = 0, p = ch_list.<a class="code" href="classEST__UList.html#a36cd9a03aa4677736edb4866364a204f">head</a>(); p; p = p-&gt;<a class="code" href="classEST__UItem.html#afc5292d4da883de227f5a92bb6df719d">next</a>(), ++i)</div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    {</div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    channel = ch_list(p);</div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    </div>
@@ -487,7 +487,6 @@ $(document).ready(function(){initNavTree('EST__wave__aux_8cc_source.html','');})
 <div class="ttc" id="EST__wave__aux_8h_html_ab45efe50248aa103bb689e771818f953ac9f5d869d4a14d443585ae73ff617852"><div class="ttname"><a href="EST__wave__aux_8h.html#ab45efe50248aa103bb689e771818f953ac9f5d869d4a14d443585ae73ff617852">st_ascii</a></div><div class="ttdef"><b>Definition:</b> <a href="EST__wave__aux_8h_source.html#l00117">EST_wave_aux.h:117</a></div></div>
 <div class="ttc" id="EST__wave__aux_8h_html_ab45efe50248aa103bb689e771818f953ad6819bc9b8b2fd2ceb72a46110bf9e0f"><div class="ttname"><a href="EST__wave__aux_8h.html#ab45efe50248aa103bb689e771818f953ad6819bc9b8b2fd2ceb72a46110bf9e0f">st_uchar</a></div><div class="ttdef"><b>Definition:</b> <a href="EST__wave__aux_8h_source.html#l00108">EST_wave_aux.h:108</a></div></div>
 <div class="ttc" id="group__EST__Track__aux__functions_html_ga2984220b2fd152ee67543259409293d6"><div class="ttname"><a href="group__EST__Track__aux__functions.html#ga2984220b2fd152ee67543259409293d6">differentiate</a></div><div class="ttdeci">EST_Track differentiate(EST_Track &amp;c, float samp_int=0.0)</div><div class="ttdef"><b>Definition:</b> <a href="EST__track__aux_8cc_source.html#l00251">EST_track_aux.cc:251</a></div></div>
-<div class="ttc" id="editline_8c_html_a5791904baf12239aadc3a8280a03e8c5"><div class="ttname"><a href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a></div><div class="ttdeci">void char * p</div><div class="ttdef"><b>Definition:</b> <a href="editline_8c_source.html#l01395">editline.c:1395</a></div></div>
 <div class="ttc" id="vec__mat__aux_8cc_html_a273034f2be664dca880e10d3e16d156e"><div class="ttname"><a href="vec__mat__aux_8cc.html#a273034f2be664dca880e10d3e16d156e">sum</a></div><div class="ttdeci">float sum(const EST_FMatrix &amp;a)</div><div class="ttdoc">sum of elements </div><div class="ttdef"><b>Definition:</b> <a href="vec__mat__aux_8cc_source.html#l00152">vec_mat_aux.cc:152</a></div></div>
 <div class="ttc" id="classEST__Wave_html_a384572676b5fa84138b980f7df6fbbf5"><div class="ttname"><a href="classEST__Wave.html#a384572676b5fa84138b980f7df6fbbf5">EST_Wave::sample_type</a></div><div class="ttdeci">EST_String sample_type() const </div><div class="ttdef"><b>Definition:</b> <a href="EST__Wave_8h_source.html#l00163">EST_Wave.h:163</a></div></div>
 <div class="ttc" id="EST__wave__aux_8h_html_ae3b1bc55ae74371093e224101061d842"><div class="ttname"><a href="EST__wave__aux_8h.html#ae3b1bc55ae74371093e224101061d842">reverse</a></div><div class="ttdeci">void reverse(EST_Wave &amp;sig)</div><div class="ttdef"><b>Definition:</b> <a href="EST__wave__aux_8cc_source.html#l00197">EST_wave_aux.cc:197</a></div></div>
@@ -505,7 +504,7 @@ $(document).ready(function(){initNavTree('EST__wave__aux_8cc_source.html','');})
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_0b40697db5b0e6bdaab126f26ffd8789.html">speech_class</a></li><li class="navelem"><a class="el" href="EST__wave__aux_8cc.html">EST_wave_aux.cc</a></li>
-    <li class="footer">Generated on Thu Jan 30 2014 00:27:13 for Edinburgh Speech Tools by
+    <li class="footer">Generated on Tue Feb 11 2014 12:00:39 for Edinburgh Speech Tools by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

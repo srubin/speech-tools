@@ -549,7 +549,7 @@ $(document).ready(function(){initNavTree('vec__mat__aux_8cc_source.html','');});
 <div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;    <span class="keywordflow">return</span> (a.<a class="code" href="classEST__TMatrix.html#af8c4b7eed4aa9a555e12df2fb1ac3264">a_no_check</a>(0,0) * a.<a class="code" href="classEST__TMatrix.html#af8c4b7eed4aa9a555e12df2fb1ac3264">a_no_check</a>(1,1)) - </div>
 <div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;        (a.<a class="code" href="classEST__TMatrix.html#af8c4b7eed4aa9a555e12df2fb1ac3264">a_no_check</a>(0,1) * a.<a class="code" href="classEST__TMatrix.html#af8c4b7eed4aa9a555e12df2fb1ac3264">a_no_check</a>(1,0));</div>
 <div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;    </div>
-<div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160;    <span class="keywordtype">float</span> <a class="code" href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a>;</div>
+<div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160;    <span class="keywordtype">float</span> p;</div>
 <div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160;    </div>
 <div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160;    <span class="comment">// create cofactor matrix</span></div>
 <div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;    j = 1;</div>
@@ -872,7 +872,6 @@ $(document).ready(function(){initNavTree('vec__mat__aux_8cc_source.html','');});
 <div class="ttc" id="vec__mat__aux_8cc_html_ad48ce966134eb6f8f10ddd8f29d7463e"><div class="ttname"><a href="vec__mat__aux_8cc.html#ad48ce966134eb6f8f10ddd8f29d7463e">eye</a></div><div class="ttdeci">void eye(EST_FMatrix &amp;a, const int n)</div><div class="ttdoc">some useful matrix creators make an identity matrix of dimension n </div><div class="ttdef"><b>Definition:</b> <a href="vec__mat__aux_8cc_source.html#l00478">vec_mat_aux.cc:478</a></div></div>
 <div class="ttc" id="vec__mat__aux_8cc_html_a7d590949d7fef8c82fd8dcd287e2ecc8"><div class="ttname"><a href="vec__mat__aux_8cc.html#a7d590949d7fef8c82fd8dcd287e2ecc8">determinant</a></div><div class="ttdeci">float determinant(const EST_FMatrix &amp;a)</div><div class="ttdef"><b>Definition:</b> <a href="vec__mat__aux_8cc_source.html#l00441">vec_mat_aux.cc:441</a></div></div>
 <div class="ttc" id="classEST__TMatrix_html_ad0d3c943e51fb813e0dc14c86f782045"><div class="ttname"><a href="classEST__TMatrix.html#ad0d3c943e51fb813e0dc14c86f782045">EST_TMatrix::num_rows</a></div><div class="ttdeci">int num_rows() const </div><div class="ttdoc">return number of rows </div><div class="ttdef"><b>Definition:</b> <a href="EST__TMatrix_8h_source.html#l00176">EST_TMatrix.h:176</a></div></div>
-<div class="ttc" id="editline_8c_html_a5791904baf12239aadc3a8280a03e8c5"><div class="ttname"><a href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a></div><div class="ttdeci">void char * p</div><div class="ttdef"><b>Definition:</b> <a href="editline_8c_source.html#l01395">editline.c:1395</a></div></div>
 <div class="ttc" id="vec__mat__aux_8cc_html_a273034f2be664dca880e10d3e16d156e"><div class="ttname"><a href="vec__mat__aux_8cc.html#a273034f2be664dca880e10d3e16d156e">sum</a></div><div class="ttdeci">float sum(const EST_FMatrix &amp;a)</div><div class="ttdoc">sum of elements </div><div class="ttdef"><b>Definition:</b> <a href="vec__mat__aux_8cc_source.html#l00152">vec_mat_aux.cc:152</a></div></div>
 <div class="ttc" id="EST__bool_8h_html_aa8cecfc5c5c054d2875c03e77b7be15d"><div class="ttname"><a href="EST__bool_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a></div><div class="ttdeci">#define TRUE</div><div class="ttdef"><b>Definition:</b> <a href="EST__bool_8h_source.html#l00118">EST_bool.h:118</a></div></div>
 <div class="ttc" id="vec__mat__aux_8cc_html_a9105736779a765750dded06ca2178b1e"><div class="ttname"><a href="vec__mat__aux_8cc.html#a9105736779a765750dded06ca2178b1e">make_random_matrix</a></div><div class="ttdeci">void make_random_matrix(EST_FMatrix &amp;M, const float scale)</div><div class="ttdoc">all elements are randomised </div><div class="ttdef"><b>Definition:</b> <a href="vec__mat__aux_8cc_source.html#l00604">vec_mat_aux.cc:604</a></div></div>
@@ -889,7 +888,7 @@ $(document).ready(function(){initNavTree('vec__mat__aux_8cc_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_48e186528d8523b137164d01852e16c8.html">base_class</a></li><li class="navelem"><a class="el" href="vec__mat__aux_8cc.html">vec_mat_aux.cc</a></li>
-    <li class="footer">Generated on Thu Jan 30 2014 00:27:11 for Edinburgh Speech Tools by
+    <li class="footer">Generated on Tue Feb 11 2014 12:00:37 for Edinburgh Speech Tools by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

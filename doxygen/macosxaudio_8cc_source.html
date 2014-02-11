@@ -197,7 +197,7 @@ $(document).ready(function(){initNavTree('macosxaudio_8cc_source.html','');});
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="keywordtype">void</span>  CreateDefaultAU()</div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;{</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    OSStatus <a class="code" href="siod_8h.html#a669c6661e022454c1ece3da610ed8bba">err</a> = noErr;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    OSStatus <a class="code" href="siod_8h.html#a75c18836092fb77b1d09351765cc8e1b">err</a> = noErr;</div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;</div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="comment">// Open the default output unit</span></div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    ComponentDescription desc;</div>
@@ -230,7 +230,7 @@ $(document).ready(function(){initNavTree('macosxaudio_8cc_source.html','');});
 <div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;</div>
 <div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;<span class="keywordtype">int</span> <a class="code" href="audioP_8h.html#ac590b5cff8326ef97da322bb364bc41e">play_macosx_wave</a>(<a class="code" href="classEST__Wave.html">EST_Wave</a> &amp;inwave, <a class="code" href="classEST__Option.html">EST_Option</a> &amp;al)</div>
 <div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;{</div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    OSStatus <a class="code" href="siod_8h.html#a669c6661e022454c1ece3da610ed8bba">err</a>;</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    OSStatus <a class="code" href="siod_8h.html#a75c18836092fb77b1d09351765cc8e1b">err</a>;</div>
 <div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    AudioStreamBasicDescription waveformat, outformat;</div>
 <div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;    UInt32 size = <span class="keyword">sizeof</span>(AudioStreamBasicDescription);</div>
 <div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;    UInt32 running;</div>
@@ -324,12 +324,12 @@ $(document).ready(function(){initNavTree('macosxaudio_8cc_source.html','');});
 <div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="classEST__Wave_html"><div class="ttname"><a href="classEST__Wave.html">EST_Wave</a></div><div class="ttdoc">A class for storing digital waveforms. The waveform is stored as an array of 16 bit shorts...</div><div class="ttdef"><b>Definition:</b> <a href="EST__Wave_8h_source.html#l00064">EST_Wave.h:64</a></div></div>
 <div class="ttc" id="EST__Wave_8h_html"><div class="ttname"><a href="EST__Wave_8h.html">EST_Wave.h</a></div></div>
-<div class="ttc" id="siod_8h_html_a669c6661e022454c1ece3da610ed8bba"><div class="ttname"><a href="siod_8h.html#a669c6661e022454c1ece3da610ed8bba">err</a></div><div class="ttdeci">LISP err(const char *message, LISP x)</div><div class="ttdef"><b>Definition:</b> <a href="slib_8cc_source.html#l00615">slib.cc:615</a></div></div>
 <div class="ttc" id="classEST__TMatrix_html_a9cc5f43dbc9697f13280eea11eec3bca"><div class="ttname"><a href="classEST__TMatrix.html#a9cc5f43dbc9697f13280eea11eec3bca">EST_TMatrix::copy_column</a></div><div class="ttdeci">void copy_column(int c, T *buf, int offset=0, int num=-1) const </div><div class="ttdef"><b>Definition:</b> <a href="EST__TMatrix_8cc_source.html#l00420">EST_TMatrix.cc:420</a></div></div>
 <div class="ttc" id="macosxaudio_8cc_html_a6619f1ac8b09e1613ae02d88fe649765"><div class="ttname"><a href="macosxaudio_8cc.html#a6619f1ac8b09e1613ae02d88fe649765">macosx_supported</a></div><div class="ttdeci">int macosx_supported</div><div class="ttdef"><b>Definition:</b> <a href="macosxaudio_8cc_source.html#l00220">macosxaudio.cc:220</a></div></div>
 <div class="ttc" id="EST__unix_8h_html"><div class="ttname"><a href="EST__unix_8h.html">EST_unix.h</a></div></div>
 <div class="ttc" id="classEST__Wave_html_ad5a2f2d5f9876bdf0838b740c9e10186"><div class="ttname"><a href="classEST__Wave.html#ad5a2f2d5f9876bdf0838b740c9e10186">EST_Wave::num_channels</a></div><div class="ttdeci">int num_channels() const </div><div class="ttdoc">return the number of channels in the waveform </div><div class="ttdef"><b>Definition:</b> <a href="EST__Wave_8h_source.html#l00145">EST_Wave.h:145</a></div></div>
 <div class="ttc" id="classEST__Wave_html_aff0238847e68a291259f226f0285d9c8"><div class="ttname"><a href="classEST__Wave.html#aff0238847e68a291259f226f0285d9c8">EST_Wave::num_samples</a></div><div class="ttdeci">int num_samples() const </div><div class="ttdoc">return the number of samples in the waveform </div><div class="ttdef"><b>Definition:</b> <a href="EST__Wave_8h_source.html#l00143">EST_Wave.h:143</a></div></div>
+<div class="ttc" id="siod_8h_html_a75c18836092fb77b1d09351765cc8e1b"><div class="ttname"><a href="siod_8h.html#a75c18836092fb77b1d09351765cc8e1b">err</a></div><div class="ttdeci">void err(const char *message, LISP x) EST_NORETURN</div><div class="ttdef"><b>Definition:</b> <a href="slib_8cc_source.html#l00616">slib.cc:616</a></div></div>
 <div class="ttc" id="EST__cutils_8h_html"><div class="ttname"><a href="EST__cutils_8h.html">EST_cutils.h</a></div></div>
 <div class="ttc" id="audioP_8h_html_ac590b5cff8326ef97da322bb364bc41e"><div class="ttname"><a href="audioP_8h.html#ac590b5cff8326ef97da322bb364bc41e">play_macosx_wave</a></div><div class="ttdeci">int play_macosx_wave(EST_Wave &amp;inwave, EST_Option &amp;al)</div><div class="ttdef"><b>Definition:</b> <a href="macosxaudio_8cc_source.html#l00222">macosxaudio.cc:222</a></div></div>
 <div class="ttc" id="classEST__Wave_html_a1a8447477bf9282800715161d50c8030"><div class="ttname"><a href="classEST__Wave.html#a1a8447477bf9282800715161d50c8030">EST_Wave::values</a></div><div class="ttdeci">const EST_SMatrix &amp; values() const </div><div class="ttdef"><b>Definition:</b> <a href="EST__Wave_8h_source.html#l00177">EST_Wave.h:177</a></div></div>
@@ -346,7 +346,7 @@ $(document).ready(function(){initNavTree('macosxaudio_8cc_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a5f32cf82ad289a7dac212f63f40f55b.html">audio</a></li><li class="navelem"><a class="el" href="macosxaudio_8cc.html">macosxaudio.cc</a></li>
-    <li class="footer">Generated on Thu Jan 30 2014 00:27:11 for Edinburgh Speech Tools by
+    <li class="footer">Generated on Tue Feb 11 2014 12:00:37 for Edinburgh Speech Tools by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

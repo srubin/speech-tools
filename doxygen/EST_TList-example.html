@@ -196,7 +196,7 @@ Sorting a list</h1>
 <div class="line">    <a class="code" href="EST__sort_8h.html#a99054d3349da2eaab9ad17766715c5f6">sort</a>(slist);</div>
 <div class="line"> </div>
 <div class="line">   cout &lt;&lt; <span class="stringliteral">&quot;\n[ Sorted\n&quot;</span>;</div>
-<div class="line">   <span class="keywordflow">for</span>(p=slist.head(); <a class="code" href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a> ; p=p-&gt;<a class="code" href="classEST__Item.html#aa5688ff49837311d904142ef224af8de">next</a>())</div>
+<div class="line">   <span class="keywordflow">for</span>(p=slist.head(); p ; p=p-&gt;<a class="code" href="classEST__Item.html#aa5688ff49837311d904142ef224af8de">next</a>())</div>
 <div class="line">     cout &lt;&lt; <span class="stringliteral">&quot;  &quot;</span> &lt;&lt; slist(p) &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
 <div class="line">   cout &lt;&lt; <span class="stringliteral">&quot;]\n&quot;</span>;</div>
 <div class="line"> </div>
@@ -204,7 +204,7 @@ Sorting a list</h1>
 <div class="line">   <a class="code" href="EST__sort_8h.html#a0bc030571656f2b8d764eeaeb8ae1c18">qsort</a>(slist,&amp;<a class="code" href="list__example_8cc.html#a57d97410d654676a27e685086e5fd182">second_char_gt</a> );</div>
 <div class="line"> </div>
 <div class="line">   cout &lt;&lt; <span class="stringliteral">&quot;\n[ Sorted by second character\n&quot;</span>;</div>
-<div class="line">   <span class="keywordflow">for</span>(p=slist.head(); <a class="code" href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a> ; p=p-&gt;<a class="code" href="classEST__Item.html#aa5688ff49837311d904142ef224af8de">next</a>())</div>
+<div class="line">   <span class="keywordflow">for</span>(p=slist.head(); p ; p=p-&gt;<a class="code" href="classEST__Item.html#aa5688ff49837311d904142ef224af8de">next</a>())</div>
 <div class="line">     cout &lt;&lt; <span class="stringliteral">&quot;  &quot;</span> &lt;&lt; slist(p) &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
 <div class="line">   cout &lt;&lt; <span class="stringliteral">&quot;]\n&quot;</span>;</div>
 <div class="line">   <span class="comment">//@ endcode</span></div>
@@ -232,7 +232,7 @@ Operation Used in Sort</h2>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Thu Jan 30 2014 00:27:15 for Edinburgh Speech Tools by
+    <li class="footer">Generated on Tue Feb 11 2014 12:00:41 for Edinburgh Speech Tools by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

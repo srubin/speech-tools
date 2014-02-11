@@ -191,7 +191,7 @@ $(document).ready(function(){initNavTree('siod__defs_8h_source.html','');});
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00098"></a><span class="lineno"><a class="line" href="siod__defs_8h.html#a394faf7191f18552a20cb17ce14226f0">   98</a></span>&#160;<span class="preprocessor">#define TYPE(x) (((x) == NIL) ? 0 : ((*(x)).type))</span></div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00100"></a><span class="lineno"><a class="line" href="siod__defs_8h.html#a2998845b47230558efb7c5ff19a2f8a5">  100</a></span>&#160;<span class="preprocessor">#define TYPEP(x,y) (TYPE(x) == (y))</span></div>
+<div class="line"><a name="l00100"></a><span class="lineno"><a class="line" href="siod__defs_8h.html#a2998845b47230558efb7c5ff19a2f8a5">  100</a></span>&#160;<span class="preprocessor">#define TYPEP(x,y) ( (x != NULL) &amp;&amp; (TYPE(x) == (y)) )</span></div>
 <div class="line"><a name="l00101"></a><span class="lineno"><a class="line" href="siod__defs_8h.html#aab2376986733f660c37183f3acfdc33c">  101</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define NTYPEP(x,y) (TYPE(x) != (y))</span></div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00103"></a><span class="lineno"><a class="line" href="siod__defs_8h.html#ab6fc9fbce8023dee5372b10c15361004">  103</a></span>&#160;<span class="preprocessor">#define tc_nil    0</span></div>
@@ -437,7 +437,7 @@ $(document).ready(function(){initNavTree('siod__defs_8h_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="siod__defs_8h.html">siod_defs.h</a></li>
-    <li class="footer">Generated on Thu Jan 30 2014 00:27:12 for Edinburgh Speech Tools by
+    <li class="footer">Generated on Tue Feb 11 2014 12:00:38 for Edinburgh Speech Tools by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

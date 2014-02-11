@@ -53,6 +53,7 @@ var searchData=
   ['est_5fnative_5fbo',['EST_NATIVE_BO',['../EST__cutils_8h.html#a7d1690ba57c043a2d99d68dc2884ba8b',1,'EST_cutils.h']]],
   ['est_5fngrambin_5fmagic',['EST_NGRAMBIN_MAGIC',['../EST__Ngrammar_8h.html#a16bab4dad59c3caf02e20bc4e5e6c392',1,'EST_Ngrammar.h']]],
   ['est_5fnint',['EST_NINT',['../EST__math_8h.html#a0d08fb9052f398cf99503392cca47ae5',1,'EST_math.h']]],
+  ['est_5fnoreturn',['EST_NORETURN',['../EST__common_8h.html#afcc8beb308660c321930c8d1a12908a1',1,'EST_common.h']]],
   ['est_5fregex_5fmax_5fsubexpressions',['EST_Regex_max_subexpressions',['../EST__Regex_8h.html#a1a8ffaa2a0bc77b4d933a53b668bfa12',1,'EST_Regex_max_subexpressions():&#160;EST_Regex.h'],['../EST__String_8h.html#a1a8ffaa2a0bc77b4d933a53b668bfa12',1,'EST_Regex_max_subexpressions():&#160;EST_String.h']]],
   ['est_5fregister_5ffeature_5ffunctions',['EST_register_feature_functions',['../EST__Item_8h.html#a535ce3b03608ec8a4e1cac6b5b7fe27f',1,'EST_Item.h']]],
   ['est_5fswapped_5fbo',['EST_SWAPPED_BO',['../EST__cutils_8h.html#a9bd6966e62d766cbb2cc1aef8c9b4f93',1,'EST_cutils.h']]],

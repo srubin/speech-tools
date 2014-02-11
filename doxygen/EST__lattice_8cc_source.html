@@ -1520,17 +1520,17 @@ $(document).ready(function(){initNavTree('EST__lattice_8cc_source.html','');});
 <div class="line"><a name="l01426"></a><span class="lineno"> 1426</span>&#160;    }</div>
 <div class="line"><a name="l01427"></a><span class="lineno"> 1427</span>&#160;</div>
 <div class="line"><a name="l01428"></a><span class="lineno"> 1428</span>&#160;    <span class="comment">// need to make sure ENTER node has no arcs in - if so add a dummy ENTER node</span></div>
-<div class="line"><a name="l01429"></a><span class="lineno"> 1429</span>&#160;</div>
-<div class="line"><a name="l01430"></a><span class="lineno"> 1430</span>&#160;    <span class="comment">//Node *enter_node = nodes(nodes.head());</span></div>
-<div class="line"><a name="l01431"></a><span class="lineno"> 1431</span>&#160;    <span class="keywordtype">bool</span> flag=<span class="keyword">false</span>;</div>
-<div class="line"><a name="l01432"></a><span class="lineno"> 1432</span>&#160;    <span class="keywordflow">for</span>(n_ptr=nodes.head();n_ptr!=NULL;n_ptr=n_ptr-&gt;<a class="code" href="classEST__UItem.html#afc5292d4da883de227f5a92bb6df719d">next</a>()){</div>
-<div class="line"><a name="l01433"></a><span class="lineno"> 1433</span>&#160;    <span class="keywordflow">for</span>(a_ptr=nodes(n_ptr)-&gt;arcs_out.head();a_ptr!=NULL; a_ptr=a_ptr-&gt;<a class="code" href="classEST__UItem.html#afc5292d4da883de227f5a92bb6df719d">next</a>()){</div>
-<div class="line"><a name="l01434"></a><span class="lineno"> 1434</span>&#160;        flag=<span class="keyword">true</span>;</div>
-<div class="line"><a name="l01435"></a><span class="lineno"> 1435</span>&#160;        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l01436"></a><span class="lineno"> 1436</span>&#160;    }</div>
-<div class="line"><a name="l01437"></a><span class="lineno"> 1437</span>&#160;    }</div>
-<div class="line"><a name="l01438"></a><span class="lineno"> 1438</span>&#160;</div>
-<div class="line"><a name="l01439"></a><span class="lineno"> 1439</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l01429"></a><span class="lineno"> 1429</span>&#160;    <span class="comment">/*</span></div>
+<div class="line"><a name="l01430"></a><span class="lineno"> 1430</span>&#160;<span class="comment">    //Node *enter_node = nodes(nodes.head());</span></div>
+<div class="line"><a name="l01431"></a><span class="lineno"> 1431</span>&#160;<span class="comment">    bool flag=false;</span></div>
+<div class="line"><a name="l01432"></a><span class="lineno"> 1432</span>&#160;<span class="comment">    for(n_ptr=nodes.head();n_ptr!=NULL;n_ptr=n_ptr-&gt;next()){</span></div>
+<div class="line"><a name="l01433"></a><span class="lineno"> 1433</span>&#160;<span class="comment">    for(a_ptr=nodes(n_ptr)-&gt;arcs_out.head();a_ptr!=NULL; a_ptr=a_ptr-&gt;next()){</span></div>
+<div class="line"><a name="l01434"></a><span class="lineno"> 1434</span>&#160;<span class="comment">        flag=true;</span></div>
+<div class="line"><a name="l01435"></a><span class="lineno"> 1435</span>&#160;<span class="comment">        break;</span></div>
+<div class="line"><a name="l01436"></a><span class="lineno"> 1436</span>&#160;<span class="comment">    }</span></div>
+<div class="line"><a name="l01437"></a><span class="lineno"> 1437</span>&#160;<span class="comment">    }</span></div>
+<div class="line"><a name="l01438"></a><span class="lineno"> 1438</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l01439"></a><span class="lineno"> 1439</span>&#160;<span class="comment"></span></div>
 <div class="line"><a name="l01440"></a><span class="lineno"> 1440</span>&#160;<span class="comment">    if(flag){</span></div>
 <div class="line"><a name="l01441"></a><span class="lineno"> 1441</span>&#160;<span class="comment">    cerr &lt;&lt; &quot; fixing ENTER node&quot; &lt;&lt; endl;</span></div>
 <div class="line"><a name="l01442"></a><span class="lineno"> 1442</span>&#160;<span class="comment">    new_node = new Node;</span></div>
@@ -1954,7 +1954,7 @@ $(document).ready(function(){initNavTree('EST__lattice_8cc_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_80d15897c818a239c9406d1f1e7aa500.html">grammar</a></li><li class="navelem"><a class="el" href="dir_44a58d5488c65df148a63d80906f9050.html">ngram</a></li><li class="navelem"><a class="el" href="EST__lattice_8cc.html">EST_lattice.cc</a></li>
-    <li class="footer">Generated on Thu Jan 30 2014 00:27:11 for Edinburgh Speech Tools by
+    <li class="footer">Generated on Tue Feb 11 2014 12:00:38 for Edinburgh Speech Tools by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

@@ -418,7 +418,7 @@ $(document).ready(function(){initNavTree('EST__THash_8h_source.html','');});
 <div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;<span class="keyword">inline</span> <span class="keyword">static</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> DefaultHashFunction(<span class="keyword">const</span> <span class="keywordtype">void</span> *data, <span class="keywordtype">size_t</span> size, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> n)</div>
 <div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;{</div>
 <div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> x=0;</div>
-<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code" href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a> = (<span class="keyword">const</span> <span class="keywordtype">char</span> *)data;</div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">char</span> *p = (<span class="keyword">const</span> <span class="keywordtype">char</span> *)data;</div>
 <div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;  <span class="keywordflow">for</span>(; size&gt;0 ; p++, size--)</div>
 <div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;      x = ((x+*p)*33) % n;</div>
 <div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;  <span class="keywordflow">return</span> x;</div>
@@ -483,7 +483,6 @@ $(document).ready(function(){initNavTree('EST__THash_8h_source.html','');});
 <div class="ttc" id="classEST__TStringHash_html_a6d5ff937552ee3fcac3f577c95929d85"><div class="ttname"><a href="classEST__TStringHash.html#a6d5ff937552ee3fcac3f577c95929d85">EST_TStringHash::KeyRwEntries</a></div><div class="ttdeci">EST_TRwIterator&lt; EST_THash&lt; EST_String, V &gt;, typename EST_THash&lt; EST_String, V &gt;::IPointer_k, EST_String &gt; KeyRwEntries</div><div class="ttdef"><b>Definition:</b> <a href="EST__THash_8h_source.html#l00317">EST_THash.h:317</a></div></div>
 <div class="ttc" id="classEST__THash_html_a87b3f74069ffac771f611108e5eec245"><div class="ttname"><a href="classEST__THash.html#a87b3f74069ffac771f611108e5eec245">EST_THash::dump</a></div><div class="ttdeci">void dump(ostream &amp;stream, int all=0)</div><div class="ttdoc">Print the table to stream in a human readable format. </div><div class="ttdef"><b>Definition:</b> <a href="EST__THash_8cc_source.html#l00228">EST_THash.cc:228</a></div></div>
 <div class="ttc" id="classEST__TStringHash_html_ae731b87a5535d782222da2e09755bfd0"><div class="ttname"><a href="classEST__TStringHash.html#ae731b87a5535d782222da2e09755bfd0">EST_TStringHash::TN_IPointer</a></div><div class="ttdeci">EST_THash&lt; EST_String, V &gt;::IPointer TN_IPointer</div><div class="ttdef"><b>Definition:</b> <a href="EST__THash_8h_source.html#l00295">EST_THash.h:295</a></div></div>
-<div class="ttc" id="editline_8c_html_a5791904baf12239aadc3a8280a03e8c5"><div class="ttname"><a href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a></div><div class="ttdeci">void char * p</div><div class="ttdef"><b>Definition:</b> <a href="editline_8c_source.html#l01395">editline.c:1395</a></div></div>
 <div class="ttc" id="classEST__THash_html_af8fbd15df184192e85446a2759df5d6a"><div class="ttname"><a href="classEST__THash.html#af8fbd15df184192e85446a2759df5d6a">EST_THash::Entry</a></div><div class="ttdeci">EST_Hash_Pair&lt; K, V &gt; Entry</div><div class="ttdoc">An entry returned by the iterator is a key value pair. </div><div class="ttdef"><b>Definition:</b> <a href="EST__THash_8h_source.html#l00215">EST_THash.h:215</a></div></div>
 <div class="ttc" id="EST__system_8h_html"><div class="ttname"><a href="EST__system_8h.html">EST_system.h</a></div></div>
 <div class="ttc" id="EST__TIterator_8h_html"><div class="ttname"><a href="EST__TIterator_8h.html">EST_TIterator.h</a></div></div>
@@ -499,7 +498,7 @@ $(document).ready(function(){initNavTree('EST__THash_8h_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="EST__THash_8h.html">EST_THash.h</a></li>
-    <li class="footer">Generated on Thu Jan 30 2014 00:27:12 for Edinburgh Speech Tools by
+    <li class="footer">Generated on Tue Feb 11 2014 12:00:38 for Edinburgh Speech Tools by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

@@ -139,7 +139,7 @@ $(document).ready(function(){initNavTree('confusion_8cc_source.html','');});
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
 <div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="confusion_8cc.html#a1b6b1483d96650f6f16b5a51bbde3320">   46</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="confusion_8cc.html#a1b6b1483d96650f6f16b5a51bbde3320">nth</a>(<a class="code" href="classEST__String.html">EST_String</a> name, <a class="code" href="classEST__TList.html">EST_TList&lt;EST_String&gt;</a> &amp;lex)</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;{</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <a class="code" href="classEST__UItem.html">EST_Litem</a> *<a class="code" href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a>;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <a class="code" href="classEST__UItem.html">EST_Litem</a> *p;</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordtype">int</span> i;</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordflow">for</span> (i = 0, p = lex.<a class="code" href="classEST__UList.html#a36cd9a03aa4677736edb4866364a204f">head</a>(); p!=0; p = p-&gt;<a class="code" href="classEST__UItem.html#afc5292d4da883de227f5a92bb6df719d">next</a>(), ++i)</div>
@@ -153,7 +153,7 @@ $(document).ready(function(){initNavTree('confusion_8cc_source.html','');});
 <div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="confusion_8cc.html#a5fae58ccc7a9069e322711e18a20a7d1">   59</a></span>&#160;<a class="code" href="classEST__FMatrix.html">EST_FMatrix</a> <a class="code" href="EST__multistats_8h.html#a5fae58ccc7a9069e322711e18a20a7d1">confusion</a>(<a class="code" href="classEST__TKVL.html">EST_StrStr_KVL</a> &amp;list, <a class="code" href="classEST__TList.html">EST_StrList</a> &amp;lex)</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;{</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <a class="code" href="classEST__FMatrix.html">EST_FMatrix</a> a(lex.<a class="code" href="classEST__UList.html#a157db3e634c5c8faad11d2a79729419d">length</a>(), lex.<a class="code" href="classEST__UList.html#a157db3e634c5c8faad11d2a79729419d">length</a>());</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <a class="code" href="classEST__UItem.html">EST_Litem</a> *<a class="code" href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a>;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <a class="code" href="classEST__UItem.html">EST_Litem</a> *p;</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordtype">int</span> n, m;</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    a.fill(0.0);</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
@@ -173,7 +173,7 @@ $(document).ready(function(){initNavTree('confusion_8cc_source.html','');});
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;{</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keywordtype">int</span> i, j;</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <a class="code" href="classEST__UItem.html">EST_Litem</a> *<a class="code" href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a>;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <a class="code" href="classEST__UItem.html">EST_Litem</a> *p;</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    cout &lt;&lt; <span class="stringliteral">&quot;              &quot;</span>;</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    (void)list;</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keywordtype">int</span> n = a.<a class="code" href="classEST__TMatrix.html#ad0d3c943e51fb813e0dc14c86f782045">num_rows</a>();</div>
@@ -283,7 +283,6 @@ $(document).ready(function(){initNavTree('confusion_8cc_source.html','');});
 <div class="ttc" id="EST__types_8h_html"><div class="ttname"><a href="EST__types_8h.html">EST_types.h</a></div></div>
 <div class="ttc" id="classEST__UList_html_a36cd9a03aa4677736edb4866364a204f"><div class="ttname"><a href="classEST__UList.html#a36cd9a03aa4677736edb4866364a204f">EST_UList::head</a></div><div class="ttdeci">EST_UItem * head() const </div><div class="ttdef"><b>Definition:</b> <a href="EST__UList_8h_source.html#l00096">EST_UList.h:96</a></div></div>
 <div class="ttc" id="classEST__TMatrix_html_ad0d3c943e51fb813e0dc14c86f782045"><div class="ttname"><a href="classEST__TMatrix.html#ad0d3c943e51fb813e0dc14c86f782045">EST_TMatrix::num_rows</a></div><div class="ttdeci">int num_rows() const </div><div class="ttdoc">return number of rows </div><div class="ttdef"><b>Definition:</b> <a href="EST__TMatrix_8h_source.html#l00176">EST_TMatrix.h:176</a></div></div>
-<div class="ttc" id="editline_8c_html_a5791904baf12239aadc3a8280a03e8c5"><div class="ttname"><a href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a></div><div class="ttdeci">void char * p</div><div class="ttdef"><b>Definition:</b> <a href="editline_8c_source.html#l01395">editline.c:1395</a></div></div>
 <div class="ttc" id="EST__defines__win32_8h_html_ab36ade30e86b0025d9fc58bd7d361aa5"><div class="ttname"><a href="EST__defines__win32_8h.html#ab36ade30e86b0025d9fc58bd7d361aa5">isnanf</a></div><div class="ttdeci">#define isnanf(N)</div><div class="ttdef"><b>Definition:</b> <a href="EST__defines__win32_8h_source.html#l00049">EST_defines_win32.h:49</a></div></div>
 <div class="ttc" id="vec__mat__aux_8cc_html_a273034f2be664dca880e10d3e16d156e"><div class="ttname"><a href="vec__mat__aux_8cc.html#a273034f2be664dca880e10d3e16d156e">sum</a></div><div class="ttdeci">float sum(const EST_FMatrix &amp;a)</div><div class="ttdoc">sum of elements </div><div class="ttdef"><b>Definition:</b> <a href="vec__mat__aux_8cc_source.html#l00152">vec_mat_aux.cc:152</a></div></div>
 <div class="ttc" id="classEST__FMatrix_html"><div class="ttname"><a href="classEST__FMatrix.html">EST_FMatrix</a></div><div class="ttdef"><b>Definition:</b> <a href="EST__FMatrix_8h_source.html#l00058">EST_FMatrix.h:58</a></div></div>
@@ -295,7 +294,7 @@ $(document).ready(function(){initNavTree('confusion_8cc_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a2a5b97680f4688c5edec2038dd4832f.html">stats</a></li><li class="navelem"><a class="el" href="confusion_8cc.html">confusion.cc</a></li>
-    <li class="footer">Generated on Thu Jan 30 2014 00:27:13 for Edinburgh Speech Tools by
+    <li class="footer">Generated on Tue Feb 11 2014 12:00:39 for Edinburgh Speech Tools by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

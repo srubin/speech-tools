@@ -171,7 +171,7 @@ $(document).ready(function(){initNavTree('dynamic__program_8cc_source.html','');
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        <a class="code" href="classEST__Item.html">EST_Item</a> *null_sym,</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        <a class="code" href="classEST__FMatrix.html">EST_FMatrix</a> &amp;cost);</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="keywordtype">void</span> <a class="code" href="dynamic__program_8cc.html#a318b1fdfa4b59d86b2d4c72eb77c2f0e">trace_back_and_link</a>(<span class="keywordtype">int</span> i, <span class="keywordtype">int</span> j,</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="keywordtype">int</span> <a class="code" href="dynamic__program_8cc.html#a034dbf7264f62d2eb2f7a5ef292c868c">trace_back_and_link</a>(<span class="keywordtype">int</span> i, <span class="keywordtype">int</span> j,</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;             <a class="code" href="classEST__Item.html">EST_Item</a> *p1, <a class="code" href="classEST__Item.html">EST_Item</a> *p2,</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;             <span class="keyword">const</span> <a class="code" href="classEST__IMatrix.html">EST_IMatrix</a> &amp;<a class="code" href="dp__main_8cc.html#aa0ab9e9b16251f4823ce98a11e11ec29">DP_path_i</a>, </div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;             <span class="keyword">const</span> <a class="code" href="classEST__IMatrix.html">EST_IMatrix</a> &amp;<a class="code" href="dp__main_8cc.html#aceb2f5576440014738c816279294b6a9">DP_path_j</a>,</div>
@@ -261,7 +261,7 @@ $(document).ready(function(){initNavTree('dynamic__program_8cc_source.html','');
 <div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;</div>
 <div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    <a class="code" href="classEST__IMatrix.html">EST_IMatrix</a> <a class="code" href="dp__main_8cc.html#aa0ab9e9b16251f4823ce98a11e11ec29">DP_path_i</a>,<a class="code" href="dp__main_8cc.html#aceb2f5576440014738c816279294b6a9">DP_path_j</a>;</div>
 <div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;    <a class="code" href="classEST__TVector.html">EST_Item_ptr_Vector</a> vr1,vr2;</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;    <a class="code" href="classEST__Item.html">EST_Item</a> *<a class="code" href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a>;</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;    <a class="code" href="classEST__Item.html">EST_Item</a> *p;</div>
 <div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    <span class="keywordtype">int</span> l1,l2,i,j;</div>
 <div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;    </div>
 <div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;    l1 = lexical.<a class="code" href="classEST__Relation.html#a07a0853fa21ceab52d42fd94186d7a2c">length</a>() + 1;</div>
@@ -314,7 +314,7 @@ $(document).ready(function(){initNavTree('dynamic__program_8cc_source.html','');
 <div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;    }</div>
 <div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;    <span class="comment">// make somewhere to record the relations</span></div>
 <div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;    <span class="comment">//utt.create_relation(&quot;Match&quot;);</span></div>
-<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;    <span class="keywordflow">for</span> (p = lexical.<a class="code" href="classEST__Relation.html#ae1624681ffa9d0a12c52162a5084a0ef">head</a>(); <a class="code" href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a>; p = p-&gt;<a class="code" href="classEST__Item.html#aa5688ff49837311d904142ef224af8de">next</a>())</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;    <span class="keywordflow">for</span> (p = lexical.<a class="code" href="classEST__Relation.html#ae1624681ffa9d0a12c52162a5084a0ef">head</a>(); p; p = p-&gt;<a class="code" href="classEST__Item.html#aa5688ff49837311d904142ef224af8de">next</a>())</div>
 <div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;    match.<a class="code" href="classEST__Relation.html#a87b849f488a55c3af5f1e879cdd22023">append</a>(p);</div>
 <div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;</div>
 <div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;    <span class="comment">/*</span></div>
@@ -327,7 +327,7 @@ $(document).ready(function(){initNavTree('dynamic__program_8cc_source.html','');
 <div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;<span class="comment">    cerr &lt;&lt; endl;</span></div>
 <div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;<span class="comment">*/</span></div>
 <div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;</div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;    <a class="code" href="dynamic__program_8cc.html#a318b1fdfa4b59d86b2d4c72eb77c2f0e">trace_back_and_link</a>(l1-1,l2-1,</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;    <a class="code" href="dynamic__program_8cc.html#a034dbf7264f62d2eb2f7a5ef292c868c">trace_back_and_link</a>(l1-1,l2-1,</div>
 <div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;            match.<a class="code" href="classEST__Relation.html#a51e2a7ad0f10d8d7f6ad7526a55fe390">last</a>(),</div>
 <div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;            surface.<a class="code" href="classEST__Relation.html#a51e2a7ad0f10d8d7f6ad7526a55fe390">last</a>(),</div>
 <div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;            <a class="code" href="dp__main_8cc.html#aa0ab9e9b16251f4823ce98a11e11ec29">DP_path_i</a>,<a class="code" href="dp__main_8cc.html#aceb2f5576440014738c816279294b6a9">DP_path_j</a>,null_sym);</div>
@@ -469,7 +469,7 @@ $(document).ready(function(){initNavTree('dynamic__program_8cc_source.html','');
 <div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;}</div>
 <div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;</div>
 <div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;</div>
-<div class="line"><a name="l00378"></a><span class="lineno"><a class="line" href="dynamic__program_8cc.html#a318b1fdfa4b59d86b2d4c72eb77c2f0e">  378</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="dynamic__program_8cc.html#a318b1fdfa4b59d86b2d4c72eb77c2f0e">trace_back_and_link</a>(<span class="keywordtype">int</span> i, <span class="keywordtype">int</span> j,</div>
+<div class="line"><a name="l00378"></a><span class="lineno"><a class="line" href="dynamic__program_8cc.html#a034dbf7264f62d2eb2f7a5ef292c868c">  378</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="dynamic__program_8cc.html#a034dbf7264f62d2eb2f7a5ef292c868c">trace_back_and_link</a>(<span class="keywordtype">int</span> i, <span class="keywordtype">int</span> j,</div>
 <div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;             <a class="code" href="classEST__Item.html">EST_Item</a> *p1, <a class="code" href="classEST__Item.html">EST_Item</a> *p2,</div>
 <div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;             <span class="keyword">const</span> <a class="code" href="classEST__IMatrix.html">EST_IMatrix</a> &amp;<a class="code" href="dp__main_8cc.html#aa0ab9e9b16251f4823ce98a11e11ec29">DP_path_i</a>, </div>
 <div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;             <span class="keyword">const</span> <a class="code" href="classEST__IMatrix.html">EST_IMatrix</a> &amp;<a class="code" href="dp__main_8cc.html#aceb2f5576440014738c816279294b6a9">DP_path_j</a>,</div>
@@ -483,37 +483,56 @@ $(document).ready(function(){initNavTree('dynamic__program_8cc_source.html','');
 <div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;    <span class="comment">//i=utt.relation(&quot;Lexical&quot;)-&gt;index(p1);</span></div>
 <div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;    <span class="comment">//j=utt.relation(&quot;Surface&quot;)-&gt;index(p2);</span></div>
 <div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;</div>
-<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;    <span class="keywordflow">if</span>((p1==0)&amp;&amp;(p2==0))</div>
-<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;    <span class="comment">// reached start</span></div>
-<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;    <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;</div>
-<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;    <span class="keywordflow">if</span>(<a class="code" href="dp__main_8cc.html#aa0ab9e9b16251f4823ce98a11e11ec29">DP_path_i</a>(i,j) == i-1)</div>
-<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;    {</div>
-<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;    <span class="keywordflow">if</span>(<a class="code" href="dp__main_8cc.html#aceb2f5576440014738c816279294b6a9">DP_path_j</a>(i,j) == j-1)</div>
-<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;    {</div>
-<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;        <span class="comment">// match, or substitution</span></div>
-<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;        <span class="comment">//cerr &lt;&lt; &quot;sub &quot; &lt;&lt; p1-&gt;name() &lt;&lt; &quot; with &quot; &lt;&lt; p2-&gt;name() &lt;&lt; endl;</span></div>
-<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;        p1-&gt;<a class="code" href="classEST__Item.html#a10c21d16af5ee720e4228cc0e5e044a6">append_daughter</a>(p2);</div>
-<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;        p1=p1-&gt;<a class="code" href="classEST__Item.html#aac2fd176a939fa834367b7227b2e258b">prev</a>();</div>
-<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;        p2=p2-&gt;<a class="code" href="classEST__Item.html#aac2fd176a939fa834367b7227b2e258b">prev</a>();</div>
-<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;    }</div>
-<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;    <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;        <span class="comment">// deletion</span></div>
+<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;    <span class="keywordflow">if</span>((p1==0)&amp;&amp;(p2==0)) <span class="comment">// reached start</span></div>
+<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;       <span class="keywordflow">return</span> <a class="code" href="EST__bool_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>;</div>
+<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;</div>
+<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;    <span class="keywordflow">if</span>(<a class="code" href="dp__main_8cc.html#aa0ab9e9b16251f4823ce98a11e11ec29">DP_path_i</a>(i,j) == i-1)</div>
+<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;    {</div>
+<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;      <span class="keywordflow">if</span>(<a class="code" href="dp__main_8cc.html#aceb2f5576440014738c816279294b6a9">DP_path_j</a>(i,j) == j-1)</div>
+<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;      {</div>
+<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;        <span class="comment">// match, or substitution</span></div>
+<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;        <span class="comment">//cerr &lt;&lt; &quot;sub &quot; &lt;&lt; p1-&gt;name() &lt;&lt; &quot; with &quot; &lt;&lt; p2-&gt;name() &lt;&lt; endl;</span></div>
+<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;        <span class="keywordflow">if</span> ((p1 == 0) || (p2 == 0)) {</div>
+<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;            cerr &lt;&lt; <span class="stringliteral">&quot;trace back and link: Wrong dynamic programming &quot;</span> &lt;&lt;</div>
+<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;            <span class="stringliteral">&quot;path or wrong  items at (i=&quot;</span> &lt;&lt; i &lt;&lt;<span class="stringliteral">&quot;, j=&quot;</span> &lt;&lt; j &lt;&lt;<span class="stringliteral">&quot;)&quot;</span> &lt;&lt; </div>
+<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;            endl;</div>
+<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="EST__bool_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
+<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;        }</div>
+<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;        p1-&gt;<a class="code" href="classEST__Item.html#a10c21d16af5ee720e4228cc0e5e044a6">append_daughter</a>(p2);</div>
 <div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;        p1=p1-&gt;<a class="code" href="classEST__Item.html#aac2fd176a939fa834367b7227b2e258b">prev</a>();</div>
-<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;    }    </div>
-<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;    <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;    {</div>
-<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;    <span class="comment">// insertion</span></div>
-<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;    <span class="comment">// p1-&gt;append_daughter(p2); // decorative</span></div>
-<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;    p2=p2-&gt;<a class="code" href="classEST__Item.html#aac2fd176a939fa834367b7227b2e258b">prev</a>();</div>
-<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;    }</div>
-<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;</div>
-<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;    <a class="code" href="dynamic__program_8cc.html#a318b1fdfa4b59d86b2d4c72eb77c2f0e">trace_back_and_link</a>(<a class="code" href="dp__main_8cc.html#aa0ab9e9b16251f4823ce98a11e11ec29">DP_path_i</a>(i,j), <a class="code" href="dp__main_8cc.html#aceb2f5576440014738c816279294b6a9">DP_path_j</a>(i,j),</div>
-<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;            p1,p2,</div>
-<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;            DP_path_i,DP_path_j,</div>
-<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;            null_sym);</div>
-<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;}</div>
-<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;</div>
+<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;        p2=p2-&gt;<a class="code" href="classEST__Item.html#aac2fd176a939fa834367b7227b2e258b">prev</a>();</div>
+<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;      }</div>
+<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;      <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;      {</div>
+<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;        <span class="comment">// deletion</span></div>
+<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;        <span class="keywordflow">if</span> (p1 == 0) {</div>
+<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;            cerr &lt;&lt; <span class="stringliteral">&quot;trace back and link: Wrong dynamic programming &quot;</span> &lt;&lt;</div>
+<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;            <span class="stringliteral">&quot;path or wrong  item p1 at (i=&quot;</span> &lt;&lt; i &lt;&lt;<span class="stringliteral">&quot;, j=&quot;</span> &lt;&lt; j &lt;&lt;<span class="stringliteral">&quot;)&quot;</span> &lt;&lt; </div>
+<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;            endl;</div>
+<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="EST__bool_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
+<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;        }</div>
+<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;        p1=p1-&gt;<a class="code" href="classEST__Item.html#aac2fd176a939fa834367b7227b2e258b">prev</a>();</div>
+<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;      }</div>
+<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;    }</div>
+<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;    <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;    {</div>
+<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;    <span class="comment">// insertion</span></div>
+<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;    <span class="comment">// p1-&gt;append_daughter(p2); // decorative</span></div>
+<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;    <span class="keywordflow">if</span> (p2 == 0) {</div>
+<div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;        cerr &lt;&lt; <span class="stringliteral">&quot;trace back and link: Wrong dynamic programming &quot;</span> &lt;&lt;</div>
+<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;        <span class="stringliteral">&quot;path or wrong  item p2 at (i=&quot;</span> &lt;&lt; i &lt;&lt;<span class="stringliteral">&quot;, j=&quot;</span> &lt;&lt; j &lt;&lt;<span class="stringliteral">&quot;)&quot;</span> &lt;&lt; </div>
+<div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;        endl;</div>
+<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="EST__bool_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
+<div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;    }</div>
+<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;    p2=p2-&gt;<a class="code" href="classEST__Item.html#aac2fd176a939fa834367b7227b2e258b">prev</a>();</div>
+<div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;    }</div>
+<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;</div>
+<div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="dynamic__program_8cc.html#a034dbf7264f62d2eb2f7a5ef292c868c">trace_back_and_link</a>(<a class="code" href="dp__main_8cc.html#aa0ab9e9b16251f4823ce98a11e11ec29">DP_path_i</a>(i,j), <a class="code" href="dp__main_8cc.html#aceb2f5576440014738c816279294b6a9">DP_path_j</a>(i,j),</div>
+<div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;            p1,p2,</div>
+<div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;            DP_path_i,DP_path_j,</div>
+<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;            null_sym);</div>
+<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;}</div>
+<div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;</div>
 <div class="ttc" id="classEST__TMatrix_html_af8c4b7eed4aa9a555e12df2fb1ac3264"><div class="ttname"><a href="classEST__TMatrix.html#af8c4b7eed4aa9a555e12df2fb1ac3264">EST_TMatrix::a_no_check</a></div><div class="ttdeci">INLINE const T &amp; a_no_check(int row, int col) const </div><div class="ttdoc">const access with no bounds check, care recommend </div><div class="ttdef"><b>Definition:</b> <a href="EST__TMatrix_8h_source.html#l00181">EST_TMatrix.h:181</a></div></div>
 <div class="ttc" id="classEST__TMatrix_html_a5dfda5ebb0a8ad6c3556c1a8f22518e6"><div class="ttname"><a href="classEST__TMatrix.html#a5dfda5ebb0a8ad6c3556c1a8f22518e6">EST_TMatrix::a</a></div><div class="ttdeci">const T &amp; a(int row, int col) const </div><div class="ttdef"><b>Definition:</b> <a href="EST__TMatrix_8h_source.html#l00195">EST_TMatrix.h:195</a></div></div>
 <div class="ttc" id="dp__main_8cc_html_a6bc4dbd3f8c1ede53520b72869e29b77"><div class="ttname"><a href="dp__main_8cc.html#a6bc4dbd3f8c1ede53520b72869e29b77">local_pruning_function</a></div><div class="ttdeci">bool(* local_pruning_function)(const int i, const int j, const int max_i, const int max_j)</div><div class="ttdef"><b>Definition:</b> <a href="dp__main_8cc_source.html#l00056">dp_main.cc:56</a></div></div>
@@ -526,6 +545,7 @@ $(document).ready(function(){initNavTree('dynamic__program_8cc_source.html','');
 <div class="ttc" id="classEST__Item_html_a10c21d16af5ee720e4228cc0e5e044a6"><div class="ttname"><a href="classEST__Item.html#a10c21d16af5ee720e4228cc0e5e044a6">EST_Item::append_daughter</a></div><div class="ttdeci">EST_Item * append_daughter(EST_Item *li=0)</div><div class="ttdef"><b>Definition:</b> <a href="EST__Item_8cc_source.html#l00425">EST_Item.cc:425</a></div></div>
 <div class="ttc" id="dynamic__program_8cc_html_a42292e6a8d3bbd9adae7b800bc52afc5"><div class="ttname"><a href="dynamic__program_8cc.html#a42292e6a8d3bbd9adae7b800bc52afc5">fixed_local_cost</a></div><div class="ttdeci">float fixed_local_cost(const EST_Item *s1, const EST_Item *s2)</div><div class="ttdef"><b>Definition:</b> <a href="dynamic__program_8cc_source.html#l00115">dynamic_program.cc:115</a></div></div>
 <div class="ttc" id="EST__math_8h_html"><div class="ttname"><a href="EST__math_8h.html">EST_math.h</a></div></div>
+<div class="ttc" id="dynamic__program_8cc_html_a034dbf7264f62d2eb2f7a5ef292c868c"><div class="ttname"><a href="dynamic__program_8cc.html#a034dbf7264f62d2eb2f7a5ef292c868c">trace_back_and_link</a></div><div class="ttdeci">int trace_back_and_link(int i, int j, EST_Item *p1, EST_Item *p2, const EST_IMatrix &amp;DP_path_i, const EST_IMatrix &amp;DP_path_j, EST_Item *null_sym)</div><div class="ttdef"><b>Definition:</b> <a href="dynamic__program_8cc_source.html#l00378">dynamic_program.cc:378</a></div></div>
 <div class="ttc" id="classEST__Relation_html_a07a0853fa21ceab52d42fd94186d7a2c"><div class="ttname"><a href="classEST__Relation.html#a07a0853fa21ceab52d42fd94186d7a2c">EST_Relation::length</a></div><div class="ttdeci">int length() const </div><div class="ttdef"><b>Definition:</b> <a href="EST__Relation_8cc_source.html#l00149">EST_Relation.cc:149</a></div></div>
 <div class="ttc" id="classEST__IMatrix_html"><div class="ttname"><a href="classEST__IMatrix.html">EST_IMatrix</a></div><div class="ttdef"><b>Definition:</b> <a href="EST__IMatrix_8h_source.html#l00052">EST_IMatrix.h:52</a></div></div>
 <div class="ttc" id="classEST__TVector_html_a8242ef14044ca84a9be253efa1d010cb"><div class="ttname"><a href="classEST__TVector.html#a8242ef14044ca84a9be253efa1d010cb">EST_TVector::def_val</a></div><div class="ttdeci">const EST_DMatrix * def_val</div><div class="ttdef"><b>Definition:</b> <a href="vector__dmatrix__t_8cc_source.html#l00045">vector_dmatrix_t.cc:45</a></div></div>
@@ -540,14 +560,12 @@ $(document).ready(function(){initNavTree('dynamic__program_8cc_source.html','');
 <div class="ttc" id="classEST__Item_html_aac2fd176a939fa834367b7227b2e258b"><div class="ttname"><a href="classEST__Item.html#aac2fd176a939fa834367b7227b2e258b">EST_Item::prev</a></div><div class="ttdeci">EST_Item * prev() const </div><div class="ttdef"><b>Definition:</b> <a href="EST__Item_8h_source.html#l00345">EST_Item.h:345</a></div></div>
 <div class="ttc" id="EST__bool_8h_html_aa93f0eb578d23995850d61f7d61c55c1"><div class="ttname"><a href="EST__bool_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a></div><div class="ttdeci">#define FALSE</div><div class="ttdef"><b>Definition:</b> <a href="EST__bool_8h_source.html#l00119">EST_bool.h:119</a></div></div>
 <div class="ttc" id="EST__relation__aux_8cc_html_a51ec4c3b9e9247e83faadd5475fd1426"><div class="ttname"><a href="EST__relation__aux_8cc.html#a51ec4c3b9e9247e83faadd5475fd1426">dp_match</a></div><div class="ttdeci">bool dp_match(const EST_Relation &amp;lexical, const EST_Relation &amp;surface, EST_Relation &amp;match, float ins, float del, float sub)</div><div class="ttdef"><b>Definition:</b> <a href="dynamic__program_8cc_source.html#l00134">dynamic_program.cc:134</a></div></div>
-<div class="ttc" id="dynamic__program_8cc_html_a318b1fdfa4b59d86b2d4c72eb77c2f0e"><div class="ttname"><a href="dynamic__program_8cc.html#a318b1fdfa4b59d86b2d4c72eb77c2f0e">trace_back_and_link</a></div><div class="ttdeci">void trace_back_and_link(int i, int j, EST_Item *p1, EST_Item *p2, const EST_IMatrix &amp;DP_path_i, const EST_IMatrix &amp;DP_path_j, EST_Item *null_sym)</div><div class="ttdef"><b>Definition:</b> <a href="dynamic__program_8cc_source.html#l00378">dynamic_program.cc:378</a></div></div>
 <div class="ttc" id="classEST__Item_html_aa5688ff49837311d904142ef224af8de"><div class="ttname"><a href="classEST__Item.html#aa5688ff49837311d904142ef224af8de">EST_Item::next</a></div><div class="ttdeci">EST_Item * next() const </div><div class="ttdef"><b>Definition:</b> <a href="EST__Item_8h_source.html#l00343">EST_Item.h:343</a></div></div>
 <div class="ttc" id="dynamic__program_8cc_html_a46ea55fa058ab9f0879ca62770faad9e"><div class="ttname"><a href="dynamic__program_8cc.html#a46ea55fa058ab9f0879ca62770faad9e">dp_sub</a></div><div class="ttdeci">bool dp_sub(int i, int j, const EST_Item_ptr_Vector &amp;vr1, const EST_Item_ptr_Vector &amp;vr2, EST_IMatrix &amp;DP_path_i, EST_IMatrix &amp;DP_path_j, local_cost_function lcf, local_pruning_function lpf, EST_Item *null_sym, EST_FMatrix &amp;cost)</div><div class="ttdef"><b>Definition:</b> <a href="dynamic__program_8cc_source.html#l00245">dynamic_program.cc:245</a></div></div>
 <div class="ttc" id="dp__main_8cc_html_aa0ab9e9b16251f4823ce98a11e11ec29"><div class="ttname"><a href="dp__main_8cc.html#aa0ab9e9b16251f4823ce98a11e11ec29">DP_path_i</a></div><div class="ttdeci">EST_IMatrix DP_path_i</div><div class="ttdef"><b>Definition:</b> <a href="dp__main_8cc_source.html#l00092">dp_main.cc:92</a></div></div>
 <div class="ttc" id="classEST__TVector_html"><div class="ttname"><a href="classEST__TVector.html">EST_TVector</a></div><div class="ttdoc">Template vector. </div><div class="ttdef"><b>Definition:</b> <a href="EST__TVector_8h_source.html#l00145">EST_TVector.h:145</a></div></div>
 <div class="ttc" id="classEST__TSimpleMatrix_html_a315d47f4050c203fee80ad25d86696a5"><div class="ttname"><a href="classEST__TSimpleMatrix.html#a315d47f4050c203fee80ad25d86696a5">EST_TSimpleMatrix::resize</a></div><div class="ttdeci">void resize(int rows, int cols, int set=1)</div><div class="ttdoc">resize matrix </div><div class="ttdef"><b>Definition:</b> <a href="EST__TSimpleMatrix_8cc_source.html#l00083">EST_TSimpleMatrix.cc:83</a></div></div>
 <div class="ttc" id="classEST__Relation_html_a87b849f488a55c3af5f1e879cdd22023"><div class="ttname"><a href="classEST__Relation.html#a87b849f488a55c3af5f1e879cdd22023">EST_Relation::append</a></div><div class="ttdeci">EST_Item * append(EST_Item *si)</div><div class="ttdef"><b>Definition:</b> <a href="EST__Relation_8cc_source.html#l00088">EST_Relation.cc:88</a></div></div>
-<div class="ttc" id="editline_8c_html_a5791904baf12239aadc3a8280a03e8c5"><div class="ttname"><a href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a></div><div class="ttdeci">void char * p</div><div class="ttdef"><b>Definition:</b> <a href="editline_8c_source.html#l01395">editline.c:1395</a></div></div>
 <div class="ttc" id="EST__bool_8h_html_aa8cecfc5c5c054d2875c03e77b7be15d"><div class="ttname"><a href="EST__bool_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a></div><div class="ttdeci">#define TRUE</div><div class="ttdef"><b>Definition:</b> <a href="EST__bool_8h_source.html#l00118">EST_bool.h:118</a></div></div>
 <div class="ttc" id="EST__bool_8h_html_abb452686968e48b67397da5f97445f5b"><div class="ttname"><a href="EST__bool_8h.html#abb452686968e48b67397da5f97445f5b">bool</a></div><div class="ttdeci">#define bool</div><div class="ttdef"><b>Definition:</b> <a href="EST__bool_8h_source.html#l00117">EST_bool.h:117</a></div></div>
 <div class="ttc" id="dp__main_8cc_html_aceb2f5576440014738c816279294b6a9"><div class="ttname"><a href="dp__main_8cc.html#aceb2f5576440014738c816279294b6a9">DP_path_j</a></div><div class="ttdeci">EST_IMatrix DP_path_j</div><div class="ttdef"><b>Definition:</b> <a href="dp__main_8cc_source.html#l00092">dp_main.cc:92</a></div></div>
@@ -559,7 +577,7 @@ $(document).ready(function(){initNavTree('dynamic__program_8cc_source.html','');
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a2a5b97680f4688c5edec2038dd4832f.html">stats</a></li><li class="navelem"><a class="el" href="dynamic__program_8cc.html">dynamic_program.cc</a></li>
-    <li class="footer">Generated on Thu Jan 30 2014 00:27:13 for Edinburgh Speech Tools by
+    <li class="footer">Generated on Tue Feb 11 2014 12:00:39 for Edinburgh Speech Tools by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

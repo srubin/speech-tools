@@ -243,8 +243,8 @@ $(document).ready(function(){initNavTree('EST__TKVL_8h_source.html','');});
 <div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;<span class="comment"></span>    <span class="keywordtype">void</span> <a class="code" href="classEST__TKVL.html#adb9763cb65a23dc6ea0cded26fdc205b">map</a>(<span class="keywordtype">void</span> (*func)(K&amp;, V&amp;));</div>
 <div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    </div>
 <div class="line"><a name="l00151"></a><span class="lineno"><a class="line" href="classEST__TKVL.html#a8cc3114472b44dabc00d2473cc129e1c">  151</a></span>&#160;    <span class="keyword">friend</span> std::ostream&amp; operator &lt;&lt; (std::ostream&amp; s, EST_TKVL&lt;K,V&gt; <span class="keyword">const</span> &amp;l)</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    {<a class="code" href="classEST__UItem.html">EST_Litem</a> *<a class="code" href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a>; </div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;        <span class="keywordflow">for</span> (p = l.list.head(); <a class="code" href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a> ; p = p-&gt;<a class="code" href="classEST__UItem.html#afc5292d4da883de227f5a92bb6df719d">next</a>()) </div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    {<a class="code" href="classEST__UItem.html">EST_Litem</a> *p; </div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;        <span class="keywordflow">for</span> (p = l.list.head(); p ; p = p-&gt;<a class="code" href="classEST__UItem.html#afc5292d4da883de227f5a92bb6df719d">next</a>()) </div>
 <div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;            <a class="code" href="regerror_8c.html#a20a6d30d76bef587ebad8cb70f9009ca">s</a> &lt;&lt; l.list(p).k &lt;&lt; <span class="stringliteral">&quot;\t&quot;</span> &lt;&lt; l.list(p).v &lt;&lt; std::endl; </div>
 <div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="regerror_8c.html#a20a6d30d76bef587ebad8cb70f9009ca">s</a>;</div>
 <div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    } </div>
@@ -350,7 +350,6 @@ $(document).ready(function(){initNavTree('EST__TKVL_8h_source.html','');});
 <div class="ttc" id="classEST__TKVL_html_ae669f1d1379351a353753523a49b839d"><div class="ttname"><a href="classEST__TKVL.html#ae669f1d1379351a353753523a49b839d">EST_TKVL::operator=</a></div><div class="ttdeci">EST_TKVL&lt; K, V &gt; &amp; operator=(const EST_TKVL&lt; K, V &gt; &amp;kv)</div><div class="ttdoc">full copy of KV list. </div><div class="ttdef"><b>Definition:</b> <a href="EST__TKVL_8cc_source.html#l00284">EST_TKVL.cc:284</a></div></div>
 <div class="ttc" id="classEST__UList_html_a36cd9a03aa4677736edb4866364a204f"><div class="ttname"><a href="classEST__UList.html#a36cd9a03aa4677736edb4866364a204f">EST_UList::head</a></div><div class="ttdeci">EST_UItem * head() const </div><div class="ttdef"><b>Definition:</b> <a href="EST__UList_8h_source.html#l00096">EST_UList.h:96</a></div></div>
 <div class="ttc" id="structEST__TKVL_1_1IPointer_html"><div class="ttname"><a href="structEST__TKVL_1_1IPointer.html">EST_TKVL::IPointer</a></div><div class="ttdef"><b>Definition:</b> <a href="EST__TKVL_8h_source.html#l00168">EST_TKVL.h:168</a></div></div>
-<div class="ttc" id="editline_8c_html_a5791904baf12239aadc3a8280a03e8c5"><div class="ttname"><a href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a></div><div class="ttdeci">void char * p</div><div class="ttdef"><b>Definition:</b> <a href="editline_8c_source.html#l01395">editline.c:1395</a></div></div>
 <div class="ttc" id="EST__TIterator_8h_html"><div class="ttname"><a href="EST__TIterator_8h.html">EST_TIterator.h</a></div></div>
 <div class="ttc" id="structEST__TKVL_1_1IPointer__k_html"><div class="ttname"><a href="structEST__TKVL_1_1IPointer__k.html">EST_TKVL::IPointer_k</a></div><div class="ttdef"><b>Definition:</b> <a href="EST__TKVL_8h_source.html#l00188">EST_TKVL.h:188</a></div></div>
 <div class="ttc" id="classEST__String_html"><div class="ttname"><a href="classEST__String.html">EST_String</a></div><div class="ttdef"><b>Definition:</b> <a href="EST__String_8h_source.html#l00071">EST_String.h:71</a></div></div>
@@ -361,7 +360,7 @@ $(document).ready(function(){initNavTree('EST__TKVL_8h_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="EST__TKVL_8h.html">EST_TKVL.h</a></li>
-    <li class="footer">Generated on Thu Jan 30 2014 00:27:12 for Edinburgh Speech Tools by
+    <li class="footer">Generated on Tue Feb 11 2014 12:00:38 for Edinburgh Speech Tools by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

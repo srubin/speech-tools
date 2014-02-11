@@ -240,9 +240,9 @@ $(document).ready(function(){initNavTree('EST__FeatureData_8cc_source.html','');
 <div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;{</div>
 <div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    <span class="keywordtype">int</span> i;</div>
 <div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;</div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    <a class="code" href="classEST__TStructIterator.html">EST_Features::Entries</a> <a class="code" href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a>;</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    <a class="code" href="classEST__TStructIterator.html">EST_Features::Entries</a> p;</div>
 <div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    <span class="keywordflow">for</span> (i = 0, p.<a class="code" href="classEST__TIterator.html#a3e4224f5d84ca10fb51fb88cfe7dd9d4">begin</a>(info); <a class="code" href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a>; ++<a class="code" href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a>, ++i)</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    <span class="keywordflow">for</span> (i = 0, p.<a class="code" href="classEST__TIterator.html#a3e4224f5d84ca10fb51fb88cfe7dd9d4">begin</a>(info); p; ++p, ++i)</div>
 <div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    {</div>
 <div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;<span class="comment">//  cout &lt;&lt; &quot;looking at &quot; &lt;&lt; info.fname(p) &lt;&lt; endl;</span></div>
 <div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;<span class="comment">//  cout &lt;&lt; &quot;i = &quot; &lt;&lt; i &lt;&lt; endl;</span></div>
@@ -275,8 +275,8 @@ $(document).ready(function(){initNavTree('EST__FeatureData_8cc_source.html','');
 <div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;    v = <span class="stringliteral">&quot;&lt;STRING&gt;&quot;</span>; </div>
 <div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;    <span class="keywordflow">else</span></div>
 <div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;      {</div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;    <a class="code" href="classEST__TStructIterator.html">EST_Features::Entries</a> <a class="code" href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a>;</div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;    <span class="keywordflow">for</span>(p.<a class="code" href="classEST__TIterator.html#a3e4224f5d84ca10fb51fb88cfe7dd9d4">begin</a>(values); <a class="code" href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a>; ++<a class="code" href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a>)</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;    <a class="code" href="classEST__TStructIterator.html">EST_Features::Entries</a> p;</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;    <span class="keywordflow">for</span>(p.<a class="code" href="classEST__TIterator.html#a3e4224f5d84ca10fb51fb88cfe7dd9d4">begin</a>(values); p; ++p)</div>
 <div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;        v += p-&gt;k + <span class="stringliteral">&quot; &quot;</span>;</div>
 <div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;      }</div>
 <div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;</div>
@@ -559,8 +559,8 @@ $(document).ready(function(){initNavTree('EST__FeatureData_8cc_source.html','');
 <div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;</div>
 <div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;    <span class="keywordflow">for</span> (i = 0; i &lt; ns; ++i)</div>
 <div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160;      {</div>
-<div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160;    <a class="code" href="classEST__TStructIterator.html">EST_Features::Entries</a> <a class="code" href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a>;</div>
-<div class="line"><a name="l00469"></a><span class="lineno">  469</span>&#160;    <span class="keywordflow">for</span> (p.<a class="code" href="classEST__TIterator.html#a3e4224f5d84ca10fb51fb88cfe7dd9d4">begin</a>(info), j = 0; j &lt; nf; ++j, ++<a class="code" href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a>)</div>
+<div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160;    <a class="code" href="classEST__TStructIterator.html">EST_Features::Entries</a> p;</div>
+<div class="line"><a name="l00469"></a><span class="lineno">  469</span>&#160;    <span class="keywordflow">for</span> (p.<a class="code" href="classEST__TIterator.html#a3e4224f5d84ca10fb51fb88cfe7dd9d4">begin</a>(info), j = 0; j &lt; nf; ++j, ++p)</div>
 <div class="line"><a name="l00470"></a><span class="lineno">  470</span>&#160;    {</div>
 <div class="line"><a name="l00471"></a><span class="lineno">  471</span>&#160;        <span class="keywordflow">if</span> (p-&gt;k == <span class="stringliteral">&quot;&lt;FLOAT&gt;&quot;</span>)</div>
 <div class="line"><a name="l00472"></a><span class="lineno">  472</span>&#160;          a(i, j) = atof(ts.<a class="code" href="classEST__TokenStream.html#ace21b3d30943896ec08ccb807ec6ca43">get</a>().string());</div>
@@ -673,7 +673,6 @@ $(document).ready(function(){initNavTree('EST__FeatureData_8cc_source.html','');
 <div class="ttc" id="classEST__FeatureData_html_ae8f23fc8ac54574344f58780cddf90ea"><div class="ttname"><a href="classEST__FeatureData.html#ae8f23fc8ac54574344f58780cddf90ea">EST_FeatureData::resize</a></div><div class="ttdeci">void resize(int num_samples, int num_columns, bool preserve=1)</div><div class="ttdef"><b>Definition:</b> <a href="EST__FeatureData_8cc_source.html#l00096">EST_FeatureData.cc:96</a></div></div>
 <div class="ttc" id="classEST__String_html_a69df8f68d20bb7a2a4b820efa3b0bde9"><div class="ttname"><a href="classEST__String.html#a69df8f68d20bb7a2a4b820efa3b0bde9">EST_String::after</a></div><div class="ttdeci">EST_String after(int pos, int len=1) const </div><div class="ttdoc">Part after pos+len. </div><div class="ttdef"><b>Definition:</b> <a href="EST__String_8h_source.html#l00317">EST_String.h:317</a></div></div>
 <div class="ttc" id="classEST__String_html_ae67ad0b525e224f9862f31ba74854e8b"><div class="ttname"><a href="classEST__String.html#ae67ad0b525e224f9862f31ba74854e8b">EST_String::before</a></div><div class="ttdeci">EST_String before(int pos, int len=0) const </div><div class="ttdoc">Part before position. </div><div class="ttdef"><b>Definition:</b> <a href="EST__String_8h_source.html#l00285">EST_String.h:285</a></div></div>
-<div class="ttc" id="editline_8c_html_a5791904baf12239aadc3a8280a03e8c5"><div class="ttname"><a href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a></div><div class="ttdeci">void char * p</div><div class="ttdef"><b>Definition:</b> <a href="editline_8c_source.html#l01395">editline.c:1395</a></div></div>
 <div class="ttc" id="EST__Token_8h_html"><div class="ttname"><a href="EST__Token_8h.html">EST_Token.h</a></div></div>
 <div class="ttc" id="EST__FileType_8h_html"><div class="ttname"><a href="EST__FileType_8h.html">EST_FileType.h</a></div></div>
 <div class="ttc" id="classEST__FeatureData_html_a7aaa69e3cc404aefe2ac660f674d862b"><div class="ttname"><a href="classEST__FeatureData.html#a7aaa69e3cc404aefe2ac660f674d862b">EST_FeatureData::type</a></div><div class="ttdeci">EST_String type(const EST_String &amp;feature_name)</div><div class="ttdef"><b>Definition:</b> <a href="EST__FeatureData_8cc_source.html#l00122">EST_FeatureData.cc:122</a></div></div>
@@ -688,7 +687,7 @@ $(document).ready(function(){initNavTree('EST__FeatureData_8cc_source.html','');
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_48e186528d8523b137164d01852e16c8.html">base_class</a></li><li class="navelem"><a class="el" href="EST__FeatureData_8cc.html">EST_FeatureData.cc</a></li>
-    <li class="footer">Generated on Thu Jan 30 2014 00:27:11 for Edinburgh Speech Tools by
+    <li class="footer">Generated on Tue Feb 11 2014 12:00:37 for Edinburgh Speech Tools by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

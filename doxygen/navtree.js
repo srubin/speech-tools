@@ -81,36 +81,6 @@ var NAVTREE =
       ] ],
       [ "The RXP XML Parser", "estxml.html#rxpparser", null ]
     ] ],
-    [ "align", "align_manual.html", [
-      [ "Synopsis", "align_manual.html#synopsis", null ],
-      [ "Options", "align_manual.html#options", null ]
-    ] ],
-    [ "ch_lab", "ch_lab_manual.html", [
-      [ "Synopsis", "ch_lab_manual.html#synopsis", null ],
-      [ "Options", "ch_lab_manual.html#options", null ]
-    ] ],
-    [ "ch_utt", "ch_utt_manual.html", [
-      [ "Synopsis", "ch_utt_manual.html#synopsis", null ],
-      [ "Options", "ch_utt_manual.html#options", null ]
-    ] ],
-    [ "design_filter", "design_filter_manual.html", [
-      [ "Synopsis", "design_filter_manual.html#synopsis", null ],
-      [ "Options", "design_filter_manual.html#options", null ]
-    ] ],
-    [ "sig2fv", "sig2fv_manual.html", [
-      [ "Synopsis", "sig2fv_manual.html#synopsis", null ],
-      [ "Options", "sig2fv_manual.html#options", null ],
-      [ "Examples", "sig2fv_manual.html#sig2fv-examples", null ]
-    ] ],
-    [ "wagon_test", "wagon_test_manual.html", [
-      [ "Synopsis", "wagon_test_manual.html#synopsis", null ],
-      [ "Options", "wagon_test_manual.html#options", null ],
-      [ "Testing trees", "wagon_test_manual.html#wagon_test-testing", null ]
-    ] ],
-    [ "wfst_run", "wfst_run_manual.html", [
-      [ "Synopsis", "wfst_run_manual.html#synopsis", null ],
-      [ "Options", "wfst_run_manual.html#options", null ]
-    ] ],
     [ "Bibliographic References", "citelist.html", null ],
     [ "Modules", "modules.html", "modules" ],
     [ "Classes", null, [
@@ -150,36 +120,36 @@ var NAVTREEINDEX =
 "EST__TMatrix_8h.html#af985acfeeaa3704c3cfed72f459c65ae",
 "EST__Utterance_8cc.html#a57c3d041e90a25a407ccbc1719198bae",
 "EST__cluster_8h.html#af6146776061c2049d20bcb01cd37a0bf",
-"EST__item__content__aux_8cc.html#a9cda1b691151073d56bfd4babfd24846",
-"EST__relation__compare_8cc.html#a5bde408cac84ab9710605b684edb4961",
-"EST__swapping_8cc.html#aa4386885046483b2edcc63b10f4777ab",
-"EST__wave__io_8cc.html#a09fbea4ede2bcda4faa3d8a477babc46",
-"classCSMM.html#a91a3ab547e747d53009a024dc88c9998",
-"classEST__FeatureData.html#aace722393745ef5eb0104778c9201a85",
-"classEST__Item__Content.html#adafbdc924b9c6d8e7de914bbb12dbc02",
-"classEST__PredictionSuffixTree__tree__node.html#a4e3610a1711f8aa4ef95cffa5ed0f119",
-"classEST__String.html#a099807c538416f42cb86d7ed1e205003",
-"classEST__TIterator.html#ac2f3788bf0b6227e1ea3727fb769183f",
-"classEST__TValuedEnumI.html#ab94ed6b96427770dd838568d9367f295",
-"classEST__Track.html#aa1c0594e342e77618bb2a6fc3579b15c",
-"classEST__Viterbi__Decoder.html#ab4ab3177068eaf6a1b1313cc57f8046c",
-"classHMM.html#ab84cf09717b6abf6c220923a1d2ea96e",
-"ctype16_8h.html#ace943ad4e0301f97a50c8fcc3894f970",
-"editline_8c.html#a2c6f423c2baf4a2243383477efb8cd9f",
+"EST__item__content__aux_8cc.html#a6d420762e75458a6bd2d0fa4f0958929",
+"EST__relation__compare_8cc.html#a59e7ef5aa43554d8ab047af9154abb24",
+"EST__swapping_8cc.html#a91a106fe23d3c6c22d8c4ac58e5dae04",
+"EST__wave__io_8cc.html",
+"classCSMM.html#a86ff0630fe5e8219db760e908a3380db",
+"classEST__FeatureData.html#aa8c33ce86739653ed94b90949ea7d0c2",
+"classEST__Item__Content.html#ad84eee0ae4f37de134a61e250a9bbf1c",
+"classEST__PredictionSuffixTree__tree__node.html#a4afeba9a5b7a96e4e5e8a3d271b90e22",
+"classEST__String.html#a0745d5dc00e6deae968c3da13bb6c2ee",
+"classEST__TIterator.html#abc6cbb307d61cd6f7a9ddf0b4697e50e",
+"classEST__TValuedEnumI.html#ab455bf2443809b78bcf9d94905e15713",
+"classEST__Track.html#aa059dc628970295cafafa755a56705e3",
+"classEST__Viterbi__Decoder.html#aad8b741c5eda42fdf1e8aefbb633fa2c",
+"classHMM.html#ab61628006cd422f3226034fbc70d9319",
+"ctype16_8h.html#abbc3807eaedf6c5194fcee68b7f460be",
+"editline_8c.html#a2c0a5b20799c0c8b2338ce42804df338",
 "esps__utils_8cc.html#ac360315a0ec7e178c82e7881a29382df",
 "functions_0x7e.html",
 "group__FIRfilters.html#ga50b7df940e6d6d07e98834c019e86a39",
 "input_8h.html#a606d882c33a75f7e9bce24b7f722760d",
 "ngrammar__io_8cc.html#a1e05bec156e2e2433f007786cdd4c39d",
-"rxp_8c.html#af98ce039d721f87614e5da594c5938bb",
-"siod_8h.html#ac041e6f36a59747c98b6ef22a1ff5911",
-"siodp_8h.html#a29708fcc3df4eb63af4772eac20ce39c",
-"slib__file_8cc.html#afbd54d9edd5795ea7bebcd7c672efad0",
-"string16_8c.html#aa300956a28953c977779f8ab25b00e63",
-"structcatch__frame.html#a607e07057873f7b028c9380719c4b256",
-"tilt_8h.html#ad8994741cb4d6a97ce4ca62a52e45ebc",
-"vector__val__t_8cc_source.html",
-"xmlparser_8h.html#a471cee813abc6ad31f6b6140eeae8cc1a9dd65d07f81f221de838b71c66516df3"
+"rxp_8h.html",
+"siod_8h.html#ac1a67b72248f7dcf3560f93e09c97a00",
+"siodp_8h.html#a2d2760394c71c8a7aba19cf56aa0a3ed",
+"slib__format_8cc.html",
+"string16_8c.html#aa8caf5aaed6dd160c0c3c6978867b0c9",
+"structcharacter__encoding__alias.html",
+"tilt_8h_source.html",
+"viterbi__main_8cc.html#a1ba6d5fe9643c69c4bf5c92120efe1ba",
+"xmlparser_8h.html#a471cee813abc6ad31f6b6140eeae8cc1aa0f280b7434c38371609607a536a2bca"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

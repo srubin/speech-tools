@@ -168,7 +168,7 @@ $(document).ready(function(){initNavTree('item__aux_8cc_source.html','');});
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordflow">if</span> (item==NULL)</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <a class="code" href="classEST__Item.html">EST_Item</a> *<a class="code" href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a> = item-&gt;<a class="code" href="classEST__Item.html#aac2fd176a939fa834367b7227b2e258b">prev</a>();</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <a class="code" href="classEST__Item.html">EST_Item</a> *p = item-&gt;<a class="code" href="classEST__Item.html#aac2fd176a939fa834367b7227b2e258b">prev</a>();</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <a class="code" href="classEST__Item.html">EST_Item</a> *n = item-&gt;<a class="code" href="classEST__Item.html#aa5688ff49837311d904142ef224af8de">next</a>();</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    rel-&gt;<a class="code" href="classEST__Relation.html#a330448fe625856ba8f5ca8b62c9e6980">remove_item</a>(item);</div>
@@ -414,7 +414,6 @@ $(document).ready(function(){initNavTree('item__aux_8cc_source.html','');});
 <div class="ttc" id="item__aux_8cc_html_aed0e1f1f1fcee59d22fb3b0a69cba004"><div class="ttname"><a href="item__aux_8cc.html#aed0e1f1f1fcee59d22fb3b0a69cba004">move_sub_tree</a></div><div class="ttdeci">int move_sub_tree(EST_Item *from, EST_Item *to)</div><div class="ttdef"><b>Definition:</b> <a href="item__aux_8cc_source.html#l00128">item_aux.cc:128</a></div></div>
 <div class="ttc" id="classEST__UList_html_a36cd9a03aa4677736edb4866364a204f"><div class="ttname"><a href="classEST__UList.html#a36cd9a03aa4677736edb4866364a204f">EST_UList::head</a></div><div class="ttdeci">EST_UItem * head() const </div><div class="ttdef"><b>Definition:</b> <a href="EST__UList_8h_source.html#l00096">EST_UList.h:96</a></div></div>
 <div class="ttc" id="classEST__Item_html_a3464ce9bd3777f7202093fe3a392f282"><div class="ttname"><a href="classEST__Item.html#a3464ce9bd3777f7202093fe3a392f282">EST_Item::S</a></div><div class="ttdeci">const EST_String S(const EST_String &amp;name) const </div><div class="ttdef"><b>Definition:</b> <a href="EST__Item_8h_source.html#l00144">EST_Item.h:144</a></div></div>
-<div class="ttc" id="editline_8c_html_a5791904baf12239aadc3a8280a03e8c5"><div class="ttname"><a href="editline_8c.html#a5791904baf12239aadc3a8280a03e8c5">p</a></div><div class="ttdeci">void char * p</div><div class="ttdef"><b>Definition:</b> <a href="editline_8c_source.html#l01395">editline.c:1395</a></div></div>
 <div class="ttc" id="EST__bool_8h_html_aa8cecfc5c5c054d2875c03e77b7be15d"><div class="ttname"><a href="EST__bool_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a></div><div class="ttdeci">#define TRUE</div><div class="ttdef"><b>Definition:</b> <a href="EST__bool_8h_source.html#l00118">EST_bool.h:118</a></div></div>
 <div class="ttc" id="group__treetraversalfunctions_html_ga0f79d15bb50c8b16260282e1b3026a91"><div class="ttname"><a href="group__treetraversalfunctions.html#ga0f79d15bb50c8b16260282e1b3026a91">daughter1</a></div><div class="ttdeci">EST_Item * daughter1(const EST_Item *n)</div><div class="ttdoc">return first daughter of n </div><div class="ttdef"><b>Definition:</b> <a href="EST__Relation__tree_8h_source.html#l00056">EST_Relation_tree.h:56</a></div></div>
 <div class="ttc" id="EST__Features_8cc_html_a55fd0eac77bbe5ce8e2d7e5865b4cea1"><div class="ttname"><a href="EST__Features_8cc.html#a55fd0eac77bbe5ce8e2d7e5865b4cea1">merge_features</a></div><div class="ttdeci">void merge_features(EST_Features &amp;to, EST_Features &amp;from)</div><div class="ttdef"><b>Definition:</b> <a href="EST__Features_8cc_source.html#l00198">EST_Features.cc:198</a></div></div>
@@ -426,7 +425,7 @@ $(document).ready(function(){initNavTree('item__aux_8cc_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_e549dd66bffc6cff8239c1003cf64b45.html">ling_class</a></li><li class="navelem"><a class="el" href="item__aux_8cc.html">item_aux.cc</a></li>
-    <li class="footer">Generated on Thu Jan 30 2014 00:27:12 for Edinburgh Speech Tools by
+    <li class="footer">Generated on Tue Feb 11 2014 12:00:38 for Edinburgh Speech Tools by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

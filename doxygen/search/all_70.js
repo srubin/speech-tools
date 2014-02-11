@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['p',['p',['../structEST__THash_1_1IPointer__s.html#a5b37bceaebdc124d7101f8d659b188a6',1,'EST_THash::IPointer_s::p()'],['../structEST__THash_1_1IPointer__k__s.html#a3c134a045d3288abda7c32777ad87f00',1,'EST_THash::IPointer_k_s::p()'],['../structEST__TKVL_1_1IPointer.html#a71f2e3e5455c9ec7cbfaa3a9d8d723bb',1,'EST_TKVL::IPointer::p()'],['../structEST__TKVL_1_1IPointer__k.html#a73b1e660e7aaf78b96adcd9b2b8249f8',1,'EST_TKVL::IPointer_k::p()'],['../structEST__TList_1_1IPointer.html#a134727c5900cd486cee96e598a1ad858',1,'EST_TList::IPointer::p()'],['../classEST__UItem.html#a72ac8b7af4841536f25dfe28175d630c',1,'EST_UItem::p()'],['../classXML__Parser.html#a15e826bc8c46945b62b4afa501968799',1,'XML_Parser::p()'],['../structobj.html#a58e15cdc91ecd24c0f6d3d75c552b90b',1,'obj::p()'],['../classEST__TrackMap.html#a7209f8716a9a214803aedcf7467013eb',1,'EST_TrackMap::P()'],['../editline_8c.html#a5791904baf12239aadc3a8280a03e8c5',1,'p():&#160;editline.c']]],
+  ['p',['p',['../structEST__THash_1_1IPointer__s.html#a5b37bceaebdc124d7101f8d659b188a6',1,'EST_THash::IPointer_s::p()'],['../structEST__THash_1_1IPointer__k__s.html#a3c134a045d3288abda7c32777ad87f00',1,'EST_THash::IPointer_k_s::p()'],['../structEST__TKVL_1_1IPointer.html#a71f2e3e5455c9ec7cbfaa3a9d8d723bb',1,'EST_TKVL::IPointer::p()'],['../structEST__TKVL_1_1IPointer__k.html#a73b1e660e7aaf78b96adcd9b2b8249f8',1,'EST_TKVL::IPointer_k::p()'],['../structEST__TList_1_1IPointer.html#a134727c5900cd486cee96e598a1ad858',1,'EST_TList::IPointer::p()'],['../classEST__UItem.html#a72ac8b7af4841536f25dfe28175d630c',1,'EST_UItem::p()'],['../classXML__Parser.html#a15e826bc8c46945b62b4afa501968799',1,'XML_Parser::p()'],['../structobj.html#a58e15cdc91ecd24c0f6d3d75c552b90b',1,'obj::p()'],['../classEST__TrackMap.html#a7209f8716a9a214803aedcf7467013eb',1,'EST_TrackMap::P()']]],
   ['p_5faccumulate',['p_accumulate',['../classEST__PredictionSuffixTree.html#a48bbaecc2163d828c4bd02b37177487e',1,'EST_PredictionSuffixTree']]],
   ['p_5faux',['p_aux',['../classEST__Track.html#ae60f76b69db30e9d41135fb55cc62f70',1,'EST_Track']]],
   ['p_5faux_5fnames',['p_aux_names',['../classEST__Track.html#a4945acfd61052c09290fced909d92476',1,'EST_Track']]],
@@ -219,7 +219,6 @@ var searchData=
   ['prog',['prog',['../structESPS__FIXED__HDR.html#abce069168923f4a8885ecfaaecf659be',1,'ESPS_FIXED_HDR::prog()'],['../regsub_8c.html#a6265fefb66ff5c526fa6bb2b80ab2871',1,'prog():&#160;regsub.c']]],
   ['progcompdate',['progcompdate',['../structESPS__FIXED__HDR.html#a8943f217181b83b14b0a1084c6f58513',1,'ESPS_FIXED_HDR']]],
   ['program',['program',['../strucths__regexp.html#afeca3afd9c606aabb8483605f66ce223',1,'hs_regexp']]],
-  ['program_5fexample_2ecc',['program_example.cc',['../program__example_8cc.html',1,'']]],
   ['program_5fmain_2ecc',['program_main.cc',['../program__main_8cc.html',1,'']]],
   ['prompt',['Prompt',['../editline_8c.html#a6ffba7481235a169bbe1dafcf88e27c2',1,'editline.c']]],
   ['protected_5fregisters',['protected_registers',['../slib_8cc.html#a4149a72e2907f30c7a7ce9e9a2a46122',1,'slib.cc']]],

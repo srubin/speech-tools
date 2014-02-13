@@ -63,16 +63,14 @@ function ToggleDisplay(CheckButton, ClassName) {
 <tr><th>Command Line:</th><td>make</td></tr>
 <tr><th>Clang Version:</th><td>Ubuntu clang version 3.4-1ubuntu1 (trunk) (based on LLVM 3.4)
 </td></tr>
-<tr><th>Date:</th><td>Tue Feb 11 12:11:49 2014</td></tr>
+<tr><th>Date:</th><td>Thu Feb 13 13:18:57 2014</td></tr>
 </table>
 <h2>Bug Summary</h2><table>
 <thead><tr><td>Bug Type</td><td>Quantity</td><td class="sorttable_nosort">Display?</td></tr></thead>
-<tr style="font-weight:bold"><td class="SUMM_DESC">All Bugs</td><td class="Q">40</td><td><center><input type="checkbox" id="AllBugsCheck" onClick="CopyCheckedStateToCheckButtons(this);" checked/></center></td></tr>
+<tr style="font-weight:bold"><td class="SUMM_DESC">All Bugs</td><td class="Q">37</td><td><center><input type="checkbox" id="AllBugsCheck" onClick="CopyCheckedStateToCheckButtons(this);" checked/></center></td></tr>
 <tr><th>Dead store</th><th colspan=2></th></tr>
 <tr><td class="SUMM_DESC">Dead assignment</td><td class="Q">35</td><td><center><input type="checkbox" onClick="ToggleDisplay(this,'bt_dead_store_dead_assignment');" checked/></center></td></tr>
 <tr><th>Logic error</th><th colspan=2></th></tr>
-<tr><td class="SUMM_DESC">Called C++ object pointer is null</td><td class="Q">1</td><td><center><input type="checkbox" onClick="ToggleDisplay(this,'bt_logic_error_called_c++_object_pointer_is_null');" checked/></center></td></tr>
-<tr><td class="SUMM_DESC">Dereference of null pointer</td><td class="Q">2</td><td><center><input type="checkbox" onClick="ToggleDisplay(this,'bt_logic_error_dereference_of_null_pointer');" checked/></center></td></tr>
 <tr><td class="SUMM_DESC">Result of operation is garbage or undefined</td><td class="Q">1</td><td><center><input type="checkbox" onClick="ToggleDisplay(this,'bt_logic_error_result_of_operation_is_garbage_or_undefined');" checked/></center></td></tr>
 <tr><td class="SUMM_DESC">Stack address stored into global variable</td><td class="Q">1</td><td><center><input type="checkbox" onClick="ToggleDisplay(this,'bt_logic_error_stack_address_stored_into_global_variable');" checked/></center></td></tr>
 </table>
@@ -89,125 +87,116 @@ function ToggleDisplay(CheckButton, ClassName) {
   <!-- REPORTBUGCOL -->
 </tr></thead>
 <tbody>
-<tr class="bt_logic_error_called_c++_object_pointer_is_null"><td class="DESC">Logic error</td><td class="DESC">Called C++ object pointer is null</td><td>grammar<span class="W"> </span>/scfg<span class="W"> </span>/EST_SCFG_Chart.cc</td><td class="Q">390</td><td class="Q">13</td><td><a href="report-bc8357.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-bc8357.html" -->
+<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>stats<span class="W"> </span>/wagon<span class="W"> </span>/wagon.cc</td><td class="Q">372</td><td class="Q">1</td><td><a href="report-79fbc5.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-79fbc5.html" -->
 </tr>
-<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>grammar<span class="W"> </span>/ngram<span class="W"> </span>/ngrammar_io.cc</td><td class="Q">679</td><td class="Q">1</td><td><a href="report-aa505e.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-aa505e.html" -->
+<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>grammar<span class="W"> </span>/ngram<span class="W"> </span>/ngrammar_io.cc</td><td class="Q">176</td><td class="Q">1</td><td><a href="report-ea905c.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-ea905c.html" -->
 </tr>
-<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>audio<span class="W"> </span>/gen_audio.cc</td><td class="Q">356</td><td class="Q">1</td><td><a href="report-801fa4.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-801fa4.html" -->
+<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>speech_class<span class="W"> </span>/EST_TrackFile.cc</td><td class="Q">419</td><td class="Q">1</td><td><a href="report-8bf344.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-8bf344.html" -->
 </tr>
-<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>speech_class<span class="W"> </span>/EST_wave_io.cc</td><td class="Q">386</td><td class="Q">1</td><td><a href="report-5fc0a8.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-5fc0a8.html" -->
+<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>ling_class<span class="W"> </span>/EST_relation_aux.cc</td><td class="Q">254</td><td class="Q">1</td><td><a href="report-8fb9d4.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-8fb9d4.html" -->
 </tr>
-<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>speech_class<span class="W"> </span>/ssff.cc</td><td class="Q">88</td><td class="Q">1</td><td><a href="report-f3fe80.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-f3fe80.html" -->
+<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>stats<span class="W"> </span>/wagon<span class="W"> </span>/wagon.cc</td><td class="Q">374</td><td class="Q">1</td><td><a href="report-7a24f0.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-7a24f0.html" -->
 </tr>
-<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>sigpr<span class="W"> </span>/sigpr_frame.cc</td><td class="Q">731</td><td class="Q">1</td><td><a href="report-2a7104.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-2a7104.html" -->
+<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>speech_class<span class="W"> </span>/EST_Track.cc</td><td class="Q">1065</td><td class="Q">1</td><td><a href="report-7c4a19.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-7c4a19.html" -->
 </tr>
-<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>stats<span class="W"> </span>/wagon<span class="W"> </span>/wagon.cc</td><td class="Q">374</td><td class="Q">1</td><td><a href="report-3c5b13.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-3c5b13.html" -->
+<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>audio<span class="W"> </span>/linux_sound.cc</td><td class="Q">737</td><td class="Q">1</td><td><a href="report-d18d3e.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-d18d3e.html" -->
 </tr>
-<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>speech_class<span class="W"> </span>/EST_TrackFile.cc</td><td class="Q">1596</td><td class="Q">1</td><td><a href="report-8a9530.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-8a9530.html" -->
+<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>testsuite<span class="W"> </span>/ling_example.cc</td><td class="Q">325</td><td class="Q">1</td><td><a href="report-c15ed1.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-c15ed1.html" -->
 </tr>
-<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>stats<span class="W"> </span>/wagon<span class="W"> </span>/wagon.cc</td><td class="Q">463</td><td class="Q">1</td><td><a href="report-b98a23.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-b98a23.html" -->
+<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>stats<span class="W"> </span>/wagon<span class="W"> </span>/wagon.cc</td><td class="Q">461</td><td class="Q">1</td><td><a href="report-d17874.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-d17874.html" -->
 </tr>
-<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>speech_class<span class="W"> </span>/EST_track_aux.cc</td><td class="Q">690</td><td class="Q">1</td><td><a href="report-809360.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-809360.html" -->
+<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>utils<span class="W"> </span>/util_io.cc</td><td class="Q">125</td><td class="Q">1</td><td><a href="report-eb9aa2.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-eb9aa2.html" -->
 </tr>
-<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>grammar<span class="W"> </span>/ngram<span class="W"> </span>/EST_Ngrammar.cc</td><td class="Q">216</td><td class="Q">1</td><td><a href="report-fe6727.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-fe6727.html" -->
+<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>grammar<span class="W"> </span>/wfst<span class="W"> </span>/ltscompile.cc</td><td class="Q">247</td><td class="Q">1</td><td><a href="report-2f9b37.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-2f9b37.html" -->
 </tr>
-<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>ling_class<span class="W"> </span>/EST_relation_aux.cc</td><td class="Q">254</td><td class="Q">1</td><td><a href="report-7dc8e2.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-7dc8e2.html" -->
+<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>speech_class<span class="W"> </span>/EST_TrackFile.cc</td><td class="Q">1596</td><td class="Q">1</td><td><a href="report-c854c1.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-c854c1.html" -->
 </tr>
-<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>speech_class<span class="W"> </span>/EST_TrackFile.cc</td><td class="Q">306</td><td class="Q">1</td><td><a href="report-f41dd2.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-f41dd2.html" -->
+<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>speech_class<span class="W"> </span>/EST_wave_io.cc</td><td class="Q">386</td><td class="Q">1</td><td><a href="report-5b7702.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-5b7702.html" -->
 </tr>
-<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>sigpr<span class="W"> </span>/fft.cc</td><td class="Q">281</td><td class="Q">1</td><td><a href="report-e09860.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-e09860.html" -->
+<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>utils<span class="W"> </span>/util_io.cc</td><td class="Q">137</td><td class="Q">1</td><td><a href="report-8f3fec.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-8f3fec.html" -->
 </tr>
-<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>speech_class<span class="W"> </span>/EST_Track.cc</td><td class="Q">490</td><td class="Q">1</td><td><a href="report-960436.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-960436.html" -->
+<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>stats<span class="W"> </span>/wagon<span class="W"> </span>/wagon.cc</td><td class="Q">463</td><td class="Q">1</td><td><a href="report-7331f1.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-7331f1.html" -->
 </tr>
-<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>speech_class<span class="W"> </span>/esps_utils.cc</td><td class="Q">982</td><td class="Q">1</td><td><a href="report-70b873.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-70b873.html" -->
+<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>audio<span class="W"> </span>/gen_audio.cc</td><td class="Q">356</td><td class="Q">1</td><td><a href="report-1a8273.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-1a8273.html" -->
 </tr>
-<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>sigpr<span class="W"> </span>/pda<span class="W"> </span>/pda.cc</td><td class="Q">115</td><td class="Q">1</td><td><a href="report-a8e6cc.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-a8e6cc.html" -->
+<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>ling_class<span class="W"> </span>/EST_relation_aux.cc</td><td class="Q">256</td><td class="Q">1</td><td><a href="report-b9dabc.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-b9dabc.html" -->
 </tr>
-<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>ling_class<span class="W"> </span>/EST_relation_aux.cc</td><td class="Q">256</td><td class="Q">1</td><td><a href="report-8b369a.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-8b369a.html" -->
+<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>intonation<span class="W"> </span>/tilt<span class="W"> </span>/tilt_analysis.cc</td><td class="Q">686</td><td class="Q">1</td><td><a href="report-6089e7.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-6089e7.html" -->
 </tr>
-<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>stats<span class="W"> </span>/wagon<span class="W"> </span>/wagon.cc</td><td class="Q">461</td><td class="Q">1</td><td><a href="report-44c00f.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-44c00f.html" -->
+<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>speech_class<span class="W"> </span>/EST_Track.cc</td><td class="Q">490</td><td class="Q">1</td><td><a href="report-277a05.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-277a05.html" -->
 </tr>
-<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>grammar<span class="W"> </span>/wfst<span class="W"> </span>/ltscompile.cc</td><td class="Q">247</td><td class="Q">1</td><td><a href="report-6cf084.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-6cf084.html" -->
+<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>sigpr<span class="W"> </span>/sigpr_frame.cc</td><td class="Q">731</td><td class="Q">1</td><td><a href="report-7f0d5a.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-7f0d5a.html" -->
 </tr>
-<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>testsuite<span class="W"> </span>/ling_example.cc</td><td class="Q">325</td><td class="Q">1</td><td><a href="report-fb81bf.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-fb81bf.html" -->
+<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>speech_class<span class="W"> </span>/EST_track_aux.cc</td><td class="Q">690</td><td class="Q">1</td><td><a href="report-3565f5.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-3565f5.html" -->
 </tr>
-<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>speech_class<span class="W"> </span>/ssff.cc</td><td class="Q">89</td><td class="Q">1</td><td><a href="report-92bd4d.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-92bd4d.html" -->
+<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>sigpr<span class="W"> </span>/pda<span class="W"> </span>/pda.cc</td><td class="Q">115</td><td class="Q">1</td><td><a href="report-2a1e9e.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-2a1e9e.html" -->
 </tr>
-<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>utils<span class="W"> </span>/util_io.cc</td><td class="Q">137</td><td class="Q">1</td><td><a href="report-b3244f.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-b3244f.html" -->
+<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>grammar<span class="W"> </span>/ngram<span class="W"> </span>/EST_Ngrammar.cc</td><td class="Q">216</td><td class="Q">1</td><td><a href="report-333fa6.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-333fa6.html" -->
 </tr>
-<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>stats<span class="W"> </span>/wagon<span class="W"> </span>/wagon.cc</td><td class="Q">372</td><td class="Q">1</td><td><a href="report-820fcf.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-820fcf.html" -->
+<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>sigpr<span class="W"> </span>/pda<span class="W"> </span>/pda.cc</td><td class="Q">114</td><td class="Q">1</td><td><a href="report-019ef9.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-019ef9.html" -->
 </tr>
-<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>testsuite<span class="W"> </span>/ling_example.cc</td><td class="Q">324</td><td class="Q">1</td><td><a href="report-3c9cf2.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-3c9cf2.html" -->
+<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>sigpr<span class="W"> </span>/fft.cc</td><td class="Q">281</td><td class="Q">1</td><td><a href="report-17a8b0.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-17a8b0.html" -->
 </tr>
-<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>intonation<span class="W"> </span>/tilt<span class="W"> </span>/tilt_analysis.cc</td><td class="Q">686</td><td class="Q">1</td><td><a href="report-37ec87.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-37ec87.html" -->
+<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>testsuite<span class="W"> </span>/ling_example.cc</td><td class="Q">324</td><td class="Q">1</td><td><a href="report-62086b.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-62086b.html" -->
 </tr>
-<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>audio<span class="W"> </span>/linux_sound.cc</td><td class="Q">735</td><td class="Q">1</td><td><a href="report-a062f6.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-a062f6.html" -->
+<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>speech_class<span class="W"> </span>/ssff.cc</td><td class="Q">88</td><td class="Q">1</td><td><a href="report-1d9d5e.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-1d9d5e.html" -->
 </tr>
-<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>audio<span class="W"> </span>/linux_sound.cc</td><td class="Q">737</td><td class="Q">1</td><td><a href="report-746b27.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-746b27.html" -->
+<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>speech_class<span class="W"> </span>/ssff.cc</td><td class="Q">89</td><td class="Q">1</td><td><a href="report-23ca58.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-23ca58.html" -->
 </tr>
-<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>main<span class="W"> </span>/wfst_train_main.cc</td><td class="Q">90</td><td class="Q">1</td><td><a href="report-022f21.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-022f21.html" -->
+<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>speech_class<span class="W"> </span>/EST_WaveFile.cc</td><td class="Q">659</td><td class="Q">1</td><td><a href="report-6f43f9.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-6f43f9.html" -->
 </tr>
-<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>sigpr<span class="W"> </span>/pda<span class="W"> </span>/pda.cc</td><td class="Q">114</td><td class="Q">1</td><td><a href="report-38efc6.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-38efc6.html" -->
+<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>speech_class<span class="W"> </span>/EST_TrackFile.cc</td><td class="Q">306</td><td class="Q">1</td><td><a href="report-6d840e.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-6d840e.html" -->
 </tr>
-<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>grammar<span class="W"> </span>/ngram<span class="W"> </span>/ngrammar_io.cc</td><td class="Q">176</td><td class="Q">1</td><td><a href="report-082976.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-082976.html" -->
+<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>main<span class="W"> </span>/wfst_train_main.cc</td><td class="Q">90</td><td class="Q">1</td><td><a href="report-f87a81.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-f87a81.html" -->
 </tr>
-<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>speech_class<span class="W"> </span>/EST_TrackFile.cc</td><td class="Q">419</td><td class="Q">1</td><td><a href="report-aa712a.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-aa712a.html" -->
+<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>ling_class<span class="W"> </span>/item_feats.cc</td><td class="Q">116</td><td class="Q">1</td><td><a href="report-a89369.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-a89369.html" -->
 </tr>
-<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>ling_class<span class="W"> </span>/item_feats.cc</td><td class="Q">116</td><td class="Q">1</td><td><a href="report-17b518.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-17b518.html" -->
+<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>audio<span class="W"> </span>/linux_sound.cc</td><td class="Q">735</td><td class="Q">1</td><td><a href="report-193c8e.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-193c8e.html" -->
 </tr>
-<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>speech_class<span class="W"> </span>/EST_Track.cc</td><td class="Q">1065</td><td class="Q">1</td><td><a href="report-1c3486.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-1c3486.html" -->
+<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>speech_class<span class="W"> </span>/esps_utils.cc</td><td class="Q">990</td><td class="Q">1</td><td><a href="report-383788.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-383788.html" -->
 </tr>
-<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>utils<span class="W"> </span>/util_io.cc</td><td class="Q">125</td><td class="Q">1</td><td><a href="report-8e0600.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-8e0600.html" -->
+<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>grammar<span class="W"> </span>/ngram<span class="W"> </span>/ngrammar_io.cc</td><td class="Q">679</td><td class="Q">1</td><td><a href="report-416394.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-416394.html" -->
 </tr>
-<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>speech_class<span class="W"> </span>/EST_WaveFile.cc</td><td class="Q">659</td><td class="Q">1</td><td><a href="report-66b4a6.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-66b4a6.html" -->
+<tr class="bt_logic_error_result_of_operation_is_garbage_or_undefined"><td class="DESC">Logic error</td><td class="DESC">Result of operation is garbage or undefined</td><td>sigpr<span class="W"> </span>/pda<span class="W"> </span>/pcb_smoother.cc</td><td class="Q">272</td><td class="Q">21</td><td><a href="report-317bc3.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-317bc3.html" -->
 </tr>
-<tr class="bt_logic_error_dereference_of_null_pointer"><td class="DESC">Logic error</td><td class="DESC">Dereference of null pointer</td><td>speech_class<span class="W"> </span>/esps_utils.cc</td><td class="Q">261</td><td class="Q">5</td><td><a href="report-b04794.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-b04794.html" -->
-</tr>
-<tr class="bt_logic_error_dereference_of_null_pointer"><td class="DESC">Logic error</td><td class="DESC">Dereference of null pointer</td><td>utils<span class="W"> </span>/EST_Server.cc</td><td class="Q">254</td><td class="Q">6</td><td><a href="report-905406.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-905406.html" -->
-</tr>
-<tr class="bt_logic_error_result_of_operation_is_garbage_or_undefined"><td class="DESC">Logic error</td><td class="DESC">Result of operation is garbage or undefined</td><td>sigpr<span class="W"> </span>/pda<span class="W"> </span>/pcb_smoother.cc</td><td class="Q">272</td><td class="Q">21</td><td><a href="report-74d387.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-74d387.html" -->
-</tr>
-<tr class="bt_logic_error_stack_address_stored_into_global_variable"><td class="DESC">Logic error</td><td class="DESC">Stack address stored into global variable</td><td>siod<span class="W"> </span>/slib.cc</td><td class="Q">894</td><td class="Q">1</td><td><a href="report-36a0d2.html#EndPath">View Report</a></td>
-<!-- REPORTBUG id="report-36a0d2.html" -->
+<tr class="bt_logic_error_stack_address_stored_into_global_variable"><td class="DESC">Logic error</td><td class="DESC">Stack address stored into global variable</td><td>siod<span class="W"> </span>/slib.cc</td><td class="Q">894</td><td class="Q">1</td><td><a href="report-07125d.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-07125d.html" -->
 </tr>
 </tbody>
 </table>

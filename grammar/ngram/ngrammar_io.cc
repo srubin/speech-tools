@@ -557,7 +557,7 @@ save_ngram_htk_ascii_sub(const EST_String &word, ostream *ost,
 
 EST_write_status
 save_ngram_htk_ascii(const EST_String filename, 
-		     EST_Ngrammar &n, double floor)
+		     EST_Ngrammar &n, double floor=0.0)
 {
     
     ostream *ost;
@@ -739,7 +739,7 @@ save_ngram_arpa(const EST_String filename, EST_Ngrammar &n)
 
 EST_write_status 
 save_ngram_cstr_ascii(const EST_String filename, EST_Ngrammar &n,
-		      const bool trace, double floor)
+		      const bool trace=false, double floor=0.0)
 {
     // awb's format
     (void)trace;
@@ -836,7 +836,7 @@ save_ngram_wfst(const EST_String filename, EST_Ngrammar &n)
 
 EST_write_status 
 save_ngram_cstr_bin(const EST_String filename, EST_Ngrammar &n, 
-		    const bool trace, double floor)
+		    const bool trace=false, double floor=0.0)
 {
     
     if (n.representation() == EST_Ngrammar::sparse)

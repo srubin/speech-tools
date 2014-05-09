@@ -204,7 +204,7 @@ void zero_small_f(EST_BackoffNgrammarState *s,void *params)
       }
 }
 
-void frequency_of_frequencies(EST_DVector &ff, EST_Ngrammar &n,int this_order)
+void frequency_of_frequencies(EST_DVector &ff, EST_Ngrammar &n,int this_order=0)
 {
   int i,size;
   EST_Litem *k;
@@ -303,7 +303,7 @@ void frequency_of_frequencies(EST_DVector &ff, EST_Ngrammar &n,int this_order)
 
 }
 
-void map_frequencies(EST_Ngrammar &n, const EST_DVector &map, const int this_order)
+void map_frequencies(EST_Ngrammar &n, const EST_DVector &map, const int this_order=0)
 {
     int i;
     EST_Litem *k;
@@ -407,7 +407,7 @@ smoothed_frequency_distribution_ExponentialFit(EST_DVector &N,int maxcount)
 }
 
 bool
-Good_Turing_smooth(EST_Ngrammar &ngrammar, int maxcount, int mincount)
+Good_Turing_smooth(EST_Ngrammar &ngrammar, int maxcount, int mincount=0)
 {
     // works for any N
     // since it just remaps frequencies
@@ -539,7 +539,7 @@ return true;
 
 void
 Good_Turing_discount(EST_Ngrammar &ngrammar, const int maxcount,
-		     const double default_discount)
+		     const double default_discount=0.5)
 {
     
     if(ngrammar.representation() != EST_Ngrammar::backoff)

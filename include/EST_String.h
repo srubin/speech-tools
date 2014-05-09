@@ -577,10 +577,10 @@ public:
       */
     ///@{
     friend int fcompare(const EST_String &a, const EST_String &b, 
-			const unsigned char *table=NULL);
+			const unsigned char *table);
 
     friend int fcompare(const EST_String &a, const char *b, 
-				const unsigned char *table=NULL);
+				const unsigned char *table);
     ///
     friend inline int fcompare(const EST_String &a, const EST_String &b, 
 			       const EST_String &table) 

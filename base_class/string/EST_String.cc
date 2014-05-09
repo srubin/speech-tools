@@ -1152,7 +1152,7 @@ int compare(const EST_String &a, const char *b)
 }
 
 int fcompare(const EST_String &a, const EST_String &b, 
-				const unsigned char *table) 
+				const unsigned char *table=NULL) 
 {
     if (a.size == 0 && b.size == 0)
 	return 0;
@@ -1165,7 +1165,7 @@ int fcompare(const EST_String &a, const EST_String &b,
 }
 
 int fcompare(const EST_String &a, const char *b, 
-				const unsigned char *table) 
+				const unsigned char *table=NULL) 
 {
     int bsize = (b ? strlen((const char *)b) : 0);
     if (a.size == 0 && bsize == 0)

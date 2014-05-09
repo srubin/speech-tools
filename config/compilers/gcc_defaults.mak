@@ -52,9 +52,9 @@ DEBUG_CCFLAGS   = -g
 DEBUG_CXXFLAGS  = -g
 DEBUG_LINKFLAGS = -g
 
-WARN_CCFLAGS   = -Wall -Wextra -Werror
-WARN_CXXFLAGS  = -Wall -Wextra -Werror
-WARN_LINKFLAGS = -Wall -Wextra -Werror
+WARN_CCFLAGS   = -Wall -Wextra -Werror -Wno-unused-variable -Wno-unused-parameter -Wno-deprecated-declarations -Wno-unused-function -Wno-format
+WARN_CXXFLAGS  = -Wall -Wextra -Werror -Wno-unused-variable -Wno-unused-parameter -Wno-deprecated-declarations -Wno-unused-function -Wno-format
+WARN_LINKFLAGS = -Wall -Wextra -Werror -Wno-unused-variable -Wno-unused-parameter -Wno-deprecated-declarations -Wno-unused-function -Wno-format
 
 VERBOSE_CCFLAGS   =
 VERBOSE_CXXFLAGS  = 

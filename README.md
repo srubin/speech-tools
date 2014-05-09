@@ -1,3 +1,9 @@
+# srubin's fork of Edinburgh speech tools library
+
+Changes
+
+* Fix to compile on OSX 10.9 Mavericks without errors
+
 # Edinburgh speech tools library
 
 This is a patched version of the speech tools library.
